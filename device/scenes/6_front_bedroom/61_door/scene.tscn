@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/6_front_bedroom/sprites/door_blurry.png" type="Texture" id=4]
+[ext_resource path="res://scenes/6_front_bedroom/door_closeup.tscn" type="PackedScene" id=5]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="background" type="TextureRect" parent="."]
+margin_left = -198.0
+margin_top = -144.0
+margin_right = 1575.0
+margin_bottom = 1135.0
+rect_scale = Vector2( 1.16, 1.16 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="door_closeup" parent="." instance=ExtResource( 5 )]
+position = Vector2( 876, 492 )
+scale = Vector2( 1.48, 1.48 )
+events_path = "res://scenes/6_front_bedroom/door_closeup.esc"
+global_id = "frontbedroom_door_closeup"
+
+[node name="game" parent="." instance=ExtResource( 3 )]

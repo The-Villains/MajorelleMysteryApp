@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/album.png" type="Texture" id=2]
+
+[node name="album" type="Node2D"]
+script = ExtResource( 1 )
+events_path = "res://scenes/7_in_bedroom/album.esc"
+global_id = "bedroom_album"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -10.0
+margin_top = -247.0
+margin_right = 316.0
+margin_bottom = 143.0
+rect_rotation = 36.2808
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2, 30 )
+texture = ExtResource( 2 )

@@ -1,0 +1,4 @@
+:look
+cut_scene telon fade_out
+change_scene res://scenes/6_front_bedroom/61_door/scene.tscn
+cut_scene telon fade_in

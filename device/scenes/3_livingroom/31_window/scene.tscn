@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/3_livingroom/sprites/living_room_blurry.png" type="Texture" id=4]
+[ext_resource path="res://scenes/3_livingroom/31_window/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/3_livingroom/sprites/placeholder.png" type="Texture" id=6]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="background" type="TextureRect" parent="."]
+margin_left = -220.0
+margin_top = -160.0
+margin_right = 1284.0
+margin_bottom = 933.0
+rect_scale = Vector2( 1.4, 1.4 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit" parent="." instance=ExtResource( 5 )]
+position = Vector2( 90.5098, 1097.43 )
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 3 )]
+
+[node name="placeholder" type="TextureButton" parent="."]
+margin_left = 5.65686
+margin_top = 48.0833
+margin_right = 1382.66
+margin_bottom = 1045.08
+texture_normal = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

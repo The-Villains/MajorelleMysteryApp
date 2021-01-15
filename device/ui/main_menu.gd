@@ -8,6 +8,10 @@ var labels = []
 func load_autosave():
 	vm.load_autosave()
 
+func can_continue():
+	return (root.get_current_scene() is preload("res://globals/scene.gd")) || vm.save_data.autosave_available()
+	pass
+
 func button_clicked():
 	# play a clicking sound here?
 	pass
@@ -19,7 +23,15 @@ func newgame_pressed():
 func start_new_game(p_confirm):
 	if !p_confirm:
 		return
-	vm.load_file("res://game/trailer.esc")
+	vm.load_file("res://scenes/00_trailer/trailer.esc")
+
+func continue_pressed():
+	button_clicked()
+	if root.get_current_scene() is preload("res://globals/scene.gd"):
+		root.menu_collapse()
+	else:
+		if vm.continue_enabled:
+			load_autosave()
 
 func testing_pressed():
 	button_clicked()
@@ -73,6 +85,14 @@ func _find_labels(p = null):
 	for i in range(0, p.get_child_count()):
 		_find_labels(p.get_child(i))
 
+func set_continue_button():
+	if vm.continue_enabled && can_continue():
+		get_node("continue").set_disabled(false)
+		#get_node("continue").show()
+	else:
+		get_node("continue").set_disabled(true)
+		#get_node("continue").hide()
+
 func _on_language_selected(lang):
 	vm.settings.text_lang=lang
 	TranslationServer.set_locale(vm.settings.text_lang)
@@ -84,11 +104,11 @@ func _ready():
 	# warning-ignore:return_value_discarded
 	get_node("new_game").connect("pressed", self, "newgame_pressed")
 	# warning-ignore:return_value_discarded
-	get_node("testing").connect("pressed", self, "testing_pressed")
-	#get_node("save").connect("pressed", self, "save_pressed")
+	# get_node("testing").connect("pressed", self, "testing_pressed")
+	# get_node("save").connect("pressed", self, "save_pressed")
 	# warning-ignore:return_value_discarded
 	get_node("exit").connect("pressed", self, "_on_exit_pressed")
-	#get_node("settings").connect("pressed", self, "settings_pressed")
+	# get_node("settings").connect("pressed", self, "settings_pressed")
 	# warning-ignore:return_value_discarded
 	get_node("credits").connect("pressed",self,"credits_pressed")
 	vm = get_tree().get_root().get_node("vm")

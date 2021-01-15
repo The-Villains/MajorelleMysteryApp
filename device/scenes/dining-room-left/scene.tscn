@@ -33,6 +33,7 @@ __meta__ = {
 }
 
 [node name="dining-room-ghost" parent="background" instance=ExtResource( 5 )]
+visible = false
 position = Vector2( 619.106, 435.947 )
 scale = Vector2( 1.4019, 1.37025 )
 z_as_relative = false
@@ -80,11 +81,11 @@ placeholders = {
 
 }
 
-[node name="game" parent="." instance=ExtResource( 8 )]
-
 [node name="buffet" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1145.6, 461.59 )
-scale = Vector2( 2, 3 )
+position = Vector2( 1094.69, 475.732 )
+scale = Vector2( -578.454, -36.9048 )
 placeholders = {
 
 }
+
+[node name="game" parent="." instance=ExtResource( 8 )]

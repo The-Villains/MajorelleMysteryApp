@@ -1,0 +1,5 @@
+Use the animations frames in this order to have a full animation walking cycle :
+
+0 - 1 - 2 - 3 - 2 - 1 - 0 - 4 - 5 - 6 - 5 - 4
+
+You can loop this animation.

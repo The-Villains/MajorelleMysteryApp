@@ -22,8 +22,6 @@ position = Vector2( 812.732, 622.75 )
 scale = Vector2( 0.999517, 1.04689 )
 texture = ExtResource( 9 )
 
-[node name="game" parent="." instance=ExtResource( 3 )]
-
 [node name="chimney-text" type="Sprite" parent="."]
 position = Vector2( 1545.05, 655.47 )
 scale = Vector2( 0.909257, 0.5 )
@@ -68,3 +66,5 @@ scale = Vector2( 0.4, 0.4 )
 placeholders = {
 
 }
+
+[node name="game" parent="." instance=ExtResource( 3 )]

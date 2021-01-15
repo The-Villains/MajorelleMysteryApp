@@ -16,8 +16,8 @@ placeholders = {
 [node name="area" type="TextureButton" parent="."]
 margin_left = -43.0
 margin_top = -42.0
-margin_right = 115.0
-margin_bottom = 112.0
+margin_right = 234.0
+margin_bottom = 324.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

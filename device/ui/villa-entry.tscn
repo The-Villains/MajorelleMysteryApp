@@ -3,7 +3,7 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://ui/door_open.png" type="Texture" id=3]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
@@ -33,5 +33,5 @@ __meta__ = {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.6, 0.6 )
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 playing = true

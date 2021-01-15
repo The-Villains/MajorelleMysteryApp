@@ -1,0 +1,145 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/3_livingroom/sprites/living_room.jpg" type="Texture" id=4]
+[ext_resource path="res://templates/player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://globals/item.gd" type="Script" id=6]
+[ext_resource path="res://scenes/3_livingroom/plants.tscn" type="PackedScene" id=7]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 699.114 ],
+"_edit_vertical_guides_": [ 529.315, 749.932, 871.555, 1502.29 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1101.0
+margin_bottom = 807.0
+rect_scale = Vector2( 1.48, 1.56 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="window" type="TextureButton" parent="."]
+margin_left = 991.0
+margin_top = 305.0
+margin_right = 1479.0
+margin_bottom = 525.0
+rect_scale = Vector2( 0.91854, 1.02029 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/window.esc"
+global_id = "livingroom_window"
+
+[node name="door" type="TextureButton" parent="."]
+margin_left = 536.0
+margin_top = 418.0
+margin_right = 765.0
+margin_bottom = 835.0
+rect_scale = Vector2( 0.91854, 1.02029 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/door.esc"
+global_id = "livingroom_door"
+placeholders = {
+
+}
+
+[node name="lamp" type="TextureButton" parent="."]
+margin_left = 1491.0
+margin_top = 611.0
+margin_right = 1604.0
+margin_bottom = 850.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/lamp.esc"
+global_id = "livingroom_lamp"
+placeholders = {
+
+}
+
+[node name="chair1" type="TextureButton" parent="."]
+margin_left = 747.51
+margin_top = 695.912
+margin_right = 851.51
+margin_bottom = 929.912
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/chair1.esc"
+global_id = "livingroom_chair1"
+placeholders = {
+
+}
+
+[node name="chair2" type="TextureButton" parent="."]
+margin_left = 899.858
+margin_top = 766.255
+margin_right = 1165.86
+margin_bottom = 1133.26
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/chair2.esc"
+global_id = "livingroom_chair2"
+placeholders = {
+
+}
+
+[node name="chair3" type="TextureButton" parent="."]
+margin_left = 532.0
+margin_top = 706.0
+margin_right = 724.0
+margin_bottom = 1070.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/chair3.esc"
+global_id = "livingroom_chair3"
+placeholders = {
+
+}
+
+[node name="sideboard" type="TextureButton" parent="."]
+margin_left = 106.0
+margin_top = 429.0
+margin_right = 514.0
+margin_bottom = 929.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/3_livingroom/sideboard.esc"
+global_id = "livingroom_sideboard"
+placeholders = {
+
+}
+
+[node name="plants" parent="." instance=ExtResource( 7 )]
+visible = false
+position = Vector2( 630.74, 500.632 )
+scale = Vector2( 0.320493, 0.391689 )
+events_path = "res://scenes/3_livingroom/plants.esc"
+global_id = "livingroom_plants"
+
+[node name="player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 195.162, 1190.77 )
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 3 )]

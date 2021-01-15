@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/4_diningroom/plants.tscn" type="PackedScene" id=4]
+[ext_resource path="res://globals/item.gd" type="Script" id=5]
+[ext_resource path="res://templates/player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/4_diningroom/sprites/diningroom.jpg" type="Texture" id=7]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="background" type="TextureRect" parent="."]
+rect_scale = Vector2( 1.52, 1.52 )
+texture = ExtResource( 7 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="painting" type="TextureButton" parent="."]
+margin_left = 871.373
+margin_top = 209.083
+margin_right = 1539.37
+margin_bottom = 391.083
+rect_rotation = -17.0864
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/4_diningroom/painting.esc"
+global_id = "diningroom_painting"
+
+[node name="door" type="TextureButton" parent="."]
+margin_left = 308.716
+margin_top = 336.029
+margin_right = 975.716
+margin_bottom = 510.029
+rect_rotation = 0.779845
+rect_scale = Vector2( 0.504505, 2.79052 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/4_diningroom/door.esc"
+global_id = "diningroom_door"
+placeholders = {
+
+}
+
+[node name="plants" parent="." instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 463.862, 463.862 )
+scale = Vector2( -0.49311, -0.387538 )
+
+[node name="player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 197.99, 1176.63 )
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 3 )]

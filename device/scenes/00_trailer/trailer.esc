@@ -1,0 +1,9 @@
+:load
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/scene.tscn
+cut_scene telon fade_in
+set_state story tell_story
+say arturo trailer_01:"Trailer 01" info avatar_arturo
+cut_scene telon fade_out
+change_scene res://scenes/1_entrance/scene.tscn
+cut_scene telon fade_in

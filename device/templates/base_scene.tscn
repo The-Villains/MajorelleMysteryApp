@@ -8,8 +8,9 @@
 script = ExtResource( 1 )
 
 [node name="background" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="game" parent="." instance=ExtResource( 3 )]

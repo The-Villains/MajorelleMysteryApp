@@ -1,0 +1,63 @@
+:look
+say player chameleon_whe:"Maybe he can help me..." default avatar_panda
+:talk
+> [!chameleon_intro]
+	say player chameleon_talk_2:"What a strange critter..." default avatar_panda
+	say chameleon chameleon_talk_3:"You know I can hear you, right?" default avatar_chameleon
+	say player chameleon_talk_4:"What? You can talk!?" default avatar_panda
+	say chameleon chameleon_talk_5:"Sure, can't you?" default avatar_chameleon
+	say player chameleon_talk_6:"..." default avatar_panda
+	say player chameleon_talk_7:"Good point." default avatar_panda
+	set_global chameleon_intro true
+? default avatar_panda
+	- chameleon_talk_8:"You're a chameleon right?"
+		say player chameleon_talk_9:"You're a chameleon right?" default avatar_panda
+		say chameleon chameleon_talk_10:"That's right!" default avatar_chameleon
+		? default avatar_panda
+			- chameleon_talk_11:"What's a chameleon doing here?"
+				say player chameleon_talk_12:"What's a chameleon doing in this part of the world?" default avatar_panda
+				say chameleon chameleon_talk_13:"Oh you know, I just like traveling a lot." default avatar_chameleon
+			- chameleon_talk_14:"I have never seen one before!"
+				say player chameleon_talk_15:"Whoooah! I've never seen one before!" default avatar_panda
+				say chameleon chameleon_talk_16:"I guess not many of us are around this part of the globe." default avatar_chameleon
+			- chameleon_talk_32:"Nevermind"
+				say player chameleon_talk_33:"Nevermind." default avatar_panda
+				stop
+	- chameleon_talk_17:"Do you enjoy our bamboo forest?"
+		say player chameleon_talk_18:"Do you enjoy our bamboo forest? Are you comfortable?" default avatar_panda
+		say chameleon chameleon_talk_19:"Sure, I like it. Where are all other pandas though?" default avatar_chameleon
+		? default avatar_panda
+			- chameleon_talk_20:"Aliens"
+				say player chameleon_talk_21:"Aliens abducted them!" default avatar_panda
+				say chameleon chameleon_talk_22:"Hahahaha! Nice one little panda!" default avatar_chameleon
+			- chameleon_talk_23:"Forest destruction"
+				say player chameleon_talk_24:"The humans are destroying our forest with their machines..." default avatar_panda
+				say chameleon chameleon_talk_25:"Ow, that doesn't sound so nice, are you doing anything about it?" default avatar_chameleon
+				? default avatar_panda
+					- chameleon_talk_26:"No"
+						say player chameleon_talk_27:"No... We can't do anything I guess." default avatar_panda
+						say chameleon chameleon_talk_28:"Oh, I see..." default avatar_chameleon
+					- chameleon_talk_29:"Imploring the Pandas' god"
+						say player chameleon_talk_30:"We are making offerings for the Pandas' god so that we can ask him for help. I'm actually gathering some fine bamboos for him! It would be my very first offering to him." default avatar_panda
+						say chameleon chameleon_talk_31:"Well! Today is your lucky day, as I am the Pandas' god! You passed my little test, now bring me the bamboo you found." default avatar_chameleon
+						anim chameleon disapear
+						set_global chameleon_disapeared true
+						set_active bamboo_god_2 true
+						cut_scene bamboo_god_2 god_appears
+						set_active chameleon false
+					- chameleon_talk_32:"Nevermind"
+						say player chameleon_talk_33:"Nevermind." default avatar_panda
+						stop
+			- chameleon_talk_32:"Nevermind"
+				say player chameleon_talk_33:"Nevermind." default avatar_panda
+				stop
+	- chameleon_talk_32:"Nevermind"
+		say player chameleon_talk_33:"Nevermind." default avatar_panda
+		stop
+:pick_up
+say chameleon chameleon_pick_up_32:"Hey! Get your hands off me!" default avatar_chameleon
+set_global chameleon_red true
+anim chameleon turn_red
+sched_event 3 chameleon back_to_green
+:back_to_green
+anim chameleon turn_red true [chameleon_red]

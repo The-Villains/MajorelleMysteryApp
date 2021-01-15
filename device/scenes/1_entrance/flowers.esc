@@ -1,0 +1,5 @@
+:look
+say flowers flowers_look:"Oh, this looks interesting." default avatar_arturo
+cut_scene telon fade_out
+change_scene res://scenes/1_entrance/11_flower_riddle/scene.tscn
+cut_scene telon fade_in

@@ -80,8 +80,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="game" parent="." instance=ExtResource( 8 )]
-
 [node name="decorative-painting" type="Sprite" parent="."]
 position = Vector2( 754.171, 517.175 )
 texture = ExtResource( 3 )
@@ -125,5 +123,7 @@ global_id = "exit_decorative_paintings"
 placeholders = {
 
 }
+
+[node name="game" parent="." instance=ExtResource( 8 )]
 [connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="left" to="." method="_on_left_pressed"]

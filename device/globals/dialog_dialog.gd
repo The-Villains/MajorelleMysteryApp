@@ -85,7 +85,7 @@ func start(params, p_context):
 		if params.size() >= 3:
 			avatar = params[2]
 		var avatars = get_node("anchor/avatars")
-		for i in range(avatars.get_child_count()):
+		for _j in range(avatars.get_child_count()):
 			var c = avatars.get_child(i)
 			if c.get_name() == avatar:
 				c.show()
