@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece9.png" type="Texture" id=2]
+
+[node name="piece9" type="Node2D"]
+script = ExtResource( 1 )
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="."]
+margin_left = 442.0
+margin_top = 164.0
+margin_right = 535.0
+margin_bottom = 269.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

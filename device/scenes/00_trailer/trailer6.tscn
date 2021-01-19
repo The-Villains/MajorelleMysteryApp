@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/2_hallway/plants.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/1_entrance/sprites/lobby2.png" type="Texture" id=5]
+[ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=6]
+[ext_resource path="res://scenes/2_hallway/keyhole.tscn" type="PackedScene" id=7]
+[ext_resource path="res://templates/player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/2_hallway/ghost.tscn" type="PackedScene" id=9]
+[ext_resource path="res://globals/item.gd" type="Script" id=10]
+[ext_resource path="res://globals/terrain.gd" type="Script" id=11]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 744.57, 982.172, 872.798, 973.56, 872.798, 1095.56, 150.216, 1346.41, 604.798, 991.56, 498.798, 955.56, 116.798, 1345.56, 122.798, 1269.56, 138.798, 1183.56, 190.798, 1057.56, 1586.8, 1103.56, 1588.8, 1343.56, 438.798, 851.56, 232.169, 956.201, 270.798, 861.56 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ), PoolIntArray( 5, 4, 3, 6, 7, 8, 9 ), PoolIntArray( 10, 11, 3, 2 ), PoolIntArray( 12, 5, 9, 13, 14 ) ]
+outlines = [ PoolVector2Array( 270.798, 861.56, 232.169, 956.201, 190.798, 1057.56, 138.798, 1183.56, 122.798, 1269.56, 116.798, 1345.56, 150.216, 1346.41, 1588.8, 1343.56, 1586.8, 1103.56, 872.798, 1095.56, 872.798, 973.56, 744.57, 982.172, 604.798, 991.56, 498.798, 955.56, 438.798, 851.56 ) ]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1083.78, 1313.56 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+rect_scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 5 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="terrain" type="Navigation2D" parent="."]
+position = Vector2( 14, -282 )
+script = ExtResource( 11 )
+scale_min = 0.2
+scale_max = 0.5
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
+position = Vector2( 16, 150 )
+navpoly = SubResource( 1 )
+
+[node name="door" type="TextureButton" parent="."]
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/2_hallway/door.esc"
+global_id = "hallway_door"
+
+[node name="ghost" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 625.083, 817.416 )
+scale = Vector2( 0.52, 0.52 )
+
+[node name="plants" parent="." instance=ExtResource( 4 )]
+position = Vector2( 837.803, 601.828 )
+scale = Vector2( 1.5, 1.5 )
+events_path = "res://scenes/00_trailer/trailer.esc"
+global_id = "hallway_plants1"
+
+[node name="keyhole" parent="." instance=ExtResource( 7 )]
+visible = false
+position = Vector2( 494.975, 582.657 )
+scale = Vector2( 0.76, 0.76 )
+
+[node name="player" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1418.85, 1194.28 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 1194
+placeholders = {
+
+}
+
+[node name="box" type="Sprite" parent="."]
+visible = false
+position = Vector2( 796.203, 1120.06 )
+scale = Vector2( 3.845, 1.57453 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="game" parent="." instance=ExtResource( 3 )]

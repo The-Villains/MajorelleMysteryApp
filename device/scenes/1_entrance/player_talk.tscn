@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+
+[node name="player_talk" type="Node2D"]
+position = Vector2( 56, 1168 )
+script = ExtResource( 1 )
+events_path = "res://scenes/00_trailer/trailer.esc"
+global_id = "player_talk"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,24 @@
+:load
+> [!solved1,!solved2,!solved3,!solved4,!solved5,!solved6,!solved7,!solved8,!solved9,!solved10]
+ say telon puzzle_unsolved:"This doesn't look done."
+
+> [solved1,solved2,solved3,solved4,solved5,!solved6,!solved7,!solved8,solved9,solved10,solved11,solved12,solved13,solved14,solved15,solved16,solved17,solved18,solved19]
+ say telon pieces_missing:"Seems like some pieces are missing. I should look for them in the living room."
+
+> [solved1,solved2,solved3,solved4,solved5,solved6,solved7,solved8,solved9,solved10,solved11,solved12,solved13,solved14,solved15,solved16,solved17,solved18,solved19]
+ say telon puzzle_solved:"Yay. You repaired the window succesfully."
+ cut_scene telon fade_out
+ change_scene res://scenes/3_livingroom/scene.tscn
+ cut_scene telon fade_in
+ set_active livingroom_window false
+ set_state livingroom_plants disappear
+ wait 3
+ set_active livingroom_plants false
+
+:talk
+
+:use
+
+:look
+
+:pick_up

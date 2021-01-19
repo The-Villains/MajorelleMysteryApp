@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/7_in_bedroom/sprites/album.png" type="Texture" id=2]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/book_overgrown w plants.png" type="Texture" id=2]
 
 [node name="album" type="Node2D"]
 script = ExtResource( 1 )

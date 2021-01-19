@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece1.png" type="Texture" id=2]
+
+[node name="slot1" type="Node2D"]
+script = ExtResource( 1 )
+events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
+global_id = "slot1"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -40.7025
+margin_top = -48.5563
+margin_right = 41.2975
+margin_bottom = 50.4437
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( -523.259, -7.07107 )
+texture = ExtResource( 2 )

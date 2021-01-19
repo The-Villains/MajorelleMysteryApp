@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -7,6 +7,12 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=5]
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/4_diningroom/sprites/diningroom.jpg" type="Texture" id=7]
+[ext_resource path="res://globals/terrain.gd" type="Script" id=8]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 324.798, 851.932, 466.798, 831.932, 470.798, 877.932, 476.798, 973.932, 470.798, 1085.93, -1.20197, 1215.93, 6.79803, 939.932, 1368.8, 879.932, 1542.8, 877.932, 1642.8, 887.932, 1648.8, 1211.93, 1224.8, 1031.93, 1206.8, 935.932, 1206.8, 867.932, 1218.8, 845.932, 700.798, 1089.93, 720.798, 1025.93, 778.798, 1017.93, 912.798, 1029.93, 540.798, 1145.93, 1108.8, 1033.93 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6 ), PoolIntArray( 7, 8, 9, 10, 11, 12 ), PoolIntArray( 13, 14, 7, 12 ), PoolIntArray( 15, 16, 17, 18 ), PoolIntArray( 5, 4, 19 ), PoolIntArray( 10, 5, 19 ), PoolIntArray( 20, 11, 10, 19, 15 ), PoolIntArray( 18, 20, 15 ) ]
+outlines = [ PoolVector2Array( 6.79803, 939.932, -1.20197, 1215.93, 1648.8, 1211.93, 1642.8, 887.932, 1542.8, 877.932, 1368.8, 879.932, 1218.8, 845.932, 1206.8, 867.932, 1206.8, 935.932, 1224.8, 1031.93, 1108.8, 1033.93, 912.798, 1029.93, 778.798, 1017.93, 720.798, 1025.93, 700.798, 1089.93, 540.798, 1145.93, 470.798, 1085.93, 476.798, 973.932, 470.798, 877.932, 466.798, 831.932, 324.798, 851.932 ) ]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -19,12 +25,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="terrain" type="Navigation2D" parent="."]
+script = ExtResource( 8 )
+scale_max = 0.4
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
+visible = false
+position = Vector2( -4.00003, 4 )
+navpoly = SubResource( 1 )
+
 [node name="painting" type="TextureButton" parent="."]
-margin_left = 871.373
-margin_top = 209.083
-margin_right = 1539.37
-margin_bottom = 391.083
-rect_rotation = -17.0864
+margin_left = 865.0
+margin_top = 126.0
+margin_right = 1535.0
+margin_bottom = 350.0
+rect_rotation = -10.6338
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -50,12 +65,13 @@ placeholders = {
 }
 
 [node name="plants" parent="." instance=ExtResource( 4 )]
-visible = false
-position = Vector2( 463.862, 463.862 )
-scale = Vector2( -0.49311, -0.387538 )
+position = Vector2( 813.862, 591.862 )
+scale = Vector2( 1.52, 1.52 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 197.99, 1176.63 )
+position = Vector2( 1421.99, 1224.63 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 1224
 placeholders = {
 
 }

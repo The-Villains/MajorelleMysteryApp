@@ -1,10 +1,11 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scenes/2_hallway/sprites/plants.png" type="Texture" id=1]
+[ext_resource path="res://scenes/3_livingroom/sprites/plants living room.png" type="Texture" id=1]
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
 
 [sub_resource type="Animation" id=1]
-resource_name = "disapear"
+resource_name = "disappear"
+length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:modulate:a")
 tracks/0/interp = 1
@@ -12,7 +13,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 1.0, 0.0 ]
@@ -24,16 +25,17 @@ events_path = "res://scenes/2_hallway/plants.esc"
 global_id = "hallway_plants"
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = -410.0
-margin_top = -529.0
-margin_right = 412.0
-margin_bottom = 558.0
+margin_left = -107.0
+margin_top = -155.0
+margin_right = 105.0
+margin_bottom = 181.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/disapear = SubResource( 1 )
+anims/disappear = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 115.966, 12.728 )
 texture = ExtResource( 1 )

@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://globals/sprites/speechbubble_right.png" type="Texture" id=1]
 [ext_resource path="res://globals/scene.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/00_trailer/arturo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/00_trailer/intro.tscn" type="PackedScene" id=5]
 
 [node name="trailer" type="Node2D"]
@@ -22,14 +21,6 @@ size_flags_vertical = 3
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
-}
-
-[node name="arturo" parent="." instance=ExtResource( 4 )]
-visible = false
-position = Vector2( 290.258, 693.489 )
-scale = Vector2( 1.6, 1.6 )
-placeholders = {
-
 }
 
 [node name="intro" parent="." instance=ExtResource( 5 )]

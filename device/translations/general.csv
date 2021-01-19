@@ -3,23 +3,28 @@ use.id,Use %1,Utiliser %1,Benutze %1
 use.combine_id,Use %1 with %2,Utiliser %1 avec %2,Benutze %1 mit %2
 look.id,Look at,Regarder,Betrachte
 pick_up.id,Pick up,Ramasser,Nimm
-talk.id,Talk to,Parler ÌÊ,Spreche mit
-UI_TESTING,Test mode,Mode du test,Testmodus
+talk.id,Talk to,Parler Ã ,Spreche mit
+UI_CONTINUE,Continue,Continuer,Weiter
 UI_NEW_GAME,New Game,Nouveau jeu,Neues Spiel
 UI_QUIT,Quit,Quitter,Beenden
 UI_YES,Yes,Oui,Ja
 UI_NO,No,Non,Nein
-UI_QUIT_CONFIRM,Do you want to quit the gameåÊ?,Souhaitez-vous vraiment quitter le jeuåÊ?,MÌ¦chten Sie das Spiel beenden ?
-UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeuåÊ? Vous n'avez pas sauvegardÌ© votre progression‰Û_,Neues Spiel starten? Alle Fortschritte gehen verloren‰Û_
-UI_BACK,Back to the main menu,Retour au menu principal,ZurÌ_ck zum HauptmenÌ_
-UI_CREDITS,Credits,CrÌ©dits,WÌ_rdigungen
-"CREDITS,""Escoria in DaÌøza was created by Elisa de Castro Guerra, CÌ©dric GÌ©my, Camille """"nylnook"""" Bissuel, GaÌÇtan """"Reptifur"""" Hilt and Adrien """"Kooda"""" Ramos in Rennes for the """"Creating Point and Click Games with Escoria"""" booksprint from August 22 to 26 in Rennes, France. Contributions to translationåÊ: Ranito and Chaosprower. 2018 improvements by bosinpai."",""Escoria en DaÌøza a Ì©tÌ© crÌ©Ì© par Elisa de Castro Guerra, CÌ©dric GÌ©my, Camille """"nylnook"""" Bissuel, GaÌÇtan """"Reptifur"""" Hilt et Adrien """"Kooda"""" Ramos ÌÊ Rennes pour le booksprint åÇåÊCreating Point and Click Games with EscoriaåÊåÈ du 22 au 26 aoÌÈt 2016 ÌÊ Rennes, France. Contributions aux traductionsåÊ: Ranito and Chaosprower. AmÌ©liorations en 2018 par bosinpai."","
-good_bamboo.tooltip,A simple bamboo,Un simple bambou,
-inv_good_bamboo.tooltip,the simple bamboo,le simple bambou,
-good_bamboo_2.tooltip,A well hiden bamboo,Un bambou bien cachÌ©,
-inv_good_bamboo_2.tooltip,the bamboo that used to be well hidden,le bambou qui Ì©tait bien cachÌ©,
-good_bamboo_3.tooltip,A delicious bamboo,Un bambou dÌ©licieux,
-inv_good_bamboo_3.tooltip,the delicious bamboo,le bambou dÌ©licieux,
-chameleon.tooltip,A chameleon,Un camÌ©lÌ©on,
-bamboo_god_2.tooltip,The Great Panda himself!,Le grand panda en personneåÊ!,
-UI_CONTINUE,Continue,Continuer,Weiter
+UI_QUIT_CONFIRM,Do you want to quit the gameÂ ?,Souhaitez-vous vraiment quitter le jeuÂ ?,MÃ¶chten Sie das Spiel beenden ?
+UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeuÂ ? Vous n'avez pas sauvegardÃ© votre progressionâ€¦,Neues Spiel starten? Alle Fortschritte gehen verloren.
+UI_BACK,Back to the main menu,Retour au menu principal,ZurÃ¼ck zum HauptmenÃ¼
+UI_CREDITS,Credits,CrÃ©dits,Credits
+CREDITS,"Escoria in DaÃ¯za was created by Elisa de Castro Guerra, CÃ©dric GÃ©my, Camille ""nylnook"" Bissuel, GaÃ«tan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translationÂ : Ranito and Chaosprower. 2018 improvements by bosinpai.","Escoria en DaÃ¯za a Ã©tÃ© crÃ©Ã© par Elisa de Castro Guerra, CÃ©dric GÃ©my, Camille ""nylnook"" Bissuel, GaÃ«tan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos Ã  Rennes pour le booksprint Â«Â Creating Point and Click Games with EscoriaÂ Â» du 22 au 26 aoÃ»t 2016 Ã  Rennes, France. Contributions aux traductionsÂ : Ranito and Chaosprower. AmÃ©liorations en 2018 par bosinpai."
+old_man.tooltip,A wise old forest man,Un vieux sage de la forÃªt,ein weiser alter Mann aus dem Wald
+bad_bamboo.tooltip,A bamboo that smells new,Un bambou qui sent le neuf, Ein neu riechender Bambus
+inv_bad_bamboo.tooltip,the bamboo that smells new,le bambou qui sent le neuf, der neu riechende Bambus
+bad_bamboo_2.tooltip,A shiny bamboo,Un bambou brillant, Ein glÃ¤nzender Bambus
+inv_bad_bamboo_2.tooltip,the shiny bamboo,le bambou brillant, der glÃ¤nzende Bambus
+good_bamboo.tooltip,A simple bamboo,Un simple bambou, ein einfacher Bambus
+inv_good_bamboo.tooltip,the simple bamboo,le simple bambou, der einfache Bambus
+good_bamboo_2.tooltip,A well hiden bamboo,Un bambou bien cachÃ©, ein gut versteckter Bambus
+inv_good_bamboo_2.tooltip,the bamboo that used to be well hidden,le bambou qui Ã©tait bien cachÃ©, der zuvor gut versteckte Bambus
+good_bamboo_3.tooltip,A delicious bamboo,Un bambou dÃ©licieux, Ein leckerer Bambus
+inv_good_bamboo_3.tooltip,the delicious bamboo,le bambou dÃ©licieux, der leckere Bambus
+chameleon.tooltip,A chameleon,Un camÃ©lÃ©on, ein ChamÃ¤leon
+bamboo_god_2.tooltip,The Great Panda himself!,Le grand panda en personneÂ !, Der groÃŸe Panda in Person !
+flowers.tooltip,some beautiful flowers,de belles fleurs,einige schÃ¶ne Blumen

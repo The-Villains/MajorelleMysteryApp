@@ -1,0 +1,11 @@
+:use inv_lightbulb
+set_global i/inv_lightbulb false
+set_active lightbulb_missing false
+set_active lamp true
+say lamp light_on:"Yay, now everything is back in order here." default avatar_jacques
+cut_scene telon fade_out
+change_scene res://scenes/2_hallway/scene.tscn
+cut_scene telon fade_in
+set_state hallway_plants disappear
+wait 3
+set_active hallway_plants false

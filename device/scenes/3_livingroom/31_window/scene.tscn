@@ -1,41 +1,1037 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/3_livingroom/sprites/living_room_blurry.png" type="Texture" id=4]
+[ext_resource path="res://scenes/3_livingroom/sprites/livingroom_blur.png" type="Texture" id=4]
 [ext_resource path="res://scenes/3_livingroom/31_window/exit.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/3_livingroom/sprites/placeholder.png" type="Texture" id=6]
+[ext_resource path="res://scenes/3_livingroom/sprites/puzzle_fenster_bg.png" type="Texture" id=6]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzle_Position_Referenz.png" type="Texture" id=7]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece12.png" type="Texture" id=8]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece8.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece9.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece11.png" type="Texture" id=11]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece14.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece10.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece17.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece18.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece6.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece16.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece15.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece5.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece3.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece19.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece13.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece7.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece4.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/3_livingroom/31_window/piece12.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece1.png" type="Texture" id=27]
+[ext_resource path="res://scenes/3_livingroom/31_window/slot11.tscn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece13.png" type="Texture" id=29]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece9.png" type="Texture" id=30]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece5.png" type="Texture" id=31]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece3.png" type="Texture" id=32]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece10.png" type="Texture" id=33]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece4.png" type="Texture" id=34]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece2.png" type="Texture" id=35]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece16.png" type="Texture" id=36]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece17.png" type="Texture" id=37]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece19.png" type="Texture" id=38]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece15.png" type="Texture" id=39]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece18.png" type="Texture" id=40]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece14.png" type="Texture" id=41]
+[ext_resource path="res://globals/item.gd" type="Script" id=45]
+[ext_resource path="res://scenes/3_livingroom/31_window/confirm.tscn" type="PackedScene" id=46]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1171.46 ],
+"_edit_vertical_guides_": [ 657.768, 1149.91, 179.265 ]
+}
 
 [node name="background" type="TextureRect" parent="."]
-margin_left = -220.0
-margin_top = -160.0
-margin_right = 1284.0
-margin_bottom = 933.0
-rect_scale = Vector2( 1.4, 1.4 )
+margin_left = -60.0
+margin_right = 1444.0
+margin_bottom = 1093.0
+rect_scale = Vector2( 1.55, 1.55 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="puzzle_background" type="TextureRect" parent="."]
+margin_left = 60.0
+margin_top = 130.0
+margin_right = 1169.0
+margin_bottom = 930.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="puzzle_reference" type="TextureRect" parent="."]
+visible = false
+margin_left = 60.0
+margin_top = 130.0
+margin_right = 1169.0
+margin_bottom = 930.0
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="show_pieces" type="Node2D" parent="."]
+
+[node name="piece1" type="Node2D" parent="show_pieces"]
+visible = false
+position = Vector2( -317.594, 800.337 )
+script = ExtResource( 45 )
+global_id = "piece1"
+use_combine = true
+
+[node name="area" type="TextureRect" parent="show_pieces/piece1"]
+margin_left = 467.0
+margin_top = -33.0
+margin_right = 549.0
+margin_bottom = 66.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="show_pieces/piece1"]
+texture = ExtResource( 27 )
+
+[node name="piece2" parent="show_pieces" instance=ExtResource( 12 )]
+visible = false
+position = Vector2( 186.677, 650.124 )
+global_id = "piece2"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece3" parent="show_pieces" instance=ExtResource( 21 )]
+visible = false
+position = Vector2( 79.112, 508.874 )
+global_id = "piece3"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece4" parent="show_pieces" instance=ExtResource( 25 )]
+visible = false
+position = Vector2( -88.704, 680.222 )
+global_id = "piece4"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece5" parent="show_pieces" instance=ExtResource( 20 )]
+visible = false
+position = Vector2( -33.398, 806.11 )
+global_id = "piece5"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece6" parent="show_pieces" instance=ExtResource( 17 )]
+visible = false
+position = Vector2( 260, 271 )
+global_id = "piece6"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece7" parent="show_pieces" instance=ExtResource( 24 )]
+visible = false
+position = Vector2( -139, 919 )
+global_id = "piece7"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece8" parent="show_pieces" instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 327, 552 )
+global_id = "piece8"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece9" parent="show_pieces" instance=ExtResource( 10 )]
+visible = false
+position = Vector2( -67.231, 280.916 )
+global_id = "piece9"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece10" parent="show_pieces" instance=ExtResource( 14 )]
+visible = false
+position = Vector2( -130.731, 493.83 )
+global_id = "piece10"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece11" parent="show_pieces" instance=ExtResource( 28 )]
+visible = false
+position = Vector2( -33.2335, 814.587 )
+global_id = "piece11"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece12" parent="show_pieces" instance=ExtResource( 26 )]
+visible = false
+position = Vector2( 321.027, 1124.3 )
+global_id = "piece12"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece13" parent="show_pieces" instance=ExtResource( 23 )]
+visible = false
+position = Vector2( 199.404, 657.609 )
+global_id = "piece13"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece14" parent="show_pieces" instance=ExtResource( 13 )]
+visible = false
+position = Vector2( 408.708, 271.529 )
+global_id = "piece14"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece15" parent="show_pieces" instance=ExtResource( 19 )]
+visible = false
+position = Vector2( 246.073, 284.964 )
+global_id = "piece15"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece16" parent="show_pieces" instance=ExtResource( 18 )]
+visible = false
+position = Vector2( 226.981, 298.4 )
+global_id = "piece16"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece17" parent="show_pieces" instance=ExtResource( 15 )]
+visible = false
+position = Vector2( -86.2665, 338.705 )
+global_id = "piece17"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece18" parent="show_pieces" instance=ExtResource( 16 )]
+visible = false
+position = Vector2( -34.6481, 951.058 )
+global_id = "piece18"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="piece19" parent="show_pieces" instance=ExtResource( 22 )]
+visible = false
+position = Vector2( 53.033, 1030.25 )
+global_id = "piece19"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="inv_pieces" type="Node2D" parent="."]
+position = Vector2( 600, 530 )
+
+[node name="inv_piece1" type="Node2D" parent="inv_pieces"]
+position = Vector2( -233.073, 322.949 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece1"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece1"]
+margin_left = 467.0
+margin_top = -33.0
+margin_right = 549.0
+margin_bottom = 66.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece1"]
+texture = ExtResource( 27 )
+
+[node name="inv_piece2" type="Node2D" parent="inv_pieces"]
+position = Vector2( -233.073, 322.949 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece2"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece2"]
+margin_left = 304.0
+margin_top = -552.0
+margin_right = 414.0
+margin_bottom = -394.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece2"]
+position = Vector2( 199.404, -371.938 )
+texture = ExtResource( 35 )
+
+[node name="inv_piece3" type="Node2D" parent="inv_pieces"]
+position = Vector2( -172.534, 149.907 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece3"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece3"]
+margin_left = 319.74
+margin_top = -206.485
+margin_right = 405.74
+margin_bottom = -62.4854
+rect_rotation = 50.1766
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece3"]
+texture = ExtResource( 32 )
+
+[node name="inv_piece4" type="Node2D" parent="inv_pieces"]
+position = Vector2( -88.4093, 155.564 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece4"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece4"]
+margin_left = 331.0
+margin_top = -52.0
+margin_right = 471.0
+margin_bottom = 81.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="inv_pieces/inv_piece4"]
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece4"]
+texture = ExtResource( 34 )
+
+[node name="inv_piece5" type="Node2D" parent="inv_pieces"]
+position = Vector2( -88.4093, 155.564 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece5"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece5"]
+margin_left = 524.0
+margin_top = -519.0
+margin_right = 624.0
+margin_bottom = -361.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece5"]
+position = Vector2( 73.5392, -189.505 )
+texture = ExtResource( 31 )
+
+[node name="inv_piece9" type="Node2D" parent="inv_pieces"]
+position = Vector2( -345.068, 107.48 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece9"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece9"]
+margin_left = 442.0
+margin_top = 164.0
+margin_right = 535.0
+margin_bottom = 269.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="inv_pieces/inv_piece9"]
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece9"]
+texture = ExtResource( 30 )
+
+[node name="inv_piece10" type="Node2D" parent="inv_pieces"]
+position = Vector2( 12.728, 12.7279 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece10"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece10"]
+margin_left = 360.0
+margin_top = 277.0
+margin_right = 537.0
+margin_bottom = 370.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="inv_pieces/inv_piece10"]
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece10"]
+texture = ExtResource( 33 )
+
+[node name="inv_piece11" type="Node2D" parent="inv_pieces"]
+position = Vector2( -8.62744, 91.9238 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece11"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece11"]
+margin_left = 365.272
+margin_top = -188.929
+margin_right = 509.272
+margin_bottom = -48.9289
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="inv_pieces/inv_piece11"]
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece11"]
+texture = ExtResource( 11 )
+
+[node name="inv_piece12" type="Node2D" parent="inv_pieces"]
+position = Vector2( 15.5563, 0 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece12"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece12"]
+margin_left = 47.0
+margin_top = -319.0
+margin_right = 230.0
+margin_bottom = -226.0
+rect_rotation = -32.9756
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece12"]
+texture = ExtResource( 8 )
+
+[node name="inv_piece13" type="Node2D" parent="inv_pieces"]
+position = Vector2( 15.5563, 0 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece13"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece13"]
+margin_left = 319.0
+margin_top = -354.0
+margin_right = 396.0
+margin_bottom = -260.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece13"]
+position = Vector2( 22.6274, -16.9706 )
+texture = ExtResource( 29 )
+
+[node name="inv_piece14" type="Node2D" parent="inv_pieces"]
+position = Vector2( 15.5563, 0 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece14"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece14"]
+margin_left = 394.0
+margin_top = 69.0
+margin_right = 505.0
+margin_bottom = 263.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece14"]
+position = Vector2( 340.825, -56.5686 )
+texture = ExtResource( 41 )
+
+[node name="inv_piece15" type="Node2D" parent="inv_pieces"]
+position = Vector2( 15.5563, 0 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece15"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece15"]
+margin_left = 364.0
+margin_top = -232.0
+margin_right = 443.0
+margin_bottom = -76.0
+rect_rotation = 60.0269
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece15"]
+position = Vector2( 57.9828, -164.049 )
+texture = ExtResource( 39 )
+
+[node name="inv_piece16" type="Node2D" parent="inv_pieces"]
+position = Vector2( -89.0951, 25.4557 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece16"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece16"]
+margin_left = 183.0
+margin_top = 114.0
+margin_right = 274.0
+margin_bottom = 207.0
+rect_rotation = -32.1698
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece16"]
+texture = ExtResource( 36 )
+
+[node name="inv_piece17" type="Node2D" parent="inv_pieces"]
+position = Vector2( -89.0951, 25.4557 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece17"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece17"]
+margin_left = 425.0
+margin_top = -43.0
+margin_right = 570.0
+margin_bottom = 33.0
+rect_rotation = 118.83
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece17"]
+position = Vector2( 8.48523, -183.848 )
+texture = ExtResource( 37 )
+
+[node name="inv_piece18" type="Node2D" parent="inv_pieces"]
+position = Vector2( -89.0951, 25.4557 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece18"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece18"]
+margin_left = 404.0
+margin_top = -339.0
+margin_right = 531.0
+margin_bottom = -258.0
+rect_rotation = 98.1651
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece18"]
+position = Vector2( 120.208, -35.3553 )
+texture = ExtResource( 40 )
+
+[node name="inv_piece19" type="Node2D" parent="inv_pieces"]
+position = Vector2( 394.566, 70.7107 )
+script = ExtResource( 45 )
+tooltip = "puzzle piece"
+global_id = "inv_piece19"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="inv_pieces/inv_piece19"]
+margin_left = 80.0
+margin_top = -252.0
+margin_right = 138.0
+margin_bottom = -170.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece19"]
+texture = ExtResource( 38 )
+
+[node name="slots" type="Node2D" parent="."]
+
+[node name="slot1" type="Node2D" parent="slots"]
+position = Vector2( -318.198, 801.859 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
+global_id = "slot1"
+
+[node name="area" type="TextureButton" parent="slots/slot1"]
+margin_left = 493.0
+margin_top = -30.0
+margin_right = 535.0
+margin_bottom = 63.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="slot2" type="Node2D" parent="slots"]
+position = Vector2( 185.262, 647.71 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot2.esc"
+global_id = "slot2"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot2"]
+margin_left = 164.0
+margin_top = -161.0
+margin_right = 257.0
+margin_bottom = -68.0
+rect_rotation = 39.987
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot3" type="Node2D" parent="slots"]
+position = Vector2( 79.9031, 510.531 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot3.esc"
+global_id = "slot3"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot3"]
+margin_left = 257.627
+margin_top = -193.691
+margin_right = 331.627
+margin_bottom = -46.6907
+rect_rotation = 46.0628
+rect_pivot_offset = Vector2( 37.2832, 63.8236 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot4" type="Node2D" parent="slots"]
+position = Vector2( -89.0955, 681.651 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot4.esc"
+global_id = "slot4"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot4"]
+margin_left = 370.0
+margin_top = -46.0
+margin_right = 470.0
+margin_bottom = 71.0
+rect_rotation = 19.7144
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot5" type="Node2D" parent="slots"]
+position = Vector2( -31.8198, 806.102 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot5.esc"
+global_id = "slot5"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot5"]
+margin_left = 521.0
+margin_top = -178.0
+margin_right = 607.0
+margin_bottom = -45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot6" type="Node2D" parent="slots"]
+position = Vector2( 260.215, 274.357 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot6.esc"
+global_id = "slot6"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot6"]
+margin_left = 233.0
+margin_top = 287.0
+margin_right = 310.0
+margin_bottom = 359.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot7" type="Node2D" parent="slots"]
+position = Vector2( -138.593, 917.824 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot7.esc"
+global_id = "slot7"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot7"]
+margin_left = 432.0
+margin_top = -372.0
+margin_right = 499.0
+margin_bottom = -231.0
+rect_rotation = 19.8621
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot8" type="Node2D" parent="slots"]
+position = Vector2( 326.683, 554.372 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot8.esc"
+global_id = "slot8"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot8"]
+margin_left = 64.0
+margin_top = -3.0
+margin_right = 168.0
+margin_bottom = 111.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot9" type="Node2D" parent="slots"]
+position = Vector2( -66.468, 280.014 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot9.esc"
+global_id = "slot9"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot9"]
+margin_left = 420.5
+margin_top = 179.5
+margin_right = 490.5
+margin_bottom = 291.5
+rect_rotation = -38.0376
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot10" type="Node2D" parent="slots"]
+position = Vector2( -130.815, 493.56 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot10.esc"
+global_id = "slot10"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot10"]
+margin_left = 358.0
+margin_top = 274.5
+margin_right = 535.0
+margin_bottom = 367.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot11" type="Node2D" parent="slots"]
+position = Vector2( -32.5269, 816.001 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot11.esc"
+global_id = "slot11"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot11"]
+margin_left = 378.0
+margin_top = -163.0
+margin_right = 523.0
+margin_bottom = -56.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot12" type="Node2D" parent="slots"]
+position = Vector2( 319.612, 1124.3 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot12.esc"
+global_id = "slot12"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot12"]
+margin_left = 91.0
+margin_top = -346.0
+margin_right = 239.0
+margin_bottom = -267.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot13" type="Node2D" parent="slots"]
+position = Vector2( 197.99, 659.023 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot13.esc"
+global_id = "slot13"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot13"]
+margin_left = 294.0
+margin_top = -338.0
+margin_right = 372.0
+margin_bottom = -246.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot14" type="Node2D" parent="slots"]
+position = Vector2( 407.293, 272.943 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot14.esc"
+global_id = "slot14"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot14"]
+margin_left = 84.9798
+margin_top = 129.605
+margin_right = 176.98
+margin_bottom = 290.605
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot15" type="Node2D" parent="slots"]
+position = Vector2( 248.902, 284.964 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot15.esc"
+global_id = "slot15"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot15"]
+margin_left = 178.0
+margin_top = 2.0
+margin_right = 317.0
+margin_bottom = 71.0
+rect_rotation = -22.9128
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot16" type="Node2D" parent="slots"]
+position = Vector2( 224.86, 296.985 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot16.esc"
+global_id = "slot16"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot16"]
+margin_left = 188.0
+margin_top = 107.0
+margin_right = 268.0
+margin_bottom = 179.0
+rect_rotation = -32.1698
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot17" type="Node2D" parent="slots"]
+position = Vector2( -84.8528, 340.118 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot17.esc"
+global_id = "slot17"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot17"]
+margin_left = 345.515
+margin_top = 98.5356
+margin_right = 414.515
+margin_bottom = 251.536
+rect_rotation = 24.6072
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot18" type="Node2D" parent="slots"]
+position = Vector2( -33.9411, 951.058 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot18.esc"
+global_id = "slot18"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot18"]
+margin_left = 201.0
+margin_top = -318.0
+margin_right = 277.0
+margin_bottom = -193.0
+rect_rotation = 10.8192
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slot19" type="Node2D" parent="slots"]
+position = Vector2( 49.4975, 1029.55 )
+script = ExtResource( 45 )
+tooltip = "broken spot"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot19.esc"
+global_id = "slot19"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot19"]
+margin_left = 80.0
+margin_top = -252.0
+margin_right = 129.0
+margin_bottom = -170.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="exit" parent="." instance=ExtResource( 5 )]
-position = Vector2( 90.5098, 1097.43 )
+position = Vector2( 90.5098, 1117.23 )
+scale = Vector2( 0.5, 0.5 )
+tooltip = "Back"
+events_path = "res://scenes/3_livingroom/31_window/exit.esc"
+global_id = "exit_living_31"
 placeholders = {
 
 }
 
-[node name="game" parent="." instance=ExtResource( 3 )]
+[node name="confirm" parent="." instance=ExtResource( 46 )]
+position = Vector2( 1285.48, 437.552 )
+scale = Vector2( 0.2, 0.2 )
+script = ExtResource( 45 )
+tooltip = "Confirm solution"
+events_path = "res://scenes/3_livingroom/31_window/confirm.esc"
+global_id = "window_confirm"
 
-[node name="placeholder" type="TextureButton" parent="."]
-margin_left = 5.65686
-margin_top = 48.0833
-margin_right = 1382.66
-margin_bottom = 1045.08
-texture_normal = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="game" parent="." instance=ExtResource( 3 )]

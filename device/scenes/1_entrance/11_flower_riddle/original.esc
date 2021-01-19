@@ -1,0 +1,9 @@
+:pick_up
+say original right_flower:"This looks good." default avatar_jacques
+set_active flowers false
+set_active tulips false
+set_active daisies false
+set_active roses false
+set_active original false
+set_active lightbulb true
+say original offer_lamp:"Take this lightbulb to repair the lamp now." default avatar_jacques

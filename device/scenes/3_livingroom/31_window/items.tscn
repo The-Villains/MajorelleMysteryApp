@@ -1,0 +1,174 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece1.png" type="Texture" id=2]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece2.png" type="Texture" id=3]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece3.png" type="Texture" id=4]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece4.png" type="Texture" id=5]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece5.png" type="Texture" id=6]
+
+[node name="items" type="Node2D"]
+
+[node name="inv_piece1" type="Node2D" parent="."]
+script = ExtResource( 1 )
+tooltip = "a puzzle piece"
+global_id = "inv_piece"
+use_combine = true
+
+[node name="area" type="TextureButton" parent="inv_piece1"]
+anchor_left = 0.972
+anchor_top = 0.519
+anchor_right = 0.972
+anchor_bottom = 0.519
+margin_left = -36.0
+margin_top = -44.0
+margin_right = 14.0
+margin_bottom = 43.0
+rect_pivot_offset = Vector2( 39.0503, 35.3459 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="piece" type="Sprite" parent="inv_piece1"]
+position = Vector2( -1.36401, -0.654053 )
+texture = ExtResource( 2 )
+offset = Vector2( -524.724, -14.9023 )
+
+[node name="inv_piece2" type="Node2D" parent="."]
+position = Vector2( -1.11597, 1.0744 )
+script = ExtResource( 1 )
+tooltip = "a puzzle piece"
+global_id = "inv_piece2"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="inv_piece2"]
+anchor_left = 0.655
+anchor_top = 0.392
+anchor_right = 0.655
+anchor_bottom = 0.392
+margin_left = 1.4397
+margin_top = -93.9877
+margin_right = 112.44
+margin_bottom = 49.0123
+rect_rotation = 37.1681
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_piece2"]
+position = Vector2( -0.247925, -3.14264 )
+texture = ExtResource( 3 )
+offset = Vector2( -170.872, 96.4807 )
+
+[node name="inv_piece3" type="Node2D" parent="."]
+position = Vector2( 0.298218, 1.07437 )
+script = ExtResource( 1 )
+tooltip = "a puzzle piece"
+global_id = "inv_piece3"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="inv_piece3"]
+anchor_top = 0.35
+anchor_right = 0.779
+anchor_bottom = 0.35
+margin_left = 1.0
+margin_top = -49.0
+margin_right = 70.0
+margin_bottom = 81.0
+rect_rotation = 50.8154
+rect_pivot_offset = Vector2( 10.8162, 9.64465 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_piece3"]
+position = Vector2( 1.16626, 1.10001 )
+texture = ExtResource( 4 )
+offset = Vector2( -315.122, 140.321 )
+
+[node name="inv_piece4" type="Node2D" parent="."]
+position = Vector2( 0.298218, -1.91455 )
+script = ExtResource( 1 )
+tooltip = "a puzzle piece"
+global_id = "inv_piece4"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="inv_piece4"]
+anchor_left = 0.857
+anchor_top = 0.541
+anchor_right = 0.857
+anchor_bottom = 0.541
+margin_left = -57.9827
+margin_top = -72.1249
+margin_right = 68.0173
+margin_bottom = 57.8751
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_piece4"]
+position = Vector2( 1.16626, 2.67474 )
+texture = ExtResource( 5 )
+offset = Vector2( -392.903, -30.959 )
+
+[node name="inv_piece5" type="Node2D" parent="."]
+position = Vector2( 0.298218, -0.500305 )
+script = ExtResource( 1 )
+tooltip = "a puzzle piece"
+global_id = "inv_piece5"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="inv_piece5"]
+anchor_left = 0.952
+anchor_top = 0.19
+anchor_right = 0.952
+anchor_bottom = 0.19
+margin_left = -45.2548
+margin_top = -84.8528
+margin_right = 44.7452
+margin_bottom = 65.1472
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="inv_piece5"]
+position = Vector2( -0.247925, -0.153748 )
+texture = ExtResource( 6 )
+offset = Vector2( -506.041, 237.742 )
+
+[node name="inv_piece9" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 1 )
+tooltip = "a puzzle piece"
+global_id = "inv_piece9"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="inv_piece9"]
+visible = false
+anchor_left = 0.936
+anchor_top = 0.762
+anchor_right = 0.936
+anchor_bottom = 0.762
+margin_left = -1091.76
+margin_top = -676.068
+margin_right = -989.764
+margin_bottom = -546.068
+rect_pivot_offset = Vector2( 1.7124, -0.500305 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

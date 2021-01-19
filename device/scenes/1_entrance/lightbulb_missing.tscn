@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/1_entrance/sprites/lobby_lampe_weg.png" type="Texture" id=2]
+
+[node name="lightbulb_missing" type="Node2D"]
+position = Vector2( -0.58606, 3.758 )
+scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 1 )
+events_path = "res://scenes/1_entrance/lamp.esc"
+global_id = "lightbulb_missing"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -16.0
+margin_top = -17.3333
+margin_right = 24.0
+margin_bottom = 22.6667
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -209.333, 250.667 )
+texture = ExtResource( 2 )

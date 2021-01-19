@@ -1,11 +1,17 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/5_staircase/sprites/staircase.jpg" type="Texture" id=5]
+[ext_resource path="res://scenes/5_staircase/sprites/staircase.png" type="Texture" id=5]
 [ext_resource path="res://scenes/5_staircase/window.tscn" type="PackedScene" id=6]
+[ext_resource path="res://globals/terrain.gd" type="Script" id=7]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 248.56, 1243.88, 244.56, 497.882, 442.56, 509.882, 438.56, 605.882, 472.56, 685.882, 620.56, 903.882, 1694.56, 1059.88, 1694.56, 1243.88, 704.56, 955.882, 1272.56, 931.882, 1270.56, 849.882, 1310.56, 847.882, 1692.56, 883.882, 754.56, 875.882, 1016.56, 925.882, 1228.56, 957.882, 812.56, 877.882 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 0, 3, 4 ), PoolIntArray( 0, 4, 5 ), PoolIntArray( 6, 7, 0, 8 ), PoolIntArray( 6, 9, 10, 11, 12 ), PoolIntArray( 0, 5, 8 ), PoolIntArray( 6, 8, 13, 14 ), PoolIntArray( 15, 9, 6 ), PoolIntArray( 13, 16, 14 ), PoolIntArray( 6, 14, 15 ) ]
+outlines = [ PoolVector2Array( 244.56, 497.882, 248.56, 1243.88, 1694.56, 1243.88, 1694.56, 1059.88, 1692.56, 883.882, 1310.56, 847.882, 1270.56, 849.882, 1272.56, 931.882, 1228.56, 957.882, 1016.56, 925.882, 812.56, 877.882, 754.56, 875.882, 704.56, 955.882, 620.56, 903.882, 472.56, 685.882, 438.56, 605.882, 442.56, 509.882 ) ]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,9 +28,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="terrain" type="Navigation2D" parent="."]
+script = ExtResource( 7 )
+scale_max = 0.4
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
+visible = false
+position = Vector2( -2, 2 )
+navpoly = SubResource( 1 )
+
 [node name="player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1035.56, 1260.7 )
-scale = Vector2( 0.42, 0.42 )
+position = Vector2( 1117.56, 1248.7 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 1248
 placeholders = {
 
 }

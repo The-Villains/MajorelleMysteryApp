@@ -1,30 +1,61 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/3_livingroom/sprites/living_room_blurry.png" type="Texture" id=4]
+[ext_resource path="res://scenes/3_livingroom/sprites/livingroom_blur.png" type="Texture" id=4]
 [ext_resource path="res://scenes/3_livingroom/33_zoom_in/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/3_livingroom/33_zoom_in/missing_piece2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/maske2_suchen.png" type="Texture" id=7]
+[ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/zoom2.png" type="Texture" id=8]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1171.46, 130.6 ],
+"_edit_vertical_guides_": [ 65.4523 ]
+}
 
 [node name="background" type="TextureRect" parent="."]
-margin_left = -220.0
-margin_top = -160.0
-margin_right = 1284.0
-margin_bottom = 933.0
-rect_scale = Vector2( 1.4, 1.4 )
+margin_left = -80.0
+margin_right = 1424.0
+margin_bottom = 1093.0
+rect_scale = Vector2( 1.55, 1.55 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
+[node name="background2" type="TextureRect" parent="."]
+margin_left = 60.0
+margin_top = 130.0
+margin_right = 1161.0
+margin_bottom = 930.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="missing_piece2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 779.232, 837.215 )
+z_index = 900
+z_as_relative = false
+events_path = "res://scenes/3_livingroom/33_zoom_in/missing_piece2.esc"
+global_id = "missing_piece2"
+
+[node name="foreground" type="Sprite" parent="."]
+position = Vector2( 610.941, 530.331 )
+z_index = 1000
+z_as_relative = false
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="exit" parent="." instance=ExtResource( 5 )]
-position = Vector2( 84.8529, 1088.95 )
-events_path = "res://scenes/3_livingroom/33_zoom_in/exit.esc"
-global_id = "exit_living_33"
 placeholders = {
 
 }

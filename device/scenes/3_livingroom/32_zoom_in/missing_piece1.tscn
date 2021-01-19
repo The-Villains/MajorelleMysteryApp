@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/suchteil1.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="missing_piece1" type="Node2D"]
+script = ExtResource( 2 )
+events_path = "res://scenes/3_livingroom/32_zoom_in/missing_piece1.esc"
+global_id = "missing_piece1"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -120.0
+margin_top = -41.0
+margin_right = 128.0
+margin_bottom = 118.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 193.747, 36.7696 )
+texture = ExtResource( 1 )

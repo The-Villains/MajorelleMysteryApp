@@ -90,17 +90,27 @@ func clicked(obj, pos):
 				return
 			player.walk_to(pos)
 			get_tree().call_group("hud", "set_tooltip", "")
-
+			
+				
 		elif obj.inventory:
-
 			if current_action == "use" && obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 			else:
 				interact([obj, current_action, current_tool])
+				
+		# Added Use_Combine functionality for items that are not in the inventory /sh
+		elif !obj.inventory && current_action == "use":
+			if  obj.use_combine && current_tool == null:
+				set_current_tool(obj)
+			else:
+				interact([obj, current_action, current_tool])		
+				
 		elif action != "":
 			player.interact([obj, action, current_tool])
+			
 		elif current_action != "":
 			player.interact([obj, current_action, current_tool])
+			
 		elif action_menu == null:
 
 			# same as action == "walk"

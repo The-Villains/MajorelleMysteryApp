@@ -1,0 +1,19 @@
+:load
+> [!found1,!found2,!found3,!found4,!found5]
+ say telon not_all_found:"Keep looking."
+
+> [found1,found2,found3,found4,found5]
+ say telon all_found:"Yay. You found all the differences."
+ change_scene res://scenes/4_diningroom/scene.tscn
+ cut_scene telon fade_in
+ set_state diningroom_plants disapear
+ wait 3
+ set_active diningroom_plants false
+
+:talk
+
+:use
+
+:look
+
+:pick_up

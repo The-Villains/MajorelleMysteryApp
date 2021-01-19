@@ -1,0 +1,6 @@
+:use inv_piece8
+set_global i/inv_piece8 false
+set_active inv_piece8 false
+set_active slot8 false
+set_active piece8 true
+set_global solved8 true

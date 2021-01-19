@@ -1,9 +1,41 @@
 :load
 cut_scene telon fade_out
-change_scene res://scenes/00_trailer/scene.tscn
+change_scene res://scenes/00_trailer/trailer1.tscn
 cut_scene telon fade_in
-set_state story tell_story
-say arturo trailer_01:"Trailer 01" info avatar_arturo
+say telon "Placeholder" info
+
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/trailer2.tscn
+cut_scene telon fade_in
+say telon "Placeholder" info
+
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/trailer3.tscn
+cut_scene telon fade_in
+say telon "Placeholder" info
+
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/trailer4.tscn
+cut_scene telon fade_in
+say telon "Placeholder" info
+
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/trailer5.tscn
+cut_scene telon fade_in
+say telon "Placeholder" info
+
+cut_scene telon fade_out
+change_scene res://scenes/00_trailer/trailer6.tscn
+cut_scene telon fade_in
+say telon "Placeholder" info
+
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/scene.tscn
 cut_scene telon fade_in
+
+#cut_scene telon fade_out
+#change_scene res://scenes/4_diningroom/scene.tscn
+#cut_scene telon fade_in
+
+# Workaround - First Sentence for following main scene and Esc Script here
+say player_talk entrance_01:"Welcome to the Lobby of Villa Majorelle"
