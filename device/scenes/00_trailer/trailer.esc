@@ -1,41 +1,42 @@
 :load
-cut_scene telon fade_out
-change_scene res://scenes/00_trailer/trailer1.tscn
-cut_scene telon fade_in
-say telon "Placeholder" info
-
-cut_scene telon fade_out
-change_scene res://scenes/00_trailer/trailer2.tscn
-cut_scene telon fade_in
-say telon "Placeholder" info
-
-cut_scene telon fade_out
-change_scene res://scenes/00_trailer/trailer3.tscn
-cut_scene telon fade_in
-say telon "Placeholder" info
-
-cut_scene telon fade_out
-change_scene res://scenes/00_trailer/trailer4.tscn
-cut_scene telon fade_in
-say telon "Placeholder" info
-
-cut_scene telon fade_out
-change_scene res://scenes/00_trailer/trailer5.tscn
-cut_scene telon fade_in
-say telon "Placeholder" info
-
-cut_scene telon fade_out
-change_scene res://scenes/00_trailer/trailer6.tscn
-cut_scene telon fade_in
-say telon "Placeholder" info
-
-cut_scene telon fade_out
-change_scene res://scenes/1_entrance/scene.tscn
-cut_scene telon fade_in
+#cut_scene telon fade_out
+#change_scene res://scenes/00_trailer/trailer1.tscn
+#cut_scene telon fade_in
+#say telon "Placeholder" info
 
 #cut_scene telon fade_out
-#change_scene res://scenes/4_diningroom/scene.tscn
+#change_scene res://scenes/00_trailer/trailer2.tscn
 #cut_scene telon fade_in
+#say telon "Placeholder" info
+
+#cut_scene telon fade_out
+#change_scene res://scenes/00_trailer/trailer3.tscn
+#cut_scene telon fade_in
+#say telon "Placeholder" info
+
+#cut_scene telon fade_out
+#change_scene res://scenes/00_trailer/trailer4.tscn
+#cut_scene telon fade_in
+#say telon "Placeholder" info
+
+#cut_scene telon fade_out
+#change_scene res://scenes/00_trailer/trailer5.tscn
+#cut_scene telon fade_in
+#say telon "Placeholder" info
+
+#cut_scene telon fade_out
+#change_scene res://scenes/00_trailer/trailer6.tscn
+#cut_scene telon fade_in
+#say telon "Placeholder" info
+
+#cut_scene telon fade_out
+#change_scene res://scenes/1_entrance/scene.tscn
+#cut_scene telon fade_in
+
+cut_scene telon fade_out
+change_scene res://scenes/5_staircase/5_window/scene.tscn
+#change_scene res://scenes/dining-room/scene.tscn
+cut_scene telon fade_in
 
 # Workaround - First Sentence for following main scene and Esc Script here
 say player_talk entrance_01:"Welcome to the Lobby of Villa Majorelle"

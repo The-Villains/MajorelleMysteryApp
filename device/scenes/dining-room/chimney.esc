@@ -1,4 +1,5 @@
 :look
-cut_scene telon fade_out
-change_scene res://scenes/chimney/scene.tscn
-cut_scene telon fade_in
+teleport arturo chimney
+
+:use arturo
+teleport arturo chimney

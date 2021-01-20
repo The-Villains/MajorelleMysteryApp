@@ -1,0 +1,149 @@
+"teleport": { "min_args": 2 },
+"teleport_pos": { "min_args": 3 },
+"set_global": { "min_args": 2, "types": [TYPE_STRING, TYPE_BOOL] },
+"set_globals": { "min_args": 2, "types": [TYPE_STRING, TYPE_BOOL] },
+"set_state": { "min_args": 2 },
+----------------------------------------
+Beispiele
+set_global solved1 true
+set_active inv_piece1 false
+set_state diningroom_plants disapear
+teleport player door
+teleport_pos arthuro 1000 700
+
+----------------------------------------
+func teleport(obj):
+	(self as Node).set_position(obj.get_global_position())
+	_update_terrain()
+
+func teleport_pos(x, y):
+	(self as Node).set_position(Vector2(x, y))
+	_update_terrain()
+
+func set_state(p_state, p_force = false):
+  	printt("set state ", global_id, state, p_state, p_force)
+  	#print_stack()
+  	if state == p_state && !p_force:
+  		return
+  	if has_node("animation"):
+  		get_node("animation").stop()
+  	state = p_state
+  	if animation != null:
+  		printt("has animation", animation.has_animation(p_state))
+  		if animation.is_playing() && animation.get_current_animation() == p_state:
+  			return
+  		if animation.has_animation(p_state):
+  			printt("playing animation ", p_state)
+  			animation.play(p_state)
+
+func global_changed(name):
+    var ev = "global_changed "+name
+    if ev in event_table:
+        run_event(event_table[ev])
+    elif "global_changed" in event_table:
+        run_event(event_table.global_changed)
+
+func spawn_action_menu(obj):
+ var pos
+ pos = obj.get_global_position()
+
+in game.gd function:
+elif obj.inventory:
+			if current_action == "use" && obj.use_combine && current_tool == null:
+				set_current_tool(obj)
+			else:
+				interact([obj, current_action, current_tool])
+
+		# Added Use_Combine functionality for items that are not in the inventory /sh
+		elif !obj.inventory && current_action == "use":
+			if  obj.use_combine && current_tool == null:
+				set_current_tool(obj)
+			else:
+				interact([obj, current_action, current_tool])
+
+----------------------------------------
+
+func set_state(name, state):
+	states[name] = state
+
+func set_active(name, active):
+	actives[name] = active
+
+func set_globals(pat, val):
+  for key in globals:
+  	if key.match(pat):
+  		globals[key] = val
+  		emit_signal("global_changed", key)
+
+---------------------------------------
+
+
+chimney.esc:
+:look
+teleport arturo chimney
+> teleportiert arturo zu dem Ankerpunkt von chimney wenn man mit look auf den Chimney klickt
+
+
+1) Alle Slots haben eine Anfangkonfiguration? -> ein Teil ist "True" von den globals, die sich ändern können z.B.
+slot1: s1_p1 false, s1_p2 false, p3 false, p4 true, p5 false, p6 false, p7 false, p8 false, p9 false
+
+2) Nutze eins der Teile mit einem Slot -> p1, p2, p3, p4, p5, p6, p7, p8, p9
+
+z.B. p1 -> s1 --> löst das Skript slot1.esc aus
+
+3) Funktion, die das Piece was an der Slot1 Position ist herausfindet und an die Stelle teleportiert von der das obj kommt.
+
+
+#Teleport in die andere Richtung
+
+obj = das Zielobjekt von Teleport
+
+teleport_reverse(obj):
+obj.set_position((self as Node).get_global_position())
+_update_terrain()
+
+
+slot1.esc
+:use 1
+ # das p1 wird an die Position von p2 teleportiert
+ teleport p1 p2
+
+
+ # global wird konfiguriert, um zu testen, ob das Rätsel gelöst ist.
+ set_global p1_solved true
+ > [slot1_solved,...,slot9_solved]
+   "Yay. Puzzle solved."
+   Give final flower
+
+:use 2
+ switch 2 1
+ teleport 2 1
+ set_global slot1_solved false
+
+:use 3
+ switch 3 1
+ set_global slot1_solved false
+
+:use 4
+ switch 4 1
+ set_global slot1_solved false
+
+:use 5
+ switch 5 1
+ set_global slot1_solved false
+
+:use 6
+ switch 6 1
+ set_global slot1_solved false
+
+:use 7
+ switch 7 1
+ set_global slot1_solved false
+
+:use 8
+ switch 8 1
+ set_global slot1_solved false
+
+:use 9
+ switch 9 1
+ set_global slot1_solved false

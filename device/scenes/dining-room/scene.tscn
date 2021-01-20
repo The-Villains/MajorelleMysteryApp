@@ -42,15 +42,13 @@ placeholders = {
 }
 
 [node name="arturo" parent="." instance=ExtResource( 6 )]
-position = Vector2( 208.062, 880.304 )
+position = Vector2( 244.832, 835.049 )
 scale = Vector2( 0.6, 0.6 )
 tooltip = "The journalist"
 placeholders = {
 
 }
 use_custom_z = true
-
-[node name="game" parent="." instance=ExtResource( 8 )]
 
 [node name="top-right-pic" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1253.45, 270.348 )
@@ -60,7 +58,7 @@ placeholders = {
 }
 
 [node name="left-nav" parent="." instance=ExtResource( 4 )]
-position = Vector2( 78.9247, 339.615 )
+position = Vector2( 56.2973, 76.5709 )
 events_path = "res://scenes/dining-room/left-nav.esc"
 placeholders = {
 
@@ -74,9 +72,10 @@ placeholders = {
 }
 
 [node name="chimney" parent="." instance=ExtResource( 7 )]
-position = Vector2( 742.514, 613.006 )
+position = Vector2( 830.196, 604.521 )
 scale = Vector2( 1.055, 1.055 )
 tooltip = "Chimney"
+use_combine = true
 placeholders = {
 
 }
@@ -87,3 +86,5 @@ scale = Vector2( 0.6, 0.6 )
 placeholders = {
 
 }
+
+[node name="game" parent="." instance=ExtResource( 8 )]

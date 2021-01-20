@@ -162,7 +162,7 @@ func drop_data(point, data):
 
 	if !inventory:
 		return
-	
+
 	get_tree().call_group("game", "clicked", self, (self as Node).get_position())
 	vm.drag_end()
 
@@ -257,7 +257,12 @@ func set_state(p_state, p_force = false):
 
 
 func teleport(obj):
-	(self as Node).set_position(obj.get_global_position())
+	var origin_pos
+	var target_pos
+	origin_pos = (self as Node).get_global_position()
+	target_pos = obj.get_global_position()
+	(self as Node).set_position(target_pos)
+	obj.set_position(origin_pos)
 	_update_terrain()
 
 func teleport_pos(x, y):

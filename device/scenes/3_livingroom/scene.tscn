@@ -136,7 +136,8 @@ placeholders = {
 [node name="window" parent="." instance=ExtResource( 9 )]
 
 [node name="plants" parent="." instance=ExtResource( 7 )]
-position = Vector2( 571.74, 554.632 )
+position = Vector2( 597.74, 609.632 )
+scale = Vector2( 1.55, 1.55 )
 events_path = "res://scenes/3_livingroom/plants.esc"
 global_id = "livingroom_plants"
 

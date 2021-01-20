@@ -3,23 +3,20 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/5_staircase/sprites/pieces/top_left.png" type="Texture" id=2]
 
-[node name="arturo" type="Node2D"]
+[node name="p1" type="Node2D"]
 script = ExtResource( 1 )
-tooltip = "Arturo, the journalist"
-events_path = "res://scenes/dining-room/arturo.esc"
-global_id = "arturo"
+tooltip = "p1"
+global_id = "p1"
 use_combine = true
-interact_angle = 90
 placeholders = {
 
 }
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = -264.0
-margin_top = -452.0
-margin_right = 1832.0
-margin_bottom = 3132.0
-rect_scale = Vector2( 0.25, 0.25 )
+margin_left = -260.0
+margin_top = -440.0
+margin_right = 260.0
+margin_bottom = 440.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
