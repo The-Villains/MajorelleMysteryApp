@@ -1,0 +1,234 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/4_diningroom/sprites/diningroom_blurry.png" type="Texture" id=4]
+[ext_resource path="res://scenes/4_diningroom/42_paper/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/4_diningroom/42_paper/confirm.tscn" type="PackedScene" id=6]
+[ext_resource path="res://globals/item.gd" type="Script" id=7]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://scenes/4_diningroom/sprites/luecken/map_blanko.png" type="Texture" id=9]
+[ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=10]
+[ext_resource path="res://scenes/4_diningroom/42_paper/hallway.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/4_diningroom/42_paper/entrance.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/4_diningroom/42_paper/livingroom.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/4_diningroom/42_paper/diningroom.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/4_diningroom/42_paper/terrasse.tscn" type="PackedScene" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+size = 36
+use_filter = true
+font_data = ExtResource( 8 )
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1277.7 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_left = -195.162
+margin_top = -144.25
+margin_right = 1533.84
+margin_bottom = 1134.75
+rect_scale = Vector2( 1.16, 1.16 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="riddle_background" type="TextureRect" parent="."]
+margin_left = 56.5686
+margin_top = 73.5392
+margin_right = 1024.57
+margin_bottom = 770.539
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="stack" type="TextureRect" parent="."]
+margin_left = 1145.97
+margin_top = 76.397
+margin_right = 5145.97
+margin_bottom = 3076.4
+rect_scale = Vector2( 0.1, 0.23 )
+texture = ExtResource( 10 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/4_diningroom/42_paper/stack.esc"
+global_id = "stack"
+
+[node name="placeholder" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 531.598
+margin_top = 234.912
+margin_right = 1154.6
+margin_bottom = 1054.91
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Placeholder for a riddle. Just click confirm for now."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="map_entrance" type="Node2D" parent="."]
+script = ExtResource( 7 )
+events_path = "res://scenes/4_diningroom/42_paper/entrance.esc"
+global_id = "map_entrance"
+use_combine = true
+
+[node name="area" type="TextureButton" parent="map_entrance"]
+margin_left = 231.0
+margin_top = 390.0
+margin_right = 337.0
+margin_bottom = 562.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="map_hallway" type="Node2D" parent="."]
+script = ExtResource( 7 )
+tooltip = "room"
+events_path = "res://scenes/4_diningroom/42_paper/hallway.esc"
+global_id = "map_hallway"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="map_hallway"]
+margin_left = 358.0
+margin_top = 390.0
+margin_right = 682.0
+margin_bottom = 472.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="map_terrasse" type="Node2D" parent="."]
+script = ExtResource( 7 )
+tooltip = "room"
+events_path = "res://scenes/4_diningroom/42_paper/terrasse.esc"
+global_id = "map_terrasse"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="map_terrasse"]
+margin_left = 525.0
+margin_top = 486.0
+margin_right = 886.0
+margin_bottom = 598.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="map_livingroom" type="Node2D" parent="."]
+script = ExtResource( 7 )
+tooltip = "room"
+events_path = "res://scenes/4_diningroom/42_paper/livingroom.esc"
+global_id = "map_livingroom"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="map_livingroom"]
+margin_left = 696.0
+margin_top = 194.0
+margin_right = 869.0
+margin_bottom = 472.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="map_diningroom" type="Node2D" parent="."]
+script = ExtResource( 7 )
+tooltip = "room"
+events_path = "res://scenes/4_diningroom/42_paper/diningroom.esc"
+global_id = "map_diningroom"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="map_diningroom"]
+margin_left = 465.0
+margin_top = 119.0
+margin_right = 682.0
+margin_bottom = 374.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="entrance" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1350, 200 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 2000
+z_as_relative = false
+
+[node name="hallway" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1350, 400 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 2000
+z_as_relative = false
+placeholders = {
+
+}
+
+[node name="livingroom" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1350, 300 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 2000
+z_as_relative = false
+placeholders = {
+
+}
+
+[node name="diningroom" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1350, 600 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 2000
+z_as_relative = false
+placeholders = {
+
+}
+
+[node name="terrasse" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1350, 500 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 2000
+z_as_relative = false
+placeholders = {
+
+}
+
+[node name="confirm" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1318.04, 683.065 )
+scale = Vector2( 0.1, 0.1 )
+script = ExtResource( 7 )
+tooltip = "Confirm"
+events_path = "res://scenes/4_diningroom/42_paper/confirm.esc"
+global_id = "confirm_diningroom_paper"
+
+[node name="exit" parent="." instance=ExtResource( 5 )]
+position = Vector2( 181.019, 1117.23 )
+tooltip = "Back"
+events_path = "res://scenes/4_diningroom/42_paper/exit.esc"
+global_id = "exit_diningroom_paper"
+placeholders = {
+
+}
+
+[node name="Position2D" type="Position2D" parent="."]
+visible = false
+position = Vector2( 500, 430 )
+
+[node name="game" parent="." instance=ExtResource( 3 )]

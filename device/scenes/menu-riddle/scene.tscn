@@ -106,8 +106,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="game" parent="." instance=ExtResource( 8 )]
-
 [node name="menu01" type="Sprite" parent="."]
 position = Vector2( 749.892, 843.088 )
 scale = Vector2( 1.5, 1.5 )
@@ -171,7 +169,6 @@ __meta__ = {
 }
 
 [node name="menu02" type="Sprite" parent="."]
-visible = false
 position = Vector2( 759.232, 862.06 )
 scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 3 )
@@ -259,6 +256,8 @@ global_id = "exit_menu_riddle"
 placeholders = {
 
 }
+
+[node name="game" parent="." instance=ExtResource( 8 )]
 [connection signal="value_changed" from="menu01/a1Select" to="." method="_on_aSelect_value_changed"]
 [connection signal="value_changed" from="menu01/b1Select" to="." method="_on_bSelect_value_changed"]
 [connection signal="value_changed" from="menu01/b1Select2" to="." method="_on_bSelect_value_changed"]

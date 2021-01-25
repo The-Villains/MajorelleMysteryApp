@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://globals/player.gd" type="Script" id=1]
 [ext_resource path="res://actors/arturo/sprites/arturo_avatar.png" type="Texture" id=2]
 [ext_resource path="res://actors/arturo/sprites/arturo_up_right.png" type="Texture" id=3]
 [ext_resource path="res://actors/arturo/sprites/back.png" type="Texture" id=4]
 [ext_resource path="res://actors/arturo/sprites/walking03.png" type="Texture" id=5]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/looking.png" type="Texture" id=6]
 [ext_resource path="res://actors/arturo/sprites/walking04.png" type="Texture" id=7]
 [ext_resource path="res://actors/arturo/sprites/arturo-down_right.png" type="Texture" id=8]
 [ext_resource path="res://actors/arturo/sprites/arturo.png" type="Texture" id=9]
@@ -12,6 +13,7 @@
 [ext_resource path="res://actors/arturo/sprites/arturo_up.png" type="Texture" id=11]
 [ext_resource path="res://actors/arturo/sprites/walking01.png" type="Texture" id=12]
 [ext_resource path="res://actors/arturo/sprites/walking02.png" type="Texture" id=13]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/arthur.png" type="Texture" id=14]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.09637
@@ -20,6 +22,11 @@ height = 0.905671
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "original_arthur",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -56,7 +63,7 @@ tracks/0/keys = {
 }
 
 [node name="player" type="Node2D"]
-scale = Vector2( 0.3, 0.3 )
+scale = Vector2( 0.4, 0.4 )
 script = ExtResource( 1 )
 placeholders = {
 
@@ -70,7 +77,7 @@ scale = Vector2( 135.746, 72.8917 )
 shape = SubResource( 1 )
 
 [node name="sprite" type="AnimatedSprite" parent="."]
-position = Vector2( 13.3333, -1040 )
+position = Vector2( 6.66663, -1120 )
 frames = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true

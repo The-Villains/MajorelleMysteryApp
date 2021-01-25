@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/2_hallway/sprites/flur_tuer_offen.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "closed"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[node name="door" type="Node2D"]
+position = Vector2( 692, 600 )
+scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 1 )
+events_path = "res://scenes/2_hallway/door.esc"
+global_id = "hallway_door"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -314.0
+margin_top = -138.0
+margin_right = 36.0
+margin_bottom = 203.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/closed = SubResource( 1 )
+anims/open = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 93.0048, -0.0572205 )
+texture = ExtResource( 2 )

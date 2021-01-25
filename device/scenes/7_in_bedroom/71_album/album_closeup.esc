@@ -1,0 +1,4 @@
+:look
+set_active album_front_closeup false
+set_active album_locked true
+set_active album_confirm true

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/4_diningroom/sprites/circle.png" type="Texture" id=2]
+[ext_resource path="res://globals/sprites/knoepfe und co/kreis.png" type="Texture" id=2]
 
 [node name="diff3" type="Node2D"]
 position = Vector2( 859.842, 726.906 )
@@ -12,10 +12,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureRect" parent="."]
-margin_left = -1.96704
-margin_top = -75.7487
-margin_right = 109.033
-margin_bottom = 29.2513
+margin_left = -19.0
+margin_top = -500.0
+margin_right = 709.0
+margin_bottom = 211.0
 rect_rotation = 42.7676
 __meta__ = {
 "_edit_use_anchors_": false

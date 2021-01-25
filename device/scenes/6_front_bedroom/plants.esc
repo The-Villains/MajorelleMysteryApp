@@ -1,4 +1,15 @@
+#Helper action to fill the inventory when starting with this scene
+:pick_up
+set_global i/inv_flower1 true
+set_global i/inv_flower2 true
+set_global i/inv_flower3 true
+set_global i/inv_flower4 true
+
 :look
-cut_scene telon fade_out
-change_scene res://scenes/6_front_bedroom/61_door/scene.tscn
-cut_scene telon fade_in
+>  [flower1,flower2,flower3,flower4]
+ cut_scene telon fade_out
+ change_scene res://scenes/7_in_bedroom/scene.tscn
+ cut_scene telon fade_in
+
+> [!flower1,!flower2,!flower3,!flower4]
+  say telon "Seems like some flowers are missing."

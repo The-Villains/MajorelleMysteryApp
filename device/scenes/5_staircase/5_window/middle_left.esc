@@ -12,3 +12,12 @@ teleport middle_middle middle_left
 
 :use middle_right
 teleport middle_right middle_left
+
+:use bottom_left
+teleport bottom_left middle_left
+
+:use bottom_middle
+teleport bottom_middle middle_left
+
+:use bottom_right
+teleport bottom_right middle_left

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/5_staircase/5_window/bottom_middle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_bg.png" type="Texture" id=2]
@@ -13,36 +13,57 @@
 [ext_resource path="res://scenes/5_staircase/5_window/bottom_right.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/5_staircase/5_window/middle_right.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/5_staircase/5_window/bottom_left.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/5_staircase/sprites/_grid.png" type="Texture" id=14]
+[ext_resource path="res://globals/item.gd" type="Script" id=15]
+[ext_resource path="res://scenes/5_staircase/5_window/confirm.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/5_staircase/sprites/_full.png" type="Texture" id=17]
+[ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=18]
+[ext_resource path="res://scenes/5_staircase/5_window/exit.tscn" type="PackedScene" id=19]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 4 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 0.923004 ],
-"_edit_vertical_guides_": [ 1544.99 ]
+"_edit_horizontal_guides_": [ 1169.93 ],
+"_edit_vertical_guides_": [ 1605.53 ]
 }
 
 [node name="background" type="TextureRect" parent="."]
-margin_right = 1027.0
-margin_bottom = 800.0
-rect_scale = Vector2( 1.58, 1.58 )
+margin_left = -80.0
+margin_top = -46.0
+margin_right = 809.0
+margin_bottom = 626.0
+rect_scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 expand = true
 script = ExtResource( 3 )
 __meta__ = {
-"_edit_lock_": true
+"_edit_use_anchors_": false
+}
+
+[node name="grid" type="TextureRect" parent="."]
+margin_left = 39.0
+margin_top = -13.0
+margin_right = 4475.0
+margin_bottom = 3187.0
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
 }
 
 [node name="top_left" parent="." instance=ExtResource( 5 )]
-position = Vector2( 185.986, 259.951 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 1000, 556.5 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 events_path = "res://scenes/5_staircase/5_window/top_left.esc"
 placeholders = {
 
 }
 
 [node name="top_middle" parent="." instance=ExtResource( 7 )]
-position = Vector2( 421.393, 260.537 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 810.5, 873 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 events_path = "res://scenes/5_staircase/5_window/top_middle.esc"
 placeholders = {
 
@@ -50,9 +71,9 @@ placeholders = {
 use_custom_z = true
 
 [node name="top_right" parent="." instance=ExtResource( 6 )]
-position = Vector2( 651.72, 263.037 )
-scale = Vector2( 0.4, 0.4 )
-tooltip = "top_right"
+position = Vector2( 810.5, 240 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 events_path = "res://scenes/dining-room/top-right-pic.esc"
 global_id = "top_right"
 use_combine = true
@@ -62,43 +83,98 @@ placeholders = {
 use_custom_z = true
 
 [node name="middle_left" parent="." instance=ExtResource( 10 )]
-position = Vector2( 197.72, 639.037 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 1000, 240 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 placeholders = {
 
 }
 
 [node name="middle_middle" parent="." instance=ExtResource( 9 )]
-position = Vector2( 421.72, 639.037 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 621, 240 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 placeholders = {
 
 }
 
 [node name="middle_right" parent="." instance=ExtResource( 12 )]
-position = Vector2( 649.72, 635.037 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 621, 556.5 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 placeholders = {
 
 }
 
 [node name="bottom_left" parent="." instance=ExtResource( 13 )]
-visible = false
-position = Vector2( 1091.72, 213.037 )
+position = Vector2( 1000, 873 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 placeholders = {
 
 }
 
 [node name="bottom_middle" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 1385.72, 223.037 )
+position = Vector2( 621, 873 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
 placeholders = {
 
 }
 
 [node name="bottom_right" parent="." instance=ExtResource( 11 )]
+position = Vector2( 810.5, 556.5 )
+scale = Vector2( 0.35, 0.35 )
+tooltip = "window piece"
+placeholders = {
+
+}
+
+[node name="confirm" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1342.08, 497.803 )
+scale = Vector2( 0.2, 0.2 )
+script = ExtResource( 15 )
+tooltip = "Confirm solution"
+events_path = "res://scenes/5_staircase/5_window/confirm.esc"
+global_id = "staircase_window_confirm"
+
+[node name="exit" parent="." instance=ExtResource( 19 )]
+position = Vector2( 101.824, 1120.06 )
+scale = Vector2( 0.45, 0.45 )
+global_id = "exit_staircase"
+placeholders = {
+
+}
+
+[node name="solved" type="TextureRect" parent="."]
 visible = false
-position = Vector2( 1233.72, 219.037 )
+margin_left = 535.45
+margin_top = 80.8786
+margin_right = 4971.45
+margin_bottom = 3280.88
+rect_scale = Vector2( 0.36, 0.36 )
+texture = ExtResource( 17 )
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+global_id = "staircase_solved_window"
+
+[node name="frame" type="TextureRect" parent="."]
+visible = false
+margin_left = 19.2617
+margin_top = -29.43
+margin_right = 4455.26
+margin_bottom = 3170.57
+rect_scale = Vector2( 0.36, 0.36 )
+texture = ExtResource( 18 )
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+global_id = "staircase_frame"
 placeholders = {
 
 }

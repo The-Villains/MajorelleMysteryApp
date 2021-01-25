@@ -1,5 +1,0 @@
-:use p1
- teleport p2 p1
-
-:use p3
- teleport p2 p1

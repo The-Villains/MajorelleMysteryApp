@@ -1,8 +1,0 @@
-:use p2
- teleport p1 p2
-
-:use p3
- teleport p1 p3
-
-:look
- teleport p3 p1

@@ -1,0 +1,161 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=1]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/book_overgrown w plants.png" type="Texture" id=2]
+[ext_resource path="res://ui/theme.tres" type="Theme" id=3]
+[ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/menu-riddle/exit.tscn" type="PackedScene" id=7]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=8]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends \"res://globals/scene_base.gd\"
+
+var vm;
+var currentIndex = 0
+var aNumber = 0
+var bNumber = 0
+var cNumber = 0
+var dNumber = 0
+
+func _ready():
+	get_node(\"/root/main\").call_deferred(\"set_current_scene\", self)
+	vm = get_tree().get_root().get_node(\"vm\")
+	get_node(\"book_with_lock/a1Select\").set(\"value\", aNumber)
+	get_node(\"book_with_lock/b1Select\").set(\"value\", bNumber)
+	get_node(\"book_with_lock/c1Select\").set(\"value\", cNumber)
+	get_node(\"book_with_lock/d1Select\").set(\"value\", dNumber)
+	checkValues()
+
+func _on_exit_pressed():
+	vm.load_file(\"res://scenes/slide-show/exit.esc\")
+
+func checkValues():
+	if aNumber == 1 and bNumber == 9 and cNumber == 0 and dNumber == 2:
+		get_node(\"book_with_lock/status1\").show()
+		#get_node(\"menu02/status2\").show()
+	else:
+		get_node(\"book_with_lock/status1\").hide()
+		#get_node(\"menu02/status2\").hide()
+
+func _on_aSelect_value_changed(value):
+	aNumber = value
+	checkValues()
+
+func _on_bSelect_value_changed(value):
+	bNumber = value
+	get_node(\"book_with_lock/b1Select\").set(\"value\", bNumber)
+	checkValues()
+
+
+func _on_c1Select_value_changed(value):
+	cNumber = value
+	checkValues()
+
+
+
+func _on_d1Select_value_changed(value):
+	dNumber = value
+	checkValues()
+"
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = ExtResource( 4 )
+
+[node name="scene" type="Node2D"]
+script = SubResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 0.923004 ],
+"_edit_vertical_guides_": [ 1544.99 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.58, 1.58 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="book_with_lock" type="Sprite" parent="."]
+position = Vector2( 789.306, 552.277 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+
+[node name="a1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = -203.0
+margin_top = 100.0
+margin_right = -115.0
+margin_bottom = 151.0
+theme = ExtResource( 3 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = -94.7669
+margin_top = 100.943
+margin_right = -6.76691
+margin_bottom = 151.943
+theme = ExtResource( 3 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = 23.3002
+margin_top = 101.886
+margin_right = 111.3
+margin_bottom = 152.886
+theme = ExtResource( 3 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = 142.452
+margin_top = 100.0
+margin_right = 223.452
+margin_bottom = 151.0
+theme = ExtResource( 3 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="status1" type="RichTextLabel" parent="book_with_lock"]
+visible = false
+margin_left = 60.1864
+margin_top = -315.63
+margin_right = 455.186
+margin_bottom = -166.63
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.137255, 0.572549, 0.137255, 1 )
+text = "Hurray"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit" parent="." instance=ExtResource( 7 )]
+position = Vector2( 105.657, 1121 )
+tooltip = "Exit the menu riddle"
+events_path = "res://scenes/menu-riddle/exit.esc"
+global_id = "exit_menu_riddle"
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 8 )]
+[connection signal="value_changed" from="book_with_lock/a1Select" to="." method="_on_aSelect_value_changed"]
+[connection signal="value_changed" from="book_with_lock/b1Select" to="." method="_on_bSelect_value_changed"]
+[connection signal="value_changed" from="book_with_lock/c1Select" to="." method="_on_c1Select_value_changed"]
+[connection signal="value_changed" from="book_with_lock/d1Select" to="." method="_on_d1Select_value_changed"]

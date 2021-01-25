@@ -35,6 +35,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "nightstand"
 events_path = "res://scenes/7_in_bedroom/nightstand.esc"
 global_id = "bedroom_nightstand"
 
@@ -47,6 +48,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "curtain"
 events_path = "res://scenes/7_in_bedroom/curtain.esc"
 global_id = "bedroom_curtain"
 placeholders = {
@@ -54,7 +56,7 @@ placeholders = {
 }
 
 [node name="painting" type="TextureButton" parent="." index="4"]
-margin_left = 958.0
+margin_left = 952.0
 margin_top = 450.0
 margin_right = 1026.0
 margin_bottom = 556.0
@@ -62,6 +64,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "painting"
 events_path = "res://scenes/7_in_bedroom/painting.esc"
 global_id = "bedroom_painting"
 placeholders = {
@@ -77,6 +80,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "dresser"
 events_path = "res://scenes/7_in_bedroom/dresser.esc"
 global_id = "bedroom_dresser"
 placeholders = {
@@ -92,6 +96,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "dressingroom"
 events_path = "res://scenes/7_in_bedroom/dressingroom.esc"
 global_id = "bedroom_dressingroom"
 placeholders = {
@@ -99,12 +104,12 @@ placeholders = {
 }
 
 [node name="album" parent="." index="7" instance=ExtResource( 4 )]
-position = Vector2( 692, 786 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 880, 608 )
+scale = Vector2( 1.52, 1.52 )
+global_id = "bedroom_album_onbed"
 
 [node name="player" parent="." index="8" instance=ExtResource( 3 )]
 position = Vector2( 1506, 1190 )
-scale = Vector2( 0.4, 0.4 )
 z_index = 1190
 placeholders = {
 

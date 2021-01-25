@@ -1,0 +1,19 @@
+:use paper_entrance
+teleport_pos paper_entrance 1350 200
+set_global paper_entrance false
+
+:use paper_hallway
+teleport_pos paper_hallway 1350 400
+set_global paper_hallway false
+
+:use paper_terrasse
+teleport_pos paper_terrasse 1350 500
+set_global paper_terrasse false
+
+:use paper_livingroom
+teleport_pos paper_livingroom 1350 300
+set_global paper_livingroom false
+
+:use paper_diningroom
+teleport_pos paper_diningroom 1350 600
+set_global paper_diningroom false

@@ -1,16 +1,24 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=4]
-[ext_resource path="res://scenes/1_entrance/sprites/lobby.png" type="Texture" id=5]
+[ext_resource path="res://scenes/1_entrance/sprites/lobby1.png" type="Texture" id=5]
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/1_entrance/flowers.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/1_entrance/lightbulb_missing.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/1_entrance/ghost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/1_entrance/lamp.tscn" type="PackedScene" id=10]
+[ext_resource path="res://globals/sprites/knoepfe und co/kreis.png" type="Texture" id=11]
 [ext_resource path="res://scenes/1_entrance/player_talk.tscn" type="PackedScene" id=12]
+[ext_resource path="res://globals/item.gd" type="Script" id=13]
+[ext_resource path="res://scenes/1_entrance/sprites/louis_far_red.png" type="Texture" id=14]
+[ext_resource path="res://scenes/1_entrance/sprites/blume_rot.png" type="Texture" id=15]
+[ext_resource path="res://scenes/1_entrance/sprites/lampe_rot.png" type="Texture" id=16]
+[ext_resource path="res://scenes/1_entrance/sprites/suitcase_red.png" type="Texture" id=17]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=18]
+[ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=19]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 1679.79, 1141.2, 1679.63, 1215.23, 1541.63, 1215.23, 1679.99, 1049.22, 121.632, 1215.23, 1.63199, 1215.23, 1.22025, 1117.23, 1542.65, 272.526, 1681.63, 287.232, 1681.33, 425.231, -1.97308, 357.221, -2.36801, 263.232, 74.0353, 254.955, 147.819, 246.961, -1.58649, 449.228, 0.951233, 1053.21, 213.632, 1215.23, 0.438629, 931.211, 377.632, 1215.23, 555.632, 1215.23, -0.00671387, 825.222, -0.510834, 705.241, -0.872131, 619.25, 1680.21, 945.216, 1413.63, 1215.23, 1384.63, 255.806, -1.19165, 543.201, 261.782, 234.615, 749.632, 1215.23, 395.941, 220.081, 536.936, 204.807, 717.632, 185.232, 814.453, 195.476, 921.632, 1215.23, 944.269, 209.212, 1190.15, 235.228, 1083.63, 1215.23, 1231.63, 1215.23, 1680.33, 893.216, 1680.72, 711.199, 1680.9, 625.234, 1681.12, 525.235 )
@@ -35,10 +43,44 @@ __meta__ = {
 visible = false
 script = ExtResource( 4 )
 scale_min = 0.2
-scale_max = 0.4
+scale_max = 0.45
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
 navpoly = SubResource( 1 )
+
+[node name="ghost_tutorial" type="Node2D" parent="."]
+visible = false
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 13 )
+global_id = "ghost_tutorial"
+
+[node name="area" type="TextureRect" parent="ghost_tutorial"]
+margin_left = -182.299
+margin_top = 802.801
+margin_right = 3913.7
+margin_bottom = 4898.8
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_tutorial" parent="." instance=ExtResource( 19 )]
+
+[node name="flower_tutorial" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 13 )
+global_id = "flower_tutorial"
+
+[node name="area" type="TextureRect" parent="flower_tutorial"]
+margin_left = -9.89938
+margin_top = -2.82854
+margin_right = 1099.1
+margin_bottom = 797.171
+rect_scale = Vector2( 1.52, 1.52 )
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="flowers" parent="." instance=ExtResource( 7 )]
 position = Vector2( 838.437, 592.717 )
@@ -48,8 +90,8 @@ events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
-position = Vector2( 274, 850 )
-scale = Vector2( 1.4, 1.4 )
+position = Vector2( 255.012, 785.231 )
+scale = Vector2( 0.3, 0.3 )
 
 [node name="lamp" parent="." instance=ExtResource( 10 )]
 visible = false
@@ -57,17 +99,91 @@ position = Vector2( 838, 589 )
 scale = Vector2( 1.5, 1.5 )
 global_id = "lamp"
 
+[node name="lightbulb_tutorial" type="Node2D" parent="."]
+visible = false
+scale = Vector2( 1.4, 1.4 )
+script = ExtResource( 13 )
+global_id = "lightbulb_tutorial"
+
+[node name="area" type="TextureRect" parent="lightbulb_tutorial"]
+margin_left = 55.2431
+margin_top = 18.0207
+margin_right = 1164.24
+margin_bottom = 818.021
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="lightbulb_missing" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1146.41, 230.758 )
+position = Vector2( 1146.41, 224 )
 
 [node name="player_talk" parent="." instance=ExtResource( 12 )]
+visible = false
 
 [node name="player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1467, 1171 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 1464.5, 1171.45 )
+scale = Vector2( 0.45, 0.45 )
 z_index = 1171
 placeholders = {
 
+}
+
+[node name="kiara_tutorial" type="Node2D" parent="."]
+visible = false
+position = Vector2( 1385, 80 )
+scale = Vector2( 0.2, 0.2 )
+script = ExtResource( 13 )
+global_id = "kiara_tutorial"
+
+[node name="area" type="TextureRect" parent="kiara_tutorial"]
+margin_left = -45.3906
+margin_top = -92.8571
+margin_right = 978.609
+margin_bottom = 931.143
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="kiara" parent="." instance=ExtResource( 18 )]
+tooltip = ""
+
+[node name="entrance_kiara" type="Node2D" parent="."]
+position = Vector2( -1.18396, 0.862915 )
+scale = Vector2( 0.28, 0.28 )
+z_index = 2000
+script = ExtResource( 13 )
+tooltip = "Kiara"
+events_path = "res://scenes/1_entrance/entrance_kiara.esc"
+global_id = "entrance_kiara"
+
+[node name="area" type="TextureButton" parent="entrance_kiara"]
+margin_left = 4777.0
+margin_top = -299.0
+margin_right = 5807.0
+margin_bottom = 887.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inventory_tutorial" type="Node2D" parent="."]
+visible = false
+position = Vector2( 600, 600 )
+scale = Vector2( 0.32, 0.32 )
+z_index = 2000
+z_as_relative = false
+script = ExtResource( 13 )
+global_id = "inventory_tutorial"
+
+[node name="area" type="TextureRect" parent="inventory_tutorial"]
+margin_left = 1495.12
+margin_top = 392.555
+margin_right = 5429.12
+margin_bottom = 2440.56
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
 }
 
 [node name="game" parent="." instance=ExtResource( 3 )]

@@ -3,12 +3,17 @@
 [ext_resource path="res://globals/sprites/objekte/blumen-rewards/flower1.png" type="Texture" id=1]
 
 [node name="flower1" type="Node2D"]
+z_index = 2000
+z_as_relative = false
 
 [node name="area" type="TextureButton" parent="."]
 margin_left = -318.0
 margin_top = -314.0
 margin_right = 336.0
 margin_bottom = 340.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="animation" type="AnimationPlayer" parent="."]
 

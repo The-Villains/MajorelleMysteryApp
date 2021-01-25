@@ -11,6 +11,7 @@
  change_scene res://scenes/3_livingroom/scene.tscn
  cut_scene telon fade_in
  set_active livingroom_window false
+ set_active livingroom_light true
  set_state livingroom_plants disappear
  wait 3
  set_active livingroom_plants false

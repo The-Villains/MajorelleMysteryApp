@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://scenes/3_livingroom/plants.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=8]
 [ext_resource path="res://scenes/3_livingroom/window.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/3_livingroom/sprites/puzzle window shine.png" type="Texture" id=10]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=11]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 2.79803, 1047.07, 540.798, 879.07, 558.798, 1119.07, 4.79803, 1249.07, 1604.8, 1253.07, 992.798, 1165.07, 726.798, 1107.07, 762.798, 1029.07, 1168.8, 1163.07, 1178.8, 1047.07, 1308.8, 1043.07, 1602.8, 1067.07, 1504.8, 845.07, 1608.8, 887.07, 1302.8, 911.07, 1334.8, 837.07, 592.798, 1065.07, 682.798, 1067.07 )
@@ -32,6 +34,19 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="light" type="TextureRect" parent="."]
+visible = false
+margin_left = -80.0
+margin_right = 1021.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.55, 1.55 )
+texture = ExtResource( 10 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "livingroom_light"
 
 [node name="terrain" type="Navigation2D" parent="."]
 script = ExtResource( 8 )
@@ -143,10 +158,30 @@ global_id = "livingroom_plants"
 
 [node name="player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1331.16, 1270.77 )
-scale = Vector2( 0.4, 0.4 )
 z_index = 1270
 placeholders = {
 
+}
+
+[node name="kiara" parent="." instance=ExtResource( 11 )]
+events_path = ""
+
+[node name="livingroom_kiara" type="Node2D" parent="."]
+z_index = 2000
+z_as_relative = false
+script = ExtResource( 6 )
+tooltip = "Kiara"
+events_path = "res://scenes/3_livingroom/livingroom_kiara.esc"
+global_id = "livingroom_kiara"
+
+[node name="area" type="TextureButton" parent="livingroom_kiara"]
+margin_left = 1388.0
+margin_top = 66.0
+margin_right = 1570.0
+margin_bottom = 250.0
+rect_pivot_offset = Vector2( -1388.12, -66.5 )
+__meta__ = {
+"_edit_use_anchors_": false
 }
 
 [node name="game" parent="." instance=ExtResource( 3 )]

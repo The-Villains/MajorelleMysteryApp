@@ -1,24 +1,28 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
-[ext_resource path="res://font/Big_Bottom_Cartoon_AD.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
 [ext_resource path="res://ui/villa-entry.tscn" type="PackedScene" id=4]
-[ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://globals/sprites/igge-button.png" type="Texture" id=6]
 [ext_resource path="res://globals/sprites/speechbubble.png" type="Texture" id=7]
+[ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=8]
+[ext_resource path="res://globals/sprites/menu_deko.png" type="Texture" id=9]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
-font_data = ExtResource( 5 )
+use_filter = true
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 96
-font_data = ExtResource( 2 )
+size = 164
+use_filter = true
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 50
-font_data = ExtResource( 5 )
+use_filter = true
+font_data = ExtResource( 10 )
 
 [node name="main_menu" type="Control"]
 margin_left = 3.15002
@@ -27,13 +31,26 @@ margin_right = 1933.15
 margin_bottom = 1106.48
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_horizontal_guides_": [ 922.567 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 828.692, 1490.69, 1160.69 ]
 }
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 859.91, 404.114 )
-scale = Vector2( 0.799316, 1.09355 )
-texture = ExtResource( 7 )
+scale = Vector2( 0.41, 0.41 )
+texture = ExtResource( 8 )
+offset = Vector2( 1958.44, 1456.87 )
+
+[node name="menu_design" type="TextureRect" parent="."]
+margin_left = -104.0
+margin_top = -112.0
+margin_right = 696.0
+margin_bottom = 959.0
+rect_scale = Vector2( 1.28, 1.28 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="villa-entry" parent="." instance=ExtResource( 4 )]
 visible = false
@@ -46,10 +63,10 @@ placeholders = {
 use_custom_z = true
 
 [node name="new_game" type="TextureButton" parent="."]
-margin_left = 57.9725
-margin_top = 744.028
-margin_right = 569.972
-margin_bottom = 1256.03
+margin_left = 798.0
+margin_top = 606.0
+margin_right = 1310.0
+margin_bottom = 1118.0
 rect_scale = Vector2( 0.8, 0.6 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
@@ -62,9 +79,9 @@ __meta__ = {
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 37.5162
-margin_top = -32.0901
+margin_top = -22.0901
 margin_right = 649.516
-margin_bottom = 72.9096
+margin_bottom = 82.9096
 rect_scale = Vector2( 0.7, 1 )
 hint_tooltip = "Start a new game"
 mouse_filter = 1
@@ -80,10 +97,10 @@ __meta__ = {
 }
 
 [node name="text" type="TextureButton" parent="."]
-margin_left = 320.0
-margin_top = -88.0
-margin_right = 3828.0
-margin_bottom = 2392.0
+margin_left = 698.0
+margin_top = -130.0
+margin_right = 4206.0
+margin_bottom = 2350.0
 rect_scale = Vector2( 0.264841, 0.269158 )
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 7 )
@@ -93,16 +110,18 @@ __meta__ = {
 }
 
 [node name="text" type="RichTextLabel" parent="text"]
-margin_left = 913.104
-margin_top = 867.875
-margin_right = 3031.1
-margin_bottom = 2245.88
+margin_left = 980.655
+margin_top = 965.292
+margin_right = 2577.66
+margin_bottom = 1934.29
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 text = "Wähle eine Sprache 
+
 Choose a language 
-Choisissez une langue
-"
+
+Choisissez une langue"
+fit_content_height = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -173,10 +192,10 @@ __meta__ = {
 }
 
 [node name="exit" type="TextureButton" parent="."]
-margin_left = 1145.0
-margin_top = 739.0
-margin_right = 1679.0
-margin_bottom = 1251.0
+margin_left = 943.0
+margin_top = 819.0
+margin_right = 1477.0
+margin_bottom = 1331.0
 rect_scale = Vector2( 0.8, 0.6 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
@@ -187,9 +206,9 @@ __meta__ = {
 
 [node name="UI_QUIT" type="Label" parent="exit"]
 margin_left = 46.2113
-margin_top = 222.378
+margin_top = 232.378
 margin_right = 647.211
-margin_bottom = 349.378
+margin_bottom = 359.378
 rect_scale = Vector2( 0.7, 1 )
 hint_tooltip = "Quit the game"
 mouse_filter = 1
@@ -205,10 +224,10 @@ __meta__ = {
 }
 
 [node name="en" type="TextureButton" parent="."]
-margin_left = 701.63
-margin_top = 506.0
-margin_right = 1213.63
-margin_bottom = 1018.0
+margin_left = 1071.63
+margin_top = 454.0
+margin_right = 1583.63
+margin_bottom = 966.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
@@ -218,10 +237,10 @@ __meta__ = {
 }
 
 [node name="en" type="Label" parent="en"]
-margin_left = 131.246
-margin_top = 122.123
-margin_right = 203.246
-margin_bottom = 191.123
+margin_left = 157.912
+margin_top = 142.123
+margin_right = 229.912
+margin_bottom = 211.123
 rect_scale = Vector2( 3, 3 )
 hint_tooltip = "en"
 mouse_filter = 1
@@ -237,10 +256,10 @@ __meta__ = {
 }
 
 [node name="fr" type="TextureButton" parent="."]
-margin_left = 955.05
-margin_top = 506.0
-margin_right = 1467.05
-margin_bottom = 1018.0
+margin_left = 1325.05
+margin_top = 454.0
+margin_right = 1837.05
+margin_bottom = 966.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
@@ -250,10 +269,10 @@ __meta__ = {
 }
 
 [node name="fr" type="Label" parent="fr"]
-margin_left = 154.006
-margin_top = 138.612
-margin_right = 211.006
-margin_bottom = 207.612
+margin_left = 180.672
+margin_top = 158.612
+margin_right = 237.672
+margin_bottom = 227.612
 rect_scale = Vector2( 3, 3 )
 hint_tooltip = "fr"
 mouse_filter = 1
@@ -272,10 +291,10 @@ anchor_left = 0.193782
 anchor_top = -0.87557
 anchor_right = 0.193782
 anchor_bottom = -0.87557
-margin_left = 86.0099
-margin_top = 1470.0
-margin_right = 598.01
-margin_bottom = 1982.0
+margin_left = 456.01
+margin_top = 1418.0
+margin_right = 968.01
+margin_bottom = 1930.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
@@ -285,10 +304,10 @@ __meta__ = {
 }
 
 [node name="de" type="Label" parent="de"]
-margin_left = 139.762
-margin_top = 138.634
-margin_right = 201.762
-margin_bottom = 207.634
+margin_left = 166.428
+margin_top = 158.634
+margin_right = 228.428
+margin_bottom = 227.634
 rect_scale = Vector2( 3, 3 )
 hint_tooltip = "fr"
 mouse_filter = 1

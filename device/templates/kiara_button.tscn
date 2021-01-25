@@ -1,0 +1,237 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/kiara_button.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/kiara.png" type="Texture" id=3]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip1.png" type="Texture" id=4]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip2.png" type="Texture" id=5]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip3.png" type="Texture" id=6]
+
+[sub_resource type="Animation" id=2]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2950, 330 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.3, 0.3 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "tip1"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 450, 1750 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.2, 1.2 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "tip2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 450, 1750 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.2, 1.2 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "tip3"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 450, 1750 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:flip_h")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.2, 1.2 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="kiara" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 2 )
+tooltip = "Kiara"
+events_path = "res://scenes/1_entrance/entrance_kiara.esc"
+global_id = "kiara"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -372.0
+margin_top = -412.0
+margin_right = 408.0
+margin_bottom = 418.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 2 )
+anims/tip1 = SubResource( 3 )
+anims/tip2 = SubResource( 4 )
+anims/tip3 = SubResource( 5 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2950, 330 )
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 1 )
+frame = 1
+flip_h = true

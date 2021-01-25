@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+
+[node name="upstairs" type="Node2D"]
+script = ExtResource( 1 )
+events_path = "res://scenes/2_hallway/door.esc"
+global_id = "hallway_door"
+
+[node name="area" type="TextureButton" parent="."]
+margin_right = 1001.0
+margin_bottom = 468.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 93.0048, -0.0572205 )

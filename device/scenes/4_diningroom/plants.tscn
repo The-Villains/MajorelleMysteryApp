@@ -4,11 +4,11 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
 
 [sub_resource type="Animation" id=1]
-resource_name = "disapear"
+resource_name = "disappear"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:modulate:a")
 tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/loop_wrap = false
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
@@ -33,7 +33,7 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/disapear = SubResource( 1 )
+anims/disappear = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

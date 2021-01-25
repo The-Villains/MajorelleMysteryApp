@@ -255,7 +255,7 @@ func set_state(p_state, p_force = false):
 			printt("playing animation ", p_state)
 			animation.play(p_state)
 
-
+# Simple modified teleport function that switches the objects
 func teleport(obj):
 	var origin_pos
 	var target_pos

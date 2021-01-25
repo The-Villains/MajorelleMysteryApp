@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://scenes/5_staircase/sprites/staircase.png" type="Texture" id=5]
 [ext_resource path="res://scenes/5_staircase/window.tscn" type="PackedScene" id=6]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=7]
+[ext_resource path="res://scenes/5_staircase/plants.tscn" type="PackedScene" id=8]
+[ext_resource path="res://globals/item.gd" type="Script" id=9]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 248.56, 1243.88, 244.56, 497.882, 442.56, 509.882, 438.56, 605.882, 472.56, 685.882, 620.56, 903.882, 1694.56, 1059.88, 1694.56, 1243.88, 704.56, 955.882, 1272.56, 931.882, 1270.56, 849.882, 1310.56, 847.882, 1692.56, 883.882, 754.56, 875.882, 1016.56, 925.882, 1228.56, 957.882, 812.56, 877.882 )
@@ -37,14 +39,45 @@ visible = false
 position = Vector2( -2, 2 )
 navpoly = SubResource( 1 )
 
+[node name="upstairs" type="Node2D" parent="."]
+script = ExtResource( 9 )
+events_path = "res://scenes/5_staircase/upstairs.esc"
+global_id = "upstairs"
+
+[node name="area" type="TextureButton" parent="upstairs"]
+margin_left = 236.0
+margin_top = -3.0
+margin_right = 1204.0
+margin_bottom = 482.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1117.56, 1248.7 )
-scale = Vector2( 0.4, 0.4 )
 z_index = 1248
 placeholders = {
 
 }
 
 [node name="window" parent="." instance=ExtResource( 6 )]
+position = Vector2( 455, 311 )
+scale = Vector2( 1.56, 1.56 )
+
+[node name="plants" parent="." instance=ExtResource( 8 )]
+position = Vector2( 833.243, 622.293 )
+scale = Vector2( 1.56, 1.56 )
+
+[node name="dont_leave" type="TextureRect" parent="."]
+margin_left = 1259.0
+margin_top = 400.0
+margin_right = 1698.0
+margin_bottom = 987.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/5_staircase/dont_leave.esc"
+global_id = "dont_leave"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

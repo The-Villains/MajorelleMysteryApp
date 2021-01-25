@@ -2,20 +2,23 @@
 
 [ext_resource path="res://ui/confirm_popup.gd" type="Script" id=1]
 [ext_resource path="res://globals/sprites/speechbubble.png" type="Texture" id=2]
-[ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-size = 96
-font_data = ExtResource( 3 )
+size = 128
+use_filter = true
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 32
-font_data = ExtResource( 3 )
+use_filter = true
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 32
-font_data = ExtResource( 3 )
+use_filter = true
+font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=4]
 length = 0.001
@@ -29,6 +32,7 @@ margin_right = 1598.0
 margin_bottom = 1198.0
 script = ExtResource( 1 )
 __meta__ = {
+"_edit_horizontal_guides_": [ 628.981 ],
 "_edit_use_anchors_": false
 }
 
@@ -77,10 +81,10 @@ __meta__ = {
 }
 
 [node name="UI_YES" type="Label" parent="yes"]
-margin_left = -87.7788
-margin_top = 217.455
-margin_right = 185.221
-margin_bottom = 307.455
+margin_left = -85.5565
+margin_top = 228.884
+margin_right = 187.443
+margin_bottom = 318.884
 rect_scale = Vector2( 2.5, 2 )
 hint_tooltip = "Yes"
 mouse_filter = 1
@@ -106,10 +110,10 @@ texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 6 )
 
 [node name="UI_NO" type="Label" parent="no"]
-margin_left = -92.4681
-margin_top = 217.435
-margin_right = 181.532
-margin_bottom = 307.435
+margin_left = -83.5793
+margin_top = 230.292
+margin_right = 190.421
+margin_bottom = 320.292
 rect_scale = Vector2( 2.5, 2 )
 hint_tooltip = "No"
 mouse_filter = 1

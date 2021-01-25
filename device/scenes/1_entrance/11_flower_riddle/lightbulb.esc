@@ -8,4 +8,12 @@ say lightbulb picked_lightbulb:"Well done. The lightbulb is now in your inventor
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/scene.tscn
 cut_scene telon fade_in
+set_active entrance_ghost true
 say entrance_ghost offer_lamp:"Okay. Now let us use this lightbulb from our inventory" default avatar_jacques
+
+set_active button_tutorial true
+teleport_pos button_tutorial 250 0
+wait 1
+set_active inventory_tutorial true
+wait 1
+set_active lightbulb_tutorial true

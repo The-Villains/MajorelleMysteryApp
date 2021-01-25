@@ -1,16 +1,15 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/2_hallway/plants.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/2_hallway/sprites/hallway.jpg" type="Texture" id=5]
-[ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=6]
 [ext_resource path="res://scenes/2_hallway/keyhole.tscn" type="PackedScene" id=7]
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/2_hallway/ghost.tscn" type="PackedScene" id=9]
-[ext_resource path="res://globals/item.gd" type="Script" id=10]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=11]
+[ext_resource path="res://scenes/4_diningroom/door.tscn" type="PackedScene" id=12]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 1588.8, 1343.56, 116.798, 1345.56, 122.798, 1269.56, 138.798, 1183.56, 190.798, 1057.56, 232.169, 956.201, 872.798, 1095.56, 744.57, 982.172, 872.798, 973.56, 1586.8, 1103.56, 270.798, 861.56, 438.798, 851.56, 498.798, 955.56, 604.798, 991.56 )
@@ -43,22 +42,11 @@ scale_max = 0.5
 position = Vector2( 36, 170 )
 navpoly = SubResource( 1 )
 
-[node name="door" type="TextureButton" parent="."]
-margin_left = 305.485
-margin_top = 507.0
-margin_right = 450.485
-margin_bottom = 694.0
-script = ExtResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-events_path = "res://scenes/2_hallway/door.esc"
-global_id = "hallway_door"
+[node name="door" parent="." instance=ExtResource( 12 )]
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 625.083, 817.416 )
-scale = Vector2( 0.52, 0.52 )
+position = Vector2( 387.495, 692.965 )
+scale = Vector2( 0.3, 0.3 )
 
 [node name="plants" parent="." instance=ExtResource( 4 )]
 position = Vector2( 832.975, 604.171 )
@@ -70,20 +58,11 @@ position = Vector2( 494.975, 582.657 )
 scale = Vector2( 0.76, 0.76 )
 
 [node name="player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1348.85, 1118.28 )
+position = Vector2( 1385.62, 1262.53 )
 scale = Vector2( 0.5, 0.5 )
-z_index = 1118
+z_index = 1262
 placeholders = {
 
-}
-
-[node name="box" type="Sprite" parent="."]
-visible = false
-position = Vector2( 796.203, 1120.06 )
-scale = Vector2( 3.845, 1.57453 )
-texture = ExtResource( 6 )
-__meta__ = {
-"_edit_lock_": true
 }
 
 [node name="game" parent="." instance=ExtResource( 3 )]

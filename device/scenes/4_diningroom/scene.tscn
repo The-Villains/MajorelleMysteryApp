@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/4_diningroom/sprites/diningroom.jpg" type="Texture" id=7]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=8]
+[ext_resource path="res://scenes/4_diningroom/paper.tscn" type="PackedScene" id=9]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 324.798, 851.932, 466.798, 831.932, 470.798, 877.932, 476.798, 973.932, 470.798, 1085.93, -1.20197, 1215.93, 6.79803, 939.932, 1368.8, 879.932, 1542.8, 877.932, 1642.8, 887.932, 1648.8, 1211.93, 1224.8, 1031.93, 1206.8, 935.932, 1206.8, 867.932, 1218.8, 845.932, 700.798, 1089.93, 720.798, 1025.93, 778.798, 1017.93, 912.798, 1029.93, 540.798, 1145.93, 1108.8, 1033.93 )
@@ -65,15 +66,20 @@ placeholders = {
 }
 
 [node name="plants" parent="." instance=ExtResource( 4 )]
-position = Vector2( 813.862, 591.862 )
+position = Vector2( 820.862, 609.862 )
 scale = Vector2( 1.52, 1.52 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1421.99, 1224.63 )
-scale = Vector2( 0.4, 0.4 )
 z_index = 1224
 placeholders = {
 
 }
+
+[node name="paper" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 814, 592 )
+scale = Vector2( 1.52, 1.52 )
+events_path = "res://scenes/4_diningroom/paper.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

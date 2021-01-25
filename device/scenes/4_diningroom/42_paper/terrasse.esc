@@ -1,0 +1,15 @@
+:use paper_entrance
+teleport_pos paper_entrance 690 540
+
+:use paper_hallway
+teleport_pos paper_hallway 690 540
+
+:use paper_terrasse
+teleport_pos paper_terrasse 690 540
+set_global paper_terrasse true
+
+:use paper_livingroom
+teleport_pos paper_livingroom 690 540
+
+:use paper_diningroom
+teleport_pos paper_diningroom 690 540

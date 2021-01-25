@@ -5,10 +5,10 @@
 > [found1,found2,found3,found4,found5]
  say telon all_found:"Yay. You found all the differences."
  change_scene res://scenes/4_diningroom/scene.tscn
- cut_scene telon fade_in
- set_state diningroom_plants disapear
+ set_active diningroom_paper true
+ set_state diningroom_paper falling
  wait 3
- set_active diningroom_plants false
+ set_global paper_on_table true
 
 :talk
 

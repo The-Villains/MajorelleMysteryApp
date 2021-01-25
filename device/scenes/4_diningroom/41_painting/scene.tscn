@@ -119,11 +119,14 @@ __meta__ = {
 }
 
 [node name="diff1" parent="." instance=ExtResource( 9 )]
+visible = false
+scale = Vector2( 0.1, 0.1 )
 global_id = "diff1"
 
 [node name="diff2" parent="." instance=ExtResource( 11 )]
 visible = false
 position = Vector2( 787.717, 780.646 )
+scale = Vector2( 0.1, 0.1 )
 global_id = "diff2"
 placeholders = {
 
@@ -132,6 +135,7 @@ placeholders = {
 [node name="diff3" parent="." instance=ExtResource( 6 )]
 visible = false
 position = Vector2( 865.499, 724.078 )
+scale = Vector2( 0.1, 0.1 )
 global_id = "diff3"
 placeholders = {
 
@@ -139,6 +143,8 @@ placeholders = {
 
 [node name="diff4" parent="." instance=ExtResource( 12 )]
 visible = false
+position = Vector2( 607.526, 635.225 )
+scale = Vector2( 0.12, 0.1 )
 global_id = "diff4"
 placeholders = {
 
@@ -146,6 +152,7 @@ placeholders = {
 
 [node name="diff5" parent="." instance=ExtResource( 10 )]
 visible = false
+scale = Vector2( 0.12, 0.12 )
 global_id = "diff5"
 placeholders = {
 

@@ -55,31 +55,102 @@ placeholders = {
 }
 
 [node name="flower1" parent="." instance=ExtResource( 11 )]
+visible = false
 position = Vector2( 630, 682 )
 scale = Vector2( 0.2, 0.2 )
-z_index = 1000
-z_as_relative = false
+z_index = 2500
 script = ExtResource( 12 )
+global_id = "flower1"
 
 [node name="flower2" parent="." instance=ExtResource( 10 )]
+visible = false
 position = Vector2( 946, 544 )
 scale = Vector2( 0.2, 0.2 )
-z_index = 1000
+z_index = 2500
 z_as_relative = false
 script = ExtResource( 12 )
+global_id = "flower2"
 
 [node name="flower3" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 738, 220 )
 scale = Vector2( 0.2, 0.2 )
-z_index = 1000
+z_index = 2500
 z_as_relative = false
 script = ExtResource( 12 )
+global_id = "flower3"
 
 [node name="flower4" parent="." instance=ExtResource( 8 )]
+visible = false
 position = Vector2( 760, 914 )
 scale = Vector2( 0.2, 0.2 )
-z_index = 1000
-z_as_relative = false
+z_index = 2500
 script = ExtResource( 12 )
+global_id = "flower4"
+
+[node name="spot1" type="Node2D" parent="."]
+script = ExtResource( 12 )
+events_path = "res://scenes/6_front_bedroom/flower1.esc"
+global_id = "bedroom_spot1"
+
+[node name="area" type="TextureButton" parent="spot1"]
+margin_left = 574.0
+margin_top = 630.0
+margin_right = 694.0
+margin_bottom = 750.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="spot2" type="Node2D" parent="."]
+script = ExtResource( 12 )
+events_path = "res://scenes/6_front_bedroom/flower2.esc"
+global_id = "bedroom_spot2"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="spot2"]
+margin_left = 892.0
+margin_top = 486.0
+margin_right = 1012.0
+margin_bottom = 606.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="spot3" type="Node2D" parent="."]
+script = ExtResource( 12 )
+events_path = "res://scenes/6_front_bedroom/flower3.esc"
+global_id = "bedroom_spot3"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="spot3"]
+margin_left = 682.0
+margin_top = 162.0
+margin_right = 802.0
+margin_bottom = 282.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="spot4" type="Node2D" parent="."]
+script = ExtResource( 12 )
+events_path = "res://scenes/6_front_bedroom/flower4.esc"
+global_id = "bedroom_spot4"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="spot4"]
+margin_left = 702.0
+margin_top = 852.0
+margin_right = 822.0
+margin_bottom = 972.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="game" parent="." instance=ExtResource( 3 )]

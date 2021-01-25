@@ -1,0 +1,11 @@
+:load
+> [wrong_flower_picked]
+ say telon wrong_flower:"I don't think this fits to the other flowers." default avatar_jacques
+
+:talk
+
+:use
+
+:look
+
+:pick_up

@@ -3,6 +3,8 @@
 [ext_resource path="res://globals/sprites/objekte/blumen-rewards/flower4.png" type="Texture" id=1]
 
 [node name="flower4" type="Node2D"]
+z_index = 2000
+z_as_relative = false
 
 [node name="area" type="TextureButton" parent="."]
 margin_left = -292.0

@@ -156,7 +156,6 @@ __meta__ = {
 }
 
 [node name="left" type="TextureButton" parent="."]
-visible = false
 margin_left = 37.0905
 margin_top = 451.266
 margin_right = 205.09

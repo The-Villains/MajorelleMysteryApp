@@ -9,10 +9,11 @@ events_path = "res://scenes/1_entrance/11_flower_riddle/riddle.esc"
 global_id = "daisies"
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = -212.0
-margin_top = -308.0
-margin_right = 202.0
-margin_bottom = 308.0
+margin_left = -208.0
+margin_top = -304.0
+margin_right = 937.0
+margin_bottom = 496.0
+rect_scale = Vector2( 0.36, 0.76 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
