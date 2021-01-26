@@ -1,2 +1,4 @@
-talk:
-say telon "This is a placeholder."
+:talk
+set_state kiara tip3
+say telon "This is a placeholder for the living room." left
+set_state kiara default

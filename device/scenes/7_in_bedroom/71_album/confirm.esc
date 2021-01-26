@@ -4,6 +4,8 @@
  set_active album_locked false
  set_active album_confirm false
  set_active album_open true
+ set_active kiara false
+ set_active exit_bedroom_album false
 
 > [!lock_open]
  say telon "This is not correct. Have you looked around in the room yet?"

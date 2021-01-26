@@ -1,0 +1,275 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://scenes/1_entrance/sprites/blumenraetsel_daisies.png" type="Texture" id=1]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/lamp.tscn" type="PackedScene" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/1_entrance/sprites/lobby_blur.png" type="Texture" id=4]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://globals/sprites/arrow-pressed.png" type="Texture" id=6]
+[ext_resource path="res://globals/sprites/arrow-left-pressed.png" type="Texture" id=7]
+[ext_resource path="res://globals/sprites/arrow.png" type="Texture" id=8]
+[ext_resource path="res://globals/sprites/arrow-left.png" type="Texture" id=9]
+[ext_resource path="res://globals/item.gd" type="Script" id=10]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/daisies.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/roses.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/original.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/tulips.tscn" type="PackedScene" id=14]
+[ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=15]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/confirm.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=17]
+[ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=18]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=19]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends \"res://globals/scene_base.gd\"
+
+#var vm;
+
+#var paintings = [
+#	\"daisies\",
+#	\"original\",
+#	\"roses\",
+#	\"tulips\"
+#]
+#var currentIndex = 0
+
+#func _ready():
+#	get_node(\"/root/main\").call_deferred(\"set_current_scene\", self)
+#	vm = get_tree().get_root().get_node(\"vm\")
+	
+	#var decorativePaintingIndex = vm.get_global(\"decorative_painting_index\")
+	#printt(\"decorativePaintingIndex \", decorativePaintingIndex)
+	#if decorativePaintingIndex != null and int(decorativePaintingIndex) > 0: 
+	#	currentIndex = decorativePaintingIndex
+	# handleImageShow()
+
+func _on_left_pressed():
+	pass
+#	currentIndex = currentIndex - 1 
+#	if currentIndex < 0:
+#		currentIndex = len(paintings) - 1
+#	changeImages()
+
+func _on_right_pressed():
+	pass
+#	currentIndex = currentIndex + 1 
+#	if currentIndex >= len(paintings):
+#		currentIndex = 0
+#	changeImages()
+
+#func handleRabbitPainting():
+#	if currentIndex == 4:
+#		get_node(\"painting\").show()
+#	else:	
+#		get_node(\"painting\").hide()
+
+#func changeImages():
+#	get_node(paintings[currentIndex]).show()
+
+#func handleImageShow():
+#	var image_tex = load(\"res://scenes/1_entrance/sprites/\" + paintings[currentIndex]) 
+#	get_node(\"decorative-painting\").texture = image_tex
+	# handleRabbitPainting()
+#	vm.set_global(\"decorative_painting_index\", currentIndex)	
+
+#func _on_exit_pressed():
+#	vm.load_file(\"res://scenes/1_entrance/11_flower_riddle/exit.esc\")
+"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+use_filter = true
+font_data = ExtResource( 19 )
+
+[node name="scene" type="Node2D"]
+script = SubResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 0.923004 ],
+"_edit_vertical_guides_": [ 1544.99, 800.245 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.58, 1.58 )
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="flower_instruction" type="TextureRect" parent="."]
+margin_left = 406.0
+margin_top = -256.0
+margin_right = 918.0
+margin_bottom = 256.0
+rect_scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 15 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "flower_instruction"
+
+[node name="Label" type="RichTextLabel" parent="flower_instruction"]
+margin_left = 108.0
+margin_top = 236.0
+margin_right = 412.0
+margin_bottom = 319.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Pick the correctly matching flowers for the entrance area!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="decorative-painting" type="Sprite" parent="."]
+visible = false
+position = Vector2( 754.171, 517.175 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 1 )
+script = ExtResource( 10 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/riddle.esc"
+global_id = "flower_riddle"
+
+[node name="right" type="TextureButton" parent="."]
+visible = false
+margin_left = 1313.62
+margin_top = 451.266
+margin_right = 1481.62
+margin_bottom = 599.266
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="left" type="TextureButton" parent="."]
+visible = false
+margin_left = 37.0905
+margin_top = 451.266
+margin_right = 205.09
+margin_bottom = 599.266
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="highlight_daisies" type="TextureRect" parent="."]
+visible = false
+margin_left = -269.0
+margin_top = 246.0
+margin_right = 4277.0
+margin_bottom = 3446.0
+rect_scale = Vector2( 0.212, 0.188 )
+texture = ExtResource( 17 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "highlight_daisies"
+
+[node name="highlight_roses" type="TextureRect" parent="."]
+visible = false
+margin_left = 133.0
+margin_top = 246.0
+margin_right = 4679.0
+margin_bottom = 3446.0
+rect_scale = Vector2( 0.212, 0.188 )
+texture = ExtResource( 17 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "highlight_roses"
+placeholders = {
+
+}
+
+[node name="highlight_tulips" type="TextureRect" parent="."]
+visible = false
+margin_left = 932.0
+margin_top = 246.0
+margin_right = 5478.0
+margin_bottom = 3446.0
+rect_scale = Vector2( 0.212, 0.188 )
+texture = ExtResource( 17 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "highlight_tulips"
+placeholders = {
+
+}
+
+[node name="highlight_original" type="TextureRect" parent="."]
+visible = false
+margin_left = 532.0
+margin_top = 246.0
+margin_right = 5078.0
+margin_bottom = 3446.0
+rect_scale = Vector2( 0.212, 0.188 )
+texture = ExtResource( 17 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "highlight_original"
+placeholders = {
+
+}
+
+[node name="daisies" parent="." instance=ExtResource( 11 )]
+position = Vector2( 202, 552 )
+scale = Vector2( 0.8, 0.8 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/daisies.esc"
+
+[node name="original" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1002, 552 )
+scale = Vector2( 0.8, 0.8 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/original.esc"
+
+[node name="roses" parent="." instance=ExtResource( 12 )]
+position = Vector2( 602, 552 )
+scale = Vector2( 0.8, 0.8 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/roses.esc"
+
+[node name="tulips" parent="." instance=ExtResource( 14 )]
+position = Vector2( 1402, 552 )
+scale = Vector2( 0.8, 0.8 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/tulips.esc"
+
+[node name="lightbulb" parent="." instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 816, 542 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/lightbulb.esc"
+global_id = "lightbulb"
+
+[node name="button_tutorial" parent="." instance=ExtResource( 18 )]
+position = Vector2( 125, 0 )
+
+[node name="exit" parent="." instance=ExtResource( 5 )]
+position = Vector2( 98, 1116 )
+scale = Vector2( 0.5, 0.5 )
+tooltip = "Return  to Lobby"
+events_path = "res://scenes/1_entrance/11_flower_riddle/exit.esc"
+global_id = "exit_flowerriddle"
+placeholders = {
+
+}
+
+[node name="confirm" parent="." instance=ExtResource( 16 )]
+visible = false
+position = Vector2( 1352, 128 )
+scale = Vector2( 0.15, 0.15 )
+script = ExtResource( 10 )
+tooltip = "Confirm"
+global_id = "flowerriddle_confirm"
+
+[node name="game" parent="." instance=ExtResource( 3 )]
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]

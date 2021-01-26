@@ -1,7 +1,62 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/1_entrance/sprites/lobby_lampe_weg.png" type="Texture" id=2]
+[ext_resource path="res://scenes/1_entrance/sprites/lampe_m_rot.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/path = NodePath("normal:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("highlighted:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( -0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "lightbulb_highlighted"
+tracks/0/type = "value"
+tracks/0/path = NodePath("highlighted:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("highlighted:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="lightbulb_missing" type="Node2D"]
 position = Vector2( -0.58606, 3.758 )
@@ -19,6 +74,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 1 )
+anims/lightbulb_highlighted = SubResource( 2 )
+
+[node name="normal" type="Sprite" parent="."]
 position = Vector2( -209.333, 250.667 )
 texture = ExtResource( 2 )
+
+[node name="highlighted" type="Sprite" parent="."]
+visible = false
+position = Vector2( -209.333, 250.667 )
+texture = ExtResource( 3 )

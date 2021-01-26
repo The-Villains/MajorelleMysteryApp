@@ -1,0 +1,9 @@
+:load
+> [lock_open]
+ say telon "Yay."
+ set_active album_locked false
+ set_active album_confirm false
+ set_active album_open true
+
+> [!lock_open]
+ say telon "This is not correct. Have you looked around in the room yet?"

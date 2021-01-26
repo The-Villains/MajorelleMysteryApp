@@ -1,0 +1,4 @@
+:talk
+set_state kiara tip2
+say telon "I say, to follow Jacques, let's have a look at the opened living room door."
+set_state kiara default

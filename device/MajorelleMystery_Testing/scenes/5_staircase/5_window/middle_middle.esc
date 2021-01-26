@@ -1,0 +1,23 @@
+:use top_left
+teleport top_left middle_middle
+
+:use top_middle
+teleport top_middle middle_middle
+
+:use top_right
+teleport top_right middle_middle
+
+:use middle_left
+teleport middle_left middle_middle
+
+:use middle_right
+teleport middle_right middle_middle
+
+:use bottom_left
+teleport bottom_left middle_middle
+
+:use bottom_middle
+teleport bottom_middle middle_middle
+
+:use bottom_right
+teleport bottom_right middle_middle

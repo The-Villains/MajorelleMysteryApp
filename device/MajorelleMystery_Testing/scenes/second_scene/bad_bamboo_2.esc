@@ -1,0 +1,9 @@
+:pick_up
+say player bad_bamboo_2_pick_up_1:"I took it off without difficulty." default avatar_panda
+anim bad_bamboo_2 pick_up
+set_global i/inv_bad_bamboo_2 true
+set_active bad_bamboo_2 false
+:look
+say player bad_bamboo_2_look_2:"This bamboo it's perfect! Maybe a little too much..." default avatar_panda
+:talk
+say player bad_bamboo_2_talk_3:"All your leaves have the same size." default avatar_panda

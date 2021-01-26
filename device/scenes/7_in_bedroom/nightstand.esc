@@ -1,0 +1,4 @@
+:look
+cut_scene telon fade_out
+change_scene res://scenes/7_in_bedroom/73_nightstand/scene.tscn
+cut_scene telon fade_in

@@ -2,7 +2,7 @@
 > [staircase_window_solved]
  set_active staircase_frame true
  set_active staircase_solved_window true
- say telon pieces_sorted:"Yay. This looks good."
+ say telon pieces_sorted:"Yay. This looks good." default avatar_luis
  cut_scene telon fade_out
  change_scene res://scenes/5_staircase/scene.tscn
  cut_scene telon fade_in
@@ -10,6 +10,8 @@
  set_state staircase_plants disappear
  wait 3
  set_active staircase_plants false
+ set_active upstairs true
+ say telon "Come on Arthur, let's see what's upstairs now!" left
 
 > [!staircase_window_solved]
  say telon pieces_not_sorted:"This doesn't look right."

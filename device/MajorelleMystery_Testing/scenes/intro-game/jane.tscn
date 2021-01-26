@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="ghost-jane" type="Node2D"]
+script = ExtResource( 2 )
+tooltip = "Jane Majorelle"
+events_path = "res://scenes/intro-game/jane.esc"
+global_id = "ghost-jane"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -122.0
+margin_top = -105.0
+margin_right = 120.0
+margin_bottom = 108.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="_focus_out" type="Sprite" parent="."]

@@ -1,0 +1,177 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/4_diningroom/sprites/dining_room_blur.png" type="Texture" id=4]
+[ext_resource path="res://globals/item.gd" type="Script" id=5]
+[ext_resource path="res://scenes/4_diningroom/41_painting/diff3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/4_diningroom/41_painting/exit.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/4_diningroom/41_painting/painting.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/4_diningroom/41_painting/diff1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/4_diningroom/41_painting/diff5.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/4_diningroom/41_painting/diff2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/4_diningroom/41_painting/diff4.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/4_diningroom/41_painting/confirm.tscn" type="PackedScene" id=13]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1170.29 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_left = -60.0
+margin_top = -24.049
+margin_right = 1646.78
+margin_bottom = 1254.95
+rect_scale = Vector2( 1.55, 1.55 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="painting" parent="." instance=ExtResource( 8 )]
+position = Vector2( 641.615, 574.953 )
+
+[node name="d1" type="Node2D" parent="."]
+script = ExtResource( 5 )
+events_path = "res://scenes/4_diningroom/41_painting/diff1.esc"
+global_id = "d1"
+
+[node name="area" type="TextureButton" parent="d1"]
+margin_left = 988.9
+margin_top = 789.243
+margin_right = 1061.9
+margin_bottom = 857.243
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d2" type="Node2D" parent="."]
+script = ExtResource( 5 )
+events_path = "res://scenes/4_diningroom/41_painting/diff2.esc"
+global_id = "d2"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="d2"]
+margin_left = 742.0
+margin_top = 738.0
+margin_right = 834.0
+margin_bottom = 822.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d3" type="Node2D" parent="."]
+script = ExtResource( 5 )
+events_path = "res://scenes/4_diningroom/41_painting/diff3.esc"
+global_id = "d3"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="d3"]
+margin_left = 826.265
+margin_top = 690.248
+margin_right = 899.265
+margin_bottom = 758.248
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d4" type="Node2D" parent="."]
+script = ExtResource( 5 )
+events_path = "res://scenes/4_diningroom/41_painting/diff4.esc"
+global_id = "d4"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="d4"]
+margin_left = 556.0
+margin_top = 604.0
+margin_right = 658.0
+margin_bottom = 679.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d5" type="Node2D" parent="."]
+script = ExtResource( 5 )
+events_path = "res://scenes/4_diningroom/41_painting/diff5.esc"
+global_id = "d5"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="d5"]
+margin_left = 246.0
+margin_top = 798.0
+margin_right = 340.0
+margin_bottom = 886.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="diff1" parent="." instance=ExtResource( 9 )]
+visible = false
+scale = Vector2( 0.1, 0.1 )
+global_id = "diff1"
+
+[node name="diff2" parent="." instance=ExtResource( 11 )]
+visible = false
+position = Vector2( 787.717, 780.646 )
+scale = Vector2( 0.1, 0.1 )
+global_id = "diff2"
+placeholders = {
+
+}
+
+[node name="diff3" parent="." instance=ExtResource( 6 )]
+visible = false
+position = Vector2( 865.499, 724.078 )
+scale = Vector2( 0.1, 0.1 )
+global_id = "diff3"
+placeholders = {
+
+}
+
+[node name="diff4" parent="." instance=ExtResource( 12 )]
+visible = false
+position = Vector2( 607.526, 635.225 )
+scale = Vector2( 0.12, 0.1 )
+global_id = "diff4"
+placeholders = {
+
+}
+
+[node name="diff5" parent="." instance=ExtResource( 10 )]
+visible = false
+scale = Vector2( 0.12, 0.12 )
+global_id = "diff5"
+placeholders = {
+
+}
+
+[node name="confirm" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1335.02, 509.117 )
+scale = Vector2( 0.2, 0.2 )
+script = ExtResource( 5 )
+events_path = "res://scenes/4_diningroom/41_painting/confirm.esc"
+global_id = "diningroom_confirm"
+
+[node name="exit" parent="." instance=ExtResource( 7 )]
+position = Vector2( 83.4386, 1115.82 )
+tooltip = "Back"
+events_path = "res://scenes/4_diningroom/41_painting/exit.esc"
+global_id = "exit_diningroom_41"
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 3 )]

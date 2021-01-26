@@ -1,0 +1,5 @@
+:look
+queue_resource res://scenes/rabbits/scene.tscn
+cut_scene telon fade_out
+change_scene res://scenes/rabbits/scene.tscn
+cut_scene telon fade_in

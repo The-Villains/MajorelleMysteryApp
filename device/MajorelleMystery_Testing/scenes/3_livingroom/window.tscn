@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/3_livingroom/sprites/living room_window mask.png" type="Texture" id=2]
+
+[node name="window" type="Node2D"]
+position = Vector2( 1051, 463 )
+scale = Vector2( 1.55, 1.55 )
+script = ExtResource( 1 )
+events_path = "res://scenes/3_livingroom/window.esc"
+global_id = "livingroom_window"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -75.0
+margin_top = -134.0
+margin_right = 261.0
+margin_bottom = 53.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -180, 100 )
+texture = ExtResource( 2 )

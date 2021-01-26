@@ -1,13 +1,15 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/2_hallway/plants.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/2_hallway/sprites/hallway.jpg" type="Texture" id=5]
+[ext_resource path="res://MajorelleMystery_Testing/templates/kiara_button.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/2_hallway/keyhole.tscn" type="PackedScene" id=7]
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/2_hallway/ghost.tscn" type="PackedScene" id=9]
+[ext_resource path="res://globals/item.gd" type="Script" id=10]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=11]
 [ext_resource path="res://scenes/4_diningroom/door.tscn" type="PackedScene" id=12]
 
@@ -45,7 +47,7 @@ navpoly = SubResource( 1 )
 [node name="door" parent="." instance=ExtResource( 12 )]
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
-position = Vector2( 387.495, 692.965 )
+position = Vector2( 387.495, 704.279 )
 scale = Vector2( 0.3, 0.3 )
 
 [node name="plants" parent="." instance=ExtResource( 4 )]
@@ -63,6 +65,22 @@ scale = Vector2( 0.5, 0.5 )
 z_index = 1262
 placeholders = {
 
+}
+
+[node name="kiara" parent="." instance=ExtResource( 6 )]
+
+[node name="hallway_kiara" type="Node2D" parent="."]
+script = ExtResource( 10 )
+events_path = "res://scenes/2_hallway/hallway_kiara.esc"
+global_id = "hallway_kiara"
+
+[node name="area" type="TextureButton" parent="hallway_kiara"]
+margin_left = 1363.0
+margin_top = -79.0
+margin_right = 1661.0
+margin_bottom = 272.0
+__meta__ = {
+"_edit_use_anchors_": false
 }
 
 [node name="game" parent="." instance=ExtResource( 3 )]

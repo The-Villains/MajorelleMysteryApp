@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/1_entrance/sprites/blumenraetsel_tulips.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="original" type="Node2D"]
+script = ExtResource( 2 )
+global_id = "tulips"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -212.0
+margin_top = -308.0
+margin_right = 202.0
+margin_bottom = 308.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

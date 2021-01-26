@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/confirm.gd" type="Script" id=1]
+[ext_resource path="res://globals/sprites/knoepfe und co/right.png" type="Texture" id=2]
+
+[node name="confirm" type="Node2D"]
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -100.0
+margin_top = -133.0
+margin_right = 142.0
+margin_bottom = 146.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dummy" type="Node" parent="area"]
+[connection signal="pressed" from="area" to="area" method="_on_confirm_pressed"]

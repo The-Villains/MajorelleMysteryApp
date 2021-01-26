@@ -1,8 +1,8 @@
 :look
 set_active button_tutorial false
-say flowers flowers_look:"Well, these really look odd. Let's see." default avatar_arturo
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/11_flower_riddle/scene.tscn
 cut_scene telon fade_in
-wait 3
+wait 1
+say telon "Here you have to pick the correct answer with the hand. This can also be used to pick up things." info avatar_luis
 set_active button_tutorial true

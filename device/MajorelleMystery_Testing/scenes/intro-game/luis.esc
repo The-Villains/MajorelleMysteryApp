@@ -1,0 +1,28 @@
+:talk
+
+> [luis_intro_talked]
+ say arturo luis_intro_fallback:"Already talked to Luis" default avatar_arturo
+
+> [!luis_intro_talked]
+ queue_resource res://scenes/luis/scene.tscn
+ cut_scene telon fade_out
+ change_scene res://scenes/luis/scene.tscn
+ cut_scene telon fade_in
+ say luis luis_intro_01:"Luis 01" large avatar_luis
+ say luis luis_intro_02:"Luis 02" large avatar_luis
+ say luis luis_intro_03:"Luis 03" large avatar_luis
+ say luis luis_intro_04:"Luis 04" large avatar_luis
+ say luis luis_intro_05:"Luis 05" large avatar_luis
+ say luis luis_intro_06:"Luis 06" large avatar_luis
+ say luis luis_intro_07:"Luis 07" large avatar_luis
+ say arturo luis_intro_arturo_01:"Luis Arturo 01" large avatar_arturo
+ set_global luis_intro_talked true
+ cut_scene telon fade_out
+ change_scene res://scenes/intro-game/scene.tscn
+ cut_scene telon fade_in
+ > [jacques_intro_talked,luis_intro_talked,jane_intro_talked]
+  cut_scene telon fade_out
+  set_global dining-room-active true
+  change_scene res://scenes/dining-room/scene.tscn
+  cut_scene telon fade_in
+  say arturo dining_room_01:"Dining Room 01" default avatar_arturo

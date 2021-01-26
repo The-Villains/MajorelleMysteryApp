@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece15.png" type="Texture" id=39]
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece18.png" type="Texture" id=40]
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece14.png" type="Texture" id=41]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=42]
 [ext_resource path="res://globals/item.gd" type="Script" id=45]
 [ext_resource path="res://scenes/3_livingroom/31_window/confirm.tscn" type="PackedScene" id=46]
 
@@ -48,7 +49,7 @@
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 1171.46 ],
-"_edit_vertical_guides_": [ 657.768, 1149.91, 179.265 ]
+"_edit_vertical_guides_": [ 657.768, 1149.91, 179.265, 1476.03 ]
 }
 
 [node name="background" type="TextureRect" parent="."]
@@ -1027,11 +1028,15 @@ placeholders = {
 }
 
 [node name="confirm" parent="." instance=ExtResource( 46 )]
-position = Vector2( 1285.48, 437.552 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 1226.08, 525.233 )
+scale = Vector2( 0.16, 0.16 )
 script = ExtResource( 45 )
 tooltip = "Confirm solution"
 events_path = "res://scenes/3_livingroom/31_window/confirm.esc"
 global_id = "window_confirm"
+
+[node name="kiara" parent="." instance=ExtResource( 42 )]
+position = Vector2( 1351.99, 2.82843 )
+events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

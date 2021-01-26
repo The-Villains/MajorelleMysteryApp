@@ -6,4 +6,5 @@ set_state kiara tip1
 say telon "Those tulips on the wall look like they don't belong here. Let's look at them."
 set_state kiara default
 set_active button_tutorial true
+set_state flowers highlighted_flower
 teleport_pos button_tutorial 0 0

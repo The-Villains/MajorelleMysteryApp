@@ -97,6 +97,7 @@ scale = Vector2( 0.3, 0.3 )
 visible = false
 position = Vector2( 838, 589 )
 scale = Vector2( 1.5, 1.5 )
+tooltip = "lamp"
 global_id = "lamp"
 
 [node name="lightbulb_tutorial" type="Node2D" parent="."]
@@ -117,6 +118,7 @@ __meta__ = {
 
 [node name="lightbulb_missing" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1146.41, 224 )
+tooltip = "lightbulb spot"
 
 [node name="player_talk" parent="." instance=ExtResource( 12 )]
 visible = false
@@ -171,8 +173,7 @@ __meta__ = {
 visible = false
 position = Vector2( 600, 600 )
 scale = Vector2( 0.32, 0.32 )
-z_index = 2000
-z_as_relative = false
+z_index = 3000
 script = ExtResource( 13 )
 global_id = "inventory_tutorial"
 

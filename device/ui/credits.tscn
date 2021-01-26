@@ -31,7 +31,7 @@ position = Vector2( 943.962, 276.632 )
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 1 )
 animation = "walk_right"
-frame = 3
+frame = 1
 playing = true
 
 [node name="CREDITS" type="Label" parent="."]

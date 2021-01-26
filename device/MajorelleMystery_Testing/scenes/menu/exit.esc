@@ -1,0 +1,22 @@
+:load
+cut_scene telon fade_out
+> [dining-room-left-active]
+ change_scene res://scenes/dining-room-left/scene.tscn
+ set_state arturo default
+> [dining-room-right-active]
+ change_scene res://scenes/dining-room-right/scene.tscn
+ set_state arturo default
+> [!dining-room-right-active,!dining-room-left-active]
+ change_scene res://scenes/dining-room/scene.tscn
+ teleport_pos arturo 1200 750
+ set_state arturo look_down_right
+
+cut_scene telon fade_in
+
+:talk
+
+:use
+
+:look
+
+:pick_up

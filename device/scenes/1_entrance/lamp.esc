@@ -8,7 +8,8 @@ set_active lightbulb_tutorial false
 set_active lightbulb_missing false
 set_active lamp true
 
-say lamp light_on:"Yay, now everything is back in order here." default avatar_jacques
+say lamp light_on:"Yay, now everything is back in order here." default avatar_luis
+say telon "And remember that button if you want to move or interact with two things." default avatar_luis
 
 cut_scene telon fade_out
 change_scene res://scenes/2_hallway/scene.tscn
@@ -17,8 +18,8 @@ cut_scene telon fade_in
 set_state hallway_plants disappear
 wait 3
 set_active hallway_plants false
-say telon "Come follow me to the living room." default avatar_jacques
+say telon "Come follow me to the living room." default avatar_luis
 set_state hallway_ghost default
 wait 4
-say telon "Okay. Let's look at the next room!" default avatar_arturo
+say telon "Okay. Let's have a look!" default avatar_arturo
 set_active hallway_ghost false

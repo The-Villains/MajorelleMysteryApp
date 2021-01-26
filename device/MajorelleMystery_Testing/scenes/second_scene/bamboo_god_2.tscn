@@ -1,0 +1,108 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/second_scene/sprites/click_mask/spirit-neutral_click_mask.png" type="BitMap" id=2]
+[ext_resource path="res://scenes/second_scene/sprites/spirit-angry.png" type="Texture" id=3]
+[ext_resource path="res://scenes/second_scene/sprites/spirit-happy.png" type="Texture" id=4]
+[ext_resource path="res://scenes/second_scene/sprites/spirit-neutral.png" type="Texture" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "angry"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "god_appears"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="bamboo_god_2" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "The almighty Panda God"
+events_path = "res://scenes/second_scene/bamboo_god_2.esc"
+global_id = "bamboo_god_2"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -511.937
+margin_top = -559.184
+margin_right = 490.063
+margin_bottom = 292.816
+texture_click_mask = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+autoplay = "neutral"
+anims/angry = SubResource( 1 )
+anims/god_appears = SubResource( 2 )
+anims/happy = SubResource( 3 )
+anims/neutral = SubResource( 4 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -10.9368, -133.184 )
+frames = SubResource( 5 )
+frame = 2

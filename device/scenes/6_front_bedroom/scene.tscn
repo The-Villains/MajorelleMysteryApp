@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://scenes/6_front_bedroom/flower2.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/6_front_bedroom/flower1.tscn" type="PackedScene" id=11]
 [ext_resource path="res://globals/item.gd" type="Script" id=12]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=13]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 1147.29, 959.976, 1641.29, 757.976, 1629.29, 1099.98, 523.288, 1375.98, 1633.29, 1373.98, 917.288, 1049.98, 723.288, 1121.98, 641.288, 1149.98, 523.288, 1155.98 )
@@ -47,6 +48,7 @@ position = Vector2( 794, 604 )
 scale = Vector2( 1.52, 1.52 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 1424, 1328 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 1328
@@ -64,7 +66,7 @@ global_id = "flower1"
 
 [node name="flower2" parent="." instance=ExtResource( 10 )]
 visible = false
-position = Vector2( 946, 544 )
+position = Vector2( 738, 220 )
 scale = Vector2( 0.2, 0.2 )
 z_index = 2500
 z_as_relative = false
@@ -73,7 +75,7 @@ global_id = "flower2"
 
 [node name="flower3" parent="." instance=ExtResource( 9 )]
 visible = false
-position = Vector2( 738, 220 )
+position = Vector2( 946, 544 )
 scale = Vector2( 0.2, 0.2 )
 z_index = 2500
 z_as_relative = false
@@ -103,6 +105,7 @@ __meta__ = {
 }
 
 [node name="spot2" type="Node2D" parent="."]
+position = Vector2( 0, 1 )
 script = ExtResource( 12 )
 events_path = "res://scenes/6_front_bedroom/flower2.esc"
 global_id = "bedroom_spot2"
@@ -111,10 +114,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="spot2"]
-margin_left = 892.0
-margin_top = 486.0
-margin_right = 1012.0
-margin_bottom = 606.0
+margin_left = 683.414
+margin_top = 163.414
+margin_right = 803.414
+margin_bottom = 283.414
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -128,10 +131,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="spot3"]
-margin_left = 682.0
-margin_top = 162.0
-margin_right = 802.0
-margin_bottom = 282.0
+margin_left = 892.0
+margin_top = 486.0
+margin_right = 1012.0
+margin_bottom = 606.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -152,5 +155,8 @@ margin_bottom = 972.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="kiara" parent="." instance=ExtResource( 13 )]
+events_path = "res://scenes/6_front_bedroom/kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

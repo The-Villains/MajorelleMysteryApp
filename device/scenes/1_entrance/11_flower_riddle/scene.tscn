@@ -118,7 +118,7 @@ margin_right = 412.0
 margin_bottom = 319.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Pick the correctly matching flowers for the entrance area!"
+text = "Pick the matching flowers for the entrance area!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/5_staircase/sprites/pieces/middle_left.png" type="Texture" id=2]
+
+[node name="middle_left" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "middle_left"
+events_path = "res://scenes/5_staircase/5_window/middle_left.esc"
+global_id = "middle_left"
+use_combine = true
+interact_angle = 90
+placeholders = {
+
+}
+use_custom_z = true
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -286.385
+margin_top = -445.154
+margin_right = 239.615
+margin_bottom = 445.846
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

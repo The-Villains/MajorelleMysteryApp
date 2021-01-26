@@ -1,0 +1,17 @@
+:look
+queue_resource res://scenes/slide-show/scene.tscn
+teleport_pos arturo 1200 700
+set_state arturo look_up_right
+
+cut_scene telon fade_out
+set_global slide-show-active true
+change_scene res://scenes/slide-show/scene.tscn
+cut_scene telon fade_in
+
+:use inv_menu_card
+queue_resource res://scenes/menu-riddle/scene.tscn
+say arturo "So lets have a look how this could help me!" default avatar_arturo
+cut_scene telon fade_out
+change_scene res://scenes/menu-riddle/scene.tscn
+cut_scene telon fade_in
+

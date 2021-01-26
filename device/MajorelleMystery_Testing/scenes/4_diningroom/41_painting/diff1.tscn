@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://globals/sprites/knoepfe und co/kreis.png" type="Texture" id=2]
+
+[node name="diff1" type="Node2D"]
+position = Vector2( 1025.3, 818.83 )
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 1 )
+
+[node name="area" type="TextureRect" parent="."]
+margin_left = -386.0
+margin_top = -370.0
+margin_right = 374.0
+margin_bottom = 383.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

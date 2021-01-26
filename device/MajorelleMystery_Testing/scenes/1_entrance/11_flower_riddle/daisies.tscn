@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/1_entrance/sprites/blumenraetsel_daisies.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="daisies" type="Node2D"]
+script = ExtResource( 2 )
+events_path = "res://scenes/1_entrance/11_flower_riddle/riddle.esc"
+global_id = "daisies"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -208.0
+margin_top = -304.0
+margin_right = 937.0
+margin_bottom = 496.0
+rect_scale = Vector2( 0.36, 0.76 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

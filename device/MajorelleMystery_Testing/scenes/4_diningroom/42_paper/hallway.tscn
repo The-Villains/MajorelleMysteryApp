@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="hallway" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "button"
+global_id = "paper_hallway"
+use_combine = true
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -193.0
+margin_top = -63.0
+margin_right = 186.0
+margin_bottom = 94.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.8, 1 )
+texture = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = -101.485
+margin_top = -21.3431
+margin_right = 128.515
+margin_bottom = 69.6569
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hallway"
+__meta__ = {
+"_edit_use_anchors_": false
+}

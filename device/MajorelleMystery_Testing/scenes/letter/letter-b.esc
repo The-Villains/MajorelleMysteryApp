@@ -1,0 +1,4 @@
+:pick_up
+set_global picked_item true
+set_global i/inv_letter_b true
+set_active letter_b false

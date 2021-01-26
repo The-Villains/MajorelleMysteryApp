@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://placeholder_art/object2.png" type="Texture" id=2]
+[ext_resource path="res://placeholder_art/object3.png" type="Texture" id=3]
+
+[node name="flower" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "A flower"
+events_path = "res://scenes/1_entrance/11_flower_riddle/riddle.esc"
+global_id = "flower1"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -96.0
+margin_top = -106.0
+margin_right = 102.0
+margin_bottom = 104.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="_focus_out" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+
+[node name="_focus_in" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+
+[node name="_pressed" type="Sprite" parent="."]
+position = Vector2( 2, -4 )
+scale = Vector2( 0.653333, 0.578348 )
+texture = ExtResource( 2 )

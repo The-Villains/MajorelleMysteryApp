@@ -1,0 +1,31 @@
+:use inv_letter_a
+set_global picked_item false
+set_global i/inv_letter_a false
+set_active letter_a_4 true
+set_global letter_a_4 true
+
+:use inv_letter_e
+set_global picked_item false
+set_global i/inv_letter_e false
+set_active letter_e_4 true
+set_global letter_e_4 true
+
+:use inv_letter_s
+set_global picked_item false
+set_global i/inv_letter_s false
+set_active letter_s_4 true
+set_global letter_s_4 true
+
+:use inv_letter_o
+set_global picked_item false
+set_global i/inv_letter_o false
+set_active letter_o_4 true
+set_global letter_o_4 true
+> [letter_a_1,letter_e_2,letter_s_3,letter_o_4,letter_p_5]
+ say arturo "Hurray, solved the riddle. AESOP is the name of the poet who wrote The Town mouse and the Country." default avatar_arturo
+
+:use inv_letter_p
+set_global picked_item false
+set_global i/inv_letter_p false
+set_active letter_p_4 true
+set_global letter_p_4 true

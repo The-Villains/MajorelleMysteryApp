@@ -24,5 +24,3 @@ func _ready():
 
 	# warning-ignore:return_value_discarded
 	get_node("back").connect("pressed", self, "back_pressed")
-
-

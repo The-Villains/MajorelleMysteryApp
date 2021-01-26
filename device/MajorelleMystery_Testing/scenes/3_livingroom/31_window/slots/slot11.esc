@@ -1,0 +1,5 @@
+:use inv_piece11
+set_active inv_piece11 false
+set_active slot11 false
+set_active piece11 true
+set_global solved11 true

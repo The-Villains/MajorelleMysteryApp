@@ -1,0 +1,10 @@
+:look
+queue_resource res://scenes/slide-show/scene.tscn
+teleport_pos arturo 500 730
+set_state arturo backside
+
+cut_scene telon fade_out
+change_scene res://scenes/stained-glass/scene.tscn
+cut_scene telon fade_in
+
+

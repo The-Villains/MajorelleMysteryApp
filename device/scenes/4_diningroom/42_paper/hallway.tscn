@@ -18,15 +18,6 @@ placeholders = {
 
 }
 
-[node name="area" type="TextureButton" parent="."]
-margin_left = -193.0
-margin_top = -63.0
-margin_right = 186.0
-margin_bottom = 94.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 3 )
@@ -39,6 +30,15 @@ margin_bottom = 69.6569
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Hallway"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -193.0
+margin_top = -63.0
+margin_right = 186.0
+margin_bottom = 94.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/3_livingroom/sprites/livingroom_blur.png" type="Texture" id=4]
+[ext_resource path="res://scenes/3_livingroom/32_zoom_in/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/maske1_suchen.png" type="Texture" id=6]
+[ext_resource path="res://scenes/3_livingroom/32_zoom_in/missing_piece1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/zoom1.png" type="Texture" id=8]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1171.46, 130.6 ],
+"_edit_vertical_guides_": [ 65.4523 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_left = -80.0
+margin_right = 1424.0
+margin_bottom = 1093.0
+rect_scale = Vector2( 1.55, 1.55 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="background2" type="TextureRect" parent="."]
+margin_left = 60.0
+margin_top = 130.0
+margin_right = 1161.0
+margin_bottom = 930.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="missing_piece1" parent="." instance=ExtResource( 7 )]
+position = Vector2( 414.364, 510.531 )
+z_index = 900
+z_as_relative = false
+tooltip = "puzzle piece"
+
+[node name="foreground" type="Sprite" parent="."]
+position = Vector2( 609.9, 530.201 )
+z_index = 1000
+z_as_relative = false
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="exit" parent="." instance=ExtResource( 5 )]
+position = Vector2( 107.48, 1117.23 )
+scale = Vector2( 0.5, 0.5 )
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 3 )]

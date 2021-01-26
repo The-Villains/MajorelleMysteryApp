@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://globals/terrain.gd" type="Script" id=7]
 [ext_resource path="res://scenes/5_staircase/plants.tscn" type="PackedScene" id=8]
 [ext_resource path="res://globals/item.gd" type="Script" id=9]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=10]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/kiara.png" type="Texture" id=11]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 248.56, 1243.88, 244.56, 497.882, 442.56, 509.882, 438.56, 605.882, 472.56, 685.882, 620.56, 903.882, 1694.56, 1059.88, 1694.56, 1243.88, 704.56, 955.882, 1272.56, 931.882, 1270.56, 849.882, 1310.56, 847.882, 1692.56, 883.882, 754.56, 875.882, 1016.56, 925.882, 1228.56, 957.882, 812.56, 877.882 )
@@ -40,6 +42,7 @@ position = Vector2( -2, 2 )
 navpoly = SubResource( 1 )
 
 [node name="upstairs" type="Node2D" parent="."]
+visible = false
 script = ExtResource( 9 )
 events_path = "res://scenes/5_staircase/upstairs.esc"
 global_id = "upstairs"
@@ -79,5 +82,18 @@ __meta__ = {
 }
 events_path = "res://scenes/5_staircase/dont_leave.esc"
 global_id = "dont_leave"
+
+[node name="kiara" parent="." instance=ExtResource( 10 )]
+visible = false
+position = Vector2( -205.061, -94.7523 )
+
+[node name="kiara_fullsize" type="Node2D" parent="."]
+script = ExtResource( 9 )
+global_id = "kiara_fullsize"
+
+[node name="Sprite" type="Sprite" parent="kiara_fullsize"]
+position = Vector2( 360, 980 )
+scale = Vector2( 0.45, 0.45 )
+texture = ExtResource( 11 )
 
 [node name="game" parent="." instance=ExtResource( 3 )]

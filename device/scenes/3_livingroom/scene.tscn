@@ -164,24 +164,7 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 11 )]
-events_path = ""
-
-[node name="livingroom_kiara" type="Node2D" parent="."]
 z_index = 2000
 z_as_relative = false
-script = ExtResource( 6 )
-tooltip = "Kiara"
-events_path = "res://scenes/3_livingroom/livingroom_kiara.esc"
-global_id = "livingroom_kiara"
-
-[node name="area" type="TextureButton" parent="livingroom_kiara"]
-margin_left = 1388.0
-margin_top = 66.0
-margin_right = 1570.0
-margin_bottom = 250.0
-rect_pivot_offset = Vector2( -1388.12, -66.5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="game" parent="." instance=ExtResource( 3 )]

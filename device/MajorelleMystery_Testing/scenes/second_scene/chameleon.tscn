@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/second_scene/sprites/click_mask/cameleon_click_mask.png" type="BitMap" id=2]
+[ext_resource path="res://scenes/second_scene/sprites/cameleon.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "disapear"
+tracks/0/type = "value"
+tracks/0/path = NodePath("_focus_out:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "turn_red"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("_focus_out:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.9375, 0.32959, 0.32959, 1 ) ]
+}
+
+[node name="chameleon" type="Node2D"]
+z_index = 800
+script = ExtResource( 1 )
+tooltip = "A little cameleon"
+events_path = "res://scenes/second_scene/chameleon.esc"
+global_id = "chameleon"
+interact_angle = 90
+placeholders = {
+
+}
+use_custom_z = true
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -68.0
+margin_top = -101.0
+margin_right = 68.0
+margin_bottom = 99.0
+texture_click_mask = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/disapear = SubResource( 1 )
+anims/turn_red = SubResource( 2 )
+
+[node name="_focus_out" type="Sprite" parent="."]
+modulate = Color( 0.9375, 0.32959, 0.32959, 1 )
+position = Vector2( 0.598524, -0.374741 )
+texture = ExtResource( 3 )

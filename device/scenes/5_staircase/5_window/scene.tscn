@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/5_staircase/5_window/bottom_middle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_bg.png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://scenes/5_staircase/sprites/_full.png" type="Texture" id=17]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=18]
 [ext_resource path="res://scenes/5_staircase/5_window/exit.tscn" type="PackedScene" id=19]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=20]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 4 )
@@ -178,5 +179,8 @@ global_id = "staircase_frame"
 placeholders = {
 
 }
+
+[node name="kiara" parent="." instance=ExtResource( 20 )]
+events_path = "res://scenes/5_staircase/5_window/kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 8 )]

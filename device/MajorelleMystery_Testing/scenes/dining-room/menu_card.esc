@@ -1,0 +1,22 @@
+:pick_up
+queue_resource res://scenes/living-room/scene.tscn
+> [dining-room-active]
+ teleport_pos arturo 1200 750
+ set_state arturo look_down_right
+
+say menu_card menu_card_pick_up_1:"I will take this menu to take a closer look." default avatar_arturo
+
+set_global picked_item true
+set_global i/inv_menu_card true
+set_active menu_card false
+
+:look
+> [!menu_card_firstlook_made]
+ say menu_card menu_card_look_2:"I'm hungry, so this is worth a look..." default avatar_arturo
+ set_global menu_card_firstlook_made true
+cut_scene telon fade_out
+change_scene res://scenes/menu/scene.tscn
+cut_scene telon fade_in
+
+:talk
+say menu_card menu_card_talk_3:"I don't think it will answer me..." default avatar_arturo

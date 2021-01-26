@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="ghost-luis" type="Node2D"]
+script = ExtResource( 2 )
+tooltip = "Luis Majorelle"
+events_path = "res://scenes/intro-game/luis.esc"
+global_id = "ghost-luis"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -115.0
+margin_top = -109.0
+margin_right = 123.0
+margin_bottom = 104.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="_focus_out" type="Sprite" parent="."]

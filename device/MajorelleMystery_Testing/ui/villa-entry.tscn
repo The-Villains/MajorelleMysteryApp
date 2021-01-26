@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://ui/door_open.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 0.25
+} ]
+
+[node name="villa-entry" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "Dining room ghost"
+events_path = "res://scenes/dining-room-left/dining-room-ghost.esc"
+global_id = "dining_room_ghost"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -225.0
+margin_top = -306.0
+margin_right = 1601.0
+margin_bottom = 2212.0
+rect_scale = Vector2( 0.25, 0.25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.6, 0.6 )
+frames = SubResource( 1 )
+playing = true

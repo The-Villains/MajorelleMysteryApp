@@ -1,0 +1,18 @@
+:pick_up
+set_global picked_item true
+set_global i/inv_letter_u true
+set_active letter_u false
+> [i/inv_letter_l,i/inv_letter_u]
+ set_global jacques_collected_letters true
+ change_scene res://scenes/jacques/scene.tscn
+ say arturo jacques_intro_arturo_01:"Jacques Arturo 01" large avatar_arturo
+ set_global jacques_intro_talked true
+ cut_scene telon fade_out
+ change_scene res://scenes/intro-game/scene.tscn
+ cut_scene telon fade_in
+ > [luis_intro_talked,jacques_intro_talked,jane_intro_talked]
+  cut_scene telon fade_out
+  set_global dining-room-active true
+  change_scene res://scenes/dining-room/scene.tscn
+  cut_scene telon fade_in
+  say arturo dining_room_01:"Dining Room 01" default avatar_arturo

@@ -1,0 +1,9 @@
+:pick_up
+say player good_bamboo_3_pick_up_1:"Come with me." default avatar_panda
+anim good_bamboo_3 pick_up
+set_global i/inv_good_bamboo_3 true
+set_active good_bamboo_3 false
+:look
+say player good_bamboo_3_look_2:"This one look like delicious." default avatar_panda
+:talk
+say player good_bamboo_3_talk_3:"All bamboos are alike! How am I supposed to do?" default avatar_panda

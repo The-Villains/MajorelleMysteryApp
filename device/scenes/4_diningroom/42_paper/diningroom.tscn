@@ -18,15 +18,6 @@ placeholders = {
 
 }
 
-[node name="area" type="TextureButton" parent="."]
-margin_left = -194.0
-margin_top = -58.0
-margin_right = 193.0
-margin_bottom = 94.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 2 )
@@ -39,6 +30,15 @@ margin_bottom = 60.7868
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Dining Room"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -194.0
+margin_top = -58.0
+margin_right = 193.0
+margin_bottom = 94.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

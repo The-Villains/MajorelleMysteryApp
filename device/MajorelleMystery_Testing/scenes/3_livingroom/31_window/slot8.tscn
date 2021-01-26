@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece8_suchen.png" type="Texture" id=2]
+
+[node name="piece8" type="Node2D"]
+script = ExtResource( 1 )
+placeholders = {
+
+}
+
+[node name="area" type="TextureRect" parent="."]
+margin_left = 64.0
+margin_top = -3.0
+margin_right = 168.0
+margin_bottom = 111.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

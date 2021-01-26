@@ -18,15 +18,6 @@ placeholders = {
 
 }
 
-[node name="area" type="TextureButton" parent="."]
-margin_left = -202.0
-margin_top = -56.0
-margin_right = 189.0
-margin_bottom = 93.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 2 )
@@ -39,6 +30,15 @@ margin_bottom = 61.3066
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Living Room"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -202.0
+margin_top = -56.0
+margin_right = 189.0
+margin_bottom = 93.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

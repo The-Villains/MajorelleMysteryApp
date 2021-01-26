@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/3_livingroom/31_window/items.tscn" type="PackedScene" id=1]
+[ext_resource path="res://globals/inventory.gd" type="Script" id=2]
+
+[node name="puzzle_inventory" type="Control"]
+margin_right = 500.0
+margin_bottom = 770.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 749.464 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 600.452 ]
+}
+
+[node name="area" type="Sprite" parent="."]
+position = Vector2( -39.598, 383.252 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="slots" type="Control" parent="."]
+margin_right = 512.0
+margin_bottom = 778.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position2D" type="Position2D" parent="slots"]
+position = Vector2( 277.186, 339.411 )
+
+[node name="Position2D2" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 359.21, 60.8111 )
+
+[node name="Position2D3" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 60.811, 318.198 )
+
+[node name="Position2D4" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 352.139, 316.784 )
+
+[node name="Position2D5" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 63.6397, 514.774 )
+
+[node name="Position2D6" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 76.3676, 685.893 )
+
+[node name="Position2D7" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 253.144, 684.479 )
+
+[node name="Position2D8" type="Position2D" parent="slots"]
+visible = false
+position = Vector2( 400.222, 688.722 )
+
+[node name="arrow_prev" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arrow_next" type="TextureButton" parent="."]
+margin_left = -18.3848
+margin_top = -16.9705
+margin_right = 21.6152
+margin_bottom = 23.0295
+
+[node name="items" parent="." instance=ExtResource( 1 )]
+position = Vector2( 275.772, 336.583 )
+
+[node name="actions" type="Control" parent="."]
+margin_left = 40.0
+margin_top = 35.0
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

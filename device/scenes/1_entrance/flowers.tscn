@@ -1,10 +1,62 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/1_entrance/sprites/lobby_diff flower mask.png" type="Texture" id=2]
+[ext_resource path="res://scenes/1_entrance/sprites/blume_m_rot.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
-resource_name = "look"
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/path = NodePath("normal:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("highlighted:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "highlighted_flower"
+tracks/0/type = "value"
+tracks/0/path = NodePath("highlighted:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("highlighted:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="flowers" type="Node2D"]
 script = ExtResource( 1 )
@@ -20,13 +72,12 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/look = SubResource( 1 )
+anims/default = SubResource( 1 )
+anims/highlighted_flower = SubResource( 2 )
 
-[node name="_focus_out" type="Sprite" parent="."]
-position = Vector2( -4, 7 )
+[node name="normal" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="_focus_in" type="Sprite" parent="."]
+[node name="highlighted" type="Sprite" parent="."]
 visible = false
-position = Vector2( 0, 0.999999 )
-scale = Vector2( 1.17021, 1.10427 )
+texture = ExtResource( 3 )

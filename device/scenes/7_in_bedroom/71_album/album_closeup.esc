@@ -2,3 +2,6 @@
 set_active album_front_closeup false
 set_active album_locked true
 set_active album_confirm true
+> [!looked_at_lock]
+ say telon "Okay, so it’s a 4-digit number. Let’s look around the room for something that fits!" default avatar_artur
+set_global looked_at_lock true

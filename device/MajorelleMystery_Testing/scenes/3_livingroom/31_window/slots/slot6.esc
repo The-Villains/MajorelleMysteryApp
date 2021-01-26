@@ -1,0 +1,6 @@
+:use inv_piece6
+set_global i/inv_piece6 false
+set_active inv_piece6 false
+set_active slot6 false
+set_active piece6 true
+set_global solved6 true

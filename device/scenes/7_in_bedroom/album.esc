@@ -2,3 +2,16 @@
 cut_scene telon fade_out
 change_scene res://scenes/7_in_bedroom/71_album/scene.tscn
 cut_scene telon fade_in
+> [!looked_at_album]
+ say telon "Oh no! It’s locked" default avatar_jane
+ say telon "Don’t worry, Madam, we’ll fix it!" default avatar_artur
+set_global looked_at_album true
+
+:pick_up
+cut_scene telon fade_out
+change_scene res://scenes/7_in_bedroom/71_album/scene.tscn
+cut_scene telon fade_in
+> [!looked_at_album]
+ say telon "Oh no! It’s locked" default avatar_jane
+ say telon "Don’t worry, Madam, we’ll fix it!" default avatar_artur
+set_global looked_at_album true

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/5_staircase/sprites/pieces/bottom_right.png" type="Texture" id=2]
+
+[node name="bottom_right" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "bottom_right"
+events_path = "res://scenes/5_staircase/5_window/bottom_right.esc"
+global_id = "bottom_right"
+use_combine = true
+interact_angle = 90
+placeholders = {
+
+}
+use_custom_z = true
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -262.0
+margin_top = -442.0
+margin_right = 264.0
+margin_bottom = 449.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

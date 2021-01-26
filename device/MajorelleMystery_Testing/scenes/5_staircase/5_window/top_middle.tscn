@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/5_staircase/sprites/pieces/top_middle.png" type="Texture" id=2]
+
+[node name="top_middle" type="Node2D"]
+script = ExtResource( 1 )
+tooltip = "top_middle"
+events_path = "res://scenes/5_staircase/5_window/chimney.esc"
+global_id = "top_middle"
+use_combine = true
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -265.0
+margin_top = -446.0
+margin_right = 261.0
+margin_bottom = 440.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

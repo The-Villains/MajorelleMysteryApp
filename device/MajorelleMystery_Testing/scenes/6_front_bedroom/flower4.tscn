@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://globals/sprites/objekte/blumen-rewards/flower4.png" type="Texture" id=1]
+
+[node name="flower4" type="Node2D"]
+z_index = 2000
+z_as_relative = false
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -292.0
+margin_top = -308.0
+margin_right = 302.0
+margin_bottom = 306.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )

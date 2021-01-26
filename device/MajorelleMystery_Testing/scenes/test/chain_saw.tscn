@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/test/chainsaw.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="chainsaw" type="TextureRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 0
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "Chainsaw"
+events_path = "res://scenes/test/chainsaw.esc"
+global_id = "chainsaw"
+placeholders = {
+
+}

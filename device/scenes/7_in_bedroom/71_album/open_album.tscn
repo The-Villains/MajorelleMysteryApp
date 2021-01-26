@@ -28,6 +28,7 @@ position = Vector2( 724, 522 )
 texture = ExtResource( 2 )
 
 [node name="www" type="TextureRect" parent="."]
+visible = false
 margin_left = 1068.0
 margin_top = 740.0
 margin_right = 1580.0
@@ -38,11 +39,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LinkButton" type="LinkButton" parent="www"]
-margin_left = 168.333
-margin_top = 191.667
-margin_right = 437.333
-margin_bottom = 426.667
+[node name="LinkButton" type="LinkButton" parent="."]
+margin_left = 869.0
+margin_top = 778.0
+margin_right = 1065.0
+margin_bottom = 895.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 action_mode = 0

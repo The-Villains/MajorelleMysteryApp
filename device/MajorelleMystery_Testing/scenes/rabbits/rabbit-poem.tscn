@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+[ext_resource path="res://scenes/rabbits/sprites/rabbit-poem.png" type="Texture" id=3]
+[ext_resource path="res://scenes/rabbits/sprites/letter-paper.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "pick_up"
+
+[node name="rabbit-poem" type="Node2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+tooltip = "The rabbit poem"
+events_path = "res://scenes/rabbits/rabbit-poem.esc"
+global_id = "rabbit_poem"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -71.0
+margin_top = -87.0
+margin_right = 138.0
+margin_bottom = 95.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/pick_up = SubResource( 1 )
+
+[node name="_focus_out" type="Sprite" parent="."]
+position = Vector2( 36.0792, -92.7858 )
+scale = Vector2( 0.18, 0.152529 )
+texture = ExtResource( 4 )
+
+[node name="text" type="Sprite" parent="_focus_out"]
+position = Vector2( 10.5555, 42.1397 )
+scale = Vector2( 1.33657, 2.83721 )
+texture = ExtResource( 3 )
+
+[node name="_focus_in" type="Sprite" parent="."]
+position = Vector2( 36.0792, -92.7858 )
+scale = Vector2( 0.18, 0.152529 )
+texture = ExtResource( 4 )
+
+[node name="text" type="Sprite" parent="_focus_in"]
+position = Vector2( 10.5555, 42.1397 )
+scale = Vector2( 1.33657, 2.83721 )
+texture = ExtResource( 3 )

@@ -1,0 +1,4 @@
+:talk
+set_state kiara tip3
+say telon "This is a placeholder for 'Find the difference'." left
+set_state kiara default

@@ -1,0 +1,14 @@
+:talk
+
+> [jacques_intro_talked]
+ say arturo jacques_intro_fallback:"Already talked to Jacques" default avatar_arturo
+
+> [!jacques_intro_talked,!jacques_first_call]
+ queue_resource res://scenes/jacques/scene.tscn
+ cut_scene telon fade_out
+ change_scene res://scenes/jacques/scene.tscn
+ cut_scene telon fade_in
+ say jacques jacques_intro_01:"Jacques 01" large avatar_jacques
+ say jacques jacques_intro_02:"Jacques 02" large avatar_jacques
+ set_global jacques_first_call true
+ change_scene res://scenes/jacques/scene.tscn

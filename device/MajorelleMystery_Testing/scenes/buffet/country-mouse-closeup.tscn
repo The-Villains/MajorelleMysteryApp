@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/dining-room/sprites/click_mask/right-top-look-mask.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="country-mousecloseup" type="Node2D"]
+script = ExtResource( 2 )
+tooltip = "Country mouse close up"
+events_path = "res://scenes/buffet/country-mouse-closeup.esc"
+global_id = "country_mouse_closeup"
+interact_angle = 90
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -43.0
+margin_top = -42.0
+margin_right = 115.0
+margin_bottom = 112.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="_focus_out" type="Sprite" parent="."]
+visible = false
+position = Vector2( 66.0205, 47.6931 )
+scale = Vector2( 2.34736, 1.9635 )
+texture = ExtResource( 1 )

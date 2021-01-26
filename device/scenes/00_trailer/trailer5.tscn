@@ -1,22 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/00_trailer/sprites/entree_closed.png" type="Texture" id=1]
 [ext_resource path="res://globals/scene.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://globals/item.gd" type="Script" id=4]
+[ext_resource path="res://scenes/00_trailer/sprites/entree_open.png" type="Texture" id=5]
 [ext_resource path="res://scenes/00_trailer/fam_majorelle.tscn" type="PackedScene" id=6]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="background" type="TextureRect" parent="."]
-margin_left = 5.22039
-margin_top = 1.94139
-margin_right = 3520.22
+margin_right = 3520.0
 margin_bottom = 2479.94
 grow_horizontal = 2
 grow_vertical = 2
-rect_scale = Vector2( 1.58, 1.58 )
+rect_scale = Vector2( 1.5, 1.5 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 1 )
@@ -24,8 +23,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="door" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 4 )
+global_id = "trailer_door"
+
+[node name="area" type="TextureRect" parent="door"]
+margin_right = 1101.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="fam_majorelle" parent="." instance=ExtResource( 6 )]
-position = Vector2( 792, 756 )
+position = Vector2( 792, 806.912 )
 events_path = "res://scenes/00_trailer/trailer.esc"
 global_id = "fam_majorelle"
 

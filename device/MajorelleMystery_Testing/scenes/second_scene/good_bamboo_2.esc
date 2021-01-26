@@ -1,0 +1,13 @@
+:pick_up
+say player good_bamboo_2_pick_up_1:"You were hiding little bamboo?" default avatar_panda
+> [!chameleon_disapeared]
+	say chameleon good_bamboo_2_pick_up_2:"Hey! It's mine!" default avatar_chameleon
+	say player good_bamboo_2_pick_up_3:"Sorry, I need this one in particular for my mission..." default avatar_panda
+	say chameleon good_bamboo_2_pick_up_4:"I'm just kidding, the forest belongs to no one. Take all the bamboo that you need." default avatar_chameleon
+anim good_bamboo_2 pick_up
+set_global i/inv_good_bamboo_2 true
+set_active good_bamboo_2 false
+:look
+say player good_bamboo_2_look_5:"Is it well enough for the pandas' god?" default avatar_panda
+:talk
+say player good_bamboo_2_talk_6:"I see you little bamboo!" default avatar_panda

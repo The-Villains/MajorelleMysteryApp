@@ -1,0 +1,14 @@
+:pick_up
+queue_resource res://scenes/slide-show/scene.tscn
+anim rabbit_poem pick_up
+set_global picked_item true
+set_global i/inv_rabbit_poem true
+cut_scene telon fade_out
+change_scene res://scenes/slide-show/scene.tscn
+cut_scene telon fade_in
+
+:look
+queue_resource res://scenes/rabbits/scene.tscn
+cut_scene telon fade_out
+change_scene res://scenes/rabbits/scene.tscn
+cut_scene telon fade_in

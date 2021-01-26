@@ -28,7 +28,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 3.3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.4, 0.4 ) ]
+"values": [ Vector2( 1.2, 1.2 ), Vector2( 0.8, 0.8 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Sprite:modulate:a")
@@ -40,7 +40,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 2.8, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 1.0, 1.0, 0.0 ]
+"values": [ 0.8, 0.8, 0.0 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -106,4 +106,6 @@ anims/fade = SubResource( 2 )
 anims/standing = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.8 )
+scale = Vector2( 1.2, 1.2 )
 texture = ExtResource( 2 )

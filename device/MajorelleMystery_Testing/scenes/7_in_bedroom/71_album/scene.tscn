@@ -1,0 +1,142 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scenes/7_in_bedroom/71_album/exit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=3]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/book_overgrown w plants.png" type="Texture" id=5]
+[ext_resource path="res://ui/theme.tres" type="Theme" id=6]
+[ext_resource path="res://scenes/7_in_bedroom/71_album/scene.gd" type="Script" id=7]
+[ext_resource path="res://globals/item.gd" type="Script" id=8]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/book_front_pl.png" type="Texture" id=9]
+[ext_resource path="res://scenes/7_in_bedroom/71_album/confirm.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/7_in_bedroom/71_album/open_album.tscn" type="PackedScene" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 2 )
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 0.923004 ],
+"_edit_vertical_guides_": [ 1544.99 ]
+}
+
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 800.0
+rect_scale = Vector2( 1.58, 1.58 )
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="album_front_closeup" type="Node2D" parent="."]
+script = ExtResource( 8 )
+events_path = "res://scenes/7_in_bedroom/71_album/album_closeup.esc"
+global_id = "album_front_closeup"
+
+[node name="area" type="TextureButton" parent="album_front_closeup"]
+margin_left = 530.0
+margin_top = 146.0
+margin_right = 1134.0
+margin_bottom = 914.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="album_front_closeup"]
+position = Vector2( 796, 544 )
+texture = ExtResource( 9 )
+
+[node name="book_with_lock" type="Sprite" parent="."]
+visible = false
+position = Vector2( 789.306, 552.277 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 5 )
+script = ExtResource( 8 )
+global_id = "album_locked"
+
+[node name="a1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = -203.0
+margin_top = 100.0
+margin_right = -115.0
+margin_bottom = 151.0
+theme = ExtResource( 6 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="b1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = -94.7669
+margin_top = 100.943
+margin_right = -6.76691
+margin_bottom = 151.943
+theme = ExtResource( 6 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="c1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = 23.3002
+margin_top = 101.886
+margin_right = 111.3
+margin_bottom = 152.886
+theme = ExtResource( 6 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="d1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = 142.452
+margin_top = 100.0
+margin_right = 223.452
+margin_bottom = 151.0
+theme = ExtResource( 6 )
+max_value = 9.0
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="status1" type="RichTextLabel" parent="book_with_lock"]
+visible = false
+margin_left = 60.1864
+margin_top = -315.63
+margin_right = 455.186
+margin_bottom = -166.63
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.137255, 0.572549, 0.137255, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="open_album" parent="." instance=ExtResource( 11 )]
+visible = false
+position = Vector2( 0, 2 )
+global_id = "album_open"
+
+[node name="exit" parent="." instance=ExtResource( 1 )]
+position = Vector2( 100, 1124 )
+scale = Vector2( 0.4, 0.4 )
+placeholders = {
+
+}
+
+[node name="confirm" parent="." instance=ExtResource( 10 )]
+visible = false
+position = Vector2( 1180, 712 )
+scale = Vector2( 0.1, 0.1 )
+script = ExtResource( 8 )
+events_path = "res://scenes/7_in_bedroom/71_album/confirm.esc"
+global_id = "album_confirm"
+
+[node name="game" parent="." instance=ExtResource( 4 )]
