@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+[ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="instructions" type="TextureRect"]
+margin_left = 406.0
+margin_top = -256.0
+margin_right = 1006.0
+margin_bottom = 256.0
+rect_scale = Vector2( 1.03346, 1.86797 )
+texture = ExtResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+placeholders = {
+
+}
+
+[node name="WINDOW_PUZZLE" type="RichTextLabel" parent="."]
+margin_left = 108.0
+margin_top = 236.0
+margin_right = 412.0
+margin_bottom = 319.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "WINDOW_PUZZLE"
+__meta__ = {
+"_edit_use_anchors_": false
+}

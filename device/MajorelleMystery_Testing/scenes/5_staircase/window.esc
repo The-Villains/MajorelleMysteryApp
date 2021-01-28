@@ -1,4 +1,0 @@
-:look
-cut_scene telon fade_out
-change_scene res://scenes/5_staircase/5_window/scene.tscn
-cut_scene telon fade_in

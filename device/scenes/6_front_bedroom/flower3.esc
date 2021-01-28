@@ -2,3 +2,12 @@
 set_global i/inv_flower3 false
 set_active flower3 true
 set_global flower3 true
+
+:use inv_flower2
+say telon frontbedroom_kiara_wrong_spot: "This flower doesn't fit here. Let's try a different spot."
+
+:use inv_flower1
+say telon frontbedroom_kiara_wrong_spot: "This flower doesn't fit here. Let's try a different spot."
+
+:use inv_flower4
+say telon frontbedroom_kiara_wrong_spot: "This flower doesn't fit here. Let's try a different spot."

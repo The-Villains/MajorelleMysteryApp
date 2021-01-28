@@ -1,9 +1,0 @@
-:pick_up
-set_active d4 false
-set_active diff4 true
-set_global found4 true
-
-:look
-set_active d4 false
-set_active diff4 true
-set_global found4 true

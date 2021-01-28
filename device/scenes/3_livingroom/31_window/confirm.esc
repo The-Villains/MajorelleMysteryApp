@@ -1,12 +1,14 @@
 :load
 > [!solved1,!solved2,!solved3,!solved4,!solved5,!solved6,!solved7,!solved8,!solved9,!solved10]
- say telon puzzle_unsolved:"This doesn't look done." avatar_jacques
+ say telon livingroom_window_not_done:"This doesn't look done." avatar_jacques
 
 > [solved1,solved2,solved3,solved4,solved5,!solved6,!solved7,!solved8,solved9,solved10,solved11,solved12,solved13,solved14,solved15,solved16,solved17,solved18,solved19]
- say telon pieces_missing:"Seems like some pieces are missing. You should look for them in the living room." avatar_jacques
+ say telon livingroom_window_missing:"Some pieces are missing… maybe I should look around." avatar_jacques
 
 > [solved1,solved2,solved3,solved4,solved5,solved6,solved7,solved8,solved9,solved10,solved11,solved12,solved13,solved14,solved15,solved16,solved17,solved18,solved19]
- say telon puzzle_solved:"Yay, you repaired the window! At last we see the beautiful light again!" default avatar_jacques
+ say telon livingroom_window_fixed:"Yay, you repaired the window! At last we see the beautiful light again!" default avatar_jacques
+ set_global i/inv_flower1 true
+ say telon livingroom_flower_reward:"You will find a flower in your inventory as a reward. Maybe this will be useful later." default avatar_jacques
  cut_scene telon fade_out
  change_scene res://scenes/3_livingroom/scene.tscn
  cut_scene telon fade_in

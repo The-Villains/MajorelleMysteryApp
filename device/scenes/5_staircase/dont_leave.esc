@@ -1,2 +1,2 @@
 :look
-say telon "I can't leave yet. It doesn't look like I am done here."
+say telon staircase_artur_dont_leave:"I don't think it is time to leave yet. It doesn't look like I am done here." default avatar_artur

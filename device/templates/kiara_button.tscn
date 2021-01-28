@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/kiara_button.png" type="Texture" id=1]
+[ext_resource path="res://globals/sprites/knoepfe und co/kiara_button.png" type="Texture" id=1]
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/kiara.png" type="Texture" id=3]
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip1.png" type="Texture" id=4]

@@ -1,5 +1,0 @@
-:use inv_piece10
-set_active inv_piece10 false
-set_active slot10 false
-set_active piece10 true
-set_global solved10 true

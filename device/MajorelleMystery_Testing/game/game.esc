@@ -1,4 +1,0 @@
-:load
-cut_scene telon fade_out
-change_scene res://scenes/intro-game/scene.tscn
-cut_scene telon fade_in

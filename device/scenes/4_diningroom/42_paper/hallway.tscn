@@ -29,7 +29,7 @@ margin_right = 128.515
 margin_bottom = 69.6569
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Hallway"
+text = "P_Hallway"
 __meta__ = {
 "_edit_use_anchors_": false
 }

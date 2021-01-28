@@ -48,6 +48,17 @@ scale_max = 0.45
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
 navpoly = SubResource( 1 )
 
+[node name="door" type="TextureRect" parent="."]
+margin_left = 512.0
+margin_top = 200.0
+margin_right = 672.0
+margin_bottom = 982.0
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "entrance_door"
+
 [node name="ghost_tutorial" type="Node2D" parent="."]
 visible = false
 scale = Vector2( 0.3, 0.3 )
@@ -85,7 +96,6 @@ __meta__ = {
 [node name="flowers" parent="." instance=ExtResource( 7 )]
 position = Vector2( 838.437, 592.717 )
 scale = Vector2( 1.5, 1.5 )
-tooltip = "some beautiful flowers"
 events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"
 
@@ -149,14 +159,12 @@ __meta__ = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 18 )]
-tooltip = ""
 
 [node name="entrance_kiara" type="Node2D" parent="."]
 position = Vector2( -1.18396, 0.862915 )
 scale = Vector2( 0.28, 0.28 )
 z_index = 2000
 script = ExtResource( 13 )
-tooltip = "Kiara"
 events_path = "res://scenes/1_entrance/entrance_kiara.esc"
 global_id = "entrance_kiara"
 

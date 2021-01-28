@@ -1,4 +1,4 @@
 :talk
 set_state kiara tip2
-say telon "I say, to follow Jacques, let's have a look at the opened living room door."
+say telon hallway_kiara:"I say, to follow Jacques, let's have a look at the opened living room door." left
 set_state kiara default

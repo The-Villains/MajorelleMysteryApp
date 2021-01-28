@@ -6,13 +6,16 @@ logs/
 .DS_Store
 thumbs.db
 *.plist
-device/Majorelle Mys.app/Contents/MacOS/Majorelle Mys
+
 *.pck
-device/Majorelle Mys.app/Contents/Resources/icon.icns
-device/Majorelle Mys.app/Contents/PkgInfo
 *.exe
 *.zip
 *.dmg
+Spieldateien/*
+
 device/Majorelle Mys 2.app/Contents/MacOS/Majorelle Mys
 device/Majorelle Mys 2.app/Contents/PkgInfo
 device/Majorelle Mys 2.app/Contents/Resources/icon.icns
+device/Majorelle Mys.app/Contents/Resources/icon.icns
+device/Majorelle Mys.app/Contents/PkgInfo
+device/Majorelle Mys.app/Contents/MacOS/Majorelle Mys

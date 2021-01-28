@@ -3,7 +3,7 @@ set_active entrance_ghost false
 set_active button_tutorial false
 set_active kiara_tutorial false
 set_state kiara tip1
-say telon "Those tulips on the wall look like they don't belong here. Let's look at them."
+say telon entrance_kiara_tip:"Those tulips on the wall look like they don't belong here. Let's look at them."
 set_state kiara default
 set_active button_tutorial true
 set_state flowers highlighted_flower

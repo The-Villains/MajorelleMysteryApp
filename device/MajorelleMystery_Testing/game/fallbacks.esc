@@ -1,9 +1,0 @@
-:use
-debug fallbacks_use_1:"use fallback!"
-say telon fallbacks_use_2:"I can't do that"
-:pick_up
-debug fallbacks_pick_up_3:"pick_up fallback!"
-say telon fallbacks_pick_up_4:"That's not a good idea"
-:talk
-debug fallbacks_talk_5:"talk fallback!"
-say telon fallbacks_talk_6:"This won't answer me!"

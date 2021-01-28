@@ -1,13 +1,14 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/7_in_bedroom/sprites/book_open.png" type="Texture" id=2]
+[ext_resource path="res://scenes/7_in_bedroom/book_corner_norm.png" type="Texture" id=2]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/LinkButton.gd" type="Script" id=4]
-[ext_resource path="res://globals/sprites/knoepfe und co/igge-button_fuer_aktionen.png" type="Texture" id=5]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/book_real.png" type="Texture" id=5]
+[ext_resource path="res://scenes/7_in_bedroom/book_corner_hover.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-size = 96
+size = 48
 use_filter = true
 font_data = ExtResource( 3 )
 
@@ -25,29 +26,30 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 724, 522 )
-texture = ExtResource( 2 )
-
-[node name="www" type="TextureRect" parent="."]
-visible = false
-margin_left = 1068.0
-margin_top = 740.0
-margin_right = 1580.0
-margin_bottom = 1252.0
-rect_scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 5 )
+
+[node name="www" type="TextureButton" parent="."]
+margin_left = 170.0
+margin_top = 124.0
+margin_right = 1279.0
+margin_bottom = 924.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LinkButton" type="LinkButton" parent="."]
-margin_left = 869.0
-margin_top = 778.0
-margin_right = 1065.0
-margin_bottom = 895.0
+[node name="LinkButton" type="LinkButton" parent="www"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 882.0
+margin_top = -231.0
+margin_right = 1054.0
+margin_bottom = -28.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 action_mode = 0
-text = "WWW."
 underline = 1
 script = ExtResource( 4 )
 __meta__ = {

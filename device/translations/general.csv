@@ -13,18 +13,143 @@ UI_QUIT_CONFIRM,Do you want to quit the game ?,Souhaitez-vous vraiment quitter 
 UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeu ? Vous n'avez pas sauvegardé votre progression…,Neues Spiel starten? Alle Fortschritte gehen verloren.
 UI_BACK,Back to the main menu,Retour au menu principal,Zurück zum Hauptmenü
 UI_CREDITS,Credits,Crédits,Credits
-CREDITS,"Escoria in Daïza was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai."
+CREDITS,"Escoria in Daïza was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai.","Escoria in Daiza wurde von Elisa de Castro Guerra, Cédric Gemy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt und Adrien ""Kooda"" Ramos in Rennes für das ""Erstellen von Point-and-click-Spiele mit escoria"" booksprint vom 22. August erstellt bis 26 in Rennes, Frankreich. Beiträge zur Übersetzung: Ranito und Chaosprower. 2018 Verbesserungen von bosinpai."
+FLOWER_RIDDLE,Pick the matching flowers for the entrance area!,Choisissez les fleurs correspondant à la zone d'entrée!,Wählen Sie die passenden Blumen für den Eingangsbereich!
+WINDOW_PUZZLE,Repair the window and move the pieces to the right spots.,Réparer la fenêtre et déplacer les pièces aux bons endroits.,Reparieren Sie das Fenster und bewegen Sie die Stücke an den richtigen Stellen.
+PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouvez les cinq différences dans la peinture de fond.,Finden Sie die fünf Unterschiede in der Bodenmalerei.
+MAP_PUZZLE,Assign the correct labels to the rooms.,Attribuer les étiquettes correctes aux chambres.,Ordnen Sie die richtigen Etiketten zu den Zimmern.
+WINDOW_SWITCH,Switch the window pieces to the right positions!,Mettez les morceaux de fenêtre aux positions de droite!,Schalten Sie die Fenster Stücke an die richtigen Positionen!
+P_Entrance,Entrance,entrée,Eingang
+P_Hallway,Hallway,Couloir,Flur
+P_Living_Room,Living Room,Salon,Wohnzimmer
+P_Dining_Room,Dining Room,Salle à manger,Esszimmer
+P_Terrasse,Terrasse,Terrasse,Terrasse
 old_man.tooltip,A wise old forest man,Un vieux sage de la forêt,ein weiser alter Mann aus dem Wald
-bad_bamboo.tooltip,A bamboo that smells new,Un bambou qui sent le neuf, Ein neu riechender Bambus
-inv_bad_bamboo.tooltip,the bamboo that smells new,le bambou qui sent le neuf, der neu riechende Bambus
-bad_bamboo_2.tooltip,A shiny bamboo,Un bambou brillant, Ein glänzender Bambus
-inv_bad_bamboo_2.tooltip,the shiny bamboo,le bambou brillant, der glänzende Bambus
-good_bamboo.tooltip,A simple bamboo,Un simple bambou, ein einfacher Bambus
-inv_good_bamboo.tooltip,the simple bamboo,le simple bambou, der einfache Bambus
-good_bamboo_2.tooltip,A well hiden bamboo,Un bambou bien caché, ein gut versteckter Bambus
-inv_good_bamboo_2.tooltip,the bamboo that used to be well hidden,le bambou qui était bien caché, der zuvor gut versteckte Bambus
-good_bamboo_3.tooltip,A delicious bamboo,Un bambou délicieux, Ein leckerer Bambus
-inv_good_bamboo_3.tooltip,the delicious bamboo,le bambou délicieux, der leckere Bambus
-chameleon.tooltip,A chameleon,Un caméléon, ein Chamäleon
-bamboo_god_2.tooltip,The Great Panda himself!,Le grand panda en personne !, Der große Panda in Person !
-flowers.tooltip,some beautiful flowers,de belles fleurs,einige schöne Blumen
+bad_bamboo.tooltip,A bamboo that smells new,Un bambou qui sent le neuf,Ein neu riechender Bambus
+inv_bad_bamboo.tooltip,the bamboo that smells new,le bambou qui sent le neuf,der neu riechende Bambus
+bad_bamboo_2.tooltip,A shiny bamboo,Un bambou brillant,Ein glänzender Bambus
+inv_bad_bamboo_2.tooltip,the shiny bamboo,le bambou brillant,der glänzende Bambus
+good_bamboo.tooltip,A simple bamboo,Un simple bambou,ein einfacher Bambus
+inv_good_bamboo.tooltip,the simple bamboo,le simple bambou,der einfache Bambus
+good_bamboo_2.tooltip,A well hiden bamboo,Un bambou bien caché,ein gut versteckter Bambus
+inv_good_bamboo_2.tooltip,the bamboo that used to be well hidden,le bambou qui était bien caché,der zuvor gut versteckte Bambus
+good_bamboo_3.tooltip,A delicious bamboo,Un bambou délicieux,Ein leckerer Bambus
+inv_good_bamboo_3.tooltip,the delicious bamboo,le bambou délicieux,der leckere Bambus
+chameleon.tooltip,A chameleon,Un caméléon,ein Chamäleon
+bamboo_god_2.tooltip,The Great Panda himself!,Le grand panda en personne !,Der große Panda in Person !
+flowers.tooltip,odd looking flowers,étranges fleurs recherche,seltsam aussehende Blumen
+entrance_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
+lightbulb_missing.tooltip,missing lightbulb,manquant lightbulb,fehlende Glühbirne
+entrance_door.tooltip,locked door,porte verrouillée,verschlossene Tür
+original.tooltip,honesties?,Silberblätter?,des monnaies du pape
+roses.tooltip,roses,des roses,Rosen
+daisies.tooltip,daisies,marguerites,Gänseblümchen
+tulips.tooltip,tulips,tulipes,Tulpen
+exit_flowerriddle.tooltip,Back,Retour,Zurück
+hallway_door.tooltip,To the living room,Pour la salle de séjour,Zum Wohnzimmer
+hallway_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
+livingroom_door.tooltip,To the dining room,Dans la salle à manger,Zum Esszimmer
+livingroom_lamp.tooltip,some info,quelques infos,einige Infos
+livingroom_chair1.tooltip,some info,quelques infos,einige Infos
+livingroom_chair2.tooltip,some info,quelques infos,einige Infos
+livingroom_chair3.tooltip,some info,quelques infos,einige Infos
+livingroom_sideboard.tooltip,some info,quelques infos,einige Infos
+livingroom_window.tooltip,some info,quelques infos,einige Infos
+livingroom_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
+inv_piece1.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece2.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece3.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece4.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece5.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece6.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece7.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece8.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece9.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece10.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece11.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece12.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece13.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece14.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece15.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece16.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece17.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece18.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece19.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+slot1.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot2.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot3.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot4.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot5.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot6.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot7.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot8.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot9.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot10.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot11.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot12.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot13.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot14.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot15.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot16.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot17.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot18.tooltip,broken spot,endroit cassé,gebrochene Stelle
+slot19.tooltip,broken spot,endroit cassé,gebrochene Stelle
+exit_living_31.tooltip,Back,Retour,Zurück
+window_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+missing_piece1.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+missing_piece2.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+missing_piece3.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+diningroom_door.tooltip,To the staircase,Pour l'escalier,Zur Treppe
+diningroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorell
+diningroom_painting.tooltip,some info,quelques infos,einige Infos
+diningroom_tablearea.tooltip,some info,quelques infos,einige Infos
+diningroom_small_painting1.tooltip,some info,quelques infos,einige Infos
+diningroom_small_painting2.tooltip,some info,quelques infos,einige Infos
+diningroom_pantry.tooltip,To the pantry (locked),Pour le garde-manger (verrouillé),In der Speisekammer (gesperrt)
+diningroom_buffet.tooltip,some info,quelques infos,einige Infos
+exit_diningroom_41.tooltip,Back,Retour,Zurück
+diningroom_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+paper_terrasse.tooltip,room label,label chambre,Zimmer-Label
+paper_diningroom.tooltip,room label,label chambre,Zimmer-Label
+paper_livingroom.tooltip,room label,label chambre,Zimmer-Label
+paper_hallway.tooltip,room label,label chambre,Zimmer-Label
+paper_entrance.tooltip,room label,label chambre,Zimmer-Label
+map_diningroom.tooltip,missing room label,label chambre manquante,fehlende Raum Label
+map_livingroom.tooltip,missing room label,label chambre manquante,fehlende Raum Label
+map_terrasse.tooltip,missing room label,label chambre manquante,fehlende Raum Label
+map_hallway.tooltip,missing room label,label chambre manquante,fehlende Raum Label
+map_entrance.tooltip,missing room label,label chambre manquante,fehlende Raum Label
+exit_diningroom_paper.tooltip,Back,Retour,Zurück
+confirm_diningroom_paper.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+stack.tooltip,stack,empiler,Stapel
+upstairs.tooltip,To the first floor,Au premier étage,In dem ersten Stock
+staircase_window.tooltip,some info,quelques infos,einige Infos
+staircase_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
+staircase_lamp.tooltip,some info,quelques infos,einige Infos
+staircase_cabinet.tooltip,some info,quelques infos,einige Infos
+staircase_flowers_glas.tooltip,some info,quelques infos,einige Infos
+top_left.tooltip,window piece,pièce de fenêtre,Fenster Stück
+top_middle.tooltip,window piece,pièce de fenêtre,Fenster Stück
+top_right.tooltip,window piece,pièce de fenêtre,Fenster Stück
+middle_left.tooltip,window piece,pièce de fenêtre,Fenster Stück
+middle_middle.tooltip,window piece,pièce de fenêtre,Fenster Stück
+middle_right.tooltip,window piece,pièce de fenêtre,Fenster Stück
+bottom_left.tooltip,window piece,pièce de fenêtre,Fenster Stück
+bottom_middle.tooltip,window piece,pièce de fenêtre,Fenster Stück
+bottom_right.tooltip,window piece,pièce de fenêtre,Fenster Stück
+staircase_window_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+exit_staircase.tooltip,Back,Retour,Zurück
+bedroom_spot1.tooltip,missing flower,fleur manquante,fehlender Blume
+bedroom_spot2.tooltip,missing flower,fleur manquante,fehlender Blume
+bedroom_spot3.tooltip,missing flower,fleur manquante,fehlender Blume
+bedroom_spot3.tooltip,missing flower,fleur manquante,fehlender Blume
+bedroom_nightstand.tooltip,some info,quelques infos,einige Infos
+bedroom_curtain.tooltip,some info,quelques infos,einige Infos
+bedroom_painting.tooltip,some info,quelques infos,einige Infos
+bedroom_dresser.tooltip,some info,quelques infos,einige Infos
+bedroom_dressingroom.tooltip,some info,quelques infos,einige Infos
+bedroom_album_onbed.tooltip,photo album,album photo,Fotoalbum
+bedroom_ghost.tooltip,Jane,Jeanne,Jane
+bedroom_door_mural.tooltip,some info,quelques infos,einige Infos
+exit_bedroom_album.tooltip,Back,Retour,Zurück
+album_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung

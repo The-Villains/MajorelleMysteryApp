@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/7_in_bedroom/sprites/edited_bedroom_w_lineart.jpg" type="Texture" id=1]
 [ext_resource path="res://templates/base_scene.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=5]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=6]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=7]
+[ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=8]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 1689.96, 996.308, 1697.96, 1086.31, 1695.96, 1216.31, -0.0379944, 1214.31, 581.962, 1066.31, 1.96201, 972.308, 331.962, 914.308, 521.962, 1038.31, 981.962, 936.308, 989.962, 882.308, 1057.96, 850.308, 1175.96, 882.308 )
@@ -104,17 +105,35 @@ placeholders = {
 
 }
 
-[node name="album" parent="." index="7" instance=ExtResource( 4 )]
+[node name="door_mural" type="TextureButton" parent="." index="7"]
+margin_left = 1184.0
+margin_top = 374.0
+margin_right = 1614.0
+margin_bottom = 604.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "bedroom_door_mural"
+placeholders = {
+
+}
+
+[node name="album" parent="." index="8" instance=ExtResource( 4 )]
 position = Vector2( 848, 608 )
 scale = Vector2( 1.52, 1.52 )
 global_id = "bedroom_album_onbed"
 
-[node name="player" parent="." index="8" instance=ExtResource( 3 )]
+[node name="player" parent="." index="9" instance=ExtResource( 3 )]
 position = Vector2( 1506, 1190 )
 z_index = 1190
 placeholders = {
 
 }
 
-[node name="kiara" parent="." index="9" instance=ExtResource( 7 )]
+[node name="kiara" parent="." index="10" instance=ExtResource( 7 )]
 events_path = "res://scenes/7_in_bedroom/kiara.esc"
+
+[node name="ghost" parent="." index="11" instance=ExtResource( 8 )]
+position = Vector2( 242, 28 )
+global_id = "bedroom_ghost"

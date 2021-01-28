@@ -1,5 +1,0 @@
-:look
-teleport top_left top_middle
-
-:use top_left
-teleport top_left top_middle

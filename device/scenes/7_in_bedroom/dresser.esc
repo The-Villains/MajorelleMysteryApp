@@ -1,2 +1,4 @@
 :look
-say telon "Seems like nothing to see here." avatar_artur
+cut_scene telon fade_out
+change_scene res://scenes/7_in_bedroom/74_dresser/scene.tscn
+cut_scene telon fade_in

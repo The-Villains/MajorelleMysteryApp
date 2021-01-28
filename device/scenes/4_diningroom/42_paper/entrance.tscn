@@ -26,7 +26,7 @@ margin_right = 171.0
 margin_bottom = 65.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Entrance"
+text = "P_Entrance"
 __meta__ = {
 "_edit_use_anchors_": false
 }

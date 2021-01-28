@@ -1,9 +1,0 @@
-:pick_up
-set_active d3 false
-set_active diff3 true
-set_global found3 true
-
-:look
-set_active d3 false
-set_active diff3 true
-set_global found3 true

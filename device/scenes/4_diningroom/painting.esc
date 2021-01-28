@@ -2,4 +2,3 @@
 cut_scene telon fade_out
 change_scene res://scenes/4_diningroom/41_painting/scene.tscn
 cut_scene telon fade_in
-say telon "Find the differences in the bottom painting." info

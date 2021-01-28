@@ -1,4 +1,5 @@
 :look
 cut_scene telon fade_out
 change_scene res://scenes/4_diningroom/scene.tscn
+set_state diningroom_ghost jane
 cut_scene telon fade_in

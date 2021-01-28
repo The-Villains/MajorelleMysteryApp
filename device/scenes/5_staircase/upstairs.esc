@@ -1,9 +1,5 @@
 :look
 cut_scene telon fade_out
 change_scene res://scenes/6_front_bedroom/scene.tscn
-set_global i/inv_flower1 true
-set_global i/inv_flower2 true
-set_global i/inv_flower3 true
-set_global i/inv_flower4 true
 cut_scene telon fade_in
-say telon "Ah, it seems I got some flowers in my inventory." default avatar_artur
+say telon frontbedroom_artur_plants:"Ah, more plants. Let's see what I can use here." default avatar_artur

@@ -1,9 +1,0 @@
-:pick_up
-set_active d5 false
-set_active diff5 true
-set_global found5 true
-
-:look
-set_active d5 false
-set_active diff5 true
-set_global found5 true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/3_livingroom/window.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/3_livingroom/sprites/puzzle window shine.png" type="Texture" id=10]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=11]
+[ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=12]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 2.79803, 1047.07, 540.798, 879.07, 558.798, 1119.07, 4.79803, 1249.07, 1604.8, 1253.07, 992.798, 1165.07, 726.798, 1107.07, 762.798, 1029.07, 1168.8, 1163.07, 1178.8, 1047.07, 1308.8, 1043.07, 1602.8, 1067.07, 1504.8, 845.07, 1608.8, 887.07, 1302.8, 911.07, 1334.8, 837.07, 592.798, 1065.07, 682.798, 1067.07 )
@@ -166,5 +167,10 @@ placeholders = {
 [node name="kiara" parent="." instance=ExtResource( 11 )]
 z_index = 2000
 z_as_relative = false
+events_path = "res://scenes/3_livingroom/livingroom_kiara.esc"
+
+[node name="ghost" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4, 72 )
+global_id = "livingroom_ghost"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

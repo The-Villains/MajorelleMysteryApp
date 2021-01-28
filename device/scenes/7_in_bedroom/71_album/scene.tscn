@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/7_in_bedroom/71_album/exit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://scenes/7_in_bedroom/71_album/confirm.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/open_album.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=12]
+[ext_resource path="res://globals/sprites/character zeug/Geister/jeanne_ohno.png" type="Texture" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 size = 64
@@ -125,13 +126,6 @@ visible = false
 position = Vector2( 0, 2 )
 global_id = "album_open"
 
-[node name="exit" parent="." instance=ExtResource( 1 )]
-position = Vector2( 100, 1124 )
-scale = Vector2( 0.4, 0.4 )
-placeholders = {
-
-}
-
 [node name="confirm" parent="." instance=ExtResource( 10 )]
 visible = false
 position = Vector2( 1180, 712 )
@@ -142,5 +136,21 @@ global_id = "album_confirm"
 
 [node name="kiara" parent="." instance=ExtResource( 12 )]
 events_path = "res://scenes/7_in_bedroom/71_album/album_kiara.esc"
+
+[node name="jane" type="Node2D" parent="."]
+script = ExtResource( 8 )
+global_id = "bedroom_album_jane"
+
+[node name="Sprite" type="Sprite" parent="jane"]
+position = Vector2( 344, 852 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 13 )
+
+[node name="exit" parent="." instance=ExtResource( 1 )]
+position = Vector2( 100, 1124 )
+scale = Vector2( 0.4, 0.4 )
+placeholders = {
+
+}
 
 [node name="game" parent="." instance=ExtResource( 4 )]

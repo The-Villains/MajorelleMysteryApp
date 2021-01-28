@@ -8,4 +8,4 @@
  set_active exit_bedroom_album false
 
 > [!lock_open]
- say telon "This is not correct. Have you looked around in the room yet?"
+ say telon bedroom_album_not_correct:"This is not correct. Have you looked around in the room yet?" default avatar_jane

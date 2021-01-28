@@ -29,7 +29,7 @@ margin_right = 164.473
 margin_bottom = 60.7868
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Dining Room"
+text = "P_Dining_Room"
 __meta__ = {
 "_edit_use_anchors_": false
 }

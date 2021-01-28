@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/5_staircase/5_window/bottom_middle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_bg.png" type="Texture" id=2]
@@ -20,12 +20,19 @@
 [ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=18]
 [ext_resource path="res://scenes/5_staircase/5_window/exit.tscn" type="PackedScene" id=19]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=20]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=21]
+[ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=22]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+use_filter = true
+font_data = ExtResource( 21 )
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 4 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 1169.93 ],
-"_edit_vertical_guides_": [ 1605.53 ]
+"_edit_horizontal_guides_": [ 1169.93, 82.3979 ],
+"_edit_vertical_guides_": [ 1605.53, 261.206 ]
 }
 
 [node name="background" type="TextureRect" parent="."]
@@ -48,6 +55,36 @@ margin_right = 4475.0
 margin_bottom = 3187.0
 rect_scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="instructions" type="TextureRect" parent="."]
+margin_left = 7.86781e-06
+margin_top = -339.412
+margin_right = 3508.0
+margin_bottom = 2646.59
+rect_scale = Vector2( 1, 1.98 )
+texture = ExtResource( 22 )
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+placeholders = {
+
+}
+
+[node name="WINDOW_PUZZLE" type="RichTextLabel" parent="instructions"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -1666.14
+margin_top = 237.0
+margin_right = -1317.14
+margin_bottom = 323.0
+rect_scale = Vector2( 1, 0.866667 )
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "WINDOW_SWITCH"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -132,15 +169,15 @@ placeholders = {
 }
 
 [node name="confirm" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1342.08, 497.803 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 216.365, 503.46 )
+scale = Vector2( 0.15, 0.15 )
 script = ExtResource( 15 )
 tooltip = "Confirm solution"
 events_path = "res://scenes/5_staircase/5_window/confirm.esc"
 global_id = "staircase_window_confirm"
 
 [node name="exit" parent="." instance=ExtResource( 19 )]
-position = Vector2( 101.824, 1120.06 )
+position = Vector2( 124.451, 1117.23 )
 scale = Vector2( 0.45, 0.45 )
 global_id = "exit_staircase"
 placeholders = {

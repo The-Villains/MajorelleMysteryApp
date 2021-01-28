@@ -53,6 +53,10 @@ __meta__ = {
 events_path = "res://scenes/4_diningroom/42_paper/stack.esc"
 global_id = "stack"
 
+[node name="area" type="TextureButton" parent="stack"]
+margin_right = 503.0
+margin_bottom = 762.0
+
 [node name="placeholder" type="RichTextLabel" parent="."]
 visible = false
 margin_left = 531.598
@@ -199,14 +203,6 @@ placeholders = {
 
 }
 
-[node name="confirm" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1288.04, 681.065 )
-scale = Vector2( 0.1, 0.1 )
-script = ExtResource( 7 )
-tooltip = "Confirm"
-events_path = "res://scenes/4_diningroom/42_paper/confirm.esc"
-global_id = "confirm_diningroom_paper"
-
 [node name="exit" parent="." instance=ExtResource( 5 )]
 position = Vector2( 181.019, 1117.23 )
 tooltip = "Back"
@@ -216,7 +212,16 @@ placeholders = {
 
 }
 
+[node name="confirm" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1288.04, 685.065 )
+scale = Vector2( 0.1, 0.1 )
+script = ExtResource( 7 )
+tooltip = "Confirm"
+events_path = "res://scenes/4_diningroom/42_paper/confirm.esc"
+global_id = "confirm_diningroom_paper"
+
 [node name="Position2D" type="Position2D" parent="."]
+visible = false
 position = Vector2( 518, 304 )
 
 [node name="kiara" parent="." instance=ExtResource( 10 )]

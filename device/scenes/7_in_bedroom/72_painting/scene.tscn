@@ -37,6 +37,6 @@ placeholders = {
 
 }
 
-[node name="game" parent="." instance=ExtResource( 3 )]
-
 [node name="kiara" parent="." instance=ExtResource( 7 )]
+
+[node name="game" parent="." instance=ExtResource( 3 )]

@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://globals/scene.gd" type="Script" id=1]
+[ext_resource path="res://globals/background.gd" type="Script" id=2]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=4]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/cupboard2.png" type="Texture" id=5]
+[ext_resource path="res://scenes/7_in_bedroom/72_painting/exit.tscn" type="PackedScene" id=6]
+[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=7]
+[ext_resource path="res://globals/item.gd" type="Script" id=9]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="background" type="TextureRect" parent="."]
+rect_scale = Vector2( 1.52, 1.52 )
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dresser" type="TextureRect" parent="."]
+margin_left = 464.0
+margin_top = 96.0
+margin_right = 1573.0
+margin_bottom = 896.0
+rect_scale = Vector2( 1.16, 1.16 )
+texture = ExtResource( 5 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "bedroom_dresser_closeup"
+
+[node name="exit" parent="." instance=ExtResource( 6 )]
+position = Vector2( 92, 1132 )
+scale = Vector2( 0.4, 0.4 )
+global_id = "exit_bedroom_nightstand"
+placeholders = {
+
+}
+
+[node name="kiara" parent="." instance=ExtResource( 7 )]
+
+[node name="game" parent="." instance=ExtResource( 3 )]

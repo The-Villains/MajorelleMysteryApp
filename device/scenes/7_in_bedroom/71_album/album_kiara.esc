@@ -1,4 +1,4 @@
 :talk
 set_state kiara tip3
-say telon "This is a placeholder for the closed album." left
+say telon "This is a placeholder for the album." left
 set_state kiara default

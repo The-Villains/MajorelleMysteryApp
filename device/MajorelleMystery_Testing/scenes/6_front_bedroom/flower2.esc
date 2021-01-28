@@ -1,4 +1,0 @@
-:use inv_flower2
-set_global i/inv_flower2 false
-set_active flower2 true
-set_global flower2 true

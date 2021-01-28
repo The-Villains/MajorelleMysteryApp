@@ -1,9 +1,0 @@
-:pick_up
-set_active d1 false
-set_active diff1 true
-set_global found1 true
-
-:look
-set_active d1 false
-set_active diff1 true
-set_global found1 true

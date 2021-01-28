@@ -1,9 +1,0 @@
-:pick_up
-set_active button_tutorial false
-
-set_active highlight_daisies true
-set_active highlight_original false
-set_active highlight_roses false
-set_active highlight_tulips false
-
-say telon wrong_flower:"I don't think this fits to the other flowers." default avatar_luis

@@ -1,4 +1,5 @@
 :look
 cut_scene telon fade_out
 change_scene res://scenes/5_staircase/scene.tscn
+set_state staircase_ghost louis
 cut_scene telon fade_in
