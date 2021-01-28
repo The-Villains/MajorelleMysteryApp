@@ -3,7 +3,7 @@
  set_active staircase_frame true
  set_active staircase_solved_window true
  say telon staircase_window_solved:"Yay. This looks good." default avatar_luis
- set_global i/inv_flower4 true
+ set_global i/inv_flower1 true
  say telon general_flower_reward:"Here is another flower as a reward." default avatar_luis
  cut_scene telon fade_out
  change_scene res://scenes/5_staircase/scene.tscn
@@ -11,9 +11,10 @@
  set_active staircase_window false
  set_state staircase_plants disappear
  wait 2
+ say telon staircase_kiara_upstairs:"Come on Artur, let's see what's upstairs now!" left
  set_active staircase_plants false
  set_active upstairs true
- say telon staircase_kiara_upstairs:"Come on Artur, let's see what's upstairs now!" left
+
 
 > [!staircase_window_solved]
  say telon staircase_window_unsolved:"This doesn't look right."

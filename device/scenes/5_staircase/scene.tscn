@@ -131,6 +131,7 @@ position = Vector2( -205.061, -94.7523 )
 [node name="kiara_fullsize" type="Node2D" parent="."]
 script = ExtResource( 9 )
 tooltip = "Kiara"
+events_path = "res://scenes/5_staircase/kiara_fullsize.esc"
 global_id = "kiara_fullsize"
 
 [node name="Sprite" type="Sprite" parent="kiara_fullsize"]
@@ -141,6 +142,7 @@ texture = ExtResource( 11 )
 [node name="ghost" parent="." instance=ExtResource( 12 )]
 position = Vector2( 760, 232 )
 scale = Vector2( 0.7, 0.7 )
+events_path = "res://scenes/5_staircase/staircase_louis.esc"
 global_id = "staircase_ghost"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

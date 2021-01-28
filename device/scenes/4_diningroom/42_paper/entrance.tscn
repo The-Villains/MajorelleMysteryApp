@@ -19,7 +19,7 @@ use_combine = true
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 3 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="P_Entrance" type="RichTextLabel" parent="."]
 margin_left = -90.0
 margin_top = -25.0
 margin_right = 171.0

@@ -20,7 +20,7 @@
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=18]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=19]
 
-[sub_resource type="GDScript" id=2]
+[sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
 
 #var vm;
@@ -76,13 +76,13 @@ func _on_right_pressed():
 #	vm.load_file(\"res://scenes/1_entrance/11_flower_riddle/exit.esc\")
 "
 
-[sub_resource type="DynamicFont" id=1]
-size = 24
+[sub_resource type="DynamicFont" id=2]
+size = 32
 use_filter = true
 font_data = ExtResource( 19 )
 
 [node name="scene" type="Node2D"]
-script = SubResource( 2 )
+script = SubResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 0.923004 ],
 "_edit_vertical_guides_": [ 1544.99, 800.245 ]
@@ -98,11 +98,18 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="flower_instruction" type="TextureRect" parent="."]
-margin_left = 406.0
-margin_top = -256.0
-margin_right = 918.0
-margin_bottom = 256.0
+[node name="Control" type="Control" parent="."]
+margin_right = 374.0
+margin_bottom = 124.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="flower_instruction" type="TextureRect" parent="Control"]
+margin_left = 382.0
+margin_top = -258.0
+margin_right = 894.0
+margin_bottom = 254.0
 rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 15 )
 script = ExtResource( 10 )
@@ -111,13 +118,13 @@ __meta__ = {
 }
 global_id = "flower_instruction"
 
-[node name="Label" type="RichTextLabel" parent="flower_instruction"]
-margin_left = 108.0
-margin_top = 236.0
-margin_right = 412.0
-margin_bottom = 319.0
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
+[node name="FLOWER_RIDDLE" type="Label" parent="Control"]
+margin_left = 502.0
+margin_top = 114.0
+margin_right = 1052.0
+margin_bottom = 207.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "FLOWER_RIDDLE"
 __meta__ = {
 "_edit_use_anchors_": false

@@ -22,7 +22,7 @@ placeholders = {
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 2 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="P_Living_Room" type="RichTextLabel" parent="."]
 margin_left = -147.066
 margin_top = -20.6934
 margin_right = 127.934

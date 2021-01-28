@@ -2,4 +2,3 @@
 cut_scene telon fade_out
 change_scene res://scenes/5_staircase/5_window/scene.tscn
 cut_scene telon fade_in
-say telon "Switch the pieces to sort this mess." info

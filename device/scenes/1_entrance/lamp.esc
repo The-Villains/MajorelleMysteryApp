@@ -16,10 +16,11 @@ change_scene res://scenes/2_hallway/scene.tscn
 set_state hallway_ghost standing
 cut_scene telon fade_in
 set_state hallway_plants disappear
-wait 3
+wait 2
 set_active hallway_plants false
 say telon hallway_jacques:"Come follow me to the living room." default avatar_jacques
 set_state hallway_ghost default
-wait 4
-say telon hallway_artur:"Okay, let’s look at the next room!" default avatar_artur
+wait 3
 set_active hallway_ghost false
+
+#say telon hallway_artur:"Okay, let’s look at the next room!" default avatar_artur

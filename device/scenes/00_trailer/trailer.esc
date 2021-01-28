@@ -21,23 +21,23 @@ wait 2
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer3.tscn
 cut_scene telon fade_in
-say telon trailer_1:"Arthur Benoit, private investigator, who am I speaking to?" info avatar_artur
+say telon trailer_1:"Arthur Benoit, private investigator, who am I speaking to?" info_l avatar_artur
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer4.tscn
 cut_scene telon fade_in
-say telon trailer_2:"Hello, I am Jeanne Majorelle, wife of Louis Majorelle and mother of Jacques Majorelle. We own a beautiful Art Nouveau villa in Nancy." info avatar_jane
-say telon trailer_3:"Now here is the problem: The doors are overgrown and the plants don't disappear unless we solve some riddles. Maybe you could help us?" info avatar_jane
+say telon trailer_2:"Hello, I am Jeanne Majorelle, wife of Louis Majorelle and mother of Jacques Majorelle. We own a beautiful Art Nouveau villa in Nancy." info_r avatar_jane
+say telon trailer_3:"Now here is the problem: The doors are overgrown and the plants don't disappear unless we solve some riddles. Maybe you could help us?" info_r avatar_jane
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer3.tscn
 cut_scene telon fade_in
-say telon trailer_4:"Of course, Madam, we'll come over as soon as possible." info avatar_artur
+say telon trailer_4:"Of course, Madam, we'll come over as soon as possible." info_l avatar_artur
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer5.tscn
 cut_scene telon fade_in
-say telon trailer_5:"We are the Majorelle family. Thank you very much for coming. Let's go right in!" info avatar_luis
+say telon trailer_5:"We are the Majorelle family. Thank you very much for coming. Let's go right in!" info_l avatar_luis
 set_active trailer_door true
 set_state fam_majorelle walk_in
 wait 1.5
@@ -61,3 +61,11 @@ set_active button_tutorial true
 teleport_pos button_tutorial 375 0
 wait 1
 set_active kiara_tutorial true
+
+#cut_scene telon fade_out
+#set_global i/inv_flower1 true
+#set_global i/inv_flower2 true
+#set_global i/inv_flower3 true
+#set_global i/inv_flower4 true
+#change_scene res://scenes/6_front_bedroom/scene.tscn
+#cut_scene telon fade_in

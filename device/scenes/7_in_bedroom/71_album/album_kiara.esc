@@ -1,4 +1,7 @@
 :talk
 set_state kiara tip3
-say telon "This is a placeholder for the album." left
+> [!looked_at_lock]
+ say telon "So it’s a 4-digit number. Let’s look around the room for something that fits!" left
+> [looked_at_lock]
+ say telon "Say something else placeholder." left 
 set_state kiara default

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=14]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=16]
+[ext_resource path="res://templates/in_game_translation_area.tscn" type="PackedScene" id=17]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -42,6 +43,7 @@ __meta__ = {
 }
 
 [node name="instructions" type="TextureRect" parent="."]
+visible = false
 margin_left = 254.0
 margin_top = -226.0
 margin_right = 766.0
@@ -67,6 +69,12 @@ text = "PAINTING_DIFFERENCES"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Control" parent="." instance=ExtResource( 17 )]
+margin_left = 1240.0
+margin_top = 172.0
+margin_right = 1240.0
+margin_bottom = 172.0
 
 [node name="painting" parent="." instance=ExtResource( 8 )]
 position = Vector2( 641.615, 574.953 )
@@ -156,12 +164,14 @@ __meta__ = {
 [node name="diff1" parent="." instance=ExtResource( 9 )]
 visible = false
 scale = Vector2( 0.1, 0.1 )
+tooltip = " "
 global_id = "diff1"
 
 [node name="diff2" parent="." instance=ExtResource( 11 )]
 visible = false
 position = Vector2( 787.717, 780.646 )
 scale = Vector2( 0.1, 0.1 )
+tooltip = " "
 global_id = "diff2"
 placeholders = {
 
@@ -171,6 +181,7 @@ placeholders = {
 visible = false
 position = Vector2( 865.499, 724.078 )
 scale = Vector2( 0.1, 0.1 )
+tooltip = " "
 global_id = "diff3"
 placeholders = {
 
@@ -180,6 +191,7 @@ placeholders = {
 visible = false
 position = Vector2( 607.526, 635.225 )
 scale = Vector2( 0.12, 0.1 )
+tooltip = " "
 global_id = "diff4"
 placeholders = {
 
@@ -188,14 +200,15 @@ placeholders = {
 [node name="diff5" parent="." instance=ExtResource( 10 )]
 visible = false
 scale = Vector2( 0.12, 0.12 )
+tooltip = " "
 global_id = "diff5"
 placeholders = {
 
 }
 
 [node name="confirm" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1335.02, 509.117 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 1347.02, 715.117 )
+scale = Vector2( 0.15, 0.15 )
 script = ExtResource( 5 )
 events_path = "res://scenes/4_diningroom/41_painting/confirm.esc"
 global_id = "diningroom_confirm"

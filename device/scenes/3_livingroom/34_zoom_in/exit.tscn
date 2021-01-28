@@ -26,7 +26,7 @@ __meta__ = {
 }
 tooltip = "Exit"
 events_path = "res://scenes/3_livingroom/33_zoom_in/exit.esc"
-global_id = "exit_living_33"
+global_id = "exit_living_34"
 interact_angle = 90
 placeholders = {
 

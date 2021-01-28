@@ -61,50 +61,50 @@ texture = ExtResource( 5 )
 script = ExtResource( 8 )
 global_id = "album_locked"
 
-[node name="a1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = -203.0
-margin_top = 100.0
-margin_right = -115.0
-margin_bottom = 151.0
+[node name="d1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = 85.7853
+margin_top = 98.0
+margin_right = 226.785
+margin_bottom = 161.0
 theme = ExtResource( 6 )
 max_value = 9.0
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = -94.7669
-margin_top = 100.943
-margin_right = -6.76691
-margin_bottom = 151.943
-theme = ExtResource( 6 )
-max_value = 9.0
-align = 1
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="c1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = 23.3002
-margin_top = 101.886
-margin_right = 111.3
-margin_bottom = 152.886
+margin_left = -14.6998
+margin_top = 100.553
+margin_right = 126.3
+margin_bottom = 163.553
 theme = ExtResource( 6 )
 max_value = 9.0
-align = 1
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = 142.452
-margin_top = 100.0
-margin_right = 223.452
-margin_bottom = 151.0
+[node name="b1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = -149.0
+margin_top = 99.3333
+margin_right = -8.0
+margin_bottom = 165.333
 theme = ExtResource( 6 )
 max_value = 9.0
-align = 1
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a1Select" type="SpinBox" parent="book_with_lock"]
+margin_left = -259.0
+margin_top = 98.0
+margin_right = -118.0
+margin_bottom = 161.0
+theme = ExtResource( 6 )
+max_value = 9.0
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -4,7 +4,7 @@
 
 > [found1,found2,found3,found4,found5]
  say telon diningroom_all_found:"You found all the differences." default avatar_jane
- set_global i/inv_flower2 true
+ set_global i/inv_flower3 true
  say telon general_flower_reward:"Here is another flower as a reward." default avatar_jane
  change_scene res://scenes/4_diningroom/scene.tscn
  set_active diningroom_paper true

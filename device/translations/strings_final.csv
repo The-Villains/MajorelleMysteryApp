@@ -1,4 +1,8 @@
 id,en,fr,de
+fallbacks_use_2,I can't do that.,Je ne peux pas le faire.,Ich kann das nicht tun.
+fallbacks_pick_up_4,That's not a good idea.,Ce n'est pas une bonne idée.,Das ist keine gute Idee.
+fallbacks_talk_6,This won't answer me!,Cela ne me répondre!,Das wird mir nicht antworten!
+fallbacks_look_8,Nothing to look at here.,Rien à regarder ici.,Nichts zu sehen hier.
 general_flower_reward,Here is another flower as a reward.,Voici une autre fleur comme une récompense.,Hier ist eine andere Blume als Belohnung.
 general_1,Placeholder,placeholder,Platzhalter
 general_2,Placeholder,placeholder,Platzhalter
@@ -21,7 +25,7 @@ entrance_wrong_flower,I don't think this fits to the other flowers.,Je ne pense 
 entrance_right_flower,This looks good!,Ça a l'air correct!,Das sieht gut aus!
 entrance_offer_lamp,"Take this lightbulb, you can repair the lamp with it!",Prenez cette ampoule avec laquelle vous pouvez réparer la lampe!,"Nimm diese Glühbirne, damit kannst du die Lampe reparieren!"
 entrance_picked_lightbulb,Well done! The lightbulb is now in your inventory.,Bien joué ! L'ampoule est maintenant dans votre inventaire.,Gut gemacht! Sie ist jetzt in deinem Inventar.
-entrance_offer_lamp,"Okay, now let’s use this lightbulb on the lamp.","Ok maintenant, utilisons cette ampoule sur la lampe","Okay, jetzt benutzen wir diese Glühbirne für die Lampe."
+entrance_use_lamp,"Okay, now let’s use this lightbulb on the lamp.","Ok maintenant, utilisons cette ampoule sur la lampe","Okay, jetzt benutzen wir diese Glühbirne für die Lampe."
 entrance_light_on,Splendid! Now everything’s back in order here!,Magnifique! Maintenant tout est en ordre ici!,Wunderbar! Jetzt ist hier alles wieder in Ordnung!
 entrance_louis_remember,And remember that last button if you want to move things somewhere or switch two things.,Et rappelez-vous que le bouton dernier si vous voulez déplacer quelque part des choses ou changer deux choses.,"Und denken Sie daran, dass die letzte Taste, wenn Sie die Dinge irgendwo oder wechseln zwei Dinge bewegen wollen."
 hallway_jacques,Come follow me to the living room.,Venez me suivre dans le salon.,Komm folge mir ins Wohnzimmer.

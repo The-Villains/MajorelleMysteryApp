@@ -44,7 +44,7 @@ position = Vector2( -3.05176e-05, 2.00006 )
 navpoly = SubResource( 1 )
 
 [node name="plants" parent="." instance=ExtResource( 5 )]
-position = Vector2( 794, 604 )
+position = Vector2( 794, 606 )
 scale = Vector2( 1.52, 1.52 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
@@ -58,8 +58,8 @@ placeholders = {
 
 [node name="flower1" parent="." instance=ExtResource( 11 )]
 visible = false
-position = Vector2( 630, 682 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 622.48, 688.16 )
+scale = Vector2( 0.228, 0.228 )
 z_index = 2500
 script = ExtResource( 12 )
 global_id = "flower1"
@@ -67,7 +67,7 @@ global_id = "flower1"
 [node name="flower2" parent="." instance=ExtResource( 10 )]
 visible = false
 position = Vector2( 738, 220 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.228, 0.228 )
 z_index = 2500
 z_as_relative = false
 script = ExtResource( 12 )
@@ -75,8 +75,8 @@ global_id = "flower2"
 
 [node name="flower3" parent="." instance=ExtResource( 9 )]
 visible = false
-position = Vector2( 946, 544 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 947.76, 539.2 )
+scale = Vector2( 0.228, 0.228 )
 z_index = 2500
 z_as_relative = false
 script = ExtResource( 12 )
@@ -84,8 +84,8 @@ global_id = "flower3"
 
 [node name="flower4" parent="." instance=ExtResource( 8 )]
 visible = false
-position = Vector2( 760, 914 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 765.36, 900.96 )
+scale = Vector2( 0.228, 0.228 )
 z_index = 2500
 script = ExtResource( 12 )
 global_id = "flower4"
@@ -148,10 +148,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="spot4"]
-margin_left = 702.0
-margin_top = 852.0
-margin_right = 822.0
-margin_bottom = 972.0
+margin_left = 706.0
+margin_top = 854.0
+margin_right = 826.0
+margin_bottom = 974.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

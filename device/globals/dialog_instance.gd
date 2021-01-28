@@ -6,7 +6,7 @@ var elapsed = 0
 var total_time
 var character
 var vm
-var speed = 10.0 # characters per second
+var speed = 15.0 # characters per second
 var finished = false
 var play_intro = true
 var play_outro = true
@@ -218,4 +218,3 @@ func _ready():
 		speech_language = default_speech_language
 
 	vm.connect("paused", self, "game_paused")
-

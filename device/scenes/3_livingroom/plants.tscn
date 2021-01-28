@@ -25,10 +25,11 @@ events_path = "res://scenes/2_hallway/plants.esc"
 global_id = "hallway_plants"
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = -107.0
-margin_top = -155.0
-margin_right = 105.0
-margin_bottom = 181.0
+margin_left = -126.0
+margin_top = -122.0
+margin_right = 55.0
+margin_bottom = 164.0
+rect_rotation = -12.2786
 __meta__ = {
 "_edit_use_anchors_": false
 }

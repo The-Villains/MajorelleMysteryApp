@@ -40,13 +40,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LinkButton" type="LinkButton" parent="www"]
+[node name="LinkButton" type="LinkButton" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 882.0
-margin_top = -231.0
-margin_right = 1054.0
-margin_bottom = -28.0
+margin_left = 1052.0
+margin_top = 693.0
+margin_right = 1224.0
+margin_bottom = 896.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 action_mode = 0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://ui/credits.gd" type="Script" id=1]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0002.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0006.png" type="Texture" id=7]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0003.png" type="Texture" id=8]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0005.png" type="Texture" id=9]
+[ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=10]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0008.png" type="Texture" id=11]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0007.png" type="Texture" id=12]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=13]
@@ -25,18 +26,18 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=2]
 size = 32
 outline_color = Color( 1, 1, 1, 0 )
 use_filter = true
 font_data = ExtResource( 13 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 72
 use_filter = true
 font_data = ExtResource( 13 )
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -44,10 +45,19 @@ __meta__ = {
 "_edit_vertical_guides_": [ 600.851, 999.659, 801.669 ]
 }
 
+[node name="bg" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="side_flower" type="TextureRect" parent="."]
-margin_left = -124.451
+margin_left = -104.652
 margin_top = -82.0244
-margin_right = 656.549
+margin_right = 676.348
 margin_bottom = 1814.98
 rect_scale = Vector2( 0.55, 0.68 )
 texture = ExtResource( 15 )
@@ -60,17 +70,17 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 4
+frame = 2
 playing = true
 
 [node name="CREDITS" type="Label" parent="."]
-margin_left = 255.343
-margin_top = 312.343
-margin_right = 1344.34
-margin_bottom = 1020.34
+margin_left = 261.0
+margin_top = 315.171
+margin_right = 1350.0
+margin_bottom = 1023.17
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "CREDITS"
@@ -82,9 +92,9 @@ __meta__ = {
 }
 
 [node name="back" type="TextureButton" parent="."]
-margin_left = 961.9
+margin_left = 942.101
 margin_top = 922.199
-margin_right = 1473.9
+margin_right = 1454.1
 margin_bottom = 1434.2
 rect_scale = Vector2( 1.3, 0.7 )
 texture_normal = ExtResource( 6 )
@@ -102,7 +112,7 @@ margin_bottom = 469.802
 rect_scale = Vector2( 0.3, 0.5 )
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.439216, 0.266667, 0.00784314, 1 )
 text = "UI_BACK"
@@ -114,4 +124,4 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/credits = SubResource( 3 )
+anims/credits = SubResource( 4 )

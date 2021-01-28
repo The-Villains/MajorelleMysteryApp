@@ -36,11 +36,13 @@ inv_good_bamboo_2.tooltip,the bamboo that used to be well hidden,le bambou qui �
 good_bamboo_3.tooltip,A delicious bamboo,Un bambou délicieux,Ein leckerer Bambus
 inv_good_bamboo_3.tooltip,the delicious bamboo,le bambou délicieux,der leckere Bambus
 chameleon.tooltip,A chameleon,Un caméléon,ein Chamäleon
-bamboo_god_2.tooltip,The Great Panda himself!,Le grand panda en personne !,Der große Panda in Person !
+kiara.tooltip,Kiara,Kiara,Kiara
 flowers.tooltip,odd looking flowers,étranges fleurs recherche,seltsam aussehende Blumen
 entrance_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
 lightbulb_missing.tooltip,missing lightbulb,manquant lightbulb,fehlende Glühbirne
 entrance_door.tooltip,locked door,porte verrouillée,verschlossene Tür
+entrance_kiara.tooltip,Kiara,Kiara,Kiara
+button_tutorial.tooltip, , , 
 original.tooltip,honesties?,Silberblätter?,des monnaies du pape
 roses.tooltip,roses,des roses,Rosen
 daisies.tooltip,daisies,marguerites,Gänseblümchen
@@ -48,6 +50,7 @@ tulips.tooltip,tulips,tulipes,Tulpen
 exit_flowerriddle.tooltip,Back,Retour,Zurück
 hallway_door.tooltip,To the living room,Pour la salle de séjour,Zum Wohnzimmer
 hallway_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
+hallway_kiara.tooltip,Kiara,Kiara,Kiara
 livingroom_door.tooltip,To the dining room,Dans la salle à manger,Zum Esszimmer
 livingroom_lamp.tooltip,some info,quelques infos,einige Infos
 livingroom_chair1.tooltip,some info,quelques infos,einige Infos
@@ -56,6 +59,14 @@ livingroom_chair3.tooltip,some info,quelques infos,einige Infos
 livingroom_sideboard.tooltip,some info,quelques infos,einige Infos
 livingroom_window.tooltip,some info,quelques infos,einige Infos
 livingroom_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
+exit_living_32.tooltip,Back,Retour,Zurück
+exit_living_33.tooltip,Back,Retour,Zurück
+exit_living_34.tooltip,Back,Retour,Zurück
+livingroom_light.tooltip, , , 
+livingroom_window_story,Some background information about the window and why it is special.,Quelques informations générales sur la fenêtre et pourquoi il est spécial.,Einige Hintergrundinformationen über das Fenster und warum es ist etwas Besonderes.
+livingroom_zoom_32,?,?,?
+livingroom_zoom_33,?,?,?
+livingroom_zoom_34,?,?,?
 inv_piece1.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
 inv_piece2.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
 inv_piece3.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
@@ -100,15 +111,19 @@ missing_piece1.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
 missing_piece2.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
 missing_piece3.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
 diningroom_door.tooltip,To the staircase,Pour l'escalier,Zur Treppe
-diningroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorell
+diningroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
 diningroom_painting.tooltip,some info,quelques infos,einige Infos
 diningroom_tablearea.tooltip,some info,quelques infos,einige Infos
 diningroom_small_painting1.tooltip,some info,quelques infos,einige Infos
 diningroom_small_painting2.tooltip,some info,quelques infos,einige Infos
 diningroom_pantry.tooltip,To the pantry (locked),Pour le garde-manger (verrouillé),In der Speisekammer (gesperrt)
 diningroom_buffet.tooltip,some info,quelques infos,einige Infos
+diningroom_sideboard_left,some info,quelques infos,einige Infos
+diningroom_sideboard_right,some info,quelques infos,einige Infos
+diningroom_painting_closeup,some info,quelques infos,einige Infos
 exit_diningroom_41.tooltip,Back,Retour,Zurück
 diningroom_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+diningroom_paper.tooltip,mysterious piece of paper,mystérieux morceau de papier,mysteriös Stück Papier
 paper_terrasse.tooltip,room label,label chambre,Zimmer-Label
 paper_diningroom.tooltip,room label,label chambre,Zimmer-Label
 paper_livingroom.tooltip,room label,label chambre,Zimmer-Label
@@ -123,6 +138,7 @@ exit_diningroom_paper.tooltip,Back,Retour,Zurück
 confirm_diningroom_paper.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
 stack.tooltip,stack,empiler,Stapel
 upstairs.tooltip,To the first floor,Au premier étage,In dem ersten Stock
+dont_leave.tooltip,Back to the entrance and exit,Retournez à l'entrée et la sortie,Zurück zum Eingang und Ausgang
 staircase_window.tooltip,some info,quelques infos,einige Infos
 staircase_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
 staircase_lamp.tooltip,some info,quelques infos,einige Infos
@@ -142,7 +158,7 @@ exit_staircase.tooltip,Back,Retour,Zurück
 bedroom_spot1.tooltip,missing flower,fleur manquante,fehlender Blume
 bedroom_spot2.tooltip,missing flower,fleur manquante,fehlender Blume
 bedroom_spot3.tooltip,missing flower,fleur manquante,fehlender Blume
-bedroom_spot3.tooltip,missing flower,fleur manquante,fehlender Blume
+bedroom_spot4.tooltip,missing flower,fleur manquante,fehlender Blume
 bedroom_nightstand.tooltip,some info,quelques infos,einige Infos
 bedroom_curtain.tooltip,some info,quelques infos,einige Infos
 bedroom_painting.tooltip,some info,quelques infos,einige Infos
@@ -153,3 +169,18 @@ bedroom_ghost.tooltip,Jane,Jeanne,Jane
 bedroom_door_mural.tooltip,some info,quelques infos,einige Infos
 exit_bedroom_album.tooltip,Back,Retour,Zurück
 album_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+bedroom_nightstand_closeup.tooltip,some info,quelques infos,einige Infos
+bedroom_dresser_closeup.tooltip,some info,quelques infos,einige Infos
+inv_lightbulb.tooltip,lightbulb,ampoule,die Glühbirne
+inv_piece6.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece7.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_piece8.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_flower1.tooltip,flower,fleur,Blume
+inv_flower2.tooltip,flower,fleur,Blume
+inv_flower3.tooltip,flower,fleur,Blume
+inv_flower4.tooltip,flower,fleur,Blume
+hallway_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
+livingroom_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
+diningroom_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
+staircase_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
+frontbedroom_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich

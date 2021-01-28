@@ -1,10 +1,18 @@
+:talk
+
+:use
+
+:look
+
+:pick_up
+
 :load
 > [!paper_entrance,!paper_hallway,!paper_terrasse,!paper_livingroom,!paper_diningroom]
  say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
 
 > [paper_entrance,paper_hallway,paper_terrasse,paper_livingroom,paper_diningroom]
  say telon diningroom_solved_paper:"Thank you for restoring that!" default avatar_jane
- set_global i/inv_flower3 true
+ set_global i/inv_flower2 true
  say telon general_flower_reward:"Here is another flower as a reward." default avatar_jane
  cut_scene telon fade_out
  change_scene res://scenes/4_diningroom/scene.tscn
@@ -14,11 +22,3 @@
  set_state diningroom_plants disappear
  wait 3
  set_active diningroom_plants false
-
-:talk
-
-:use
-
-:look
-
-:pick_up

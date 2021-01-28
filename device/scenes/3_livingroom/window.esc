@@ -7,4 +7,4 @@ set_global i/inv_piece2 true [!slot2]
 set_global i/inv_piece3 true [!slot3]
 set_global i/inv_piece4 true [!slot4]
 set_global i/inv_piece5 true [!slot5]
-say telon "Use the puzzle pieces with the right spot where it is missing." info 
+#say telon "Use the puzzle pieces with the right spot where it is missing." info 

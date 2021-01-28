@@ -94,7 +94,7 @@ __meta__ = {
 }
 
 [node name="flowers" parent="." instance=ExtResource( 7 )]
-position = Vector2( 838.437, 592.717 )
+position = Vector2( 832.78, 601.202 )
 scale = Vector2( 1.5, 1.5 )
 events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"

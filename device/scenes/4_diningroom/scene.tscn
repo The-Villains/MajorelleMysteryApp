@@ -21,7 +21,6 @@ outlines = [ PoolVector2Array( 6.79803, 939.932, -1.20197, 1215.93, 1648.8, 1211
 script = ExtResource( 1 )
 
 [node name="background" type="TextureRect" parent="."]
-margin_top = 1.0
 margin_right = 1081.0
 margin_bottom = 801.0
 rect_scale = Vector2( 1.52, 1.52 )
@@ -31,16 +30,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="tablearea" type="TextureRect" parent="."]
-margin_left = 482.0
-margin_top = 718.0
-margin_right = 1205.0
-margin_bottom = 1064.0
+[node name="terrain" type="Navigation2D" parent="."]
+script = ExtResource( 8 )
+scale_max = 0.4
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
+visible = false
+position = Vector2( -4.00003, 4 )
+navpoly = SubResource( 1 )
+
+[node name="door" type="TextureButton" parent="."]
+margin_left = 308.716
+margin_top = 336.029
+margin_right = 975.716
+margin_bottom = 510.029
+rect_rotation = 0.779845
+rect_scale = Vector2( 0.504505, 2.79052 )
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-global_id = "diningroom_tablearea"
+events_path = "res://scenes/4_diningroom/door.esc"
+global_id = "diningroom_door"
+placeholders = {
+
+}
+
+[node name="plants" parent="." instance=ExtResource( 4 )]
+position = Vector2( 820.862, 609.862 )
+scale = Vector2( 1.52, 1.52 )
 
 [node name="small_painting1" type="TextureRect" parent="."]
 margin_left = -4.0
@@ -70,6 +88,34 @@ placeholders = {
 
 }
 
+[node name="sideboard_left" type="TextureRect" parent="."]
+margin_left = -2.0
+margin_top = 560.0
+margin_right = 166.0
+margin_bottom = 932.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "diningroom_sideboard_left"
+placeholders = {
+
+}
+
+[node name="sideboard_right" type="TextureRect" parent="."]
+margin_left = 714.0
+margin_top = 574.0
+margin_right = 868.0
+margin_bottom = 684.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "diningroom_sideboard_right"
+placeholders = {
+
+}
+
 [node name="pantry" type="TextureRect" parent="."]
 margin_left = 912.0
 margin_top = 418.0
@@ -85,10 +131,11 @@ placeholders = {
 }
 
 [node name="buffet" type="TextureRect" parent="."]
-margin_left = 1106.0
-margin_top = 332.0
-margin_right = 1507.0
-margin_bottom = 738.0
+margin_left = 1066.0
+margin_top = 377.0
+margin_right = 1513.0
+margin_bottom = 809.0
+rect_rotation = 0.85816
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -97,15 +144,6 @@ global_id = "diningroom_buffet"
 placeholders = {
 
 }
-
-[node name="terrain" type="Navigation2D" parent="."]
-script = ExtResource( 8 )
-scale_max = 0.4
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
-visible = false
-position = Vector2( -4.00003, 4 )
-navpoly = SubResource( 1 )
 
 [node name="painting" type="TextureButton" parent="."]
 margin_left = 865.0
@@ -120,26 +158,16 @@ __meta__ = {
 events_path = "res://scenes/4_diningroom/painting.esc"
 global_id = "diningroom_painting"
 
-[node name="door" type="TextureButton" parent="."]
-margin_left = 308.716
-margin_top = 336.029
-margin_right = 975.716
-margin_bottom = 510.029
-rect_rotation = 0.779845
-rect_scale = Vector2( 0.504505, 2.79052 )
+[node name="tablearea" type="TextureRect" parent="."]
+margin_left = 482.0
+margin_top = 718.0
+margin_right = 1205.0
+margin_bottom = 1064.0
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-events_path = "res://scenes/4_diningroom/door.esc"
-global_id = "diningroom_door"
-placeholders = {
-
-}
-
-[node name="plants" parent="." instance=ExtResource( 4 )]
-position = Vector2( 820.862, 609.862 )
-scale = Vector2( 1.52, 1.52 )
+global_id = "diningroom_tablearea"
 
 [node name="player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1421.99, 1224.63 )
