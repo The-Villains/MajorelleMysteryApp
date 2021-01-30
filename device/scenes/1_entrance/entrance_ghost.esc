@@ -1,0 +1,10 @@
+:talk
+set_active button_tutorial false
+set_active ghost_tutorial false
+say telon entrance_louis_greeting:"Welcome to the Villa Majorelle or Villa Jika as we prefer to call it, after my beautiful wife." left avatar_luis
+say telon entrance_louis_intruction1:"First let me show you how to interact with things." left avatar_luis
+say telon entrance_louis_intruction2:"To look around, you must first click the eye and then whatever sparks your interest. Try it out!" left avatar_luis
+set_active button_tutorial true
+teleport_pos button_tutorial 0 0
+wait 1
+set_state flowers highlighted_flower

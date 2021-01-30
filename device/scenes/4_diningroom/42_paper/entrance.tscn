@@ -19,14 +19,14 @@ use_combine = true
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 3 )
 
-[node name="P_Entrance" type="RichTextLabel" parent="."]
-margin_left = -90.0
+[node name="P_ENTRANCE" type="RichTextLabel" parent="."]
+margin_left = -120.0
 margin_top = -25.0
-margin_right = 171.0
+margin_right = 141.0
 margin_bottom = 65.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "P_Entrance"
+text = "Entrance"
 __meta__ = {
 "_edit_use_anchors_": false
 }

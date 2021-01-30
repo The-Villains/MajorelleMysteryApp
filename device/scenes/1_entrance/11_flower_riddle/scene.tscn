@@ -100,31 +100,32 @@ __meta__ = {
 [node name="Control" type="Control" parent="."]
 margin_right = 374.0
 margin_bottom = 124.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="flower_instruction" type="TextureRect" parent="Control"]
-margin_left = 382.0
-margin_top = -258.0
-margin_right = 894.0
-margin_bottom = 254.0
-rect_scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 15 )
 script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 global_id = "flower_instruction"
 
+[node name="flower_instruction" type="TextureRect" parent="Control"]
+margin_left = 418.0
+margin_top = -196.0
+margin_right = 930.0
+margin_bottom = 316.0
+rect_scale = Vector2( 1.5, 1.42 )
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="FLOWER_RIDDLE" type="Label" parent="Control"]
-margin_left = 502.0
-margin_top = 114.0
-margin_right = 1052.0
-margin_bottom = 207.0
+margin_left = 536.0
+margin_top = 146.0
+margin_right = 1056.0
+margin_bottom = 245.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "FLOWER_RIDDLE"
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

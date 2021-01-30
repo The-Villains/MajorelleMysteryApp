@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -16,10 +16,15 @@
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=14]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=16]
-[ext_resource path="res://templates/in_game_translation_area.tscn" type="PackedScene" id=17]
+[ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=17]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
+use_filter = true
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
 use_filter = true
 font_data = ExtResource( 15 )
 
@@ -70,11 +75,41 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Control" parent="." instance=ExtResource( 17 )]
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_left = 1242.0
 margin_top = 212.0
 margin_right = 1242.0
 margin_bottom = 212.0
+__meta__ = {
+"_edit_horizontal_guides_": [ 600.707 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 400.163 ]
+}
+
+[node name="background" type="TextureRect" parent="Control"]
+margin_left = 5.99998
+margin_top = 3.99999
+margin_right = 1760.0
+margin_bottom = 2484.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PAINTING_DIFFERENCES" type="RichTextLabel" parent="Control"]
+margin_left = 84.0
+margin_top = 98.0
+margin_right = 266.0
+margin_bottom = 406.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Find the five differences in the bottom painting."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="painting" parent="." instance=ExtResource( 8 )]
 position = Vector2( 641.615, 574.953 )

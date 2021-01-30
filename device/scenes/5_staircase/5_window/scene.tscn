@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://scenes/5_staircase/5_window/bottom_middle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_bg.png" type="Texture" id=2]
@@ -20,7 +20,13 @@
 [ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=18]
 [ext_resource path="res://scenes/5_staircase/5_window/exit.tscn" type="PackedScene" id=19]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=20]
-[ext_resource path="res://templates/in_game_translation_area.tscn" type="PackedScene" id=21]
+[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=21]
+[ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=22]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+use_filter = true
+font_data = ExtResource( 21 )
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 4 )
@@ -53,11 +59,41 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Control" parent="." instance=ExtResource( 21 )]
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_left = 107.48
 margin_top = 73.5392
 margin_right = 107.48
 margin_bottom = 73.5392
+__meta__ = {
+"_edit_horizontal_guides_": [ 600.707 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 400.163 ]
+}
+
+[node name="background" type="TextureRect" parent="Control"]
+margin_left = -56.2255
+margin_top = -38.4265
+margin_right = 1697.77
+margin_bottom = 2441.57
+rect_scale = Vector2( 0.24, 0.24 )
+texture = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WINDOW_SWITCH" type="RichTextLabel" parent="Control"]
+margin_left = 47.4853
+margin_top = 98.201
+margin_right = 252.485
+margin_bottom = 423.201
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Switch the window pieces to the right positions!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="top_left" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1000, 556.5 )

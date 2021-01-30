@@ -8,8 +8,8 @@ set_active lightbulb_tutorial false
 set_active lightbulb_missing false
 set_active lamp true
 
-say lamp entrance_light_on:"Splendid! Now everything’s back in order here!" default avatar_luis
-say telon entrance_louis_remember:"And remember that last button if you want to move things somewhere or switch two things." default avatar_luis
+say lamp entrance_light_on:"Splendid! Now everything’s back in order here!" left avatar_luis
+say telon entrance_louis_remember:"And remember that last button if you want to move things somewhere or switch two things." left avatar_luis
 
 cut_scene telon fade_out
 change_scene res://scenes/2_hallway/scene.tscn

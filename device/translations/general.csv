@@ -57,7 +57,7 @@ livingroom_chair1.tooltip,(table) wooden butome table,table en bois avec motif b
 livingroom_chair2.tooltip,table instead,à la place la table,Tabelle statt
 livingroom_chair3.tooltip,pine themed armchair,fauteuil en pin,Sessel mit Kiefermotiv
 livingroom_sideboard.tooltip,some info,quelques infos,einige Infos
-livingroom_window.tooltip,redundant w jacques explaination,w redondant Jacques explaination,redundantes w jacques explaination
+livingroom_window.tooltip,Moroccan stained glass,Vitrail marrocain,Marrokanische Glasmalerei
 livingroom_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
 exit_living_32.tooltip,Back,Retour,Zurück
 exit_living_33.tooltip,Back,Retour,Zurück
@@ -105,7 +105,7 @@ slot16.tooltip,broken window,fenêtre cassé,kaputtes Fenster
 slot17.tooltip,broken window,fenêtre cassé,kaputtes Fenster
 slot18.tooltip,broken window,fenêtre cassé,kaputtes Fenster
 slot19.tooltip,broken window,fenêtre cassé,kaputtes Fenster
-exit_living_31.tooltip,Back,Retour,Zurück
+exit_living_31.tooltip,Back,Arrière,Zurück
 window_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
 missing_piece1.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 missing_piece2.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
@@ -121,7 +121,7 @@ diningroom_buffet.tooltip,Wheat themed cabinet with a rat,Armoire sur le thème 
 diningroom_sideboard_left,some info,quelques infos,einige Infos
 diningroom_sideboard_right,some info,quelques infos,einige Infos
 diningroom_painting_closeup,painting of geese,peinture des oies,Malerei von Gänsen
-exit_diningroom_41.tooltip,Back,Retour,Zurück
+exit_diningroom_41.tooltip,Back,Arrière,Zurück
 diningroom_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
 diningroom_paper.tooltip,mysterious piece of paper,bout de papier mystérieux,mysteriöses Stück Papier
 paper_terrasse.tooltip,room label,label de chambre,Raum-Label
@@ -134,7 +134,7 @@ map_livingroom.tooltip,missing room label,label de chambre manquante,fehlendes R
 map_terrasse.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
 map_hallway.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
 map_entrance.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
-exit_diningroom_paper.tooltip,Back,Retour,Zurück
+exit_diningroom_paper.tooltip,Back,Arrière,Zurück
 confirm_diningroom_paper.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
 stack.tooltip,stack,pile,Stapel
 upstairs.tooltip,To the first floor,Au premier étage,Zum ersten Stock
@@ -154,23 +154,23 @@ bottom_left.tooltip,window piece,morceau de fenêtre,Fenster Stück
 bottom_middle.tooltip,window piece,morceau de fenêtre,Fenster Stück
 bottom_right.tooltip,window piece,morceau de fenêtre,Fenster Stück
 staircase_window_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
-exit_staircase.tooltip,Back,Retour,Zurück
+exit_staircase.tooltip,Back,Arrière,Zurück
 bedroom_spot1.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot2.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot3.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot4.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_nightstand.tooltip,walnut nightstand,table de chevet en noyer,Walnuss Nachtschränkchen
-bedroom_curtain.tooltip,some info,quelques infos,einige Infos
-bedroom_painting.tooltip,"painting of Xs sister ""Name"" (von wem nochmal)",peinture de « Nom » soeur Xs (le nochmal von),"Malerei von Xs Schwester ""Name"" (von wem nochmal)"
-bedroom_dresser.tooltip,walnut dreser,Dreser noyer,Walnuss Dreser
+bedroom_curtain.tooltip,mint curtain,rideau menthe,Minzfarbener Vorhang
+bedroom_painting.tooltip,"painting of Xs sister ""Name""",peinture de soeur Xs « Nom »,Malerei von Xs Schwester „Name“
+bedroom_dresser.tooltip,walnut dresser,commode en noyer,Nussbaum Kommode
 bedroom_dressingroom.tooltip,dressing room,loge,Umkleideraum
 bedroom_album_onbed.tooltip,photo album,album photo,Fotoalbum
 bedroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
-bedroom_door_mural.tooltip,some info,quelques infos,einige Infos
-exit_bedroom_album.tooltip,Back,Retour,Zurück
+bedroom_door_mural.tooltip,honesties stained glass art,vitrail des monnaies du pape,Silbertaler Buntglaskunst
+exit_bedroom_album.tooltip,Back,Arrière,Zurück
 album_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
-bedroom_nightstand_closeup.tooltip,some info,quelques infos,einige Infos
-bedroom_dresser_closeup.tooltip,some info,quelques infos,einige Infos
+bedroom_nightstand_closeup.tooltip,walnut nightstand,table de chevet en noyer,Walnuss Nachtschränkchen
+bedroom_dresser_closeup.tooltip,walnut dresser,commode en noyer,Nussbaum Kommode
 inv_lightbulb.tooltip,lightbulb,ampoule,Glühbirne
 inv_piece6.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_piece7.tooltip,puzzle piece,morceau de puzzle,Puzzleteil

@@ -52,12 +52,11 @@ scale_max = 0.45
 navpoly = SubResource( 1 )
 
 [node name="door" type="TextureRect" parent="."]
-margin_left = -25.1716
-margin_top = 1042.28
-margin_right = 2376.83
-margin_bottom = 3090.28
+margin_left = 475.0
+margin_top = 211.0
+margin_right = 2623.0
+margin_bottom = 7746.0
 rect_scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 17 )
 script = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -105,8 +104,10 @@ events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 317.237, 762.604 )
 scale = Vector2( 0.3, 0.3 )
+events_path = "res://scenes/1_entrance/entrance_ghost.esc"
 
 [node name="lamp" parent="." instance=ExtResource( 10 )]
 visible = false
