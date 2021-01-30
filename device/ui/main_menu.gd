@@ -64,9 +64,10 @@ func menu_collapsed():
 	close()
 
 func _on_exit_pressed():
-	button_clicked()
-	confirm_popup = get_node("/root/main").load_menu("res://ui/confirm_popup.tscn")
-	confirm_popup.start("UI_QUIT_CONFIRM",self,"_quit_game")
+	#button_clicked()
+	#confirm_popup = get_node("/root/main").load_menu("res://ui/confirm_popup.tscn")
+	#confirm_popup.start("UI_QUIT_CONFIRM",self,"_quit_game")
+	_quit_game(true)
 	
 func _quit_game(p_confirm):
 	if !p_confirm:

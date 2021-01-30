@@ -15,8 +15,10 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Majorelle Mystery App"
+config/name="Majorelle Mystery"
 run/main_scene="res://globals/scene_main.tscn"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
@@ -39,10 +41,7 @@ print_clicked_control=true
 
 window/size/width=1600
 window/size/height=1200
-window/size/test_width=1600
-window/size/test_height=1200
 mouse_cursor/custom_image="res://globals/sprites/knoepfe und co/cursor_small.png"
-mouse_cursor/tooltip_position_offset=Vector2( 0, 0 )
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 game_height=1150
@@ -142,6 +141,7 @@ windowed_available=true
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 quality/reflections/texture_array_reflections.mobile=true
+environment/default_clear_color=Color( 0.439216, 0.439216, 0.439216, 0.054902 )
 
 [ui]
 

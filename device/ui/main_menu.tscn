@@ -25,27 +25,25 @@ use_filter = true
 font_data = ExtResource( 10 )
 
 [node name="main_menu" type="Control"]
-margin_left = 3.15002
-margin_top = 5.48335
-margin_right = 1933.15
-margin_bottom = 1106.48
+margin_right = 1600.0
+margin_bottom = 1200.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 922.567 ],
+"_edit_horizontal_guides_": [ 922.567, 1200.08 ],
 "_edit_use_anchors_": false,
-"_edit_vertical_guides_": [ 828.692, 1490.69, 1160.69 ]
+"_edit_vertical_guides_": [ 828.692, 1600.08, 1160.69 ]
 }
 
-[node name="background" type="Sprite" parent="."]
-scale = Vector2( 0.41, 0.41 )
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 8 )
-offset = Vector2( 1958.44, 1456.87 )
+centered = false
 
 [node name="menu_design" type="TextureRect" parent="."]
-margin_left = -104.0
-margin_top = -112.0
-margin_right = 696.0
-margin_bottom = 959.0
+margin_left = -106.0
+margin_top = -78.0
+margin_right = 694.0
+margin_bottom = 993.0
 rect_scale = Vector2( 1.28, 1.28 )
 texture = ExtResource( 9 )
 __meta__ = {
@@ -224,9 +222,9 @@ __meta__ = {
 }
 
 [node name="en" type="TextureButton" parent="."]
-margin_left = 1071.63
-margin_top = 454.0
-margin_right = 1583.63
+margin_left = 1075.0
+margin_top = 450.0
+margin_right = 1587.0
 margin_bottom = 966.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
@@ -256,8 +254,8 @@ __meta__ = {
 }
 
 [node name="fr" type="TextureButton" parent="."]
-margin_left = 1325.05
-margin_top = 454.0
+margin_left = 1320.0
+margin_top = 450.0
 margin_right = 1837.05
 margin_bottom = 966.0
 rect_scale = Vector2( 0.3, 0.3 )
@@ -291,10 +289,10 @@ anchor_left = 0.193782
 anchor_top = -0.87557
 anchor_right = 0.193782
 anchor_bottom = -0.87557
-margin_left = 456.01
-margin_top = 1418.0
-margin_right = 968.01
-margin_bottom = 1930.0
+margin_left = 519.949
+margin_top = 1500.68
+margin_right = 1031.95
+margin_bottom = 2012.68
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )

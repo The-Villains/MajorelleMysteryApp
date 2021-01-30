@@ -101,7 +101,7 @@ func check_screen():
 	get_tree().get_root().set_size_override_stretch(true)
 
 	var m = Transform2D()
-	var ofs = Vector2(0, (height - game_size.y) / 2)
+	var ofs = Vector2(0,0)
 	m[2] = ofs
 	get_tree().get_root().set_global_canvas_transform(m)
 
@@ -119,7 +119,7 @@ func _process(_time):
 func _input(event):
 	if (event is InputEventKey and event.pressed and event.control and event.scancode==KEY_F12):
 		OS.print_all_textures_by_size()
-		
+
 	if menu_stack.size() > 0:
 		menu_stack[menu_stack.size() - 1].input(event)
 	elif current != null:
@@ -154,4 +154,3 @@ func _ready():
 	ProjectSettings.load_resource_pack("res://scripts.zip")
 
 	call_deferred("load_telon")
-

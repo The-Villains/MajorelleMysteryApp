@@ -64,7 +64,6 @@ func set_current_action(p_act):
 		set_current_tool(null)
 	current_action = p_act
 
-
 func set_current_tool(p_tool):
 	current_tool = p_tool
 
@@ -299,11 +298,11 @@ func set_camera_limits():
 		camera.set_limit(MARGIN_RIGHT, area.position.x + area.size.x)
 		var cam_top = area.position.y # - get_node("/root/main").screen_ofs.y
 		camera.set_limit(MARGIN_TOP, cam_top)
-		camera.set_limit(MARGIN_BOTTOM, cam_top + area.size.y + get_node("/root/main").screen_ofs.y * 2)
+		camera.set_limit(MARGIN_BOTTOM, cam_top + area.size.y)
 
 		if area.size.x == 0 || area.size.y == 0:
-			area.size.x = 1920
-			area.size.y = 1080
+			area.size.x = 1600
+			area.size.y = 1200
 
 		printt("setting camera limits from scene ", area)
 		cam_limit = area

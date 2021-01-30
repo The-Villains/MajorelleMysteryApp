@@ -103,7 +103,7 @@ func update_window_fullscreen(p_force = false):
 	else:
 		var title = ProjectSettings.get("platform/window_title_height")
 		var sc = OS.get_current_screen()
-		var ratio = 1200 / 1600.0
+		var ratio = 1200.0 / 1600.0
 		var size = OS.get_screen_size(sc)
 		printt("***** got screen size ", size, title)
 		var h = size.y - title
@@ -766,5 +766,3 @@ func _ready():
 	connect("global_changed", self, "check_achievement")
 
 	set_process(true)
-
-

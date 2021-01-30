@@ -24,6 +24,8 @@ __meta__ = {
 }
 
 [node name="background" type="TextureRect" parent="."]
+margin_right = 1600.0
+margin_bottom = 1200.0
 rect_scale = Vector2( 1.5, 1.5 )
 texture = ExtResource( 5 )
 script = ExtResource( 2 )

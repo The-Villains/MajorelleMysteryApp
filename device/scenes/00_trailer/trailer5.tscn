@@ -11,8 +11,8 @@
 script = ExtResource( 2 )
 
 [node name="background" type="TextureRect" parent="."]
-margin_right = 3520.0
-margin_bottom = 2479.94
+margin_right = 1600.0
+margin_bottom = 1200.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_scale = Vector2( 1.5, 1.5 )
