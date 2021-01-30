@@ -55,11 +55,11 @@ __meta__ = {
 }
 
 [node name="side_flower" type="TextureRect" parent="."]
-margin_left = -104.652
-margin_top = -82.0244
-margin_right = 676.348
-margin_bottom = 1814.98
-rect_scale = Vector2( 0.55, 0.68 )
+margin_left = -90.5098
+margin_top = 65.054
+margin_right = 690.49
+margin_bottom = 1962.06
+rect_scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 15 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -70,7 +70,7 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CREDITS" type="Label" parent="."]

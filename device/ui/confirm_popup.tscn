@@ -108,6 +108,9 @@ rect_scale = Vector2( 0.45, 0.7 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="UI_NO" type="Label" parent="no"]
 margin_left = -83.5793

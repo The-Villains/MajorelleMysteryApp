@@ -44,8 +44,7 @@ position = Vector2( -3.05176e-05, 2.00006 )
 navpoly = SubResource( 1 )
 
 [node name="plants" parent="." instance=ExtResource( 5 )]
-position = Vector2( 794, 606 )
-scale = Vector2( 1.52, 1.52 )
+position = Vector2( 844, 676 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
 visible = false
@@ -58,16 +57,14 @@ placeholders = {
 
 [node name="flower1" parent="." instance=ExtResource( 11 )]
 visible = false
-position = Vector2( 622.48, 688.16 )
-scale = Vector2( 0.228, 0.228 )
+position = Vector2( 698.48, 754.66 )
 z_index = 2500
 script = ExtResource( 12 )
 global_id = "flower1"
 
 [node name="flower2" parent="." instance=ExtResource( 10 )]
 visible = false
-position = Vector2( 738, 220 )
-scale = Vector2( 0.228, 0.228 )
+position = Vector2( 785, 334 )
 z_index = 2500
 z_as_relative = false
 script = ExtResource( 12 )
@@ -75,8 +72,7 @@ global_id = "flower2"
 
 [node name="flower3" parent="." instance=ExtResource( 9 )]
 visible = false
-position = Vector2( 947.76, 539.2 )
-scale = Vector2( 0.228, 0.228 )
+position = Vector2( 977.76, 606.2 )
 z_index = 2500
 z_as_relative = false
 script = ExtResource( 12 )
@@ -84,8 +80,7 @@ global_id = "flower3"
 
 [node name="flower4" parent="." instance=ExtResource( 8 )]
 visible = false
-position = Vector2( 765.36, 900.96 )
-scale = Vector2( 0.228, 0.228 )
+position = Vector2( 821.36, 947.146 )
 z_index = 2500
 script = ExtResource( 12 )
 global_id = "flower4"
@@ -101,6 +96,7 @@ margin_top = 630.0
 margin_right = 694.0
 margin_bottom = 750.0
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -119,6 +115,7 @@ margin_top = 163.414
 margin_right = 803.414
 margin_bottom = 283.414
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -136,6 +133,7 @@ margin_top = 486.0
 margin_right = 1012.0
 margin_bottom = 606.0
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -153,6 +151,7 @@ margin_top = 854.0
 margin_right = 826.0
 margin_bottom = 974.0
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 

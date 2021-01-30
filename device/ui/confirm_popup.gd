@@ -13,18 +13,15 @@ func start(message, p_target, p_slot):
 	show()
 
 func button_pressed(p_confirm):
-	printt("button pressed!", p_confirm, anim.is_playing())
-	if anim.is_playing():
-		return
-	if target != null:
-		target.call_deferred(slot, p_confirm)
-
-
-	close()
+	#printt("button pressed!", p_confirm, anim.is_playing())
+	#if anim.is_playing():
+	#	return
+	#if target != null:
+	#	target.call_deferred(slot, p_confirm)
+	get_node("/root/main").load_menu(ProjectSettings.get("ui/main_menu"))
 
 func menu_collapsed():
 	close()
-
 
 func close():
 	get_node("/root/main").menu_close(self)

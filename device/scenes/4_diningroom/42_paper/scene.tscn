@@ -16,13 +16,13 @@
 [ext_resource path="res://scenes/4_diningroom/42_paper/diningroom.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/4_diningroom/42_paper/terrasse.tscn" type="PackedScene" id=15]
 
-[sub_resource type="DynamicFont" id=1]
-size = 36
+[sub_resource type="DynamicFont" id=2]
+size = 32
 use_filter = true
 font_data = ExtResource( 8 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 32
+[sub_resource type="DynamicFont" id=1]
+size = 36
 use_filter = true
 font_data = ExtResource( 8 )
 
@@ -44,10 +44,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="MAP_PUZZLE" type="Label" parent="."]
+margin_left = 534.0
+margin_top = 743.0
+margin_right = 785.0
+margin_bottom = 961.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MAP_PUZZLE"
+align = 3
+valign = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="stack" type="TextureRect" parent="."]
-margin_left = 1165.97
+margin_left = 1163.14
 margin_top = 46.397
-margin_right = 5165.97
+margin_right = 5163.14
 margin_bottom = 3046.4
 rect_scale = Vector2( 0.6, 1 )
 texture = ExtResource( 9 )
@@ -211,18 +225,6 @@ placeholders = {
 
 [node name="kiara" parent="." instance=ExtResource( 10 )]
 events_path = "res://scenes/4_diningroom/42_paper/paper_kiara.esc"
-
-[node name="MAP_PUZZLE" type="Label" parent="."]
-margin_left = 528.0
-margin_top = 766.0
-margin_right = 930.0
-margin_bottom = 1004.0
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "MAP_PUZZLE"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="confirm" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1288.04, 685.065 )

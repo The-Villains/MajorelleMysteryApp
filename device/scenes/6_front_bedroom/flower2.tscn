@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://globals/sprites/objekte/blumen-rewards/flower2.png" type="Texture" id=1]
+[ext_resource path="res://scenes/6_front_bedroom/sprites/flower2.png" type="Texture" id=1]
 
 [node name="flower2" type="Node2D"]
 

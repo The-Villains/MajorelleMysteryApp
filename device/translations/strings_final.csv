@@ -1,73 +1,73 @@
 id,en,fr,de
-fallbacks_use_2,I can't do that.,Je ne peux pas le faire.,Ich kann das nicht tun.
-fallbacks_pick_up_4,That's not a good idea.,Ce n'est pas une bonne idée.,Das ist keine gute Idee.
-fallbacks_talk_6,This won't answer me!,Cela ne me répondre!,Das wird mir nicht antworten!
-fallbacks_look_8,Nothing to look at here.,Rien à regarder ici.,Nichts zu sehen hier.
-general_flower_reward,Here is another flower as a reward.,Voici une autre fleur comme une récompense.,Hier ist eine andere Blume als Belohnung.
+fallbacks_use_2,I can't do that.,Je ne peux pas faire ça.,Ich kann das nicht tun.
+fallbacks_pick_up_4,I can't pick this up.,Je ne peux pas ramasser ça.,Das kann ich nicht aufheben.
+fallbacks_talk_6,This won't answer me!,Cela ne me répondra pas.,Das wird mir wahrscheinlich eher nicht antworten.
+fallbacks_look_8,Nothing to look at here.,Rien à voir ici.,Hier ist nichts zu sehen.
+general_flower_reward,Here is another flower as a reward.,Voici une autre fleur comme une récompense.,Hier ist noch eine Blume als Belohnung.
 general_1,Placeholder,placeholder,Platzhalter
 general_2,Placeholder,placeholder,Platzhalter
 general_3,Placeholder,placeholder,Platzhalter
 general_4,Placeholder,placeholder,Platzhalter
 general_5,Placeholder,placeholder,Platzhalter
 trailer_1,"Arthur Benoit, private investigator, who am I speaking to?","Arthur Benoit, détective privé, à qui ai-je l'honneur ?","Detektei Benoit, Arthur Benoit am Apparat, mit wem spreche ich?"
-trailer_2,"Hello I am Jeanne Majorelle, wife of Louis Majorelle and mother of Jacques Majorelle. We own a beautiful “Art Nouveau” villa in Nancy.","Bonjour, je suis Jeanne Majorelle, épouse de Louis Majorelle et mère de Jacques Majorelle. Nous possédons une belle villa ""Art Nouveau"" à Nancy.","Hallo, ich bin Jeanne Majorelle, Ehefrau von Louis Majorelle und Mutter von Jacques Majorelle. Wir besitzen eine wunderschöne Jugendstilvilla in Nancy."
-trailer_3,Now here’s the problem: The doors are overgrown and the plants don’t leave unless we solve riddles… Maybe you could help us?,"Voilà le problème : Les portes sont envahies par la végétation et les plantes ne s’en iront que si nous résolvons des énigmes. Pourriez-vous, peut-être, nous aider ?",Aber hier ist das Problem:
+trailer_2,"Hello I am Jane Majorelle, wife of Louis Majorelle and mother of Jacques Majorelle. We own a beautiful “Art Nouveau” villa in Nancy.","Bonjour, je suis Jeanne Majorelle, épouse de Louis Majorelle et mère de Jacques Majorelle. Nous possédons une belle villa ""Art Nouveau"" à Nancy.","Hallo, ich bin Jeanne Majorelle, Ehefrau von Louis Majorelle und Mutter von Jacques Majorelle. Wir besitzen eine wunderschöne Jugendstilvilla in Nancy."
+trailer_3,Now here’s the problem: The doors are overgrown and the plants don’t leave unless we solve riddles. Maybe you could help us?,"Voilà le problème : Les portes sont envahies par la végétation et les plantes ne s’en iront que si nous résolvons des énigmes. Pourriez-vous, peut-être, nous aider ?",Aber hier ist das Problem: Die Türen sind zugewachsen und die Pflanzen verschwinden nicht ehe wir einige Rätsel lösen. Können Sie uns vielleicht helfen?
 trailer_4,"Of course, Madam, we’ll come over as soon as possible.","Bien sûr, Madame, nous arrivons dès que possible.","Natürlich, Madam, wir kommen so schnell wie möglich vorbei."
 trailer_5,We are the Majorelle family. Thank you very much for coming. Let’s go right in!,Nous sommes la famille Majorelle. Merci beaucoup d'être venus. Entrons !,"Wir sind die Familie Majorelle. Vielen Dank, dass Sie gekommen sind. Gehen wir gleich rein!"
 trailer_6,"Hmm, these must be the plants Jeanne Majorelle was talking about...","Hmm, ce sont sûrement les plantes dont Jeanne Majorelle parlait…","Hmm, das müssen die Pflanzen sein, von denen Jeanne Majorelle gesprochen hat..."
 entrance_louis_greeting,"Welcome to the Villa Majorelle or Villa Jika as we prefer to call it, after my beautiful wife","Bienvenue à la Villa Majorelle ou Villa Jika, comme nous préférons l'appeler, d’après ma charmante femme","Willkommen in der Villa Majorelle oder Villa Jika, wie wir sie lieber nennen, nach meiner wunderschönen Frau"
 entrance_louis_intruction1,First let me show you how to interact with things,Laissez-moi d'abord vous montrer comment interagir avec les objets,"Zuerst zeige ich Ihnen, wie man mit den Dingen interagiert."
 entrance_louis_intruction2,"To look around, you must first click the eye and then whatever sparks your interest. Try it out","Pour regarder autour de vous, Cliquez sur l’œil puis sur quelque chose d’autre qui vous intéresse.. Essayez!","Um sich umzusehen, musst du zuerst das Auge anklicken und dann das, was was auch immer dein Interesse weckt. Probiere es aus!"
-entrance_artur_kiara,Got it. Hmm ... Let's ask Kiara first for an advice. She always has an idea.,Je l'ai. Hmm ... Demandons Kiara d'abord pour un conseil. Elle a toujours une idée.,Ich habs. Hmm ... Lassen Sie uns fragen Kiara zuerst um Beratung. Sie hat immer eine Idee.
+entrance_artur_kiara,Got it. Hmm ... Let's ask Kiara for some advice first. She always has the best ideas.,Je l'ai. Hmm ... Demandons Kiara quelques conseils en premier. Elle a toujours les meilleures idées.,Ich habs. Hmm ... Lassen Sie uns fragen Kiara für einige Ratschläge zuerst. Sie hat immer die besten Ideen.
 entrance_kiara_tip,Those tulips on the wall look like they don't belong here. Let's look at them.,Ces tulipes sur le look de mur comme ils ne font pas partie ici. Regardons à eux.,"Diese Tulpen auf der Wand schauen, wie sie gehören nicht hierher. Schauen wir uns ihnen."
-entrance_louis_riddle,Here you have to pick the correct answer with the hand. This can also be used to pick up things.,"Ici, vous devez choisir la bonne réponse avec la main. Cela peut aussi servir à ramasser des objets",Hier musst du mit der Hand die richtige Antwort auswählen. Diesen Knopf kann man aber auch zum Aufheben von Dingen benutzen.
-entrance_wrong_flower,I don't think this fits to the other flowers.,Je ne pense pas que cela correspond aux autres fleurs.,"Ich glaube nicht, das paßt zu den anderen Blumen."
+entrance_louis_riddle,Here you have to pick the correct answer with the hand. This can also be used to pick things up.,"Ici, vous devez choisir la bonne réponse avec la main. Cela peut aussi servir à ramasser des objets",Hier musst du mit der Hand die richtige Antwort auswählen. Diesen Knopf kann man aber auch zum Aufheben von Dingen benutzen.
+entrance_wrong_flower,I don't think this fits with the other flowers.,Je ne pense pas que cela corresponde aux autres fleurs.,"Ich glaube nicht, dass das zu den anderen Blumen passt."
 entrance_right_flower,This looks good!,Ça a l'air correct!,Das sieht gut aus!
 entrance_offer_lamp,"Take this lightbulb, you can repair the lamp with it!",Prenez cette ampoule avec laquelle vous pouvez réparer la lampe!,"Nimm diese Glühbirne, damit kannst du die Lampe reparieren!"
 entrance_picked_lightbulb,Well done! The lightbulb is now in your inventory.,Bien joué ! L'ampoule est maintenant dans votre inventaire.,Gut gemacht! Sie ist jetzt in deinem Inventar.
-entrance_use_lamp,"Okay, now let’s use this lightbulb on the lamp.","Ok maintenant, utilisons cette ampoule sur la lampe","Okay, jetzt benutzen wir diese Glühbirne für die Lampe."
+entrance_use_lamp,"Okay, now let’s put the lightbulb into the lamp.","Ok maintenant, utilisons cette ampoule sur la lampe","Okay, jetzt benutzen wir diese Glühbirne für die Lampe."
 entrance_light_on,Splendid! Now everything’s back in order here!,Magnifique! Maintenant tout est en ordre ici!,Wunderbar! Jetzt ist hier alles wieder in Ordnung!
-entrance_louis_remember,And remember that last button if you want to move things somewhere or switch two things.,Et rappelez-vous que le bouton dernier si vous voulez déplacer quelque part des choses ou changer deux choses.,"Und denken Sie daran, dass die letzte Taste, wenn Sie die Dinge irgendwo oder wechseln zwei Dinge bewegen wollen."
-hallway_jacques,Come follow me to the living room.,Venez me suivre dans le salon.,Komm folge mir ins Wohnzimmer.
+entrance_louis_remember,And remember that last button if you want to move things somewhere or switch two things.,Tu peux aussi utiliser ce dernier bouton si tu veux déplacer ou échanger des choses.,Die letzte Taste kannst du auch benutzen wenn du Dinge bewegen oder tauschen willst.
+hallway_jacques,Come follow me to the living room.,Suivez-moi dans le salon.,Folge mir ins Wohnzimmer.
 hallway_artur,"Okay, let’s look at the next room!","Ok, regardons la pièce d'à côté!","Okay, schauen wir uns den nächsten Raum an!"
-hallway_kiara,"I say, to follow Jacques, let's have a look at the opened living room door.","Je dis, à suivre Jacques, nous allons jeter un coup d'œil à la porte du salon ouverte.","Ich sage, Jacques zu folgen, lassen Sie uns einen Blick auf die geöffnete Wohnzimmertür haben."
-livingroom_window_not_done,This doesn't look done.,Cela ne semble pas faire.,Das sieht nicht getan.
+hallway_kiara,We should follow Jacques and have a look at the next room.,Suivons Jacques et regardons la pièce suivante.,Wir sollten Jacques folgen und uns den nächsten Raum anschauen.
+livingroom_window_not_done,This doesn't look complete.,Cela n'a pas l'air complet.,Das sieht so nicht ganz vollständig aus
 livingroom_window_missing,Some pieces are missing… maybe I should look around.,Il manque quelques morceaux... peut-être que je devrais regarder autour de moi,Da fehlen ein paar Teile... vielleicht sollte ich mich im Raum umsehen.
 livingroom_window_fixed,"Yay, you repaired the window! At last we see the beautiful light again!","Bravo, vous avez réparé la fenêtre! Nous pouvons enfin profiter à nouveau de la lumière!","Juhu, du hast das Fenster repariert! Endlich können wir wieder das schöne Licht sehen!"
-livingroom_flower_reward,You will find a flower in your inventory as a reward. Maybe this will be useful later.,Vous trouverez une fleur dans votre inventaire comme une récompense. Peut-être que cela sera utile plus tard.,Sie erhalten eine Blume im Inventar als Belohnung finden. Vielleicht wird dies später nützlich sein.
-livingroom_window_kiara,Placeholder,placeholder,Platzhalter
-livingroom_kiara_tip,Placeholder,placeholder,Platzhalter
+livingroom_flower_reward,You will find a flower in your inventory as a reward. Maybe this will be useful later.,Vous trouverez une fleur dans votre inventaire comme récompense. Cela vous sera peut-être utile plus tard.,"Du erhältst eine Blume als Belohnung, die du in deinem Inventar finden kannst. Vielleicht wird diese später nützlich sein."
+livingroom_window_kiara,Try the edges first!,Essaie d'abord les bords !,Probiere zuerst die Kanten zu puzzeln!
+livingroom_kiara_tip,That window looks broken.,Cette fenêtre a l'air cassée.,Dieses Fenster sieht kaputt aus.
 livingroom_1,Placeholder,placeholder,Platzhalter
 livingroom_2,Placeholder,placeholder,Platzhalter
 livingroom_3,Placeholder,placeholder,Platzhalter
 diningroom_kiara_tip,Maybe we should look around.,On devrait peut-être regarder autour de nous.,Vielleicht sollten wir uns umsehen.
-diningroom_painting_kiara,Placeholder,placeholder,Platzhalter
-diningroom_not_all_found,Keep looking.,Continue de regarder.,Weiter suchen.
+diningroom_painting_kiara,That duck looks weird!,Ce canard a l'air un peu bizarre!,Das Ente sieht komisch aus!
+diningroom_not_all_found,Keep looking!,Continue de regarder!,Suche weiter!
 diningroom_all_found,You found all the differences!,Vous avez trouvé toutes les différences!,Du hast alle Unterschiede gefunden!
-diningroom_artur_paper,"Oh, a piece of paper fell out! Oh my, let’s have a look at it!","Oh, un morceau de papier est tombé! Regardons-le!","Oh, ein Stück Papier ist herausgefallen! Oh je, das sollten wir uns mal ansehen!"
-diningroom_not_solved_paper,Something is still not right.,Quelque chose est toujours pas droit.,Etwas ist immer noch nicht richtig.
+diningroom_artur_paper,"Oh, a piece of paper fell out! Let’s have a look at it!","Oh, un morceau de papier est tombé! Regardons-le!","Oh, ein Stück Papier ist herausgefallen! Das sollten wir uns mal ansehen!"
+diningroom_not_solved_paper,Something is still not right.,Quelque chose ne va pas encore.,Irgendwas stimmt hier noch nicht.
 diningroom_solved_paper,Thank you for restoring that!,Merci d'avoir restauré ça!,"Danke, dass Sie das wiederhergestellt haben!"
-diningroom_paper_kiara,Placeholder,placeholder,Platzhalter
+diningroom_paper_kiara,Okay so where did we come from?,"Bon, d'où venons-nous encore?","Okay, woher kamen wir nochmal?"
 diningroom_1,Placeholder,placeholder,Platzhalter
 diningroom_2,Placeholder,placeholder,Platzhalter
 diningroom_3,Placeholder,placeholder,Platzhalter
-staircase_artur_dont_leave,I don't think it is time to leave yet. It doesn't look like I am done here.,Je ne pense pas qu'il est temps de partir encore. Il ne semble pas que je suis fait ici.,"Ich glaube nicht, es ist Zeit, noch zu verlassen. Es sieht nicht so aus, wie ich hier fertig bin."
-staircase_window_kiara,This is a placeholder for the switch puzzle.,Ceci est un espace réservé pour le casse-tête de commutateur.,Dies ist ein Platzhalter für das Switch-Puzzle.
-staircase_window_solved,Yay. This looks good.,Yay. Cela semble bon.,Yay. Das sieht gut aus.
-staircase_window_unsolved,This doesn't look right.,Cela ne semble pas juste.,Dies sieht nicht richtig aus.
-staircase_kiara_upstairs,"Come on Artur, let's see what's upstairs now!","Venez sur Artur, nous allons voir ce qui est là-haut maintenant!","Komm Artur, mal sehen, was jetzt nach oben ist!"
+staircase_artur_dont_leave,I don't think it is time to leave yet. It doesn't look like I am done here.,Je pense qu'il est trop tôt pour partir. Je n'ai pas encore fini.,Ich glaube es ist noch zu früh um zu gehen. Ich bin hier noch nicht fertig.
+staircase_window_kiara,Looks like the blue part goes in the middle!,On dirait que le morceau bleue va au milieu!,Der blaue Teil scheint in die Mitte zu passen!
+staircase_window_solved,Yay! This looks great.,Yay ! C'est parfait.,Yay! Das sieht super aus.
+staircase_window_unsolved,This doesn't look right.,Cela n'a pas l'air correct.,Das sieht so nicht ganz richtig aus.
+staircase_kiara_upstairs,"Come on, Arthur, let's see what's upstairs now!","Viens, Arthur, allons voir ce qu'il y a là-haut!","Lass uns schauen was oben ist, Arthur!"
 staircase_1,Placeholder,placeholder,Platzhalter
-frontbedroom_artur_plants,"Ah, more plants. Let's see what I can use here.","Ah, plus de plantes. Voyons voir ce que je peux utiliser ici.","Ah, mehr Pflanzen. Mal sehen, was ich hier verwenden können."
-frontbedroom_kiara_tip,This is a placeholder for the front of the bedroom.,Ceci est un espace réservé pour le devant de la chambre à coucher.,Dies ist ein Platzhalter für den vor dem Schlafzimmer.
-frontbedroom_kiara_wrong_spot,The flower doesn't fit here. Let us try a different spot.,La fleur ne correspond pas ici. Tentons un autre endroit.,Die Blume passt nicht hier. Lassen Sie uns einen anderen Ort versuchen.
-frontbedroom_not_all_flowers,Seems like some flowers are missing.,On dirait des fleurs manquent.,"Scheint, wie einige Blumen fehlen."
+frontbedroom_artur_plants,"Ah, more plants. Let's see what I can use here.",Encore plus de plantes! Voyons ce que je peux utiliser ici.,"Oh, noch mehr Pflanzen! Mal sehen, was ich hier verwenden kann."
+frontbedroom_kiara_tip,These gaps look like the flowers we got earlier!,Ces lacunes ressemblent les fleurs que nous avons eu plus tôt!,"Diese Lücken sehen aus wie die Blumen, die wir vorher bekommen haben!"
+frontbedroom_kiara_wrong_spot,This flower doesn't fit here. Let us try a different spot!,Cette fleur ne va pas ici. Essaye un autre endroit!,Diese Blume passt hier nicht. Versuche sie an einer anderen Stelle einzusetzen!
+frontbedroom_not_all_flowers,Seems like some flowers are missing.,Il semble qu'il manque des fleurs.,Es sieht aus als ob hier ein paar Blumen fehlen.
 bedroom_jeanne_album1,"Thank you very much! Here, take this photo album as a rewar-","Merci beaucoup ! Voici, prenez cet album photo en récompens-","Vielen Dank! Hier, nimm dieses Fotoalbum als Belohnun-"
-bedroom_jeanne_album2,Thank you very much! There is a photo album on the bed as a reward. Take it!,Merci beaucoup! Il y a un album photo sur le lit comme une récompense. Prends-le!,Vielen Dank! Es ist ein Fotoalbum auf dem Bett als Belohnung. Nimm es!
+bedroom_jeanne_album2,Thank you very much! There is a photo album on the bed as a reward. Take it!,Merci beaucoup ! Prenez le album photo sur le lit comme cadeau!,"Vielen Dank! Hier, nimm dieses Fotoalbum auf dem Bett als Belohnung!"
 bedroom_jeanne_locked,Oh no! It’s locked,Oh non ! C'est fermé!,Oh nein! Es ist zugewachsen!.
 bedroom_artur_dontworry,"Don’t worry, Madam, we’ll fix it!","Ne vous inquiétez pas, Madame, nous allons le réparer!","Keine Sorge, Madame, das kriegen wir schon hin."
 bedroom_album_kiara_tip1,Let’s look at the lock on the side!,Regardons la serrure sur le côté,Schauen wir uns das Schloss an der Seite an.
-bedroom_album_kiara_tip2,Okay… so it’s a 4-digit number. Let’s look around the room for something that fits!,Ok... donc c'est un nombre à 4 chiffres. Regardons autour de nous pour trouver quelque chose qui corresponde !,Hmm... Wir brauchen eine vierstellige Zahlenfolge. Sehen wir uns im Zimmer nach etwas Passendem um!
-bedroom_album_not_correct,This is not correct. Have you looked around in the room yet?,Ce n'est pas correct. Avez-vous regardé autour encore dans la chambre?,Das ist nicht richtig. Haben Sie noch im Raum sah sich um?
-bedroom_nothing_here,Seems like nothing to see here.,On dirait que rien à voir ici.,"Scheint, als ob hier nichts zu sehen."
-bedroom_kiara_tip,This is a placeholder for the bedroom.,Ceci est un espace réservé pour la chambre à coucher.,Dies ist ein Platzhalter für das Schlafzimmer.
+bedroom_album_kiara_tip2,Okay… so the password is a 4-digit number. Let’s look around the room for something that fits!,Ok... donc c'est un nombre à 4 chiffres. Regardons autour de nous pour trouver quelque chose qui corresponde !,Hmm... Wir brauchen eine vierstellige Zahlenfolge. Sehen wir uns im Zimmer nach etwas Passendem um!
+bedroom_album_not_correct,This is not correct. Have you looked around in the room yet?,Ce n'est pas correct. As-tu déjà regardé dans la pièce ?,"Das stimmt so nicht, hast du dich im Raum umgeschaut?"
+bedroom_nothing_here,Seems like nothing to see here.,Il n'y a rien à voir ici.,Hier ist nichts zu sehen.
+bedroom_kiara_tip,Four digit number... Sounds like it could be a date?,Un nombre à quatre chiffres... Peut-être une date?,Eine zierstellige Zahl ... Könnte eventuell eine Jahreszahl sein?
 bedroom_1,Placeholder,placeholder,Platzhalter

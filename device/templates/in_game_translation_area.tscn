@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://globals/sprites/knoepfe und co/vertical button_number lock.png" type="Texture" id=2]
+[ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -20,21 +20,21 @@ __meta__ = {
 }
 
 [node name="background" type="TextureRect" parent="."]
-margin_left = -226.0
-margin_top = -128.0
-margin_right = 286.0
-margin_bottom = 384.0
-rect_scale = Vector2( 1.5, 1.4 )
+margin_left = 5.99998
+margin_top = 3.99999
+margin_right = 1760.0
+margin_bottom = 2484.0
+rect_scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PLACEHOLDER" type="RichTextLabel" parent="."]
-margin_left = 40.0
-margin_top = 50.0
-margin_right = 268.0
-margin_bottom = 428.0
+margin_left = 84.0
+margin_top = 98.0
+margin_right = 266.0
+margin_bottom = 406.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "PLACEHOLDER"

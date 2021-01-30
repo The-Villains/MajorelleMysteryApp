@@ -14,7 +14,7 @@ func input(event):
 		close()
 
 func back_pressed():
-	close()
+	get_node("/root/main").load_menu(ProjectSettings.get("ui/main_menu"))
 
 func _ready():
 

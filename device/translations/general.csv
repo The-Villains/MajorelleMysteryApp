@@ -9,16 +9,16 @@ UI_NEW_GAME,New Game,Nouveau jeu,Neues Spiel
 UI_QUIT,Quit,Quitter,Beenden
 UI_YES,Yes,Oui,Ja
 UI_NO,No,Non,Nein
-UI_QUIT_CONFIRM,Do you want to quit the game ?,Souhaitez-vous vraiment quitter le jeu ?,Möchten Sie das Spiel beenden ?
-UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeu ? Vous n'avez pas sauvegardé votre progression…,Neues Spiel starten? Alle Fortschritte gehen verloren.
+UI_QUIT_CONFIRM,Do you want to quit the game ?,Veux-tu vraiment quitter le jeu ?,Möchten Sie das Spiel beenden ?
+UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeu ? Tout progrès serra perdu.,Neues Spiel starten? Alle Fortschritte gehen verloren.
 UI_BACK,Back to the main menu,Retour au menu principal,Zurück zum Hauptmenü
 UI_CREDITS,Credits,Crédits,Credits
 CREDITS,"Escoria in Daïza was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai.","Escoria in Daiza wurde von Elisa de Castro Guerra, Cédric Gemy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt und Adrien ""Kooda"" Ramos in Rennes für das ""Erstellen von Point-and-click-Spiele mit escoria"" booksprint vom 22. August erstellt bis 26 in Rennes, Frankreich. Beiträge zur Übersetzung: Ranito und Chaosprower. 2018 Verbesserungen von bosinpai."
-FLOWER_RIDDLE,Pick the matching flowers for the entrance area!,Choisissez les fleurs correspondant à la zone d'entrée!,Wählen Sie die passenden Blumen für den Eingangsbereich!
-WINDOW_PUZZLE,Repair the window and move the pieces to the right spots.,Réparer la fenêtre et déplacer les pièces aux bons endroits.,Reparieren Sie das Fenster und bewegen Sie die Stücke an den richtigen Stellen.
-PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouvez les cinq différences dans la peinture de fond.,Finden Sie die fünf Unterschiede in der Bodenmalerei.
-MAP_PUZZLE,Assign the correct labels to the rooms.,Attribuer les étiquettes correctes aux chambres.,Ordnen Sie die richtigen Etiketten zu den Zimmern.
-WINDOW_SWITCH,Switch the window pieces to the right positions!,Mettez les morceaux de fenêtre aux positions de droite!,Schalten Sie die Fenster Stücke an die richtigen Positionen!
+FLOWER_RIDDLE,Pick the matching flowers for the entrance area!,Choisi les fleurs correspondant à la zone d'entrée!,Suche Blumen für den Eingangsbereich aus!
+WINDOW_PUZZLE,Repair the window and move the pieces to the right spots.,Répare la fenêtre et ordonne les morceaux.,Repariere das Fenster indem du die Stücke an den richtigen Stelle bewegst.
+PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouve les cinq différences dans le tableau du bas.,Finde die Unterschiede und wähle sie im unteren Bild aus!
+MAP_PUZZLE,Assign the correct labels to the rooms.,Distribue les étiquettes correctes aux différentes chambres.,Ordne die Labels den richtigen Räumen zu.
+WINDOW_SWITCH,Switch the window pieces to the right positions!,Change les morceaux de fenêtre jusqu'à ce qu'ils soient au bon endroit!,"Tausche die Teile des Fensters miteinande, bis sie an der richtigen Stelle sind!"
 P_Entrance,Entrance,entrée,Eingang
 P_Hallway,Hallway,Couloir,Flur
 P_Living_Room,Living Room,Salon,Wohnzimmer
@@ -37,150 +37,150 @@ good_bamboo_3.tooltip,A delicious bamboo,Un bambou délicieux,Ein leckerer Bambu
 inv_good_bamboo_3.tooltip,the delicious bamboo,le bambou délicieux,der leckere Bambus
 chameleon.tooltip,A chameleon,Un caméléon,ein Chamäleon
 kiara.tooltip,Kiara,Kiara,Kiara
-flowers.tooltip,odd looking flowers,étranges fleurs recherche,seltsam aussehende Blumen
+flowers.tooltip,odd looking flowers,des fleurs bizarres,seltsam aussehende Blumen
 entrance_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
-lightbulb_missing.tooltip,missing lightbulb,manquant lightbulb,fehlende Glühbirne
+lightbulb_missing.tooltip,missing lightbulb,ampoule manquante,fehlende Glühbirne
 entrance_door.tooltip,locked door,porte verrouillée,verschlossene Tür
 entrance_kiara.tooltip,Kiara,Kiara,Kiara
 button_tutorial.tooltip, , , 
-original.tooltip,honesties?,Silberblätter?,des monnaies du pape
-roses.tooltip,roses,des roses,Rosen
+original.tooltip,honesties,monnaies du pape,Silbertaler
+roses.tooltip,roses,roses,Rosen
 daisies.tooltip,daisies,marguerites,Gänseblümchen
 tulips.tooltip,tulips,tulipes,Tulpen
 exit_flowerriddle.tooltip,Back,Retour,Zurück
-hallway_door.tooltip,To the living room,Pour la salle de séjour,Zum Wohnzimmer
+hallway_door.tooltip,To the living room,Vers la salle de séjour,Zum Wohnzimmer
 hallway_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
 hallway_kiara.tooltip,Kiara,Kiara,Kiara
-livingroom_door.tooltip,To the dining room,Dans la salle à manger,Zum Esszimmer
-livingroom_lamp.tooltip,some info,quelques infos,einige Infos
-livingroom_chair1.tooltip,some info,quelques infos,einige Infos
-livingroom_chair2.tooltip,some info,quelques infos,einige Infos
-livingroom_chair3.tooltip,some info,quelques infos,einige Infos
+livingroom_door.tooltip,To the dining room,Vers la salle à manger,Zum Esszimmer
+livingroom_lamp.tooltip,dragonfly lamp,lampe libellule,Libellen-Lampe
+livingroom_chair1.tooltip,(table) wooden butome table,table en bois avec motif buttome,Holztisch mit Schwanenblumenmuster
+livingroom_chair2.tooltip,table instead,à la place la table,Tabelle statt
+livingroom_chair3.tooltip,pine themed armchair,fauteuil en pin,Sessel mit Kiefermotiv
 livingroom_sideboard.tooltip,some info,quelques infos,einige Infos
-livingroom_window.tooltip,some info,quelques infos,einige Infos
+livingroom_window.tooltip,redundant w jacques explaination,w redondant Jacques explaination,redundantes w jacques explaination
 livingroom_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
 exit_living_32.tooltip,Back,Retour,Zurück
 exit_living_33.tooltip,Back,Retour,Zurück
 exit_living_34.tooltip,Back,Retour,Zurück
 livingroom_light.tooltip, , , 
-livingroom_window_story,Some background information about the window and why it is special.,Quelques informations générales sur la fenêtre et pourquoi il est spécial.,Einige Hintergrundinformationen über das Fenster und warum es ist etwas Besonderes.
+livingroom_window_story,The window broke in war XY  and we rebuilt it differently inspired by my stay in morocco!,"La fenêtre s'est cassée pendant la guerre XY et nous l'avons reconstruite différemment, inspirée par mon séjour au Maroc !","Das Fenster ist im Krieg XY zerbrochen und wir haben es, inspiriert von meinem Marokko-Aufenthalt, anders wieder aufgebaut!"
 livingroom_zoom_32,?,?,?
 livingroom_zoom_33,?,?,?
 livingroom_zoom_34,?,?,?
-inv_piece1.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece2.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece3.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece4.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece5.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece6.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece7.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece8.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece9.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece10.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece11.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece12.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece13.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece14.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece15.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece16.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece17.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece18.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece19.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-slot1.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot2.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot3.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot4.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot5.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot6.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot7.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot8.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot9.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot10.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot11.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot12.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot13.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot14.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot15.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot16.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot17.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot18.tooltip,broken spot,endroit cassé,gebrochene Stelle
-slot19.tooltip,broken spot,endroit cassé,gebrochene Stelle
+inv_piece1.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece2.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece3.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece4.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece5.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece6.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece7.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece8.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece9.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece10.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece11.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece12.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece13.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece14.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece15.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece16.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece17.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece18.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece19.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+slot1.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot2.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot3.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot4.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot5.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot6.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot7.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot8.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot9.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot10.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot11.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot12.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot13.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot14.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot15.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot16.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot17.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot18.tooltip,broken window,fenêtre cassé,kaputtes Fenster
+slot19.tooltip,broken window,fenêtre cassé,kaputtes Fenster
 exit_living_31.tooltip,Back,Retour,Zurück
-window_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
-missing_piece1.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-missing_piece2.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-missing_piece3.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+window_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
+missing_piece1.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+missing_piece2.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+missing_piece3.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 diningroom_door.tooltip,To the staircase,Pour l'escalier,Zur Treppe
 diningroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
-diningroom_painting.tooltip,some info,quelques infos,einige Infos
+diningroom_painting.tooltip,painting of geese,peinture des oies,Malerei von Gänsen
 diningroom_tablearea.tooltip,some info,quelques infos,einige Infos
-diningroom_small_painting1.tooltip,some info,quelques infos,einige Infos
-diningroom_small_painting2.tooltip,some info,quelques infos,einige Infos
-diningroom_pantry.tooltip,To the pantry (locked),Pour le garde-manger (verrouillé),In der Speisekammer (gesperrt)
-diningroom_buffet.tooltip,some info,quelques infos,einige Infos
+diningroom_small_painting1.tooltip,painting of house at the water,peinture d'une maison au bord de l'eau,Malerei eines Haus am Rande des Wassers
+diningroom_small_painting2.tooltip,painting of a boat,peinture d'un bateau,Malerei eines Bootes
+diningroom_pantry.tooltip,To the pantry (locked),Au garde-manger (verrouillé),Zur Speisekammer (abgesperrt)
+diningroom_buffet.tooltip,Wheat themed cabinet with a rat,Armoire sur le thème du blé avec un rat,Weizen-Themenschrank mit einer Ratte
 diningroom_sideboard_left,some info,quelques infos,einige Infos
 diningroom_sideboard_right,some info,quelques infos,einige Infos
-diningroom_painting_closeup,some info,quelques infos,einige Infos
+diningroom_painting_closeup,painting of geese,peinture des oies,Malerei von Gänsen
 exit_diningroom_41.tooltip,Back,Retour,Zurück
-diningroom_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
-diningroom_paper.tooltip,mysterious piece of paper,mystérieux morceau de papier,mysteriös Stück Papier
-paper_terrasse.tooltip,room label,label chambre,Zimmer-Label
-paper_diningroom.tooltip,room label,label chambre,Zimmer-Label
-paper_livingroom.tooltip,room label,label chambre,Zimmer-Label
-paper_hallway.tooltip,room label,label chambre,Zimmer-Label
-paper_entrance.tooltip,room label,label chambre,Zimmer-Label
-map_diningroom.tooltip,missing room label,label chambre manquante,fehlende Raum Label
-map_livingroom.tooltip,missing room label,label chambre manquante,fehlende Raum Label
-map_terrasse.tooltip,missing room label,label chambre manquante,fehlende Raum Label
-map_hallway.tooltip,missing room label,label chambre manquante,fehlende Raum Label
-map_entrance.tooltip,missing room label,label chambre manquante,fehlende Raum Label
+diningroom_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
+diningroom_paper.tooltip,mysterious piece of paper,bout de papier mystérieux,mysteriöses Stück Papier
+paper_terrasse.tooltip,room label,label de chambre,Raum-Label
+paper_diningroom.tooltip,room label,label de chambre,Raum-Label
+paper_livingroom.tooltip,room label,label de chambre,Raum-Label
+paper_hallway.tooltip,room label,label de chambre,Raum-Label
+paper_entrance.tooltip,room label,label de chambre,Raum-Label
+map_diningroom.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
+map_livingroom.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
+map_terrasse.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
+map_hallway.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
+map_entrance.tooltip,missing room label,label de chambre manquante,fehlendes Raum-Label
 exit_diningroom_paper.tooltip,Back,Retour,Zurück
-confirm_diningroom_paper.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
-stack.tooltip,stack,empiler,Stapel
-upstairs.tooltip,To the first floor,Au premier étage,In dem ersten Stock
-dont_leave.tooltip,Back to the entrance and exit,Retournez à l'entrée et la sortie,Zurück zum Eingang und Ausgang
-staircase_window.tooltip,some info,quelques infos,einige Infos
+confirm_diningroom_paper.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
+stack.tooltip,stack,pile,Stapel
+upstairs.tooltip,To the first floor,Au premier étage,Zum ersten Stock
+dont_leave.tooltip,Back to the entrance and exit,Retour à l'entrée et la sortie,Zurück zum Eingang und Ausgang
+staircase_window.tooltip,stained glass window,vitrail,Glasmalerei
 staircase_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
-staircase_lamp.tooltip,some info,quelques infos,einige Infos
+staircase_lamp.tooltip,stained glass lamp,lampe en verre teinté,Glasmalereilampe
 staircase_cabinet.tooltip,some info,quelques infos,einige Infos
-staircase_flowers_glas.tooltip,some info,quelques infos,einige Infos
-top_left.tooltip,window piece,pièce de fenêtre,Fenster Stück
-top_middle.tooltip,window piece,pièce de fenêtre,Fenster Stück
-top_right.tooltip,window piece,pièce de fenêtre,Fenster Stück
-middle_left.tooltip,window piece,pièce de fenêtre,Fenster Stück
-middle_middle.tooltip,window piece,pièce de fenêtre,Fenster Stück
-middle_right.tooltip,window piece,pièce de fenêtre,Fenster Stück
-bottom_left.tooltip,window piece,pièce de fenêtre,Fenster Stück
-bottom_middle.tooltip,window piece,pièce de fenêtre,Fenster Stück
-bottom_right.tooltip,window piece,pièce de fenêtre,Fenster Stück
-staircase_window_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
+staircase_flowers_glas.tooltip,flower themed stained glass,vitrail sur le thème des fleurs,Glasmalerei mit Blumenmotiven
+top_left.tooltip,window piece,morceau de fenêtre,Fenster Stück
+top_middle.tooltip,window piece,morceau de fenêtre,Fenster Stück
+top_right.tooltip,window piece,morceau de fenêtre,Fenster Stück
+middle_left.tooltip,window piece,morceau de fenêtre,Fenster Stück
+middle_middle.tooltip,window piece,morceau de fenêtre,Fenster Stück
+middle_right.tooltip,window piece,morceau de fenêtre,Fenster Stück
+bottom_left.tooltip,window piece,morceau de fenêtre,Fenster Stück
+bottom_middle.tooltip,window piece,morceau de fenêtre,Fenster Stück
+bottom_right.tooltip,window piece,morceau de fenêtre,Fenster Stück
+staircase_window_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
 exit_staircase.tooltip,Back,Retour,Zurück
-bedroom_spot1.tooltip,missing flower,fleur manquante,fehlender Blume
-bedroom_spot2.tooltip,missing flower,fleur manquante,fehlender Blume
-bedroom_spot3.tooltip,missing flower,fleur manquante,fehlender Blume
-bedroom_spot4.tooltip,missing flower,fleur manquante,fehlender Blume
-bedroom_nightstand.tooltip,some info,quelques infos,einige Infos
+bedroom_spot1.tooltip,missing flower,fleur manquante,fehlende Blume
+bedroom_spot2.tooltip,missing flower,fleur manquante,fehlende Blume
+bedroom_spot3.tooltip,missing flower,fleur manquante,fehlende Blume
+bedroom_spot4.tooltip,missing flower,fleur manquante,fehlende Blume
+bedroom_nightstand.tooltip,walnut nightstand,table de chevet en noyer,Walnuss Nachtschränkchen
 bedroom_curtain.tooltip,some info,quelques infos,einige Infos
-bedroom_painting.tooltip,some info,quelques infos,einige Infos
-bedroom_dresser.tooltip,some info,quelques infos,einige Infos
-bedroom_dressingroom.tooltip,some info,quelques infos,einige Infos
+bedroom_painting.tooltip,"painting of Xs sister ""Name"" (von wem nochmal)",peinture de « Nom » soeur Xs (le nochmal von),"Malerei von Xs Schwester ""Name"" (von wem nochmal)"
+bedroom_dresser.tooltip,walnut dreser,Dreser noyer,Walnuss Dreser
+bedroom_dressingroom.tooltip,dressing room,loge,Umkleideraum
 bedroom_album_onbed.tooltip,photo album,album photo,Fotoalbum
-bedroom_ghost.tooltip,Jane,Jeanne,Jane
+bedroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
 bedroom_door_mural.tooltip,some info,quelques infos,einige Infos
 exit_bedroom_album.tooltip,Back,Retour,Zurück
 album_confirm.tooltip,Confirm solution,Confirmer solution,Bestätigen Lösung
 bedroom_nightstand_closeup.tooltip,some info,quelques infos,einige Infos
 bedroom_dresser_closeup.tooltip,some info,quelques infos,einige Infos
-inv_lightbulb.tooltip,lightbulb,ampoule,die Glühbirne
-inv_piece6.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece7.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
-inv_piece8.tooltip,puzzle piece,pièce de puzzle,Puzzleteil
+inv_lightbulb.tooltip,lightbulb,ampoule,Glühbirne
+inv_piece6.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece7.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+inv_piece8.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_flower1.tooltip,flower,fleur,Blume
 inv_flower2.tooltip,flower,fleur,Blume
 inv_flower3.tooltip,flower,fleur,Blume
 inv_flower4.tooltip,flower,fleur,Blume
-hallway_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
-livingroom_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
-diningroom_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
-staircase_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
-frontbedroom_plants.tooltip,overgrown area,zone envahies,zugewachsener Bereich
+hallway_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
+livingroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
+diningroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
+staircase_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
+frontbedroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
