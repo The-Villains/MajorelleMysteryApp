@@ -15,9 +15,9 @@
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=13]
 
 [sub_resource type="NavigationPolygon" id=1]
-vertices = PoolVector2Array( 1147.29, 959.976, 1641.29, 757.976, 1629.29, 1099.98, 523.288, 1375.98, 1633.29, 1373.98, 917.288, 1049.98, 723.288, 1121.98, 641.288, 1149.98, 523.288, 1155.98 )
-polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 2, 4, 3 ), PoolIntArray( 5, 0, 3 ), PoolIntArray( 6, 5, 3 ), PoolIntArray( 7, 6, 3 ), PoolIntArray( 8, 7, 3 ) ]
-outlines = [ PoolVector2Array( 523.288, 1155.98, 523.288, 1375.98, 1633.29, 1373.98, 1629.29, 1099.98, 1641.29, 757.976, 1147.29, 959.976, 917.288, 1049.98, 723.288, 1121.98, 641.288, 1149.98 ) ]
+vertices = PoolVector2Array( 1255, 971.769, 1641.29, 757.976, 1629.29, 1099.98, 1253, 1209.77, 1633.29, 1373.98, 523.288, 1375.98, 1023, 1211.41, 731, 1213.41, 509, 1215.41 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 2, 4 ), PoolIntArray( 3, 4, 5, 6 ), PoolIntArray( 7, 6, 5, 8 ) ]
+outlines = [ PoolVector2Array( 509, 1215.41, 523.288, 1375.98, 1633.29, 1373.98, 1629.29, 1099.98, 1641.29, 757.976, 1255, 971.769, 1253, 1209.77, 1023, 1211.41, 731, 1213.41 ) ]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -43,8 +43,19 @@ visible = false
 position = Vector2( -3.05176e-05, 2.00006 )
 navpoly = SubResource( 1 )
 
+[node name="door" type="TextureButton" parent="."]
+margin_left = 560.0
+margin_top = 78.0
+margin_right = 1208.0
+margin_bottom = 1212.0
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+events_path = "res://scenes/6_front_bedroom/door.esc"
+global_id = "front_bedroom_door"
+
 [node name="plants" parent="." instance=ExtResource( 5 )]
-position = Vector2( 844, 676 )
 
 [node name="player" parent="." instance=ExtResource( 6 )]
 visible = false
@@ -56,39 +67,41 @@ placeholders = {
 }
 
 [node name="flower1" parent="." instance=ExtResource( 11 )]
-visible = false
-position = Vector2( 698.48, 754.66 )
-z_index = 2500
+light_mask = 2
+position = Vector2( 630.48, 708.66 )
+scale = Vector2( 1.1, 1.1 )
 script = ExtResource( 12 )
 global_id = "flower1"
 
 [node name="flower2" parent="." instance=ExtResource( 10 )]
-visible = false
-position = Vector2( 785, 334 )
-z_index = 2500
-z_as_relative = false
+light_mask = 1023
+position = Vector2( 725.5, 246.5 )
+scale = Vector2( 1.1, 1.1 )
 script = ExtResource( 12 )
 global_id = "flower2"
 
 [node name="flower3" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 977.76, 606.2 )
-z_index = 2500
-z_as_relative = false
+light_mask = 2
+position = Vector2( 937.76, 544.7 )
+scale = Vector2( 1.1, 1.1 )
 script = ExtResource( 12 )
 global_id = "flower3"
 
 [node name="flower4" parent="." instance=ExtResource( 8 )]
-visible = false
-position = Vector2( 821.36, 947.146 )
-z_index = 2500
+light_mask = 2
+position = Vector2( 765, 920.146 )
+scale = Vector2( 1.1, 1.1 )
+z_index = 4000
 script = ExtResource( 12 )
 global_id = "flower4"
 
 [node name="spot1" type="Node2D" parent="."]
+z_index = 4096
+z_as_relative = false
 script = ExtResource( 12 )
 events_path = "res://scenes/6_front_bedroom/flower1.esc"
 global_id = "bedroom_spot1"
+use_combine = true
 
 [node name="area" type="TextureButton" parent="spot1"]
 margin_left = 574.0
@@ -102,6 +115,8 @@ __meta__ = {
 
 [node name="spot2" type="Node2D" parent="."]
 position = Vector2( 0, 1 )
+z_index = 4096
+z_as_relative = false
 script = ExtResource( 12 )
 events_path = "res://scenes/6_front_bedroom/flower2.esc"
 global_id = "bedroom_spot2"
@@ -120,6 +135,8 @@ __meta__ = {
 }
 
 [node name="spot3" type="Node2D" parent="."]
+z_index = 4096
+z_as_relative = false
 script = ExtResource( 12 )
 events_path = "res://scenes/6_front_bedroom/flower3.esc"
 global_id = "bedroom_spot3"
@@ -138,6 +155,8 @@ __meta__ = {
 }
 
 [node name="spot4" type="Node2D" parent="."]
+z_index = 4096
+z_as_relative = false
 script = ExtResource( 12 )
 events_path = "res://scenes/6_front_bedroom/flower4.esc"
 global_id = "bedroom_spot4"

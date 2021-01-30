@@ -12,7 +12,7 @@ func start(message, p_target, p_slot):
 	get_node("/root/main").menu_open(self)
 	show()
 
-func button_pressed(p_confirm):
+func button_pressed(_p_confirm):
 	#printt("button pressed!", p_confirm, anim.is_playing())
 	#if anim.is_playing():
 	#	return

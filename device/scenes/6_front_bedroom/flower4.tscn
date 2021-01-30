@@ -3,6 +3,7 @@
 [ext_resource path="res://scenes/6_front_bedroom/sprites/flower4.png" type="Texture" id=1]
 
 [node name="flower4" type="Node2D"]
+visible = false
 z_index = 2000
 z_as_relative = false
 
