@@ -30,7 +30,7 @@
 [ext_resource path="res://scenes/4_diningroom/sprites/zettel_esszimmer.png" type="Texture" id=28]
 [ext_resource path="res://globals/item.gd" type="Script" id=29]
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=1]
 resource_name = "falling"
 length = 3.0
 step = 0.2
@@ -97,6 +97,7 @@ animations = [ {
 } ]
 
 [node name="paper" type="Node2D"]
+z_as_relative = false
 script = ExtResource( 29 )
 global_id = "diningroom_paper"
 
@@ -109,8 +110,9 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/falling = SubResource( 4 )
+anims/falling = SubResource( 1 )
 anims/flying = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+z_as_relative = false
 frames = SubResource( 3 )

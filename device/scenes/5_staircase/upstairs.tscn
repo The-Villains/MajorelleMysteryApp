@@ -1,19 +1,22 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/5_staircase/area.gd" type="Script" id=2]
 
 [node name="upstairs" type="Node2D"]
+visible = false
 script = ExtResource( 1 )
-events_path = "res://scenes/2_hallway/door.esc"
-global_id = "hallway_door"
+tooltip = "To the first floor"
+events_path = "res://scenes/5_staircase/upstairs.esc"
+global_id = "upstairs"
 
 [node name="area" type="TextureButton" parent="."]
-margin_right = 1001.0
-margin_bottom = 468.0
+margin_left = 446.0
+margin_top = -3.0
+margin_right = 1204.0
+margin_bottom = 504.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Sprite" type="Sprite" parent="."]
-visible = false
-position = Vector2( 93.0048, -0.0572205 )
+[connection signal="pressed" from="area" to="area" method="_on_area_pressed"]

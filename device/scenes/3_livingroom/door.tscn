@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://templates/area.gd" type="Script" id=2]
+
+[node name="door" type="Node2D"]
+position = Vector2( 692, 600 )
+scale = Vector2( 1.5, 1.5 )
+z_as_relative = false
+script = ExtResource( 1 )
+tooltip = "To the dining room"
+events_path = "res://scenes/3_livingroom/door.esc"
+global_id = "livingroom_door"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -147.0
+margin_top = -128.0
+margin_right = 21.0
+margin_bottom = 145.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 93.0048, -0.0572205 )
+z_as_relative = false
+[connection signal="pressed" from="area" to="area" method="_on_area_pressed"]

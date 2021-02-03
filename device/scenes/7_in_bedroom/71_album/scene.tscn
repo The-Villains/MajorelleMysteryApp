@@ -1,11 +1,8 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/7_in_bedroom/71_album/exit.tscn" type="PackedScene" id=1]
-[ext_resource path="res://font/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=3]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/7_in_bedroom/sprites/book_overgrown w plants.png" type="Texture" id=5]
-[ext_resource path="res://ui/theme.tres" type="Theme" id=6]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/scene.gd" type="Script" id=7]
 [ext_resource path="res://globals/item.gd" type="Script" id=8]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/book_front_pl.png" type="Texture" id=9]
@@ -13,10 +10,7 @@
 [ext_resource path="res://scenes/7_in_bedroom/71_album/open_album.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=12]
 [ext_resource path="res://globals/sprites/character zeug/Geister/jeanne_ohno.png" type="Texture" id=13]
-
-[sub_resource type="DynamicFont" id=1]
-size = 64
-font_data = ExtResource( 2 )
+[ext_resource path="res://scenes/7_in_bedroom/71_album/book_with_lock.tscn" type="PackedScene" id=14]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 7 )
@@ -53,73 +47,8 @@ __meta__ = {
 position = Vector2( 796, 544 )
 texture = ExtResource( 9 )
 
-[node name="book_with_lock" type="Sprite" parent="."]
+[node name="book_with_lock" parent="." instance=ExtResource( 14 )]
 visible = false
-position = Vector2( 789.306, 552.277 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 5 )
-script = ExtResource( 8 )
-global_id = "album_locked"
-
-[node name="d1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = 85.7853
-margin_top = 98.0
-margin_right = 226.785
-margin_bottom = 161.0
-theme = ExtResource( 6 )
-max_value = 9.0
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="c1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = -14.6998
-margin_top = 100.553
-margin_right = 126.3
-margin_bottom = 163.553
-theme = ExtResource( 6 )
-max_value = 9.0
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = -149.0
-margin_top = 99.3333
-margin_right = -8.0
-margin_bottom = 165.333
-theme = ExtResource( 6 )
-max_value = 9.0
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="a1Select" type="SpinBox" parent="book_with_lock"]
-margin_left = -259.0
-margin_top = 98.0
-margin_right = -118.0
-margin_bottom = 161.0
-theme = ExtResource( 6 )
-max_value = 9.0
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="status1" type="RichTextLabel" parent="book_with_lock"]
-visible = false
-margin_left = 60.1864
-margin_top = -315.63
-margin_right = 455.186
-margin_bottom = -166.63
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0.137255, 0.572549, 0.137255, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="open_album" parent="." instance=ExtResource( 11 )]
 visible = false
@@ -142,7 +71,7 @@ script = ExtResource( 8 )
 global_id = "bedroom_album_jane"
 
 [node name="Sprite" type="Sprite" parent="jane"]
-position = Vector2( 344, 852 )
+position = Vector2( 334, 852 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 13 )
 

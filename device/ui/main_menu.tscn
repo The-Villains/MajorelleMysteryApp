@@ -1,37 +1,37 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
+[ext_resource path="res://ui/font.tres" type="Theme" id=2]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
 [ext_resource path="res://ui/villa-entry.tscn" type="PackedScene" id=4]
+[ext_resource path="res://font/kalam-font/Kalam.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://globals/sprites/igge-button.png" type="Texture" id=6]
 [ext_resource path="res://globals/sprites/speechbubble.png" type="Texture" id=7]
 [ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=8]
 [ext_resource path="res://globals/sprites/menu_deko.png" type="Texture" id=9]
-[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://font/kalam-font/KalamBold.ttf" type="DynamicFontData" id=10]
 
 [sub_resource type="DynamicFont" id=1]
-size = 60
+size = 124
 use_filter = true
+extra_spacing_top = 12
+extra_spacing_bottom = 12
 font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 164
+size = 64
 use_filter = true
-font_data = ExtResource( 10 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 50
-use_filter = true
-font_data = ExtResource( 10 )
+font_data = ExtResource( 5 )
 
 [node name="main_menu" type="Control"]
 margin_right = 1600.0
 margin_bottom = 1200.0
+theme = ExtResource( 2 )
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 922.567, 1200.08 ],
+"_edit_horizontal_guides_": [ 922.567, 1200.08, 536.757 ],
 "_edit_use_anchors_": false,
-"_edit_vertical_guides_": [ 828.692, 1600.08, 1160.69 ]
+"_edit_vertical_guides_": [ 828.692, 1600.08, 1160.69, 1322.16 ]
 }
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -61,10 +61,10 @@ placeholders = {
 use_custom_z = true
 
 [node name="new_game" type="TextureButton" parent="."]
-margin_left = 798.0
-margin_top = 606.0
-margin_right = 1310.0
-margin_bottom = 1118.0
+margin_left = 800.828
+margin_top = 613.071
+margin_right = 1312.83
+margin_bottom = 1125.07
 rect_scale = Vector2( 0.8, 0.6 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
@@ -76,15 +76,15 @@ __meta__ = {
 [node name="UI_NEW_GAME" type="Label" parent="new_game"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 37.5162
-margin_top = -22.0901
-margin_right = 649.516
-margin_bottom = 82.9096
+margin_left = 42.5162
+margin_top = -7.78052
+margin_right = 654.516
+margin_bottom = 97.2191
 rect_scale = Vector2( 0.7, 1 )
 hint_tooltip = "Start a new game"
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 1 )
+theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_NEW_GAME"
@@ -108,13 +108,15 @@ __meta__ = {
 }
 
 [node name="text" type="RichTextLabel" parent="text"]
-margin_left = 980.655
-margin_top = 965.292
-margin_right = 2577.66
-margin_bottom = 1934.29
-custom_fonts/normal_font = SubResource( 2 )
+margin_left = 873.961
+margin_top = 940.933
+margin_right = 2470.96
+margin_bottom = 1834.93
+theme = ExtResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.223529, 0.223529, 0.184314, 1 )
-text = "Wähle eine Sprache 
+text = "
+Wähle eine Sprache 
 
 Choose a language 
 
@@ -125,10 +127,10 @@ __meta__ = {
 }
 
 [node name="credits" type="TextureButton" parent="."]
-margin_left = 1442.0
-margin_top = 1046.0
-margin_right = 1954.0
-margin_bottom = 1558.0
+margin_left = 1310.48
+margin_top = 999.331
+margin_right = 1822.48
+margin_bottom = 1511.33
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
@@ -138,15 +140,15 @@ __meta__ = {
 }
 
 [node name="UI_CREDITS" type="Label" parent="credits"]
-margin_left = 45.3136
-margin_top = 209.935
-margin_right = 657.313
-margin_bottom = 314.935
-rect_scale = Vector2( 0.7, 1 )
+margin_left = -46.9951
+margin_top = 225.428
+margin_right = 565.005
+margin_bottom = 409.428
 hint_tooltip = "Start a new game"
 mouse_filter = 1
-size_flags_vertical = 0
-custom_fonts/font = SubResource( 1 )
+size_flags_vertical = 1
+theme = ExtResource( 2 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_CREDITS"
@@ -179,7 +181,7 @@ rect_scale = Vector2( 0.7, 1 )
 hint_tooltip = "Start a new game"
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 1 )
+theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_CONTINUE"
@@ -190,10 +192,10 @@ __meta__ = {
 }
 
 [node name="exit" type="TextureButton" parent="."]
-margin_left = 943.0
-margin_top = 819.0
-margin_right = 1477.0
-margin_bottom = 1331.0
+margin_left = 800.164
+margin_top = 852.941
+margin_right = 1334.16
+margin_bottom = 1364.94
 rect_scale = Vector2( 0.8, 0.6 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
@@ -203,15 +205,15 @@ __meta__ = {
 }
 
 [node name="UI_QUIT" type="Label" parent="exit"]
-margin_left = 46.2113
-margin_top = 232.378
-margin_right = 647.211
-margin_bottom = 359.378
+margin_left = 46.0
+margin_top = 244.499
+margin_right = 647.0
+margin_bottom = 333.499
 rect_scale = Vector2( 0.7, 1 )
 hint_tooltip = "Quit the game"
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 1 )
+theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_QUIT"
@@ -222,9 +224,9 @@ __meta__ = {
 }
 
 [node name="en" type="TextureButton" parent="."]
-margin_left = 1075.0
+margin_left = 1065.1
 margin_top = 450.0
-margin_right = 1587.0
+margin_right = 1577.1
 margin_bottom = 966.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
@@ -235,15 +237,15 @@ __meta__ = {
 }
 
 [node name="en" type="Label" parent="en"]
-margin_left = 157.912
-margin_top = 142.123
-margin_right = 229.912
-margin_bottom = 211.123
+margin_left = 144.579
+margin_top = 182.123
+margin_right = 216.579
+margin_bottom = 251.123
 rect_scale = Vector2( 3, 3 )
 hint_tooltip = "en"
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 3 )
+theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.184314, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "en"
@@ -254,9 +256,9 @@ __meta__ = {
 }
 
 [node name="fr" type="TextureButton" parent="."]
-margin_left = 1320.0
+margin_left = 1310.1
 margin_top = 450.0
-margin_right = 1837.05
+margin_right = 1827.15
 margin_bottom = 966.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
@@ -267,15 +269,15 @@ __meta__ = {
 }
 
 [node name="fr" type="Label" parent="fr"]
-margin_left = 180.672
-margin_top = 158.612
-margin_right = 237.672
-margin_bottom = 227.612
+margin_left = 176.767
+margin_top = 189.184
+margin_right = 233.767
+margin_bottom = 258.184
 rect_scale = Vector2( 3, 3 )
 hint_tooltip = "fr"
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 3 )
+theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "fr"
@@ -289,9 +291,9 @@ anchor_left = 0.193782
 anchor_top = -0.87557
 anchor_right = 0.193782
 anchor_bottom = -0.87557
-margin_left = 519.949
+margin_left = 510.049
 margin_top = 1500.68
-margin_right = 1031.95
+margin_right = 1022.05
 margin_bottom = 2012.68
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
@@ -302,15 +304,15 @@ __meta__ = {
 }
 
 [node name="de" type="Label" parent="de"]
-margin_left = 166.428
-margin_top = 158.634
-margin_right = 228.428
-margin_bottom = 227.634
+margin_left = 153.095
+margin_top = 189.206
+margin_right = 215.095
+margin_bottom = 258.206
 rect_scale = Vector2( 3, 3 )
 hint_tooltip = "fr"
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 3 )
+theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "de"

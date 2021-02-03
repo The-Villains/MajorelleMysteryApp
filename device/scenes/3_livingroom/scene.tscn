@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://scenes/3_livingroom/sprites/puzzle window shine.png" type="Texture" id=10]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/3_livingroom/door.tscn" type="PackedScene" id=13]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 2.79803, 1047.07, 540.798, 879.07, 558.798, 1119.07, 4.79803, 1249.07, 1604.8, 1253.07, 992.798, 1165.07, 726.798, 1107.07, 762.798, 1029.07, 1168.8, 1163.07, 1178.8, 1047.07, 1308.8, 1043.07, 1602.8, 1067.07, 1504.8, 845.07, 1608.8, 887.07, 1302.8, 911.07, 1334.8, 837.07, 592.798, 1065.07, 682.798, 1067.07 )
@@ -21,7 +22,7 @@ outlines = [ PoolVector2Array( 2.79803, 1047.07, 4.79803, 1249.07, 1604.8, 1253.
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 1252.5 ],
+"_edit_horizontal_guides_": [ 1252.5, 1619.46 ],
 "_edit_vertical_guides_": [ -131.674, -207.674, 1714.33, 1694.33 ]
 }
 
@@ -58,21 +59,7 @@ visible = false
 position = Vector2( 1.99997, 2 )
 navpoly = SubResource( 1 )
 
-[node name="door" type="TextureButton" parent="."]
-margin_left = 494.0
-margin_top = 414.0
-margin_right = 700.0
-margin_bottom = 801.0
-rect_scale = Vector2( 0.91854, 1.02029 )
-script = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-events_path = "res://scenes/3_livingroom/door.esc"
-global_id = "livingroom_door"
-placeholders = {
-
-}
+[node name="door" parent="." instance=ExtResource( 13 )]
 
 [node name="lamp" type="TextureButton" parent="."]
 margin_left = 1497.0
@@ -83,23 +70,25 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "dragonfly lamp"
 events_path = "res://scenes/3_livingroom/lamp.esc"
 global_id = "livingroom_lamp"
 placeholders = {
 
 }
 
-[node name="chair1" type="TextureButton" parent="."]
-margin_left = 707.51
-margin_top = 697.912
-margin_right = 811.51
-margin_bottom = 931.912
+[node name="table" type="TextureButton" parent="."]
+margin_left = 758.0
+margin_top = 692.0
+margin_right = 950.0
+margin_bottom = 926.0
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "wooden butome table"
 events_path = "res://scenes/3_livingroom/chair1.esc"
-global_id = "livingroom_chair1"
+global_id = "livingroom_table"
 placeholders = {
 
 }
@@ -113,6 +102,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "pine themed armchair"
 events_path = "res://scenes/3_livingroom/chair2.esc"
 global_id = "livingroom_chair2"
 placeholders = {
@@ -121,13 +111,14 @@ placeholders = {
 
 [node name="chair3" type="TextureButton" parent="."]
 margin_left = 830.0
-margin_top = 740.0
+margin_top = 824.0
 margin_right = 1124.0
-margin_bottom = 1144.0
+margin_bottom = 1060.0
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "pine themed armchair"
 events_path = "res://scenes/3_livingroom/chair3.esc"
 global_id = "livingroom_chair3"
 placeholders = {
@@ -143,6 +134,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "some info about sideboard"
 events_path = "res://scenes/3_livingroom/sideboard.esc"
 global_id = "livingroom_sideboard"
 placeholders = {
@@ -150,27 +142,30 @@ placeholders = {
 }
 
 [node name="window" parent="." instance=ExtResource( 9 )]
+tooltip = "Moroccan stained glass"
 
 [node name="plants" parent="." instance=ExtResource( 7 )]
 position = Vector2( 597.74, 609.632 )
 scale = Vector2( 1.55, 1.55 )
+tooltip = "overgrown area"
 events_path = "res://scenes/3_livingroom/plants.esc"
 global_id = "livingroom_plants"
 
 [node name="player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1331.16, 1270.77 )
-z_index = 1270
+position = Vector2( 1369.16, 1222.77 )
+z_index = 1222
 placeholders = {
 
 }
 
+[node name="ghost" parent="." instance=ExtResource( 12 )]
+position = Vector2( 164, 0 )
+tooltip = "Jacques Majorelle"
+events_path = "res://scenes/3_livingroom/livingroom_ghost.esc"
+global_id = "livingroom_ghost"
+
 [node name="kiara" parent="." instance=ExtResource( 11 )]
 z_index = 2000
-z_as_relative = false
 events_path = "res://scenes/3_livingroom/livingroom_kiara.esc"
-
-[node name="ghost" parent="." instance=ExtResource( 12 )]
-position = Vector2( 4, 72 )
-global_id = "livingroom_ghost"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

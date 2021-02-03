@@ -38,5 +38,6 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 7 )]
+events_path = "res://scenes/7_in_bedroom/72_painting/painting_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

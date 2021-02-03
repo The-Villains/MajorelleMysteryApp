@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://globals/sprites/knoepfe und co/kiara_button.png" type="Texture" id=1]
+[ext_resource path="res://globals/item.gd" type="Script" id=2]
+
+[node name="kiara" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
+z_as_relative = false
+script = ExtResource( 2 )
+tooltip = "Kiara"
+events_path = "res://scenes/1_entrance/entrance_kiara.esc"
+global_id = "kiara"
+
+[node name="area" type="TextureRect" parent="."]
+margin_left = 2429.0
+margin_top = 45.0
+margin_right = 3513.0
+margin_bottom = 1092.0
+rect_scale = Vector2( 0.3, 0.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2600, 200 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+flip_h = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://globals/sprites/knoepfe und co/kiara_button.png" type="Texture" id=1]
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip1.png" type="Texture" id=4]
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip2.png" type="Texture" id=5]
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/Tip3.png" type="Texture" id=6]
+[ext_resource path="res://globals/sprites/knoepfe und co/void.png" type="Texture" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "default"
@@ -31,7 +32,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 2950, 330 ) ]
+"values": [ Vector2( 2950, 200 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Sprite:scale")
@@ -44,6 +45,18 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 0.3, 0.3 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("area:texture_normal")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 7 ) ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -209,10 +222,22 @@ animations = [ {
 
 [node name="kiara" type="Node2D"]
 scale = Vector2( 0.5, 0.5 )
+z_as_relative = false
 script = ExtResource( 2 )
 tooltip = "Kiara"
 events_path = "res://scenes/1_entrance/entrance_kiara.esc"
 global_id = "kiara"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = 2736.0
+margin_top = -4.00012
+margin_right = 3793.0
+margin_bottom = 1053.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="animation" type="AnimationPlayer" parent="."]
 anims/default = SubResource( 1 )
@@ -221,17 +246,9 @@ anims/tip2 = SubResource( 3 )
 anims/tip3 = SubResource( 4 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( 2950, 330 )
+position = Vector2( 2950, 200 )
 scale = Vector2( 0.3, 0.3 )
+z_as_relative = false
 frames = SubResource( 5 )
 frame = 1
 flip_h = true
-
-[node name="area" type="TextureButton" parent="."]
-margin_left = 2724.0
-margin_top = 36.0
-margin_right = 3208.0
-margin_bottom = 538.0
-__meta__ = {
-"_edit_use_anchors_": false
-}

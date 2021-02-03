@@ -1,0 +1,4 @@
+:talk
+set_state kiara tip2
+say telon bedroom_kiara_found:"Hah, can you also see that four digit number? We should try that." left
+set_state kiara default

@@ -1,11 +1,13 @@
-:look
+:load
 cut_scene telon fade_out
 change_scene res://scenes/6_front_bedroom/scene.tscn
 cut_scene telon fade_in
 say telon frontbedroom_artur_plants:"Ah, more plants. Let's see what I can use here." default avatar_artur
 
 :pick_up
-cut_scene telon fade_out
-change_scene res://scenes/6_front_bedroom/scene.tscn
-cut_scene telon fade_in
-say telon frontbedroom_artur_plants:"Ah, more plants. Let's see what I can use here." default avatar_artur
+
+:look
+
+:talk
+
+:use

@@ -24,7 +24,49 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="photo_left_top" type="TextureRect" parent="."]
+margin_left = 274.0
+margin_top = 188.0
+margin_right = 688.0
+margin_bottom = 490.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "aöbum_photo_left_top"
+global_id = "aöbum_photo_left_top"
+
+[node name="photo_left_bottom" type="TextureRect" parent="."]
+margin_left = 340.0
+margin_top = 520.0
+margin_right = 660.0
+margin_bottom = 876.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "album_photo_left_bottom"
+global_id = "album_photo_left_bottom"
+placeholders = {
+
+}
+
+[node name="photo_right" type="TextureRect" parent="."]
+margin_left = 788.0
+margin_top = 248.0
+margin_right = 1150.0
+margin_bottom = 686.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "album_photo_right"
+global_id = "album_photo_right"
+placeholders = {
+
+}
+
+[node name="album" type="Sprite" parent="."]
 position = Vector2( 724, 522 )
 texture = ExtResource( 5 )
 
@@ -32,10 +74,9 @@ texture = ExtResource( 5 )
 margin_left = 170.0
 margin_top = 124.0
 margin_right = 1279.0
-margin_bottom = 924.0
-texture_normal = ExtResource( 2 )
-texture_pressed = ExtResource( 6 )
-texture_hover = ExtResource( 6 )
+margin_bottom = 936.0
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,9 +84,9 @@ __meta__ = {
 [node name="LinkButton" type="LinkButton" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 1052.0
+margin_left = 1054.0
 margin_top = 693.0
-margin_right = 1224.0
+margin_right = 1226.0
 margin_bottom = 896.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )

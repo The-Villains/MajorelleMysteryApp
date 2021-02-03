@@ -37,7 +37,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "nightstand"
+tooltip = "walnut nightstand"
 events_path = "res://scenes/7_in_bedroom/nightstand.esc"
 global_id = "bedroom_nightstand"
 
@@ -50,7 +50,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "curtain"
+tooltip = "mint curtain"
 events_path = "res://scenes/7_in_bedroom/curtain.esc"
 global_id = "bedroom_curtain"
 placeholders = {
@@ -66,7 +66,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "painting"
+tooltip = "painting of Xs sister \"Name\""
 events_path = "res://scenes/7_in_bedroom/painting.esc"
 global_id = "bedroom_painting"
 placeholders = {
@@ -82,7 +82,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "dresser"
+tooltip = "walnut dresser"
 events_path = "res://scenes/7_in_bedroom/dresser.esc"
 global_id = "bedroom_dresser"
 placeholders = {
@@ -98,7 +98,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "dressingroom"
+tooltip = "dressing room"
 events_path = "res://scenes/7_in_bedroom/dressingroom.esc"
 global_id = "bedroom_dressingroom"
 placeholders = {
@@ -114,13 +114,14 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "honesties stained glass art"
 global_id = "bedroom_door_mural"
 placeholders = {
 
 }
 
 [node name="album" parent="." index="8" instance=ExtResource( 4 )]
-position = Vector2( 848, 608 )
+position = Vector2( 848, 610 )
 scale = Vector2( 1.52, 1.52 )
 global_id = "bedroom_album_onbed"
 
@@ -131,9 +132,10 @@ placeholders = {
 
 }
 
-[node name="kiara" parent="." index="10" instance=ExtResource( 7 )]
-events_path = "res://scenes/7_in_bedroom/kiara.esc"
-
-[node name="ghost" parent="." index="11" instance=ExtResource( 8 )]
-position = Vector2( 242, 28 )
+[node name="ghost" parent="." index="10" instance=ExtResource( 8 )]
+position = Vector2( 202, 30 )
+tooltip = "Jane Majorelle"
 global_id = "bedroom_ghost"
+
+[node name="kiara" parent="." index="11" instance=ExtResource( 7 )]
+events_path = "res://scenes/7_in_bedroom/kiara.esc"

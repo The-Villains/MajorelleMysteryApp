@@ -17,14 +17,10 @@
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=16]
 [ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=17]
+[ext_resource path="res://ui/font.tres" type="Theme" id=18]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
-use_filter = true
-font_data = ExtResource( 15 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 32
 use_filter = true
 font_data = ExtResource( 15 )
 
@@ -99,20 +95,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PAINTING_DIFFERENCES" type="RichTextLabel" parent="Control"]
+[node name="PAINTING_DIFFERENCES" type="Label" parent="Control"]
 margin_left = 84.0
-margin_top = 98.0
-margin_right = 266.0
-margin_bottom = 406.0
-custom_fonts/normal_font = SubResource( 2 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Find the five differences in the bottom painting."
+margin_top = 124.0
+margin_right = 311.0
+margin_bottom = 478.0
+rect_scale = Vector2( 0.8, 0.8 )
+theme = ExtResource( 18 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PAINTING_DIFFERENCES"
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="painting" parent="." instance=ExtResource( 8 )]
 position = Vector2( 641.615, 574.953 )
+tooltip = " "
 
 [node name="d1" type="Node2D" parent="."]
 script = ExtResource( 5 )
@@ -245,6 +244,7 @@ placeholders = {
 position = Vector2( 1347.02, 715.117 )
 scale = Vector2( 0.15, 0.15 )
 script = ExtResource( 5 )
+tooltip = "Confirm solution"
 events_path = "res://scenes/4_diningroom/41_painting/confirm.esc"
 global_id = "diningroom_confirm"
 
@@ -258,6 +258,7 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 14 )]
+z_index = 3000
 events_path = "res://scenes/4_diningroom/41_painting/painting_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

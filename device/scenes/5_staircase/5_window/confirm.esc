@@ -7,10 +7,12 @@
  say telon general_flower_reward:"Here is another flower as a reward." default avatar_luis
  cut_scene telon fade_out
  change_scene res://scenes/5_staircase/scene.tscn
- cut_scene telon fade_in
  set_active staircase_window false
+ set_active kiara_fullsize true
+ set_active staircase_kiara false
+ cut_scene telon fade_in
  set_state staircase_plants disappear
- wait 2
+ wait 3
  say telon staircase_kiara_upstairs:"Come on Artur, let's see what's upstairs now!" left
  set_active staircase_plants false
  set_active upstairs true

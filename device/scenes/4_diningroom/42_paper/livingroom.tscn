@@ -1,13 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=2]
-[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=3]
-
-[sub_resource type="DynamicFont" id=1]
-size = 64
-use_filter = true
-font_data = ExtResource( 3 )
+[ext_resource path="res://ui/font.tres" type="Theme" id=3]
 
 [node name="livingroom" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,14 +17,16 @@ placeholders = {
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 2 )
 
-[node name="P_Living_Room" type="RichTextLabel" parent="."]
-margin_left = -147.066
-margin_top = -20.6934
-margin_right = 127.934
-margin_bottom = 61.3066
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Living Room"
+[node name="P_LIVINGROOM" type="Label" parent="."]
+margin_left = -165.0
+margin_top = -31.0
+margin_right = 165.0
+margin_bottom = 61.0
+theme = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "P_LIVINGROOM"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

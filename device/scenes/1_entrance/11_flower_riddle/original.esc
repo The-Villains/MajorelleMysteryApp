@@ -20,4 +20,4 @@ set_active highlight_daisies false
 set_active highlight_roses false
 set_active highlight_original false
 set_active lightbulb true
-say original entrance_offer_lamp:"Take this lightbulb, you can repair the lamp with it!" default avatar_luis
+say original entrance_offer_lamp:"Take this lightbulb now. You you can repair the lamp with it!" default avatar_luis

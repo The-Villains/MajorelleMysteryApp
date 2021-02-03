@@ -141,5 +141,4 @@ frames = SubResource( 3 )
 
 [node name="plants2" type="Sprite" parent="."]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
 texture = ExtResource( 1 )

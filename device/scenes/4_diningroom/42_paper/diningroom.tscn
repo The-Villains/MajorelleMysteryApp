@@ -1,13 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=2]
-[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=3]
-
-[sub_resource type="DynamicFont" id=1]
-size = 64
-use_filter = true
-font_data = ExtResource( 3 )
+[ext_resource path="res://ui/font.tres" type="Theme" id=3]
 
 [node name="diningroom" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,14 +17,16 @@ placeholders = {
 scale = Vector2( 0.8, 1 )
 texture = ExtResource( 2 )
 
-[node name="P_Dining_Room" type="RichTextLabel" parent="."]
-margin_left = -125.527
-margin_top = -21.2132
-margin_right = 164.473
-margin_bottom = 60.7868
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Dining Room"
+[node name="P_DININGROOM" type="Label" parent="."]
+margin_left = -162.0
+margin_top = -38.0
+margin_right = 168.0
+margin_bottom = 68.0
+theme = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "P_DININGROOM"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

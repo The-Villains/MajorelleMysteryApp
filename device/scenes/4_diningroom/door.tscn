@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/2_hallway/sprites/flur_tuer_offen.png" type="Texture" id=2]
+[ext_resource path="res://scenes/4_diningroom/area.gd" type="Script" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "closed"
@@ -36,6 +37,7 @@ tracks/0/keys = {
 [node name="door" type="Node2D"]
 position = Vector2( 692, 600 )
 scale = Vector2( 1.5, 1.5 )
+z_as_relative = false
 script = ExtResource( 1 )
 events_path = "res://scenes/2_hallway/door.esc"
 global_id = "hallway_door"
@@ -45,6 +47,7 @@ margin_left = -314.0
 margin_top = -138.0
 margin_right = 36.0
 margin_bottom = 203.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -55,4 +58,6 @@ anims/open = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 93.0048, -0.0572205 )
+z_as_relative = false
 texture = ExtResource( 2 )
+[connection signal="pressed" from="area" to="area" method="_on_area_pressed"]

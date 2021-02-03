@@ -1,0 +1,10 @@
+:talk
+> [!looked_at_window]
+ set_state kiara tip1
+ say telon livingroom_kiara_zoom:"Let's pick that puzzle piece up. We can probably use that." left
+ set_state kiara default
+
+> [looked_at_window]
+ set_state kiara tip2
+ say telon livingroom_kiara_zoom:"Ah, there is another one of the missing puzzle pieces. Let's pick it up." left
+ set_state kiara default

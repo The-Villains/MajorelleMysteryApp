@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -42,15 +42,10 @@
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece18.png" type="Texture" id=40]
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece14.png" type="Texture" id=41]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=42]
-[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=43]
+[ext_resource path="res://ui/font.tres" type="Theme" id=43]
 [ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=44]
 [ext_resource path="res://globals/item.gd" type="Script" id=45]
 [ext_resource path="res://scenes/3_livingroom/31_window/confirm.tscn" type="PackedScene" id=46]
-
-[sub_resource type="DynamicFont" id=1]
-size = 32
-use_filter = true
-font_data = ExtResource( 43 )
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -98,9 +93,9 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1220.0
-margin_top = 80.0
+margin_top = 152.0
 margin_right = 1220.0
-margin_bottom = 80.0
+margin_bottom = 152.0
 __meta__ = {
 "_edit_horizontal_guides_": [ 600.707 ],
 "_edit_use_anchors_": false,
@@ -108,24 +103,25 @@ __meta__ = {
 }
 
 [node name="background" type="TextureRect" parent="Control"]
-margin_left = 5.99998
-margin_top = 3.99999
+margin_left = 6.0
+margin_top = 6.0
 margin_right = 1760.0
-margin_bottom = 2484.0
+margin_bottom = 2486.0
 rect_scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 44 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="WINDOW_PUZZLE" type="RichTextLabel" parent="Control"]
-margin_left = 98.1421
-margin_top = 146.083
-margin_right = 280.142
-margin_bottom = 454.083
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Repair the window and move the pieces to the right spots."
+[node name="WINDOW_PUZZLE" type="Label" parent="Control"]
+margin_left = 82.0
+margin_top = 88.0
+margin_right = 277.0
+margin_bottom = 408.0
+theme = ExtResource( 43 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "WINDOW_PUZZLE"
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -694,7 +690,7 @@ texture = ExtResource( 38 )
 [node name="slot1" type="Node2D" parent="slots"]
 position = Vector2( -318.198, 801.859 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
 global_id = "slot1"
 
@@ -711,7 +707,7 @@ __meta__ = {
 [node name="slot2" type="Node2D" parent="slots"]
 position = Vector2( 185.262, 647.71 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot2.esc"
 global_id = "slot2"
 placeholders = {
@@ -731,7 +727,7 @@ __meta__ = {
 [node name="slot3" type="Node2D" parent="slots"]
 position = Vector2( 79.9031, 510.531 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot3.esc"
 global_id = "slot3"
 placeholders = {
@@ -752,7 +748,7 @@ __meta__ = {
 [node name="slot4" type="Node2D" parent="slots"]
 position = Vector2( -89.0955, 681.651 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot4.esc"
 global_id = "slot4"
 placeholders = {
@@ -772,7 +768,7 @@ __meta__ = {
 [node name="slot5" type="Node2D" parent="slots"]
 position = Vector2( -31.8198, 806.102 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot5.esc"
 global_id = "slot5"
 placeholders = {
@@ -791,7 +787,7 @@ __meta__ = {
 [node name="slot6" type="Node2D" parent="slots"]
 position = Vector2( 260.215, 274.357 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot6.esc"
 global_id = "slot6"
 placeholders = {
@@ -810,7 +806,7 @@ __meta__ = {
 [node name="slot7" type="Node2D" parent="slots"]
 position = Vector2( -138.593, 917.824 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot7.esc"
 global_id = "slot7"
 placeholders = {
@@ -830,7 +826,7 @@ __meta__ = {
 [node name="slot8" type="Node2D" parent="slots"]
 position = Vector2( 326.683, 554.372 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot8.esc"
 global_id = "slot8"
 placeholders = {
@@ -849,7 +845,7 @@ __meta__ = {
 [node name="slot9" type="Node2D" parent="slots"]
 position = Vector2( -66.468, 280.014 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot9.esc"
 global_id = "slot9"
 placeholders = {
@@ -869,7 +865,7 @@ __meta__ = {
 [node name="slot10" type="Node2D" parent="slots"]
 position = Vector2( -130.815, 493.56 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot10.esc"
 global_id = "slot10"
 placeholders = {
@@ -888,7 +884,7 @@ __meta__ = {
 [node name="slot11" type="Node2D" parent="slots"]
 position = Vector2( -32.5269, 816.001 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot11.esc"
 global_id = "slot11"
 placeholders = {
@@ -907,7 +903,7 @@ __meta__ = {
 [node name="slot12" type="Node2D" parent="slots"]
 position = Vector2( 319.612, 1124.3 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot12.esc"
 global_id = "slot12"
 placeholders = {
@@ -926,7 +922,7 @@ __meta__ = {
 [node name="slot13" type="Node2D" parent="slots"]
 position = Vector2( 197.99, 659.023 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot13.esc"
 global_id = "slot13"
 placeholders = {
@@ -945,7 +941,7 @@ __meta__ = {
 [node name="slot14" type="Node2D" parent="slots"]
 position = Vector2( 407.293, 272.943 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot14.esc"
 global_id = "slot14"
 placeholders = {
@@ -964,7 +960,7 @@ __meta__ = {
 [node name="slot15" type="Node2D" parent="slots"]
 position = Vector2( 248.902, 284.964 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot15.esc"
 global_id = "slot15"
 placeholders = {
@@ -984,7 +980,7 @@ __meta__ = {
 [node name="slot16" type="Node2D" parent="slots"]
 position = Vector2( 224.86, 296.985 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot16.esc"
 global_id = "slot16"
 placeholders = {
@@ -1004,7 +1000,7 @@ __meta__ = {
 [node name="slot17" type="Node2D" parent="slots"]
 position = Vector2( -84.8528, 340.118 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot17.esc"
 global_id = "slot17"
 placeholders = {
@@ -1024,7 +1020,7 @@ __meta__ = {
 [node name="slot18" type="Node2D" parent="slots"]
 position = Vector2( -33.9411, 951.058 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot18.esc"
 global_id = "slot18"
 placeholders = {
@@ -1044,7 +1040,7 @@ __meta__ = {
 [node name="slot19" type="Node2D" parent="slots"]
 position = Vector2( 49.4975, 1029.55 )
 script = ExtResource( 45 )
-tooltip = "broken spot"
+tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot19.esc"
 global_id = "slot19"
 placeholders = {
@@ -1071,11 +1067,10 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 42 )]
-position = Vector2( 1351.99, 2.82843 )
 events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
 
 [node name="confirm" parent="." instance=ExtResource( 46 )]
-position = Vector2( 1347.7, 618.571 )
+position = Vector2( 1351.7, 698.571 )
 scale = Vector2( 0.16, 0.16 )
 script = ExtResource( 45 )
 tooltip = "Confirm solution"

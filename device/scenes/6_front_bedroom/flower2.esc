@@ -15,7 +15,8 @@ wait 1.5
  set_active bedroom_spot4 false
  wait 5
  set_active bedroom_plants false
- 
+ set_active front_bedroom_door true
+
 :use inv_flower1
 say telon frontbedroom_kiara_wrong_spot:"This flower doesn't fit here. Let's try a different spot."
 

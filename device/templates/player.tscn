@@ -16,19 +16,19 @@
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/arthur.png" type="Texture" id=14]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 4.09637
+radius = 3.25645
 height = 0.905671
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "original_arthur",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 14 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "original_arthur",
 "speed": 5.0
 } ]
 
@@ -64,20 +64,23 @@ tracks/0/keys = {
 
 [node name="player" type="Node2D"]
 scale = Vector2( 0.4, 0.4 )
+z_as_relative = false
 script = ExtResource( 1 )
 placeholders = {
 
 }
 
 [node name="area" type="Area2D" parent="."]
+z_as_relative = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
-position = Vector2( -80, -233.334 )
+position = Vector2( -65, -188.334 )
 scale = Vector2( 135.746, 72.8917 )
 shape = SubResource( 1 )
 
 [node name="sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 6.66663, -1120 )
+z_as_relative = false
 frames = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true

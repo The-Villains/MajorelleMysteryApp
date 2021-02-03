@@ -21,7 +21,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="nightstand" type="TextureRect" parent="."]
+[node name="nightstand_sprite" type="TextureRect" parent="."]
 margin_left = 170.0
 margin_top = 88.0
 margin_right = 1279.0
@@ -33,6 +33,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 global_id = "bedroom_nightstand_closeup"
+placeholders = {
+
+}
 
 [node name="ben_mate" type="TextureRect" parent="."]
 margin_left = 260.0
@@ -44,6 +47,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="nightstand" type="TextureRect" parent="."]
+margin_left = 170.0
+margin_top = 88.0
+margin_right = 1279.0
+margin_bottom = 888.0
+rect_scale = Vector2( 1.16, 1.16 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "nightstand"
+global_id = "bedroom_nightstand_closeup"
+
 [node name="exit" parent="." instance=ExtResource( 6 )]
 position = Vector2( 92, 1132 )
 scale = Vector2( 0.4, 0.4 )
@@ -53,5 +69,6 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 7 )]
+events_path = "res://scenes/7_in_bedroom/zoom_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

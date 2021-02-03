@@ -1,4 +1,7 @@
 :load
+#cut_scene telon fade_out
+#change_scene res://scenes/1_entrance/11_flower_riddle/scene.tscn
+#cut_scene telon fade_in
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer1.tscn
@@ -49,25 +52,16 @@ cut_scene telon fade_in
 
 # Workaround - Initial speaking for following main scene and Esc Script here
 set_state kiara tip1
-say telon entrance_kiara_1:"Nice entrance area. Although those tulips look weird." left
-set_state kiara tip2
-say telon entrance_kiara_2:"Let's ask Louis for instructions. And if you need any more tips from me later, just talk to me then." left
+say telon entrance_kiara_01:"Nice entrance area. Although those tulips look like they don't belong here. Hmm... Let's talk to Louis." left
+#set_state kiara tip2
+#say telon entrance_kiara_2:"Let's ask Louis for instructions. And if you need any more tips from me later, just talk to me then." left
+#set_active kiara_tutorial true
 set_state kiara default
 set_active entrance_ghost true
-#set_active kiara_tutorial true
-#wait 1.5
+#wait 1
 #set_active kiara_tutorial false
-#say telon entrance_artur_kiara:"Got it. Hmm ... Let's ask Kiara first for an advice on this. She always has helping ideas." default avatar_artur
 wait 1
 set_active button_tutorial true
 teleport_pos button_tutorial 375 0
-wait 1.5
+wait 1
 set_active ghost_tutorial true
-
-#cut_scene telon fade_out
-#set_global i/inv_flower1 true
-#set_global i/inv_flower2 true
-#set_global i/inv_flower3 true
-#set_global i/inv_flower4 true
-#change_scene res://scenes/6_front_bedroom/scene.tscn
-#cut_scene telon fade_in

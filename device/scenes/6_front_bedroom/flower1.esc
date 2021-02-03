@@ -15,6 +15,7 @@ wait 1.5
  set_active bedroom_spot4 false
  wait 5
  set_active bedroom_plants false
+ set_active front_bedroom_door true
 
 
 :use inv_flower2

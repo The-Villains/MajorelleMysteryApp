@@ -4,6 +4,7 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=2]
 
 [node name="painting" type="Node2D"]
+z_as_relative = false
 script = ExtResource( 2 )
 global_id = "diningroom_painting_closeup"
 
@@ -19,4 +20,5 @@ __meta__ = {
 [node name="animation" type="AnimationPlayer" parent="."]
 
 [node name="Sprite" type="Sprite" parent="."]
+z_as_relative = false
 texture = ExtResource( 1 )

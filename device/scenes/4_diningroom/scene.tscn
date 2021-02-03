@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/4_diningroom/paper.tscn" type="PackedScene" id=9]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=10]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=11]
+[ext_resource path="res://templates/door.tscn" type="PackedScene" id=12]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 324.798, 851.932, 466.798, 831.932, 470.798, 877.932, 476.798, 973.932, 470.798, 1085.93, -1.20197, 1215.93, 6.79803, 939.932, 1368.8, 879.932, 1542.8, 877.932, 1642.8, 887.932, 1648.8, 1211.93, 1224.8, 1031.93, 1206.8, 935.932, 1206.8, 867.932, 1218.8, 845.932, 700.798, 1089.93, 720.798, 1025.93, 778.798, 1017.93, 912.798, 1029.93, 540.798, 1145.93, 1108.8, 1033.93 )
@@ -39,26 +40,17 @@ visible = false
 position = Vector2( -4.00003, 4 )
 navpoly = SubResource( 1 )
 
-[node name="door" type="TextureButton" parent="."]
-margin_left = 308.716
-margin_top = 336.029
-margin_right = 975.716
-margin_bottom = 510.029
-rect_rotation = 0.779845
-rect_scale = Vector2( 0.504505, 2.79052 )
-script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="door" parent="." instance=ExtResource( 12 )]
+position = Vector2( 512, 650 )
+tooltip = "To the staircase"
 events_path = "res://scenes/4_diningroom/door.esc"
 global_id = "diningroom_door"
-placeholders = {
-
-}
 
 [node name="plants" parent="." instance=ExtResource( 4 )]
 position = Vector2( 820.862, 609.862 )
 scale = Vector2( 1.52, 1.52 )
+z_as_relative = false
+tooltip = "overgrown area"
 
 [node name="small_painting1" type="TextureRect" parent="."]
 margin_left = -4.0
@@ -69,6 +61,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "painting of house at the water"
 global_id = "diningroom_small_painting1"
 placeholders = {
 
@@ -83,6 +76,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "painting of a boat"
 global_id = "diningroom_small_painting2"
 placeholders = {
 
@@ -97,6 +91,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "some info about left sideboard"
 global_id = "diningroom_sideboard_left"
 placeholders = {
 
@@ -111,6 +106,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "some info about right sideboard"
 global_id = "diningroom_sideboard_right"
 placeholders = {
 
@@ -125,6 +121,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "To the pantry (locked)"
 global_id = "diningroom_pantry"
 placeholders = {
 
@@ -140,6 +137,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "Wheat themed cabinet with a rat"
 global_id = "diningroom_buffet"
 placeholders = {
 
@@ -155,19 +153,35 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "painting of geese"
 events_path = "res://scenes/4_diningroom/painting.esc"
 global_id = "diningroom_painting"
 
 [node name="tablearea" type="TextureRect" parent="."]
-margin_left = 482.0
-margin_top = 718.0
-margin_right = 1205.0
-margin_bottom = 1064.0
+margin_left = 478.0
+margin_top = 720.0
+margin_right = 1201.0
+margin_bottom = 1066.0
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "some info about table area"
 global_id = "diningroom_tablearea"
+
+[node name="paper" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 814, 592 )
+scale = Vector2( 1.52, 1.52 )
+z_index = 500
+tooltip = "mysterious piece of paper"
+events_path = "res://scenes/4_diningroom/paper.esc"
+
+[node name="ghost" parent="." instance=ExtResource( 11 )]
+position = Vector2( 118, 70 )
+z_index = 1500
+tooltip = "Jane Majorelle"
+global_id = "diningroom_ghost"
 
 [node name="player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1421.99, 1224.63 )
@@ -176,16 +190,8 @@ placeholders = {
 
 }
 
-[node name="paper" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 814, 592 )
-scale = Vector2( 1.52, 1.52 )
-events_path = "res://scenes/4_diningroom/paper.esc"
-
 [node name="kiara" parent="." instance=ExtResource( 10 )]
+z_index = 2500
 events_path = "res://scenes/4_diningroom/diningroom_kiara.esc"
-
-[node name="ghost" parent="." instance=ExtResource( 11 )]
-global_id = "diningroom_ghost"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

@@ -31,6 +31,7 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "swalnut dresser"
 global_id = "bedroom_dresser_closeup"
 
 [node name="exit" parent="." instance=ExtResource( 6 )]
@@ -42,5 +43,6 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 7 )]
+events_path = "res://scenes/7_in_bedroom/zoom_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

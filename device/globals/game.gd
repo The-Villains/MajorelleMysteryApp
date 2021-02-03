@@ -29,10 +29,13 @@ func set_mode(p_mode):
 func mouse_enter(obj):
 	var text
 	var tt = obj.get_esctooltip()
-	if current_action != "" && current_tool != null:
+	if current_action == "use" && current_tool != null:
 		text = tr(current_action + ".combine_id")
 		text = text.replace("%2", tr(tt))
 		text = text.replace("%1", tr(current_tool.get_esctooltip()))
+	elif current_action != "":
+		text = tr(current_action + ".id")
+		text = text.replace("%1", tr(tt))
 	elif obj.inventory:
 		var action = inventory.get_action()
 		if action == "":
@@ -89,27 +92,27 @@ func clicked(obj, pos):
 				return
 			player.walk_to(pos)
 			get_tree().call_group("hud", "set_tooltip", "")
-			
-				
+
+
 		elif obj.inventory:
 			if current_action == "use" && obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 			else:
 				interact([obj, current_action, current_tool])
-				
+
 		# Added Use_Combine functionality for items that are not in the inventory /sh
 		elif !obj.inventory && current_action == "use":
 			if  obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 			else:
-				interact([obj, current_action, current_tool])		
-				
+				interact([obj, current_action, current_tool])
+
 		elif action != "":
 			player.interact([obj, action, current_tool])
-			
+
 		elif current_action != "":
 			player.interact([obj, current_action, current_tool])
-			
+
 		elif action_menu == null:
 
 			# same as action == "walk"
@@ -276,7 +279,7 @@ func set_inventory_enabled(p_enabled):
 		get_node("hud_layer/hud/inventory").show()
 	else:
 		get_node("hud_layer/hud/inventory").hide()
-		
+
 func set_buttons_enabled(p_enabled):
 	buttons_enabled = p_enabled
 
@@ -352,5 +355,3 @@ func _ready():
 
 	call_deferred("set_camera_limits")
 	call_deferred("load_hud")
-
-

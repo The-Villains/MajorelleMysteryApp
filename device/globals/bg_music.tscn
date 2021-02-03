@@ -1,9 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://globals/bg_music.gd" type="Script" id=1]
-[ext_resource path="res://audio/sounds/bizet-georges-chanson-boheme-7456.ogg" type="AudioStream" id=2]
-
-
+[ext_resource path="res://audio/sounds/MajorelleMysterySoundtrack.ogg" type="AudioStream" id=2]
 
 [node name="bg_music" type="Control"]
 script = ExtResource( 1 )
@@ -17,5 +15,5 @@ placeholders = {
 
 [node name="stream" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-volume_db = -36.0
+volume_db = -27.0
 autoplay = true

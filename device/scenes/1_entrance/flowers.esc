@@ -3,6 +3,6 @@ set_active button_tutorial false
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/11_flower_riddle/scene.tscn
 cut_scene telon fade_in
-wait 1
+wait 0.5
 say telon entrance_louis_riddle:"Here you have to pick the correct answer with the hand. This can also be used to pick up things." info_l avatar_luis
 set_active button_tutorial true

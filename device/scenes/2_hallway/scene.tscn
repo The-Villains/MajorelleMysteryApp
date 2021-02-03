@@ -45,14 +45,21 @@ position = Vector2( 36, 170 )
 navpoly = SubResource( 1 )
 
 [node name="door" parent="." instance=ExtResource( 12 )]
+z_index = 1000
+tooltip = "To the living room"
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
 position = Vector2( 387.495, 704.279 )
 scale = Vector2( 0.3, 0.3 )
+z_index = 1500
+tooltip = "Jacques Majorelle"
 
 [node name="plants" parent="." instance=ExtResource( 4 )]
 position = Vector2( 832.975, 604.171 )
 scale = Vector2( 1.5, 1.5 )
+z_index = 1600
+z_as_relative = false
+tooltip = "overgrown area"
 
 [node name="keyhole" parent="." instance=ExtResource( 7 )]
 visible = false
@@ -71,14 +78,15 @@ placeholders = {
 
 [node name="hallway_kiara" type="Node2D" parent="."]
 script = ExtResource( 10 )
+tooltip = "Kiara"
 events_path = "res://scenes/2_hallway/hallway_kiara.esc"
 global_id = "hallway_kiara"
 
 [node name="area" type="TextureButton" parent="hallway_kiara"]
-margin_left = 1363.0
-margin_top = -79.0
+margin_left = 1325.0
+margin_top = -111.0
 margin_right = 1661.0
-margin_bottom = 272.0
+margin_bottom = 256.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

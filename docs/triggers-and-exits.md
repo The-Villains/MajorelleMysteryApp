@@ -60,4 +60,3 @@ An example of this would be
 set_global last_exit bridge
 change_scene res://game/rooms/office/main.tscn
 ```
-

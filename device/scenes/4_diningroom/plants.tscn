@@ -36,4 +36,5 @@ __meta__ = {
 anims/disappear = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+z_as_relative = false
 texture = ExtResource( 1 )

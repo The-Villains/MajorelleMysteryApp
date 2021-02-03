@@ -10,13 +10,13 @@
 [ext_resource path="res://scenes/1_entrance/lightbulb_missing.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/1_entrance/ghost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/1_entrance/lamp.tscn" type="PackedScene" id=10]
-[ext_resource path="res://globals/sprites/knoepfe und co/kreis.png" type="Texture" id=11]
+[ext_resource path="res://globals/sprites/knoepfe und co/kiara_button_highlighted.png" type="Texture" id=11]
 [ext_resource path="res://scenes/1_entrance/player_talk.tscn" type="PackedScene" id=12]
 [ext_resource path="res://globals/item.gd" type="Script" id=13]
 [ext_resource path="res://scenes/1_entrance/sprites/louis_far_red.png" type="Texture" id=14]
 [ext_resource path="res://scenes/1_entrance/sprites/blume_rot.png" type="Texture" id=15]
 [ext_resource path="res://scenes/1_entrance/sprites/lampe_rot.png" type="Texture" id=16]
-[ext_resource path="res://scenes/1_entrance/sprites/suitcase_red.png" type="Texture" id=17]
+[ext_resource path="res://scenes/1_entrance/sprites/suitcase_red_trimmed.png" type="Texture" id=17]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=18]
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=19]
 
@@ -28,7 +28,8 @@ outlines = [ PoolVector2Array( 1679.63, 1215.23, 1679.79, 1141.2, 1679.99, 1049.
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 1199.87 ]
+"_edit_horizontal_guides_": [ 1199.87, 130.897 ],
+"_edit_vertical_guides_": [ 1468.62 ]
 }
 
 [node name="background" type="TextureRect" parent="."]
@@ -61,6 +62,7 @@ script = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = "locked door"
 global_id = "entrance_door"
 
 [node name="ghost_tutorial" type="Node2D" parent="."]
@@ -100,6 +102,7 @@ __meta__ = {
 [node name="flowers" parent="." instance=ExtResource( 7 )]
 position = Vector2( 832.78, 601.202 )
 scale = Vector2( 1.5, 1.5 )
+tooltip = "odd looking flowers"
 events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"
 
@@ -107,19 +110,21 @@ global_id = "flowers"
 visible = false
 position = Vector2( 317.237, 762.604 )
 scale = Vector2( 0.3, 0.3 )
+tooltip = "Louis Majorelle"
 events_path = "res://scenes/1_entrance/entrance_ghost.esc"
 
 [node name="lamp" parent="." instance=ExtResource( 10 )]
 visible = false
 position = Vector2( 838, 589 )
 scale = Vector2( 1.5, 1.5 )
-tooltip = "lamp"
+tooltip = " "
 global_id = "lamp"
 
 [node name="lightbulb_tutorial" type="Node2D" parent="."]
 visible = false
 scale = Vector2( 1.4, 1.4 )
 script = ExtResource( 13 )
+tooltip = " "
 global_id = "lightbulb_tutorial"
 
 [node name="area" type="TextureRect" parent="lightbulb_tutorial"]
@@ -134,13 +139,13 @@ __meta__ = {
 
 [node name="lightbulb_missing" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1146.41, 224 )
-tooltip = "lightbulb spot"
+tooltip = "missing lightbulb"
 
 [node name="player_talk" parent="." instance=ExtResource( 12 )]
 visible = false
 
 [node name="player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1464.5, 1171.45 )
+position = Vector2( 1464.15, 1171.6 )
 scale = Vector2( 0.45, 0.45 )
 z_index = 1171
 placeholders = {
@@ -149,56 +154,37 @@ placeholders = {
 
 [node name="kiara_tutorial" type="Node2D" parent="."]
 visible = false
-position = Vector2( 1385, 80 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 1384, 80.5 )
+scale = Vector2( 0.15, 0.15 )
 script = ExtResource( 13 )
+tooltip = " "
 global_id = "kiara_tutorial"
 
 [node name="area" type="TextureRect" parent="kiara_tutorial"]
-margin_left = -45.3906
-margin_top = -92.8571
-margin_right = 978.609
-margin_bottom = 931.143
+margin_left = -118.724
+margin_top = -599.523
+margin_right = 1317.28
+margin_bottom = 836.477
 texture = ExtResource( 11 )
+flip_h = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="kiara" parent="." instance=ExtResource( 18 )]
-
-[node name="entrance_kiara" type="Node2D" parent="."]
-position = Vector2( -1.18396, 0.862915 )
-scale = Vector2( 0.28, 0.28 )
-z_index = 2000
-script = ExtResource( 13 )
-events_path = "res://scenes/1_entrance/entrance_kiara.esc"
-global_id = "entrance_kiara"
-
-[node name="area" type="TextureButton" parent="entrance_kiara"]
-margin_left = 4777.0
-margin_top = -299.0
-margin_right = 5807.0
-margin_bottom = 887.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="inventory_tutorial" type="Node2D" parent="."]
+[node name="inventory_tutorial" type="Sprite" parent="."]
 visible = false
-position = Vector2( 600, 600 )
-scale = Vector2( 0.32, 0.32 )
-z_index = 3000
+light_mask = -2147483645
+position = Vector2( 1226.1, 1239.12 )
+scale = Vector2( 0.34, 0.34 )
+z_index = 4000
+z_as_relative = false
+texture = ExtResource( 17 )
+offset = Vector2( 522.032, -558.678 )
 script = ExtResource( 13 )
+tooltip = " "
 global_id = "inventory_tutorial"
 
-[node name="area" type="TextureRect" parent="inventory_tutorial"]
-margin_left = 1495.12
-margin_top = 392.555
-margin_right = 5429.12
-margin_bottom = 2440.56
-texture = ExtResource( 17 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="kiara" parent="." instance=ExtResource( 18 )]
+z_index = 1
 
 [node name="game" parent="." instance=ExtResource( 3 )]

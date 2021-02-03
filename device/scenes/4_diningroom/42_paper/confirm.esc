@@ -1,15 +1,4 @@
-:talk
-
-:use
-
-:look
-
-:pick_up
-
 :load
-> [!paper_entrance,!paper_hallway,!paper_terrasse,!paper_livingroom,!paper_diningroom]
- say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
-
 > [paper_entrance,paper_hallway,paper_terrasse,paper_livingroom,paper_diningroom]
  say telon diningroom_solved_paper:"Thank you for restoring that!" default avatar_jane
  set_global i/inv_flower2 true
@@ -22,3 +11,32 @@
  set_state diningroom_plants disappear
  wait 3
  set_active diningroom_plants false
+ set_active diningroom_door true
+
+> [!paper_entrance]
+ say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ stop
+
+> [!paper_hallway]
+ say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ stop
+
+> [!paper_livingroom]
+ say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ stop
+
+> [!paper_diningroom]
+ say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ stop
+
+> [!paper_terrasse ]
+ say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ stop
+
+:talk
+
+:use
+
+:look
+
+:pick_up

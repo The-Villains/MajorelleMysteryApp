@@ -1,0 +1,4 @@
+:talk
+set_state staircase_kiara tip2
+say telon staircase_kiara_tip:"Let's look at that window. It seems a little scrambled." left
+set_state staircase_kiara default

@@ -1,0 +1,4 @@
+:talk
+set_state kiara tip1
+say telon bedroom_kiara_nothing:"This is a nice piece of furniture, but I can't see anything. Let's keep looking." left
+set_state kiara default

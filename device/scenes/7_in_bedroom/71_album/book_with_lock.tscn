@@ -18,13 +18,14 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 766.089 ]
 }
+tooltip = "locked photo album"
 global_id = "album_locked"
 
 [node name="bg" type="TextureRect" parent="."]
 margin_left = -256.0
-margin_top = 49.333
+margin_top = 49.0
 margin_right = 256.0
-margin_bottom = 561.333
+margin_bottom = 561.0
 rect_scale = Vector2( 0.28, 0.28 )
 texture = ExtResource( 5 )
 __meta__ = {
@@ -32,10 +33,10 @@ __meta__ = {
 }
 
 [node name="bg2" type="TextureRect" parent="."]
-margin_left = -125.0
-margin_top = 49.333
-margin_right = 387.0
-margin_bottom = 561.333
+margin_left = -131.667
+margin_top = 49.0
+margin_right = 380.333
+margin_bottom = 561.0
 rect_scale = Vector2( 0.28, 0.28 )
 texture = ExtResource( 5 )
 __meta__ = {
@@ -43,10 +44,10 @@ __meta__ = {
 }
 
 [node name="bg3" type="TextureRect" parent="."]
-margin_left = -10.0
-margin_top = 49.333
-margin_right = 502.0
-margin_bottom = 561.333
+margin_left = -14.0
+margin_top = 49.0
+margin_right = 498.0
+margin_bottom = 561.0
 rect_scale = Vector2( 0.28, 0.28 )
 texture = ExtResource( 5 )
 __meta__ = {
@@ -55,34 +56,20 @@ __meta__ = {
 
 [node name="bg4" type="TextureRect" parent="."]
 margin_left = 103.0
-margin_top = 49.333
+margin_top = 49.0
 margin_right = 615.0
-margin_bottom = 561.333
+margin_bottom = 561.0
 rect_scale = Vector2( 0.28, 0.28 )
 texture = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="a1Select" type="SpinBox" parent="."]
-margin_left = -271.667
-margin_top = 91.9997
-margin_right = -130.667
-margin_bottom = 155.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme = ExtResource( 4 )
-max_value = 9.0
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="b1Select" type="SpinBox" parent="."]
-margin_left = -142.0
-margin_top = 93.0
-margin_right = -1.0
-margin_bottom = 156.0
+[node name="d1Select" type="SpinBox" parent="."]
+margin_left = 100.0
+margin_top = 90.0
+margin_right = 241.0
+margin_bottom = 153.0
 theme = ExtResource( 4 )
 max_value = 9.0
 align = 2
@@ -91,10 +78,10 @@ __meta__ = {
 }
 
 [node name="c1Select" type="SpinBox" parent="."]
-margin_left = -23.0
-margin_top = 92.0
-margin_right = 118.0
-margin_bottom = 155.0
+margin_left = -17.0
+margin_top = 90.6667
+margin_right = 124.0
+margin_bottom = 153.667
 theme = ExtResource( 4 )
 max_value = 9.0
 align = 2
@@ -102,11 +89,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d1Select" type="SpinBox" parent="."]
-margin_left = 91.3333
-margin_top = 93.3333
-margin_right = 232.333
-margin_bottom = 156.333
+[node name="b1Select" type="SpinBox" parent="."]
+margin_left = -135.333
+margin_top = 90.0
+margin_right = 5.66699
+margin_bottom = 153.0
+theme = ExtResource( 4 )
+max_value = 9.0
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="a1Select" type="SpinBox" parent="."]
+margin_left = -260.0
+margin_top = 90.0
+margin_right = -119.0
+margin_bottom = 153.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
 theme = ExtResource( 4 )
 max_value = 9.0
 align = 2

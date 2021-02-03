@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/1_entrance/sprites/blumenraetsel_daisies.png" type="Texture" id=1]
 [ext_resource path="res://scenes/1_entrance/11_flower_riddle/lamp.tscn" type="PackedScene" id=2]
@@ -18,7 +18,7 @@
 [ext_resource path="res://scenes/1_entrance/11_flower_riddle/confirm.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=17]
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=18]
-[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=19]
+[ext_resource path="res://ui/font.tres" type="Theme" id=19]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends \"res://globals/scene_base.gd\"
@@ -76,11 +76,6 @@ func _on_right_pressed():
 #	vm.load_file(\"res://scenes/1_entrance/11_flower_riddle/exit.esc\")
 "
 
-[sub_resource type="DynamicFont" id=2]
-size = 32
-use_filter = true
-font_data = ExtResource( 19 )
-
 [node name="scene" type="Node2D"]
 script = SubResource( 1 )
 __meta__ = {
@@ -98,12 +93,11 @@ __meta__ = {
 }
 
 [node name="Control" type="Control" parent="."]
-margin_right = 374.0
-margin_bottom = 124.0
 script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+tooltip = " "
 global_id = "flower_instruction"
 
 [node name="flower_instruction" type="TextureRect" parent="Control"]
@@ -118,11 +112,12 @@ __meta__ = {
 }
 
 [node name="FLOWER_RIDDLE" type="Label" parent="Control"]
-margin_left = 536.0
-margin_top = 146.0
-margin_right = 1056.0
-margin_bottom = 245.0
-custom_fonts/font = SubResource( 2 )
+margin_left = 530.0
+margin_top = 136.0
+margin_right = 1215.0
+margin_bottom = 265.0
+rect_scale = Vector2( 0.8, 0.8 )
+theme = ExtResource( 19 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "FLOWER_RIDDLE"
 autowrap = true
@@ -233,31 +228,37 @@ placeholders = {
 [node name="daisies" parent="." instance=ExtResource( 11 )]
 position = Vector2( 202, 552 )
 scale = Vector2( 0.8, 0.8 )
+tooltip = "daisies"
 events_path = "res://scenes/1_entrance/11_flower_riddle/daisies.esc"
 
 [node name="original" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1002, 552 )
 scale = Vector2( 0.8, 0.8 )
+tooltip = "honesty flowers"
 events_path = "res://scenes/1_entrance/11_flower_riddle/original.esc"
 
 [node name="roses" parent="." instance=ExtResource( 12 )]
 position = Vector2( 602, 552 )
 scale = Vector2( 0.8, 0.8 )
+tooltip = "roses"
 events_path = "res://scenes/1_entrance/11_flower_riddle/roses.esc"
 
 [node name="tulips" parent="." instance=ExtResource( 14 )]
 position = Vector2( 1402, 552 )
 scale = Vector2( 0.8, 0.8 )
+tooltip = "tulips"
 events_path = "res://scenes/1_entrance/11_flower_riddle/tulips.esc"
 
 [node name="lightbulb" parent="." instance=ExtResource( 2 )]
 visible = false
 position = Vector2( 816, 542 )
+tooltip = "lightbulb"
 events_path = "res://scenes/1_entrance/11_flower_riddle/lightbulb.esc"
 global_id = "lightbulb"
 
 [node name="button_tutorial" parent="." instance=ExtResource( 18 )]
 position = Vector2( 125, 0 )
+tooltip = " "
 
 [node name="exit" parent="." instance=ExtResource( 5 )]
 position = Vector2( 98, 1116 )

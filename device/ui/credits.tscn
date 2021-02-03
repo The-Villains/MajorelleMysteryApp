@@ -12,11 +12,11 @@
 [ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=10]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0008.png" type="Texture" id=11]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0007.png" type="Texture" id=12]
-[ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0009.png" type="Texture" id=14]
 [ext_resource path="res://globals/sprites/easter eggs/sonjas_blume_col.png" type="Texture" id=15]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0004.png" type="Texture" id=16]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0001.png" type="Texture" id=17]
+[ext_resource path="res://font/kalam-font/Kalam.ttf" type="DynamicFontData" id=18]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -30,12 +30,12 @@ animations = [ {
 size = 32
 outline_color = Color( 1, 1, 1, 0 )
 use_filter = true
-font_data = ExtResource( 13 )
+font_data = ExtResource( 18 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 72
 use_filter = true
-font_data = ExtResource( 13 )
+font_data = ExtResource( 18 )
 
 [sub_resource type="Animation" id=4]
 
@@ -70,7 +70,7 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 4
+frame = 3
 playing = true
 
 [node name="CREDITS" type="Label" parent="."]
@@ -106,9 +106,9 @@ __meta__ = {
 
 [node name="UI_BACK" type="Label" parent="back"]
 margin_left = -19.226
-margin_top = 193.802
+margin_top = 201.883
 margin_right = 1814.77
-margin_bottom = 469.802
+margin_bottom = 477.883
 rect_scale = Vector2( 0.3, 0.5 )
 mouse_filter = 1
 size_flags_vertical = 0
