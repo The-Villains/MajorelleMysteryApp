@@ -1,4 +1,4 @@
-:pick_up
+:use
 queue_resource res://scenes/living-room/scene.tscn
 > [dining-room-active]
  teleport_pos arturo 1200 750

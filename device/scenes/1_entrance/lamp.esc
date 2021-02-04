@@ -16,7 +16,7 @@ say telon kiara_tutorial_edit:"Okay, I think we are well prepared to free this v
 say telon kiara_tutorial_edit2:"I will stay in the background, but you can ask me for advice and ideas anytime that you don’t know what to do next. Maybe my notes will be of use to you." right_left
 set_state kiara default
 set_active kiara_tutorial true
-wait 1.5
+wait 2
 
 cut_scene telon fade_out
 change_scene res://scenes/2_hallway/scene.tscn

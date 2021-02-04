@@ -1,4 +1,4 @@
-:pick_up
+:use
 set_active d1 false
 set_active diff1 true
 set_global found1 true

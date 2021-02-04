@@ -1,4 +1,4 @@
-:pick_up
+:use
 
 set_global i/inv_can true
 set_active can false

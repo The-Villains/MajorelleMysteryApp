@@ -6,7 +6,7 @@
 > [!box_open]
 	say player "It's a box"
 
-:pick_up
+:use
 
 > [box_open]
 	set_global i/inv_news true

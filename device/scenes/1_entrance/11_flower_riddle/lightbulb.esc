@@ -1,4 +1,4 @@
-:pick_up
+:use
 queue_resource res://scenes/1_entrance/scene.tscn
 set_global picked_item true
 set_active lightbulb false

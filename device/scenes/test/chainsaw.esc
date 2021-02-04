@@ -1,4 +1,4 @@
-:pick_up
+:use
 
 set_global i/inv_chainsaw true
 set_active chainsaw false

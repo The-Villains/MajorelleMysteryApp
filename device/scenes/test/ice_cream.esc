@@ -1,4 +1,4 @@
-:pick_up
+:use
 
 set_global i/inv_ice_cream true
 set_active ice_cream false

@@ -1,4 +1,4 @@
-:pick_up
+:use
 queue_resource res://scenes/3_livingroom/31_window/scene.tscn
 set_active missing_piece2 false
 set_global i/inv_piece7 true

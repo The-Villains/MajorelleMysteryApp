@@ -7,7 +7,7 @@ cut_scene telon fade_in
  say telon bedroom_artur_dontworry:"Don’t worry, Madam, we’ll fix it!" left avatar_artur
 set_global looked_at_album true
 
-:pick_up
+:use
 cut_scene telon fade_out
 change_scene res://scenes/7_in_bedroom/71_album/scene.tscn
 cut_scene telon fade_in

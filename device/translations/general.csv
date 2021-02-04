@@ -1,5 +1,5 @@
 id,en,fr,de
-use.id,Use %1,Utiliser %1,Benutze %1
+use.id,Pick %1,Ramasser %1,Nimm %1
 use.combine_id,Use %1 with %2,Utiliser %1 avec %2,Benutze %1 mit %2
 look.id,Look closer at %1,Regarder %1,Betrachte %1 näher
 pick_up.id,Pick %1,Ramasser %1,Nimm %1
@@ -191,7 +191,7 @@ exit_bedroom_album.tooltip,Back,Retour,Zurück
 exit_bedroom_painting.tooltip,Back,Retour,Zurück
 album_photo_right.tooltip,Jane Majorelle greeting two guests at the front door of the Villa Majorelle,Jane Majorelle accueillant deux invités à la porte d’entrée de la Villa Majorelle,Jane Majorelle begrüßt zwei Gäste an der Eingangstür der Villa Majorelle
 album_photo_left_top.tooltip,Jane and Louis Majorelle sitting in the terrace of the Villa Majorelle,Jane et Louis Majorelle assis dans la terrasse de la Villa Majorelle,Jane und Louis Majorelle sitzen auf der Terrasse der Villa Majorelle
-album_photo_left_bottom.tooltip,,Jane Kretz-Majorelle + infos,
+album_photo_left_bottom.tooltip,Jane Majorelle in the bedroom,,
 album_confirm.tooltip,Confirm solution,Confirmer la solution,Bestätigen Lösung
 inv_lightbulb.tooltip,lightbulb,ampoule,Glühbirne
 inv_piece6.tooltip,puzzle piece,morceau de puzzle,Puzzleteil

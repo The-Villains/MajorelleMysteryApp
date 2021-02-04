@@ -1,4 +1,4 @@
-:pick_up
+:use
 set_active button_tutorial false
 set_global wrong_flower_picked false
 set_global right_flower_picked true

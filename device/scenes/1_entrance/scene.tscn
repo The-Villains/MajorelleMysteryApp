@@ -82,6 +82,7 @@ __meta__ = {
 }
 
 [node name="button_tutorial" parent="." instance=ExtResource( 19 )]
+position = Vector2( 121, 0 )
 
 [node name="flower_tutorial" type="Node2D" parent="."]
 visible = false
