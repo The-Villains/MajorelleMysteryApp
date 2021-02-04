@@ -49,11 +49,22 @@ texture = ExtResource( 9 )
 
 [node name="book_with_lock" parent="." instance=ExtResource( 14 )]
 visible = false
+z_as_relative = false
 
 [node name="open_album" parent="." instance=ExtResource( 11 )]
 visible = false
 position = Vector2( 0, 2 )
 global_id = "album_open"
+
+[node name="jane" type="Node2D" parent="."]
+script = ExtResource( 8 )
+global_id = "bedroom_album_jane"
+
+[node name="Sprite" type="Sprite" parent="jane"]
+position = Vector2( 1274, 876 )
+scale = Vector2( 0.28, 0.28 )
+texture = ExtResource( 13 )
+flip_h = true
 
 [node name="confirm" parent="." instance=ExtResource( 10 )]
 visible = false
@@ -63,23 +74,15 @@ script = ExtResource( 8 )
 events_path = "res://scenes/7_in_bedroom/71_album/confirm.esc"
 global_id = "album_confirm"
 
-[node name="kiara" parent="." instance=ExtResource( 12 )]
-events_path = "res://scenes/7_in_bedroom/71_album/album_kiara.esc"
-
-[node name="jane" type="Node2D" parent="."]
-script = ExtResource( 8 )
-global_id = "bedroom_album_jane"
-
-[node name="Sprite" type="Sprite" parent="jane"]
-position = Vector2( 334, 852 )
-scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 13 )
-
 [node name="exit" parent="." instance=ExtResource( 1 )]
 position = Vector2( 100, 1124 )
 scale = Vector2( 0.4, 0.4 )
 placeholders = {
 
 }
+
+[node name="kiara" parent="." instance=ExtResource( 12 )]
+z_index = 2500
+events_path = "res://scenes/7_in_bedroom/71_album/album_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 4 )]

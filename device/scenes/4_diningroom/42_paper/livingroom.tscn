@@ -6,7 +6,7 @@
 
 [node name="livingroom" type="Node2D"]
 script = ExtResource( 1 )
-tooltip = "button"
+tooltip = "living room label"
 global_id = "paper_livingroom"
 use_combine = true
 placeholders = {
@@ -18,10 +18,11 @@ scale = Vector2( 0.8, 1 )
 texture = ExtResource( 2 )
 
 [node name="P_LIVINGROOM" type="Label" parent="."]
-margin_left = -165.0
-margin_top = -31.0
-margin_right = 165.0
-margin_bottom = 61.0
+margin_left = -175.0
+margin_top = -50.0
+margin_right = 97.0
+margin_bottom = 54.0
+rect_scale = Vector2( 1.3, 1.3 )
 theme = ExtResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "P_LIVINGROOM"

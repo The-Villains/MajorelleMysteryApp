@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
-[ext_resource path="res://scenes/7_in_bedroom/book_corner_norm.png" type="Texture" id=2]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/corner_beige.png" type="Texture" id=2]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/LinkButton.gd" type="Script" id=4]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/book_real.png" type="Texture" id=5]
-[ext_resource path="res://scenes/7_in_bedroom/book_corner_hover.png" type="Texture" id=6]
+[ext_resource path="res://scenes/7_in_bedroom/sprites/corner_green.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -33,8 +33,8 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "aöbum_photo_left_top"
-global_id = "aöbum_photo_left_top"
+tooltip = "Jane and Louis Majorelle sitting in the terrace of the Villa Majorelle"
+global_id = "album_photo_left_top"
 
 [node name="photo_left_bottom" type="TextureRect" parent="."]
 margin_left = 340.0
@@ -45,7 +45,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "album_photo_left_bottom"
+tooltip = "Jane Majorelle"
 global_id = "album_photo_left_bottom"
 placeholders = {
 
@@ -60,7 +60,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "album_photo_right"
+tooltip = "Jane Majorelle greeting two guests at the front door of the Villa Majorelle"
 global_id = "album_photo_right"
 placeholders = {
 
@@ -71,12 +71,14 @@ position = Vector2( 724, 522 )
 texture = ExtResource( 5 )
 
 [node name="www" type="TextureButton" parent="."]
-margin_left = 170.0
-margin_top = 124.0
-margin_right = 1279.0
-margin_bottom = 936.0
-texture_normal = ExtResource( 6 )
-texture_hover = ExtResource( 2 )
+margin_left = 1057.88
+margin_top = 697.293
+margin_right = 1215.88
+margin_bottom = 890.293
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 6 )
+texture_focused = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -84,9 +86,9 @@ __meta__ = {
 [node name="LinkButton" type="LinkButton" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = 1054.0
+margin_left = 1049.76
 margin_top = 693.0
-margin_right = 1226.0
+margin_right = 1221.76
 margin_bottom = 896.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -96,3 +98,4 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="mouse_entered" from="LinkButton" to="LinkButton" method="_on_LinkButton_mouse_entered"]

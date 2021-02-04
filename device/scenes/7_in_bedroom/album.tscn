@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/7_in_bedroom/sprites/bedroom_book.png" type="Texture" id=2]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/bedroom_book_pl.png" type="Texture" id=3]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "no_plants"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -19,7 +19,7 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "plants"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -34,7 +34,7 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
@@ -58,9 +58,9 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/no_plants = SubResource( 2 )
-anims/plants = SubResource( 3 )
+anims/no_plants = SubResource( 1 )
+anims/plants = SubResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 1 )
+frames = SubResource( 3 )
 frame = 1

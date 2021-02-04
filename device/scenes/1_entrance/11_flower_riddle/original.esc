@@ -8,7 +8,7 @@ set_active highlight_original true
 set_active highlight_roses false
 set_active highlight_tulips false
 
-say telon entrance_right_flower:"This looks good!" default avatar_luis
+say telon entrance_right_flower:"This looks good!" left_left avatar_luis
 set_active flower_instruction false
 set_active flowers false
 set_active tulips false
@@ -20,4 +20,4 @@ set_active highlight_daisies false
 set_active highlight_roses false
 set_active highlight_original false
 set_active lightbulb true
-say original entrance_offer_lamp:"Take this lightbulb now. You you can repair the lamp with it!" default avatar_luis
+say original entrance_offer_lamp:"Take this lightbulb now. You you can repair the lamp with it!" left_left avatar_luis

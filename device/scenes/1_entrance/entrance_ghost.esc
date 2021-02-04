@@ -1,8 +1,8 @@
 :talk
 set_active button_tutorial false
 set_active ghost_tutorial false
-say telon entrance_louis_1:"For the entrance area it should be all honesties as flowers on the wall. Let’s have a closer look at those tulips to fix that." left avatar_luis
-say telon entrance_louis_2:"To do so, you must first click the eye and then what you want to closer look at. Try it out!" left avatar_luis
+say telon entrance_louis_1:"For the entrance area it should be all honesties as flowers on the wall. Let’s have a closer look at those tulips to fix that." right_left avatar_luis
+say telon entrance_louis_2:"To do so, you must first click the eye and then what you want to closer look at. Try it out!" right_left avatar_luis
 set_active button_tutorial true
 teleport_pos button_tutorial 0 0
 wait 1

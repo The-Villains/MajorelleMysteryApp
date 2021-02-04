@@ -66,7 +66,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "painting of Xs sister \"Name\""
+tooltip = "Portrait of Jika Majorelle"
 events_path = "res://scenes/7_in_bedroom/painting.esc"
 global_id = "bedroom_painting"
 placeholders = {

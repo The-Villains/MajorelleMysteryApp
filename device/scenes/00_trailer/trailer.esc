@@ -43,7 +43,7 @@ wait 1.5
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer6.tscn
 cut_scene telon fade_in
-say telon trailer_6:"Hmm, these must be the plants Jeanne Majorelle was talking about..." default avatar_artur
+say telon trailer_6:"Hmm, these must be the plants Jeanne Majorelle was talking about..." right_right avatar_artur
 
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/scene.tscn
@@ -52,7 +52,7 @@ cut_scene telon fade_in
 
 # Workaround - Initial speaking for following main scene and Esc Script here
 set_state kiara tip1
-say telon entrance_kiara_01:"Nice entrance area. Although those tulips look like they don't belong here. Hmm... Let's talk to Louis." left
+say telon entrance_kiara_01:"Nice entrance area. Although those tulips look like they don't belong here. Hmm... Let's talk to Louis." right_left
 #set_state kiara tip2
 #say telon entrance_kiara_2:"Let's ask Louis for instructions. And if you need any more tips from me later, just talk to me then." left
 #set_active kiara_tutorial true

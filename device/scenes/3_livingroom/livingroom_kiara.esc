@@ -1,4 +1,4 @@
 :talk
 set_state kiara tip3
-say telon livingroom_kiara_tip:"This is a placeholder for the living room." left
+say telon livingroom_kiara_tip:"This is a placeholder for the living room." right_left
 set_state kiara default

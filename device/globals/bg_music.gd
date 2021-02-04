@@ -30,7 +30,5 @@ func set_state(p_state, p_force = false):
 		stream.set_volume(vm.settings.music_volume)
 
 
-
 func _ready():
 	stream = get_node("stream")
-

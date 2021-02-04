@@ -181,6 +181,7 @@ events_path = "res://scenes/4_diningroom/paper.esc"
 position = Vector2( 118, 70 )
 z_index = 1500
 tooltip = "Jane Majorelle"
+events_path = "res://scenes/4_diningroom/diningroom_ghost.esc"
 global_id = "diningroom_ghost"
 
 [node name="player" parent="." instance=ExtResource( 6 )]

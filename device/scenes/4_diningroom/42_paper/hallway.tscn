@@ -6,7 +6,7 @@
 
 [node name="hallway" type="Node2D"]
 script = ExtResource( 1 )
-tooltip = "button"
+tooltip = "hallway label"
 global_id = "paper_hallway"
 use_combine = true
 placeholders = {
@@ -18,10 +18,11 @@ scale = Vector2( 0.8, 1 )
 texture = ExtResource( 3 )
 
 [node name="P_HALLWAY" type="Label" parent="."]
-margin_left = -167.0
-margin_top = -37.0
-margin_right = 157.0
-margin_bottom = 71.0
+margin_left = -175.0
+margin_top = -50.0
+margin_right = 97.0
+margin_bottom = 54.0
+rect_scale = Vector2( 1.3, 1.3 )
 theme = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "P_HALLWAY"
@@ -37,5 +38,6 @@ margin_top = -63.0
 margin_right = 186.0
 margin_bottom = 94.0
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }

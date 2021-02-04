@@ -15,7 +15,7 @@ use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 42
+size = 36
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3

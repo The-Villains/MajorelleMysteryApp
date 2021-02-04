@@ -13,9 +13,9 @@ UI_QUIT_CONFIRM,Do you want to quit the game ?,Veux-tu vraiment quitter le jeu 
 UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeu ? Toute progression sera perdue.,Neues Spiel starten? Alle Fortschritte gehen verloren.
 UI_BACK,Back to the main menu,Retour au menu principal,Zurück zum Hauptmenü
 UI_CREDITS,Credits,Crédits,Credits
-CREDITS,"Escoria in Daïza was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai.","Escoria in Daiza wurde von Elisa de Castro Guerra, Cédric Gemy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt und Adrien ""Kooda"" Ramos in Rennes für das ""Erstellen von Point-and-click-Spiele mit escoria"" booksprint vom 22. August erstellt bis 26 in Rennes, Frankreich. Beiträge zur Übersetzung: Ranito und Chaosprower. 2018 Verbesserungen von bosinpai."
-FLOWER_RIDDLE,"Which flowers match the decoration in the entrance area, that Louis Majorelle chose?",Quelles sont les fleurs correspondant à la décoration choisie par Louis Majorellee dans d'entrée?,"Welche dieser Blumen passen zu der Eingangsdekoration, die Louis Majorelle ausgesucht hat?"
-WINDOW_PUZZLE,Repair the stained glass art and move the pieces to the right spots.,Reconstitue le vitrail en plaçant les pièces au bon endroit.,Repariere die Glasmalerei indem du die Stücke an den richtigen Stelle bewegst.
+CREDITS,"/// This is an unofficial beta testing version. Official credits and licensing is in revision. //// Game is based on: Escoria in Daïza that was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","/// Il s'agit d'une version bêta-test non officielle. Les crédits et licences officiels sont en cours de révision. //// Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai.","/// Dies ist eine inoffizielle Beta-Test-Version. Offizielle Kredite und Lizenzierung ist in Revision. //// Spiel basiert auf: escoria in Daiza, die von Elisa de Castro Guerra, Cédric Gemy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt und Adrien ""Kooda"" Ramos in Rennes für das „Erstellen von Punkt erstellt wurde, und klicken Spiele mit escoria“booksprint vom 22. August bis 26 in Rennes, Frankreich. Beiträge zur Übersetzung: Ranito und Chaosprower. 2018 Verbesserungen von bosinpai."
+FLOWER_RIDDLE,Which flowers match the decoration in the entrance area that Louis Majorelle chose?,Quelles sont les fleurs correspondant à la décoration choisie par Louis Majorellee dans d'entrée?,"Welche dieser Blumen passen zu der Eingangsdekoration, die Louis Majorelle ausgesucht hat?"
+WINDOW_PUZZLE,Repair the stained glass art and move the pieces to the right spots.,Reconstitue le vitrail en plaçant les pièces au bon endroit.,Repariere die Glasmalerei indem du die Stücke an die richtige Stelle bewegst.
 PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouve les cinq différences dans le tableau du bas.,Finde die Unterschiede und wähle sie im unteren Bild aus!
 MAP_PUZZLE,Assign the correct labels to the rooms.,Distribue les étiquettes correctes aux différentes chambres.,Ordne die Labels den richtigen Räumen zu.
 WINDOW_SWITCH,"Switch the window pieces until you have restored the stained glass art ""honesty flowers""","Réarrange les pièces de verre pour retrouver le dessin du vitrail ""monnaie du pape""","Tausche die Fensterteile miteinander, bis du die Glasmalerei ""Silbertaler"" wiederhergestellt hast."
@@ -142,11 +142,11 @@ diff5.tooltip, , ,
 exit_diningroom_41.tooltip,Back,Retour,Zurück
 diningroom_confirm.tooltip,Confirm solution,Confirmer la solution,Lösung bestätigen
 diningroom_paper.tooltip,mysterious piece of paper,Bout de papier mystérieux,mysteriöses Stück Papier
-paper_terrasse.tooltip,room label,label de pièce,Raum-Label
-paper_diningroom.tooltip,room label,label de pièce,Raum-Label
-paper_livingroom.tooltip,room label,label de pièce,Raum-Label
-paper_hallway.tooltip,room label,label de pièce,Raum-Label
-paper_entrance.tooltip,room label,label de pièce,Raum-Label
+paper_terrasse.tooltip,terrace label,label de terrasse,Terrasse
+paper_diningroom.tooltip,dining room label,label de salle à manger,Esszimmer
+paper_livingroom.tooltip,living room label,label de salon,Wohnzimmer
+paper_hallway.tooltip,hallway label,label de couloir,Flur
+paper_entrance.tooltip,entrance label,label d'entrée,Eingang
 map_diningroom.tooltip,missing room label,label de pièce manquante,fehlendes Raum-Label
 map_livingroom.tooltip,missing room label,label de pièce manquante,fehlendes Raum-Label
 map_terrasse.tooltip,missing room label,label de pièce manquante,fehlendes Raum-Label

@@ -4,7 +4,6 @@
 [ext_resource path="res://templates/area.gd" type="Script" id=2]
 
 [node name="door" type="Node2D"]
-visible = false
 position = Vector2( 692, 600 )
 scale = Vector2( 1.5, 1.5 )
 z_as_relative = false
@@ -13,10 +12,10 @@ tooltip = "To the "
 global_id = "_door"
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = -158.0
-margin_top = -312.0
-margin_right = 201.0
-margin_bottom = 215.0
+margin_left = -159.0
+margin_top = -357.0
+margin_right = 187.0
+margin_bottom = 225.0
 expand = true
 script = ExtResource( 2 )
 __meta__ = {
