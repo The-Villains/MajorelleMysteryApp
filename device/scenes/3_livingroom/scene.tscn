@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/3_livingroom/door.tscn" type="PackedScene" id=13]
+[ext_resource path="res://globals/sprites/knoepfe und co/kiara_button.png" type="Texture" id=14]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 2.79803, 1047.07, 540.798, 879.07, 558.798, 1119.07, 4.79803, 1249.07, 1604.8, 1253.07, 992.798, 1165.07, 726.798, 1107.07, 762.798, 1029.07, 1168.8, 1163.07, 1178.8, 1047.07, 1308.8, 1043.07, 1602.8, 1067.07, 1504.8, 845.07, 1608.8, 887.07, 1302.8, 911.07, 1334.8, 837.07, 592.798, 1065.07, 682.798, 1067.07 )
@@ -167,5 +168,21 @@ global_id = "livingroom_ghost"
 [node name="kiara" parent="." instance=ExtResource( 11 )]
 z_index = 2000
 events_path = "res://scenes/3_livingroom/livingroom_kiara.esc"
+
+[node name="kiara_button" type="TextureButton" parent="."]
+visible = false
+margin_left = 920.475
+margin_top = 36.4411
+margin_right = 1721.47
+margin_bottom = 837.441
+rect_scale = Vector2( 0.15, 0.15 )
+texture_normal = ExtResource( 14 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "Kiara"
+events_path = "res://scenes/3_livingroom/livingroom_kiara.esc"
+global_id = "kiara_button"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

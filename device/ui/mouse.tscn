@@ -13,20 +13,18 @@ visible = false
 script = ExtResource( 1 )
 
 [node name="normal" type="Sprite" parent="."]
-visible = false
+scale = Vector2( 0.9, 0.9 )
 texture = ExtResource( 3 )
-centered = false
-offset = Vector2( -23.7574, -22.634 )
+offset = Vector2( -20, -50 )
 
 [node name="use" type="Sprite" parent="."]
-visible = false
 texture = ExtResource( 2 )
-offset = Vector2( 5.65646, -1.4102 )
+offset = Vector2( -20, -50 )
 
 [node name="look" type="Sprite" parent="."]
-visible = false
 texture = ExtResource( 4 )
+offset = Vector2( -20, -50 )
 
 [node name="talk" type="Sprite" parent="."]
-visible = false
 texture = ExtResource( 5 )
+offset = Vector2( -20, -50 )

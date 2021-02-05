@@ -46,18 +46,6 @@ tracks/2/keys = {
 "update": 0,
 "values": [ Vector2( 0.3, 0.3 ) ]
 }
-tracks/3/type = "value"
-tracks/3/path = NodePath("area:texture_normal")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ ExtResource( 7 ) ]
-}
 
 [sub_resource type="Animation" id=2]
 resource_name = "tip1"
@@ -224,13 +212,17 @@ animations = [ {
 scale = Vector2( 0.5, 0.5 )
 z_as_relative = false
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 37.125 ],
+"_edit_vertical_guides_": [ 1414.66 ]
+}
 tooltip = "Kiara"
 events_path = "res://scenes/1_entrance/entrance_kiara.esc"
 global_id = "kiara"
 
 [node name="area" type="TextureButton" parent="."]
 margin_left = 2736.0
-margin_top = -4.00012
+margin_top = -4.0
 margin_right = 3793.0
 margin_bottom = 1053.0
 rect_scale = Vector2( 0.4, 0.4 )
