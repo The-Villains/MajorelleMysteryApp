@@ -334,6 +334,7 @@ func load_hud():
 	else:
 		get_node("hud_layer/hud/verb_menu").hide()
 
+
 func _ready():
 	add_to_group("game")
 	vm = get_tree().get_root().get_node("vm")

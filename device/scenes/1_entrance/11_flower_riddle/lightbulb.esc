@@ -10,7 +10,7 @@ change_scene res://scenes/1_entrance/scene.tscn
 cut_scene telon fade_in
 set_active entrance_ghost true
 say entrance_ghost entrance_use_lamp:"Okay. Now let us use this lightbulb from our inventory." right_left avatar_luis
-say telon entrance_louis_use_explain:"Use the gears, click the item you want to use and then where you want to use or move it to… the same goes for switching two items." right_left avatar_luis
+say telon entrance_louis_use_explain:"Use the hand, click the item you want to use and then where you want to use or move it to… the same goes for switching two items." right_left avatar_luis
 set_active button_tutorial true
 teleport_pos button_tutorial 250 0
 wait .5

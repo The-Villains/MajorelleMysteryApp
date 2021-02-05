@@ -41,6 +41,7 @@ position = Vector2( -4.00003, 4 )
 navpoly = SubResource( 1 )
 
 [node name="door" parent="." instance=ExtResource( 12 )]
+visible = false
 position = Vector2( 512, 650 )
 tooltip = "To the staircase"
 events_path = "res://scenes/4_diningroom/door.esc"

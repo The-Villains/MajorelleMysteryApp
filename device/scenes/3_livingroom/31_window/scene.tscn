@@ -323,7 +323,7 @@ placeholders = {
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece1"]
-margin_left = 467.0
+margin_left = 459.0
 margin_top = -33.0
 margin_right = 549.0
 margin_bottom = 66.0
@@ -392,9 +392,9 @@ placeholders = {
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece4"]
 margin_left = 331.0
-margin_top = -52.0
+margin_top = -36.0
 margin_right = 471.0
-margin_bottom = 81.0
+margin_bottom = 99.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -438,8 +438,8 @@ placeholders = {
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece9"]
-margin_left = 442.0
-margin_top = 164.0
+margin_left = 420.0
+margin_top = 146.0
 margin_right = 535.0
 margin_bottom = 269.0
 __meta__ = {
@@ -695,12 +695,11 @@ events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
 global_id = "slot1"
 
 [node name="area" type="TextureButton" parent="slots/slot1"]
-margin_left = 493.0
+margin_left = 495.0
 margin_top = -30.0
 margin_right = 535.0
 margin_bottom = 63.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -745,6 +744,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="slot7" type="Node2D" parent="slots"]
+position = Vector2( -138.593, 917.824 )
+script = ExtResource( 45 )
+tooltip = "broken window"
+events_path = "res://scenes/3_livingroom/31_window/slots/slot7.esc"
+global_id = "slot7"
+placeholders = {
+
+}
+
+[node name="area" type="TextureButton" parent="slots/slot7"]
+margin_left = 432.0
+margin_top = -372.0
+margin_right = 499.0
+margin_bottom = -231.0
+rect_rotation = 19.8621
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="slot4" type="Node2D" parent="slots"]
 position = Vector2( -89.0955, 681.651 )
 script = ExtResource( 45 )
@@ -756,11 +775,11 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="slots/slot4"]
-margin_left = 370.0
-margin_top = -46.0
-margin_right = 470.0
-margin_bottom = 71.0
-rect_rotation = 19.7144
+margin_left = 339.0
+margin_top = -40.0
+margin_right = 444.0
+margin_bottom = 73.0
+rect_rotation = 5.90874
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -799,26 +818,6 @@ margin_left = 233.0
 margin_top = 287.0
 margin_right = 310.0
 margin_bottom = 359.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="slot7" type="Node2D" parent="slots"]
-position = Vector2( -138.593, 917.824 )
-script = ExtResource( 45 )
-tooltip = "broken window"
-events_path = "res://scenes/3_livingroom/31_window/slots/slot7.esc"
-global_id = "slot7"
-placeholders = {
-
-}
-
-[node name="area" type="TextureButton" parent="slots/slot7"]
-margin_left = 432.0
-margin_top = -372.0
-margin_right = 499.0
-margin_bottom = -231.0
-rect_rotation = 19.8621
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -873,10 +872,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="slots/slot10"]
-margin_left = 358.0
-margin_top = 274.5
-margin_right = 535.0
-margin_bottom = 367.5
+margin_left = 362.0
+margin_top = 283.0
+margin_right = 527.0
+margin_bottom = 360.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -894,7 +893,7 @@ placeholders = {
 [node name="area" type="TextureButton" parent="slots/slot11"]
 margin_left = 378.0
 margin_top = -163.0
-margin_right = 523.0
+margin_right = 517.0
 margin_bottom = -56.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -911,10 +910,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="slots/slot12"]
-margin_left = 91.0
+margin_left = 97.0
 margin_top = -346.0
-margin_right = 239.0
-margin_bottom = -267.0
+margin_right = 247.0
+margin_bottom = -259.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1050,7 +1049,7 @@ placeholders = {
 [node name="area" type="TextureButton" parent="slots/slot19"]
 margin_left = 80.0
 margin_top = -252.0
-margin_right = 129.0
+margin_right = 125.0
 margin_bottom = -170.0
 __meta__ = {
 "_edit_use_anchors_": false
