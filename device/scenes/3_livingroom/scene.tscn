@@ -61,6 +61,7 @@ position = Vector2( 1.99997, 2 )
 navpoly = SubResource( 1 )
 
 [node name="door" parent="." instance=ExtResource( 13 )]
+visible = false
 
 [node name="lamp" type="TextureButton" parent="."]
 margin_left = 1497.0

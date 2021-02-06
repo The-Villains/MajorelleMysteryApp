@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -47,12 +47,6 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=45]
 [ext_resource path="res://scenes/3_livingroom/31_window/confirm.tscn" type="PackedScene" id=46]
 
-[sub_resource type="BitMap" id=1]
-data = {
-"data": PoolByteArray(  ),
-"size": Vector2( 0, 0 )
-}
-
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
@@ -84,6 +78,7 @@ __meta__ = {
 }
 
 [node name="puzzle_reference" type="TextureRect" parent="."]
+visible = false
 margin_left = 60.0
 margin_top = 130.0
 margin_right = 1169.0
@@ -700,11 +695,10 @@ events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
 global_id = "slot1"
 
 [node name="area" type="TextureButton" parent="slots/slot1"]
-margin_left = 495.0
-margin_top = -30.0
+margin_left = 498.0
+margin_top = -26.0
 margin_right = 535.0
 margin_bottom = 63.0
-texture_click_mask = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1036,8 +1030,8 @@ placeholders = {
 [node name="area" type="TextureButton" parent="slots/slot18"]
 margin_left = 201.0
 margin_top = -318.0
-margin_right = 277.0
-margin_bottom = -193.0
+margin_right = 276.0
+margin_bottom = -206.0
 rect_rotation = 10.8192
 __meta__ = {
 "_edit_use_anchors_": false

@@ -17,6 +17,7 @@
  set_state livingroom_plants disappear
  wait 3
  set_active livingroom_plants false
+ set_active livingroom_door true
 
 :talk
 

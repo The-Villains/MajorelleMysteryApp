@@ -33,8 +33,8 @@ func mouse_enter(obj):
 		text = tr(current_action + ".combine_id")
 		text = text.replace("%2", tr(tt))
 		text = text.replace("%1", tr(current_tool.get_esctooltip()))
-	elif current_action != "":
-		text = tr(current_action + ".id")
+	elif current_action != "" :
+		text = tr(current_action+".id")
 		text = text.replace("%1", tr(tt))
 	elif obj.inventory:
 		var action = inventory.get_action()
@@ -62,10 +62,16 @@ func mouse_exit(obj):
 func clear_action():
 	current_tool = null
 
+func clear_current_action():
+	current_action = null
+
 func set_current_action(p_act):
 	if p_act != current_action:
 		set_current_tool(null)
 	current_action = p_act
+
+func get_current_action():
+	return current_action
 
 func set_current_tool(p_tool):
 	current_tool = p_tool
@@ -93,26 +99,41 @@ func clicked(obj, pos):
 			player.walk_to(pos)
 			get_tree().call_group("hud", "set_tooltip", "")
 
-
 		elif obj.inventory:
 			if current_action == "use" && obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 			else:
 				interact([obj, current_action, current_tool])
-
+				printt("1 ",obj.name,current_action,current_tool)
+				current_action=""
+				#get_tree().call_group("verb_menu","reset_mouse")
+				
 		# Added Use_Combine functionality for items that are not in the inventory /sh
 		elif !obj.inventory && current_action == "use":
 			if  obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 			else:
+				
 				interact([obj, current_action, current_tool])
-
+				printt("2 ",obj.name,current_action,current_tool)
+				current_action=""
+				get_tree().call_group("verb_menu", "reset_mouse",current_action)
+				printt("Mouse should be reset.")
+		
 		elif action != "":
 			player.interact([obj, action, current_tool])
+			printt("3 ",obj.name,action,current_tool)
+			action=""
+			get_tree().call_group("verb_menu", "reset_mouse")
+			printt("Mouse should be reset.")
 
 		elif current_action != "":
 			player.interact([obj, current_action, current_tool])
-
+			printt("4 ",obj.name,current_action,current_tool)
+			current_action=""
+			get_tree().call_group("verb_menu", "reset_mouse",current_action)
+			printt("Mouse should be reset.")
+		
 		elif action_menu == null:
 
 			# same as action == "walk"
@@ -161,9 +182,11 @@ func interact(p_params):
 				return
 			#inventory.close()
 			activate(obj, action, p_params[2])
+			printt("Activated this",obj.name,action,p_params[2])
 		else:
 			#inventory.close()
 			activate(obj, action)
+			printt("Activated that",obj.name,action)
 			clear_action()
 		return
 
