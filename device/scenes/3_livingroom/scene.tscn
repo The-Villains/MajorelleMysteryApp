@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/3_livingroom/plants.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=8]
 [ext_resource path="res://scenes/3_livingroom/window.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/3_livingroom/sprites/puzzle window shine.png" type="Texture" id=10]
+[ext_resource path="res://scenes/3_livingroom/sprites/colorful sparkly light.png" type="Texture" id=10]
 [ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/3_livingroom/door.tscn" type="PackedScene" id=13]
@@ -88,7 +88,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "wooden butome table"
+tooltip = "Tea table with butomaceae ornaments"
 events_path = "res://scenes/3_livingroom/chair1.esc"
 global_id = "livingroom_table"
 placeholders = {
@@ -104,7 +104,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "pine themed armchair"
+tooltip = "armchair \"Pine cones\""
 events_path = "res://scenes/3_livingroom/chair2.esc"
 global_id = "livingroom_chair2"
 placeholders = {
@@ -120,7 +120,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "pine themed armchair"
+tooltip = "armchair \"Pine cones\""
 events_path = "res://scenes/3_livingroom/chair3.esc"
 global_id = "livingroom_chair3"
 placeholders = {
@@ -136,7 +136,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "some info about sideboard"
+tooltip = "buffet \"Pine cones\""
 events_path = "res://scenes/3_livingroom/sideboard.esc"
 global_id = "livingroom_sideboard"
 placeholders = {
@@ -144,7 +144,7 @@ placeholders = {
 }
 
 [node name="window" parent="." instance=ExtResource( 9 )]
-tooltip = "Moroccan stained glass"
+tooltip = "Moroccan-inspired stained glass"
 
 [node name="plants" parent="." instance=ExtResource( 7 )]
 position = Vector2( 597.74, 609.632 )

@@ -113,7 +113,9 @@ __meta__ = {
 position = Vector2( 641.615, 574.953 )
 tooltip = " "
 
-[node name="d1" type="Node2D" parent="."]
+[node name="d1" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 5 )
 events_path = "res://scenes/4_diningroom/41_painting/diff1.esc"
 global_id = "d1"
@@ -127,7 +129,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d2" type="Node2D" parent="."]
+[node name="d2" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 5 )
 events_path = "res://scenes/4_diningroom/41_painting/diff2.esc"
 global_id = "d2"
@@ -144,7 +148,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d3" type="Node2D" parent="."]
+[node name="d3" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 5 )
 events_path = "res://scenes/4_diningroom/41_painting/diff3.esc"
 global_id = "d3"
@@ -161,7 +167,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d4" type="Node2D" parent="."]
+[node name="d4" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 5 )
 events_path = "res://scenes/4_diningroom/41_painting/diff4.esc"
 global_id = "d4"
@@ -178,7 +186,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="d5" type="Node2D" parent="."]
+[node name="d5" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 5 )
 events_path = "res://scenes/4_diningroom/41_painting/diff5.esc"
 global_id = "d5"

@@ -45,7 +45,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "Jane Majorelle"
+tooltip = "Jane Majorelle in the bedroom"
 global_id = "album_photo_left_bottom"
 placeholders = {
 
@@ -90,6 +90,7 @@ margin_left = 1049.76
 margin_top = 693.0
 margin_right = 1221.76
 margin_bottom = 896.0
+hint_tooltip = "To the Website of Villa Majorelle"
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 action_mode = 0

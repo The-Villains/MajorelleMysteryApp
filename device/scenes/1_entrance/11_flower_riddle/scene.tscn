@@ -225,25 +225,33 @@ placeholders = {
 
 }
 
-[node name="daisies" parent="." instance=ExtResource( 11 )]
+[node name="daisies" parent="." groups=[
+"puzzle",
+] instance=ExtResource( 11 )]
 position = Vector2( 202, 552 )
 scale = Vector2( 0.8, 0.8 )
 tooltip = "daisies"
 events_path = "res://scenes/1_entrance/11_flower_riddle/daisies.esc"
 
-[node name="original" parent="." instance=ExtResource( 13 )]
+[node name="original" parent="." groups=[
+"puzzle",
+] instance=ExtResource( 13 )]
 position = Vector2( 1002, 552 )
 scale = Vector2( 0.8, 0.8 )
 tooltip = "honesty flowers"
 events_path = "res://scenes/1_entrance/11_flower_riddle/original.esc"
 
-[node name="roses" parent="." instance=ExtResource( 12 )]
+[node name="roses" parent="." groups=[
+"puzzle",
+] instance=ExtResource( 12 )]
 position = Vector2( 602, 552 )
 scale = Vector2( 0.8, 0.8 )
 tooltip = "roses"
 events_path = "res://scenes/1_entrance/11_flower_riddle/roses.esc"
 
-[node name="tulips" parent="." instance=ExtResource( 14 )]
+[node name="tulips" parent="." groups=[
+"puzzle",
+] instance=ExtResource( 14 )]
 position = Vector2( 1402, 552 )
 scale = Vector2( 0.8, 0.8 )
 tooltip = "tulips"
@@ -272,7 +280,7 @@ placeholders = {
 
 [node name="confirm" parent="." instance=ExtResource( 16 )]
 visible = false
-position = Vector2( 1352, 128 )
+position = Vector2( 1480, -132 )
 scale = Vector2( 0.15, 0.15 )
 script = ExtResource( 10 )
 tooltip = "Confirm"

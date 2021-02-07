@@ -106,25 +106,27 @@ func clicked(obj, pos):
 				interact([obj, current_action, current_tool])
 				printt("1 ",obj.name,current_action,current_tool)
 				current_action=""
-				#get_tree().call_group("verb_menu","reset_mouse")
+				get_tree().call_group("verb_menu", "reset_mouse",current_action)
 				
 		# Added Use_Combine functionality for items that are not in the inventory /sh
 		elif !obj.inventory && current_action == "use":
 			if  obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 			else:
-				
-				interact([obj, current_action, current_tool])
 				printt("2 ",obj.name,current_action,current_tool)
-				current_action=""
-				get_tree().call_group("verb_menu", "reset_mouse",current_action)
-				printt("Mouse should be reset.")
+				if obj.is_in_group("puzzle") or obj.get_parent().is_in_group("puzzle"):
+					interact([obj, current_action, current_tool])
+				else:
+					interact([obj, current_action, current_tool])
+					current_action=""
+					get_tree().call_group("verb_menu", "reset_mouse",current_action)
+					printt("Mouse should be reset.")
 		
 		elif action != "":
 			player.interact([obj, action, current_tool])
 			printt("3 ",obj.name,action,current_tool)
 			action=""
-			get_tree().call_group("verb_menu", "reset_mouse")
+			get_tree().call_group("verb_menu", "reset_mouse",current_action)
 			printt("Mouse should be reset.")
 
 		elif current_action != "":
@@ -144,7 +146,6 @@ func clicked(obj, pos):
 
 		elif obj.use_action_menu && action_menu != null:
 			spawn_action_menu(obj)
-
 
 func spawn_action_menu(obj):
 	if action_menu == null:

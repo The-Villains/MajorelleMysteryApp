@@ -312,7 +312,9 @@ placeholders = {
 [node name="inv_pieces" type="Node2D" parent="."]
 position = Vector2( 600, 530 )
 
-[node name="inv_piece1" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece1" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -233.073, 322.949 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -334,7 +336,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece1"]
 texture = ExtResource( 27 )
 
-[node name="inv_piece2" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece2" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -233.073, 322.949 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -357,7 +361,9 @@ __meta__ = {
 position = Vector2( 199.404, -371.938 )
 texture = ExtResource( 35 )
 
-[node name="inv_piece3" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece3" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -172.534, 149.907 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -380,7 +386,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece3"]
 texture = ExtResource( 32 )
 
-[node name="inv_piece4" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece4" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -88.4093, 155.564 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -404,7 +412,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece4"]
 texture = ExtResource( 34 )
 
-[node name="inv_piece5" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece5" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -88.4093, 155.564 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -427,7 +437,9 @@ __meta__ = {
 position = Vector2( 73.5392, -189.505 )
 texture = ExtResource( 31 )
 
-[node name="inv_piece9" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece9" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -345.068, 107.48 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -451,7 +463,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece9"]
 texture = ExtResource( 30 )
 
-[node name="inv_piece10" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece10" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( 12.728, 12.7279 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -475,7 +489,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece10"]
 texture = ExtResource( 33 )
 
-[node name="inv_piece11" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece11" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -8.62744, 91.9238 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -499,7 +515,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece11"]
 texture = ExtResource( 11 )
 
-[node name="inv_piece12" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece12" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( 15.5563, 0 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -522,7 +540,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece12"]
 texture = ExtResource( 8 )
 
-[node name="inv_piece13" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece13" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( 15.5563, 0 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -545,7 +565,9 @@ __meta__ = {
 position = Vector2( 22.6274, -16.9706 )
 texture = ExtResource( 29 )
 
-[node name="inv_piece14" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece14" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( 15.5563, 0 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -568,7 +590,9 @@ __meta__ = {
 position = Vector2( 340.825, -56.5686 )
 texture = ExtResource( 41 )
 
-[node name="inv_piece15" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece15" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( 15.5563, 0 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -592,7 +616,9 @@ __meta__ = {
 position = Vector2( 57.9828, -164.049 )
 texture = ExtResource( 39 )
 
-[node name="inv_piece16" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece16" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -89.0951, 25.4557 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -615,7 +641,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece16"]
 texture = ExtResource( 36 )
 
-[node name="inv_piece17" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece17" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -89.0951, 25.4557 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -639,7 +667,9 @@ __meta__ = {
 position = Vector2( 8.48523, -183.848 )
 texture = ExtResource( 37 )
 
-[node name="inv_piece18" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece18" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( -89.0951, 25.4557 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -663,7 +693,9 @@ __meta__ = {
 position = Vector2( 120.208, -35.3553 )
 texture = ExtResource( 40 )
 
-[node name="inv_piece19" type="Node2D" parent="inv_pieces"]
+[node name="inv_piece19" type="Node2D" parent="inv_pieces" groups=[
+"puzzle",
+]]
 position = Vector2( 394.566, 70.7107 )
 script = ExtResource( 45 )
 tooltip = "puzzle piece"
@@ -685,7 +717,9 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="inv_pieces/inv_piece19"]
 texture = ExtResource( 38 )
 
-[node name="slots" type="Node2D" parent="."]
+[node name="slots" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 
 [node name="slot1" type="Node2D" parent="slots"]
 position = Vector2( -318.198, 801.859 )

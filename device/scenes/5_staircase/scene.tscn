@@ -43,18 +43,6 @@ visible = false
 position = Vector2( -2, 2 )
 navpoly = SubResource( 1 )
 
-[node name="lamp" type="TextureRect" parent="."]
-margin_left = 668.0
-margin_top = 258.0
-margin_right = 820.0
-margin_bottom = 378.0
-script = ExtResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-tooltip = "stained glass lamp"
-global_id = "staircase_lamp"
-
 [node name="cabinet" type="TextureRect" parent="."]
 margin_left = 802.0
 margin_top = 538.0
@@ -64,7 +52,7 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "some info about that cabinet behind Louis"
+tooltip = "custom cabinet for the staircase"
 global_id = "staircase_cabinet"
 placeholders = {
 
@@ -80,7 +68,7 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "flower themed stained glass"
+tooltip = "\"honesty flowers\" themed stained glass"
 global_id = "staircase_flowers_glas"
 placeholders = {
 
@@ -96,12 +84,24 @@ placeholders = {
 [node name="window" parent="." instance=ExtResource( 6 )]
 position = Vector2( 455, 311 )
 scale = Vector2( 1.56, 1.56 )
-tooltip = "stained glass window"
+tooltip = "stained glass window \"honesty flowers\""
 
 [node name="plants" parent="." instance=ExtResource( 8 )]
 position = Vector2( 833.243, 622.293 )
 scale = Vector2( 1.56, 1.56 )
 tooltip = "overgrown area"
+
+[node name="lamp" type="TextureRect" parent="."]
+margin_left = 668.0
+margin_top = 258.0
+margin_right = 820.0
+margin_bottom = 378.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "Lamp \"Algae\""
+global_id = "staircase_lamp"
 
 [node name="dont_leave" type="TextureRect" parent="."]
 margin_left = 1259.0

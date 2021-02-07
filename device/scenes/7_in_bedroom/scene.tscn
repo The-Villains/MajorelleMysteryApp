@@ -37,7 +37,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "walnut nightstand"
+tooltip = "nightstand"
 events_path = "res://scenes/7_in_bedroom/nightstand.esc"
 global_id = "bedroom_nightstand"
 
@@ -50,7 +50,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "mint curtain"
+tooltip = "curtain"
 events_path = "res://scenes/7_in_bedroom/curtain.esc"
 global_id = "bedroom_curtain"
 placeholders = {
@@ -82,7 +82,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "walnut dresser"
+tooltip = "dresser"
 events_path = "res://scenes/7_in_bedroom/dresser.esc"
 global_id = "bedroom_dresser"
 placeholders = {
@@ -98,7 +98,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "dressing room"
+tooltip = "closet"
 events_path = "res://scenes/7_in_bedroom/dressingroom.esc"
 global_id = "bedroom_dressingroom"
 placeholders = {
@@ -114,7 +114,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "honesties stained glass art"
+tooltip = "stained glass art \"honesty flowers\""
 global_id = "bedroom_door_mural"
 placeholders = {
 

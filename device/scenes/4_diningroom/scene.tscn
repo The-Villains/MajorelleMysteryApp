@@ -92,7 +92,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "some info about left sideboard"
+tooltip = "buffet \"Wheat ears\" on the left"
 global_id = "diningroom_sideboard_left"
 placeholders = {
 
@@ -107,7 +107,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "some info about right sideboard"
+tooltip = "buffet \"Wheat ears\" on the right"
 global_id = "diningroom_sideboard_right"
 placeholders = {
 
@@ -138,7 +138,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "Wheat themed cabinet with a rat"
+tooltip = "buffet \"Wheat ears\""
 global_id = "diningroom_buffet"
 placeholders = {
 
@@ -154,7 +154,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "painting of geese"
+tooltip = "decorative painting of the dining room"
 events_path = "res://scenes/4_diningroom/painting.esc"
 global_id = "diningroom_painting"
 
@@ -167,7 +167,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "some info about table area"
+tooltip = "table \"Wheat ears\""
 global_id = "diningroom_tablearea"
 
 [node name="paper" parent="." instance=ExtResource( 9 )]

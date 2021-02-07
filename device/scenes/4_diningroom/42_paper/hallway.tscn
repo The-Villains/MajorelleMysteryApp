@@ -33,11 +33,10 @@ __meta__ = {
 }
 
 [node name="area" type="TextureButton" parent="."]
-margin_left = -193.0
-margin_top = -63.0
-margin_right = 186.0
-margin_bottom = 94.0
+margin_left = -188.757
+margin_top = -85.0
+margin_right = 190.243
+margin_bottom = 115.0
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }

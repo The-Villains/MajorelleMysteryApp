@@ -91,7 +91,9 @@ __meta__ = {
 [node name="kiara" parent="." instance=ExtResource( 10 )]
 events_path = "res://scenes/4_diningroom/42_paper/paper_kiara.esc"
 
-[node name="map_entrance" type="Node2D" parent="."]
+[node name="map_entrance" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 7 )
 tooltip = "missing room label"
 events_path = "res://scenes/4_diningroom/42_paper/entrance.esc"
@@ -107,7 +109,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="map_hallway" type="Node2D" parent="."]
+[node name="map_hallway" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 7 )
 tooltip = "missing room label"
 events_path = "res://scenes/4_diningroom/42_paper/hallway.esc"
@@ -126,7 +130,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="map_terrasse" type="Node2D" parent="."]
+[node name="map_terrasse" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 7 )
 tooltip = "missing room label"
 events_path = "res://scenes/4_diningroom/42_paper/terrasse.esc"
@@ -145,7 +151,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="map_livingroom" type="Node2D" parent="."]
+[node name="map_livingroom" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 7 )
 tooltip = "missing room label"
 events_path = "res://scenes/4_diningroom/42_paper/livingroom.esc"
@@ -164,7 +172,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="map_diningroom" type="Node2D" parent="."]
+[node name="map_diningroom" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 script = ExtResource( 7 )
 tooltip = "missing room label"
 events_path = "res://scenes/4_diningroom/42_paper/diningroom.esc"

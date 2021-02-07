@@ -84,7 +84,9 @@ z_index = 4000
 script = ExtResource( 12 )
 global_id = "flower4"
 
-[node name="spot1" type="Node2D" parent="."]
+[node name="spot1" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 z_index = 4096
 z_as_relative = false
 script = ExtResource( 12 )
@@ -102,7 +104,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="spot2" type="Node2D" parent="."]
+[node name="spot2" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 position = Vector2( 0, 1 )
 z_index = 4096
 z_as_relative = false
@@ -123,7 +127,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="spot3" type="Node2D" parent="."]
+[node name="spot3" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 z_index = 4096
 z_as_relative = false
 script = ExtResource( 12 )
@@ -143,7 +149,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="spot4" type="Node2D" parent="."]
+[node name="spot4" type="Node2D" parent="." groups=[
+"puzzle",
+]]
 z_index = 4096
 z_as_relative = false
 script = ExtResource( 12 )
