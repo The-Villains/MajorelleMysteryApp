@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -18,7 +18,6 @@
 [ext_resource path="res://scenes/1_entrance/sprites/lampe_rot.png" type="Texture" id=16]
 [ext_resource path="res://scenes/1_entrance/sprites/suitcase_red_trimmed.png" type="Texture" id=17]
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=19]
-[ext_resource path="res://globals/sprites/knoepfe und co/kiara_button.png" type="Texture" id=20]
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=21]
 
 [sub_resource type="NavigationPolygon" id=1]
@@ -29,8 +28,8 @@ outlines = [ PoolVector2Array( 1679.63, 1215.23, 1679.79, 1141.2, 1679.99, 1049.
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 1199.87, 130.897 ],
-"_edit_vertical_guides_": [ 1468.62 ]
+"_edit_horizontal_guides_": [ 1199.87, 130.897, -1.78799 ],
+"_edit_vertical_guides_": [ 1468.62, 1598.5 ]
 }
 
 [node name="background" type="TextureRect" parent="."]
@@ -185,22 +184,6 @@ offset = Vector2( 522.032, -558.678 )
 script = ExtResource( 13 )
 tooltip = " "
 global_id = "inventory_tutorial"
-
-[node name="kiara_button" type="TextureButton" parent="."]
-visible = false
-margin_left = 129.397
-margin_top = 75.0416
-margin_right = 329.397
-margin_bottom = 275.042
-texture_normal = ExtResource( 20 )
-expand = true
-script = ExtResource( 13 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-tooltip = "Kiara"
-events_path = "res://scenes/1_entrance/entrance_kiara.esc"
-global_id = "kiara_button"
 
 [node name="kiara" parent="." instance=ExtResource( 21 )]
 position = Vector2( 0, 1200 )

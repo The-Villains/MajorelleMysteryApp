@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=4]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/cupboard2.png" type="Texture" id=5]
 [ext_resource path="res://scenes/7_in_bedroom/72_painting/exit.tscn" type="PackedScene" id=6]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=7]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://globals/item.gd" type="Script" id=9]
 
 [node name="scene" type="Node2D"]
@@ -43,6 +43,7 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 7 )]
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/7_in_bedroom/zoom_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

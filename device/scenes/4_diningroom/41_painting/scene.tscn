@@ -13,7 +13,7 @@
 [ext_resource path="res://scenes/4_diningroom/41_painting/diff2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/4_diningroom/41_painting/diff4.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/4_diningroom/41_painting/confirm.tscn" type="PackedScene" id=13]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=14]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=14]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=16]
 [ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=17]
@@ -268,7 +268,7 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 14 )]
-z_index = 3000
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/4_diningroom/41_painting/painting_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

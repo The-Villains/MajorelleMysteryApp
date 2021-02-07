@@ -41,7 +41,7 @@
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece15.png" type="Texture" id=39]
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece18.png" type="Texture" id=40]
 [ext_resource path="res://scenes/3_livingroom/sprites/Puzzleteile/piece14.png" type="Texture" id=41]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=42]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=42]
 [ext_resource path="res://ui/font.tres" type="Theme" id=43]
 [ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=44]
 [ext_resource path="res://globals/item.gd" type="Script" id=45]
@@ -1100,9 +1100,6 @@ placeholders = {
 
 }
 
-[node name="kiara" parent="." instance=ExtResource( 42 )]
-events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
-
 [node name="confirm" parent="." instance=ExtResource( 46 )]
 position = Vector2( 1351.7, 698.571 )
 scale = Vector2( 0.16, 0.16 )
@@ -1110,5 +1107,9 @@ script = ExtResource( 45 )
 tooltip = "Confirm solution"
 events_path = "res://scenes/3_livingroom/31_window/confirm.esc"
 global_id = "window_confirm"
+
+[node name="kiara" parent="." instance=ExtResource( 42 )]
+position = Vector2( 0, 1200 )
+events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

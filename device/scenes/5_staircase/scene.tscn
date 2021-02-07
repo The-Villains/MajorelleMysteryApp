@@ -9,7 +9,7 @@
 [ext_resource path="res://globals/terrain.gd" type="Script" id=7]
 [ext_resource path="res://scenes/5_staircase/plants.tscn" type="PackedScene" id=8]
 [ext_resource path="res://globals/item.gd" type="Script" id=9]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=10]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=10]
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/kiara.png" type="Texture" id=11]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/5_staircase/upstairs.tscn" type="PackedScene" id=13]
@@ -131,6 +131,7 @@ texture = ExtResource( 11 )
 [node name="upstairs" parent="." instance=ExtResource( 13 )]
 
 [node name="kiara" parent="." instance=ExtResource( 10 )]
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/5_staircase/kiara.esc"
 global_id = "staircase_kiara"
 

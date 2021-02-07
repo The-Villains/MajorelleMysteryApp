@@ -9,7 +9,7 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=7]
 [ext_resource path="res://font/AngelasHandwriting-XjLP.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://scenes/4_diningroom/sprites/stack.png" type="Texture" id=9]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=10]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/4_diningroom/42_paper/hallway.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/4_diningroom/42_paper/entrance.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/4_diningroom/42_paper/livingroom.tscn" type="PackedScene" id=13]
@@ -89,6 +89,7 @@ __meta__ = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 10 )]
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/4_diningroom/42_paper/paper_kiara.esc"
 
 [node name="map_entrance" type="Node2D" parent="." groups=[

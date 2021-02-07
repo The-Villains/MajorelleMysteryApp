@@ -8,7 +8,7 @@
 [ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/maske3_suchen.png" type="Texture" id=6]
 [ext_resource path="res://scenes/3_livingroom/34_zoom_in/exit.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/3_livingroom/sprites/teile suchen/zoom3.png" type="Texture" id=8]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=9]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=9]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -57,14 +57,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="kiara" parent="." instance=ExtResource( 9 )]
-events_path = "res://scenes/3_livingroom/zoom_in_kiara.esc"
-
 [node name="exit" parent="." instance=ExtResource( 7 )]
 tooltip = "Back"
 events_path = "res://scenes/3_livingroom/34_zoom_in/exit.esc"
 placeholders = {
 
 }
+
+[node name="kiara" parent="." instance=ExtResource( 9 )]
+position = Vector2( 0, 1200 )
+events_path = "res://scenes/3_livingroom/zoom_in_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

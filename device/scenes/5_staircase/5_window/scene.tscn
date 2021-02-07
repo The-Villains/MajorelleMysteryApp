@@ -19,7 +19,7 @@
 [ext_resource path="res://scenes/5_staircase/sprites/_full.png" type="Texture" id=17]
 [ext_resource path="res://scenes/5_staircase/sprites/tap_edge.png" type="Texture" id=18]
 [ext_resource path="res://scenes/5_staircase/5_window/exit.tscn" type="PackedScene" id=19]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=20]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=20]
 [ext_resource path="res://globals/sprites/knoepfe und co/instruction_box.png" type="Texture" id=22]
 [ext_resource path="res://ui/font.tres" type="Theme" id=23]
 
@@ -238,6 +238,7 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 20 )]
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/5_staircase/5_window/kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 8 )]

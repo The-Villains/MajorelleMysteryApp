@@ -1,6 +1,7 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/7_in_bedroom/71_album/exit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=3]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/scene.gd" type="Script" id=7]
@@ -8,7 +9,6 @@
 [ext_resource path="res://scenes/7_in_bedroom/sprites/book_front_pl.png" type="Texture" id=9]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/confirm.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/open_album.tscn" type="PackedScene" id=11]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=12]
 [ext_resource path="res://globals/sprites/character zeug/Geister/jeanne_ohno.png" type="Texture" id=13]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/book_with_lock.tscn" type="PackedScene" id=14]
 
@@ -28,6 +28,16 @@ expand = true
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="jane" type="Node2D" parent="."]
+script = ExtResource( 8 )
+global_id = "bedroom_album_jane"
+
+[node name="Sprite" type="Sprite" parent="jane"]
+position = Vector2( 1274, 876 )
+scale = Vector2( 0.28, 0.28 )
+texture = ExtResource( 13 )
+flip_h = true
 
 [node name="album_front_closeup" type="Node2D" parent="."]
 script = ExtResource( 8 )
@@ -56,16 +66,6 @@ visible = false
 position = Vector2( 0, 2 )
 global_id = "album_open"
 
-[node name="jane" type="Node2D" parent="."]
-script = ExtResource( 8 )
-global_id = "bedroom_album_jane"
-
-[node name="Sprite" type="Sprite" parent="jane"]
-position = Vector2( 1274, 876 )
-scale = Vector2( 0.28, 0.28 )
-texture = ExtResource( 13 )
-flip_h = true
-
 [node name="confirm" parent="." instance=ExtResource( 10 )]
 visible = false
 position = Vector2( 1180, 712 )
@@ -81,8 +81,8 @@ placeholders = {
 
 }
 
-[node name="kiara" parent="." instance=ExtResource( 12 )]
-z_index = 2500
+[node name="kiara" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/7_in_bedroom/71_album/album_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 4 )]

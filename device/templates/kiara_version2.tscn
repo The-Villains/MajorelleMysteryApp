@@ -93,8 +93,20 @@ tracks/6/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/7/type = "value"
+tracks/7/path = NodePath("area:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( -0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "tip1"
 length = 0.5
 tracks/0/type = "value"
@@ -182,8 +194,7 @@ tracks/6/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "tip2"
+[sub_resource type="Animation" id=3]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("tip2:frame")
@@ -361,29 +372,30 @@ tracks/6/keys = {
 [node name="kiara_2" type="Node2D"]
 z_as_relative = false
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -1202.35, -1150.35 ],
+"_edit_vertical_guides_": [ 1600.06, 1548.06 ]
+}
 tooltip = "Kiara"
 global_id = "kiara"
 
-[node name="area" type="TextureButton" parent="."]
-margin_left = 1351.0
-margin_top = -1256.0
-margin_right = 1651.0
-margin_bottom = -954.0
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 1 )
+anims/tip1 = SubResource( 2 )
+anims/tip2 = SubResource( 3 )
+anims/tip3 = SubResource( 4 )
+
+[node name="default" type="TextureRect" parent="."]
+margin_left = 1399.0
+margin_top = -1150.35
+margin_right = 2399.0
+margin_bottom = -151.35
+rect_scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+stretch_mode = 4
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="animation" type="AnimationPlayer" parent="."]
-anims/default = SubResource( 1 )
-anims/tip1 = SubResource( 3 )
-anims/tip2 = SubResource( 2 )
-anims/tip3 = SubResource( 4 )
-
-[node name="default" type="Sprite" parent="."]
-position = Vector2( 1500, -1100 )
-scale = Vector2( 0.15, 0.15 )
-z_as_relative = false
-texture = ExtResource( 2 )
 
 [node name="tip1" type="Sprite" parent="."]
 visible = false
@@ -411,3 +423,13 @@ z_as_relative = false
 texture = ExtResource( 4 )
 centered = false
 flip_h = true
+
+[node name="area" type="TextureButton" parent="."]
+light_mask = 3
+margin_left = 1335.0
+margin_top = -1202.0
+margin_right = 1603.0
+margin_bottom = -948.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

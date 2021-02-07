@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/4_diningroom/sprites/diningroom.jpg" type="Texture" id=7]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=8]
 [ext_resource path="res://scenes/4_diningroom/paper.tscn" type="PackedScene" id=9]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=10]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=10]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/door.tscn" type="PackedScene" id=12]
 
@@ -193,7 +193,7 @@ placeholders = {
 }
 
 [node name="kiara" parent="." instance=ExtResource( 10 )]
-z_index = 2500
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/4_diningroom/diningroom_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

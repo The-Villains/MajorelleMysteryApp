@@ -6,8 +6,8 @@
 [ext_resource path="res://scenes/7_in_bedroom/album.tscn" type="PackedScene" id=4]
 [ext_resource path="res://globals/item.gd" type="Script" id=5]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=6]
-[ext_resource path="res://templates/kiara_button.tscn" type="PackedScene" id=7]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=8]
+[ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=9]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 1689.96, 996.308, 1697.96, 1086.31, 1695.96, 1216.31, -0.0379944, 1214.31, 581.962, 1066.31, 1.96201, 972.308, 331.962, 914.308, 521.962, 1038.31, 981.962, 936.308, 989.962, 882.308, 1057.96, 850.308, 1175.96, 882.308 )
@@ -137,5 +137,6 @@ position = Vector2( 202, 30 )
 tooltip = "Jane Majorelle"
 global_id = "bedroom_ghost"
 
-[node name="kiara" parent="." index="11" instance=ExtResource( 7 )]
+[node name="kiara" parent="." index="11" instance=ExtResource( 9 )]
+position = Vector2( 0, 1200 )
 events_path = "res://scenes/7_in_bedroom/kiara.esc"
