@@ -370,6 +370,7 @@ tracks/6/keys = {
 }
 
 [node name="kiara_2" type="Node2D"]
+z_index = 3000
 z_as_relative = false
 script = ExtResource( 1 )
 __meta__ = {
@@ -378,6 +379,7 @@ __meta__ = {
 }
 tooltip = "Kiara"
 global_id = "kiara"
+use_custom_z = true
 
 [node name="animation" type="AnimationPlayer" parent="."]
 anims/default = SubResource( 1 )

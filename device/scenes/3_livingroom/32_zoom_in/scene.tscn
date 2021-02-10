@@ -65,5 +65,6 @@ placeholders = {
 
 [node name="kiara" parent="." instance=ExtResource( 10 )]
 position = Vector2( 0, 1200 )
+events_path = "res://scenes/3_livingroom/zoom_in_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

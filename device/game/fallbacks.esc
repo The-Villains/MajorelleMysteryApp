@@ -1,12 +1,21 @@
 :use
 debug fallbacks_use_1:"use fallback!"
 say telon fallbacks_use_2:"I can't do that."
+
 :pick_up
 debug fallbacks_pick_up_3:"pick_up fallback!"
 say telon fallbacks_pick_up_4:"That's not a good idea."
+
 :talk
 debug fallbacks_talk_5:"talk fallback!"
 say telon fallbacks_talk_6:"This won't answer me!"
+
 :look
 debug fallbacks_look_7:"look fallback!"
 say telon fallbacks_look_8:"Nothing to look at here."
+
+:no_interaction
+say telon "I cannot interact with this."
+
+:no_action_chosen
+say telon "Try again after choosing one of the actions."

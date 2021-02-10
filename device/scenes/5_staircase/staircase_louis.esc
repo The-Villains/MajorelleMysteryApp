@@ -1,2 +1,19 @@
 :talk
-say telon "Placeholder"
+
+> [!staircase_louis1]
+ say telon staircase_louis1:"staircase_louis1" right_right avatar_luis
+ set_global staircase_louis1 true
+ stop
+
+> [staircase_louis1,!staircase_louis2]
+ say telon staircase_louis2:"staircase_louis2" right_right avatar_luis
+ set_global staircase_louis2 true
+ stop
+
+> [staircase_louis1,staircase_louis2,!staircase_window_solved]
+ say telon staircase_louis3:"staircase_louis3" right_right avatar_luis
+ set_global staircase_louis3 true
+ stop
+
+> [staircase_window_solved]
+ say telon staircase_louis4:"staircase_louis4" right_right avatar_luis

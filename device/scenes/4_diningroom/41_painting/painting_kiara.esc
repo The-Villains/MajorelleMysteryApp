@@ -1,4 +1,47 @@
 :talk
-set_state kiara tip3
-say telon diningroom_painting_kiara:"This is a placeholder for 'Find the difference'." left
-set_state kiara default
+> [!diningroom_painting_kiara1]
+ set_state kiara tip3
+ say telon diningroom_painting_kiara1:"diningroom_painting_kiara1" right_left
+ set_state kiara default
+ set_global diningroom_painting_kiara1 true
+ stop
+
+#goose d2
+> [diningroom_painting_kiara1,!found2]
+ set_state kiara tip3
+ say telon diningroom_painting_kiara2:"diningroom_painting_kiara2" right_left
+ set_state kiara default
+ set_global diningroom_painting_kiara2 true
+ stop
+
+#general
+> [diningroom_painting_kiara1,diningroom_painting_kiara2]
+ set_state kiara tip3
+ say telon diningroom_painting_kiara3:"diningroom_painting_kiara3" right_left
+ set_state kiara default
+ set_global diningroom_painting_kiara3 true
+ set_global diningroom_painting_kiara2 false
+ stop
+
+#feather d5
+> [diningroom_painting_kiara1,diningroom_painting_kiara2,!found5]
+ set_state kiara tip3
+ say telon diningroom_painting_kiara4:"diningroom_painting_kiara4" right_left
+ set_state kiara default
+ set_global diningroom_painting_kiara4 true
+ stop
+
+#flying d4
+> [diningroom_painting_kiara1,diningroom_painting_kiara2,!found4]
+ set_state kiara tip3
+ say telon diningroom_painting_kiara5:"diningroom_painting_kiara5" right_left
+ set_state kiara default
+ set_global diningroom_painting_kiara5 true
+ stop
+
+#added birds d1 d3
+> [diningroom_painting_kiara1,diningroom_painting_kiara2,diningroom_painting_kiara3]
+ set_state kiara tip3
+ say telon diningroom_painting_kiara6:"diningroom_painting_kiara6" right_left
+ set_state kiara default
+ set_global diningroom_painting_kiara6 true

@@ -4,6 +4,7 @@ set_active flower3 true
 set_global flower3 true
 wait 1.5
 >  [flower1,flower2,flower3,flower4]
+ set_state bedroom_plants disappear
  set_active flower1 false
  set_active flower2 false
  set_active flower3 false
@@ -12,16 +13,16 @@ wait 1.5
  set_active bedroom_spot2 false
  set_active bedroom_spot3 false
  set_active bedroom_spot4 false
- set_state bedroom_plants disappear
- wait 5
+ wait 3
  set_active bedroom_plants false
  set_active front_bedroom_door true
+ set_global flowers_solved true
 
 :use inv_flower2
-say telon frontbedroom_kiara_wrong_spot:"This flower doesn't fit here. Let's try a different spot."
+say telon frontbedroom_kiara_wrong_spot:"frontbedroom_kiara_wrong_spot"
 
 :use inv_flower1
-say telon frontbedroom_kiara_wrong_spot:"This flower doesn't fit here. Let's try a different spot."
+say telon frontbedroom_kiara_wrong_spot:"frontbedroom_kiara_wrong_spot"
 
 :use inv_flower4
-say telon frontbedroom_kiara_wrong_spot:"This flower doesn't fit here. Let's try a different spot."
+say telon frontbedroom_kiara_wrong_spot:"frontbedroom_kiara_wrong_spot"

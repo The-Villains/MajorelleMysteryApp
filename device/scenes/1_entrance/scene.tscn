@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://scenes/1_entrance/sprites/blume_rot.png" type="Texture" id=15]
 [ext_resource path="res://scenes/1_entrance/sprites/lampe_rot.png" type="Texture" id=16]
 [ext_resource path="res://scenes/1_entrance/sprites/suitcase_red_trimmed.png" type="Texture" id=17]
+[ext_resource path="res://templates/no_interaction.tscn" type="PackedScene" id=18]
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=19]
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=21]
 
@@ -24,6 +25,41 @@
 vertices = PoolVector2Array( 1679.79, 1141.2, 1679.63, 1215.23, 1541.63, 1215.23, 1679.99, 1049.22, 121.632, 1215.23, 1.63199, 1215.23, 1.22025, 1117.23, 1542.65, 272.526, 1681.63, 287.232, 1681.33, 425.231, -1.97308, 357.221, -2.36801, 263.232, 74.0353, 254.955, 147.819, 246.961, -1.58649, 449.228, 0.951233, 1053.21, 213.632, 1215.23, 0.438629, 931.211, 377.632, 1215.23, 555.632, 1215.23, -0.00671387, 825.222, -0.510834, 705.241, -0.872131, 619.25, 1680.21, 945.216, 1413.63, 1215.23, 1384.63, 255.806, -1.19165, 543.201, 261.782, 234.615, 749.632, 1215.23, 395.941, 220.081, 536.936, 204.807, 717.632, 185.232, 814.453, 195.476, 921.632, 1215.23, 944.269, 209.212, 1190.15, 235.228, 1083.63, 1215.23, 1231.63, 1215.23, 1680.33, 893.216, 1680.72, 711.199, 1680.9, 625.234, 1681.12, 525.235 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 6 ), PoolIntArray( 7, 8, 9 ), PoolIntArray( 10, 11, 12, 13, 14 ), PoolIntArray( 4, 6, 15, 16 ), PoolIntArray( 16, 15, 17, 18 ), PoolIntArray( 19, 18, 17, 20, 21, 22 ), PoolIntArray( 23, 3, 2, 24, 25 ), PoolIntArray( 26, 14, 13, 27, 28 ), PoolIntArray( 28, 19, 22, 26 ), PoolIntArray( 28, 27, 29 ), PoolIntArray( 28, 29, 30 ), PoolIntArray( 28, 30, 31, 32, 33 ), PoolIntArray( 33, 32, 34 ), PoolIntArray( 33, 34, 35, 36 ), PoolIntArray( 37, 36, 35, 25 ), PoolIntArray( 24, 37, 25 ), PoolIntArray( 38, 23, 25 ), PoolIntArray( 39, 38, 25 ), PoolIntArray( 40, 39, 25 ), PoolIntArray( 41, 40, 25, 7, 9 ) ]
 outlines = [ PoolVector2Array( 1679.63, 1215.23, 1679.79, 1141.2, 1679.99, 1049.22, 1680.21, 945.216, 1680.33, 893.216, 1680.72, 711.199, 1680.9, 625.234, 1681.12, 525.235, 1681.33, 425.231, 1681.63, 287.232, 1542.65, 272.526, 1384.63, 255.806, 1190.15, 235.228, 944.269, 209.212, 814.453, 195.476, 717.632, 185.232, 536.936, 204.807, 395.941, 220.081, 261.782, 234.615, 147.819, 246.961, 74.0353, 254.955, -2.36801, 263.232, -1.97308, 357.221, -1.58649, 449.228, -1.19165, 543.201, -0.872131, 619.25, -0.510834, 705.241, -0.00671387, 825.222, 0.438629, 931.211, 0.951233, 1053.21, 1.22025, 1117.23, 1.63199, 1215.23, 121.632, 1215.23, 213.632, 1215.23, 377.632, 1215.23, 555.632, 1215.23, 749.632, 1215.23, 921.632, 1215.23, 1083.63, 1215.23, 1231.63, 1215.23, 1413.63, 1215.23, 1541.63, 1215.23 ) ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/path = NodePath("area:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2500, 2500 ), Vector2( 1436, 1436 ) ]
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("area:rect_position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( -4000, -0.25, 0, 0.25, 0, -726.835, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("area:rect_position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( -750, -0.25, 0, 0.25, 0, -599.523, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -52,6 +88,23 @@ scale_max = 0.45
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
 navpoly = SubResource( 1 )
 
+[node name="ghost_tutorial" type="Node2D" parent="."]
+visible = false
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 13 )
+global_id = "ghost_tutorial"
+
+[node name="area" type="TextureRect" parent="ghost_tutorial"]
+margin_left = 553.322
+margin_top = 814.674
+margin_right = 2220.32
+margin_bottom = 4140.68
+rect_scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="door" type="TextureRect" parent="."]
 margin_left = 475.0
 margin_top = 211.0
@@ -64,22 +117,6 @@ __meta__ = {
 }
 tooltip = "locked door"
 global_id = "entrance_door"
-
-[node name="ghost_tutorial" type="Node2D" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.3 )
-script = ExtResource( 13 )
-global_id = "ghost_tutorial"
-
-[node name="area" type="TextureRect" parent="ghost_tutorial"]
-margin_left = -182.299
-margin_top = 802.801
-margin_right = 3913.7
-margin_bottom = 4898.8
-texture = ExtResource( 14 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="button_tutorial" parent="." instance=ExtResource( 19 )]
 position = Vector2( 121, 0 )
@@ -108,8 +145,7 @@ events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 317.237, 762.604 )
+position = Vector2( 467.237, 774.604 )
 scale = Vector2( 0.3, 0.3 )
 tooltip = "Louis Majorelle"
 events_path = "res://scenes/1_entrance/entrance_ghost.esc"
@@ -153,25 +189,6 @@ placeholders = {
 
 }
 
-[node name="kiara_tutorial" type="Node2D" parent="."]
-visible = false
-position = Vector2( 1500, 80.5 )
-scale = Vector2( 0.15, 0.15 )
-script = ExtResource( 13 )
-tooltip = " "
-global_id = "kiara_tutorial"
-
-[node name="area" type="TextureRect" parent="kiara_tutorial"]
-margin_left = -726.835
-margin_top = -599.523
-margin_right = 709.169
-margin_bottom = 836.477
-texture = ExtResource( 11 )
-flip_h = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="inventory_tutorial" type="Sprite" parent="."]
 visible = false
 light_mask = -2147483645
@@ -188,5 +205,31 @@ global_id = "inventory_tutorial"
 [node name="kiara" parent="." instance=ExtResource( 21 )]
 position = Vector2( 0, 1200 )
 events_path = "res://scenes/1_entrance/entrance_kiara.esc"
+
+[node name="kiara_tutorial" type="Node2D" parent="."]
+visible = false
+position = Vector2( 1475, 105 )
+scale = Vector2( 0.15, 0.15 )
+z_index = 1000
+z_as_relative = false
+script = ExtResource( 13 )
+tooltip = " "
+global_id = "kiara_tutorial"
+
+[node name="area" type="TextureRect" parent="kiara_tutorial"]
+margin_left = -4000.0
+margin_top = -750.0
+margin_right = -1500.0
+margin_bottom = 1750.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="kiara_tutorial"]
+anims/default = SubResource( 2 )
+
+[node name="no_interaction" parent="." instance=ExtResource( 18 )]
 
 [node name="game" parent="." instance=ExtResource( 3 )]

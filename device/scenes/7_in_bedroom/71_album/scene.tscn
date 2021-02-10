@@ -1,9 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/7_in_bedroom/71_album/exit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/bedr_blur.png" type="Texture" id=3]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=4]
+[ext_resource path="res://globals/sprites/knoepfe und co/general-button-wide.png" type="Texture" id=5]
+[ext_resource path="res://ui/font.tres" type="Theme" id=6]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/scene.gd" type="Script" id=7]
 [ext_resource path="res://globals/item.gd" type="Script" id=8]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/book_front_pl.png" type="Texture" id=9]
@@ -41,6 +43,7 @@ flip_h = true
 
 [node name="album_front_closeup" type="Node2D" parent="."]
 script = ExtResource( 8 )
+tooltip = "locked photo album"
 events_path = "res://scenes/7_in_bedroom/71_album/album_closeup.esc"
 global_id = "album_front_closeup"
 
@@ -59,12 +62,7 @@ texture = ExtResource( 9 )
 
 [node name="book_with_lock" parent="." instance=ExtResource( 14 )]
 visible = false
-z_as_relative = false
-
-[node name="open_album" parent="." instance=ExtResource( 11 )]
-visible = false
-position = Vector2( 0, 2 )
-global_id = "album_open"
+z_index = 1
 
 [node name="confirm" parent="." instance=ExtResource( 10 )]
 visible = false
@@ -81,8 +79,36 @@ placeholders = {
 
 }
 
+[node name="end_game" type="TextureButton" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 836.0
+margin_right = 528.0
+margin_bottom = 1348.0
+texture_normal = ExtResource( 5 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+global_id = "end_game"
+
+[node name="UI_BACK" type="Label" parent="end_game"]
+margin_left = 76.0
+margin_top = 240.0
+margin_right = 455.0
+margin_bottom = 314.0
+theme = ExtResource( 6 )
+text = "UI_BACK"
+
+[node name="open_album" parent="." instance=ExtResource( 11 )]
+visible = false
+position = Vector2( 0, 2 )
+global_id = "album_open"
+
 [node name="kiara" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, 1200 )
+z_index = 4096
 events_path = "res://scenes/7_in_bedroom/71_album/album_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 4 )]
+[connection signal="pressed" from="end_game" to="end_game" method="_on_end_game_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://ui/credits.gd" type="Script" id=1]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0002.png" type="Texture" id=2]
@@ -12,11 +12,13 @@
 [ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=10]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0008.png" type="Texture" id=11]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0007.png" type="Texture" id=12]
+[ext_resource path="res://font/kalam-font/KalamBold.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0009.png" type="Texture" id=14]
 [ext_resource path="res://globals/sprites/easter eggs/sonjas_blume_col.png" type="Texture" id=15]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0004.png" type="Texture" id=16]
 [ext_resource path="res://globals/sprites/z_credits_anim/frame0001.png" type="Texture" id=17]
 [ext_resource path="res://font/kalam-font/Kalam.ttf" type="DynamicFontData" id=18]
+[ext_resource path="res://font/kalam-font/KalamLight.ttf" type="DynamicFontData" id=19]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -26,18 +28,36 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[sub_resource type="DynamicFont" id=2]
-size = 32
+[sub_resource type="DynamicFont" id=6]
+size = 20
 outline_color = Color( 1, 1, 1, 0 )
 use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 3
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+outline_color = Color( 1, 1, 1, 0 )
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 3
+font_data = ExtResource( 13 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+outline_color = Color( 1, 1, 1, 0 )
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 3
 font_data = ExtResource( 18 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 72
 use_filter = true
 font_data = ExtResource( 18 )
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
@@ -70,23 +90,81 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 3
+frame = 11
 playing = true
 
-[node name="CREDITS" type="Label" parent="."]
-margin_left = 261.0
-margin_top = 315.171
-margin_right = 1350.0
-margin_bottom = 1023.17
+[node name="CREDITS" type="RichTextLabel" parent="."]
+margin_left = 332.0
+margin_top = 278.0
+margin_right = 1421.0
+margin_bottom = 1052.0
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-text = "CREDITS"
-align = 1
-autowrap = true
-clip_text = true
+custom_fonts/italics_font = SubResource( 6 )
+custom_fonts/bold_font = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]CREDITS  [BETA TEST VERSION][/b]
+
+[b]Coding da Vinci[/b]
+The idea and prototype development for MajorelleMystery started as part of the “Coding da Vinci Saar-Lor-Lux 2020” hackathon for open cultural data. Further development for this version 1.0 was made possible through the generous Coding da Vinci-Stipends.
+
+[b]Escoria[/b]
+The game is based on the point & click adventure game framework for Godot Engine “Escoria” and has been built upon the demo video game “Escoria in Daïza” developed by Élisa de Castro Guerra, Cédric Gémy, Ariel Manzur, Camille \"nylnook\" Bissuel, Gaëtan \"Reptifur\" Hilt, Adrien \"Kooda\" Ramos licensed under the MIT License (MIT).
+
+[b]We’d like to thank ...[/b]
+
+[b]Our original team members[/b] - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the [b]“helping hands” [/b] Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
+
+[b]Our testers [/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+
+[b]… and of course the Coding da Vinci team and the Villa Majorelle for making this possible![/b]
+
+[b]The Villains Version 1.0 Development team:[/b] 
+[b]Project Management[/b]  - Sonja Heinze
+[b]Game design[/b]  - Sonja Heinze, UHH Steinfeltz
+[b]Art design[/b]  - UHH Steinfeltz
+[b]Character design[/b]  - UHH Steinfeltz
+[b]2D UI design[/b]  - UHH Steinfeltz
+[b]Room design*[/b] - UHH Steinfeltz
+[b]Programming [/b] - Sonja Heinze
+[b]Music & Sound[/b]  - Sonja Heinze, UHH Steinfeltz
+[b]Text & Scripting (English) [/b] - Sonja Heinze, UHH Steinfeltz
+[b]Translations (German and French)[/b] - UHH Steinfeltz, Sophie Toulouze
+
+[i] *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR.[/i] "
+text = "CREDITS  [BETA TEST VERSION]
+
+Coding da Vinci
+The idea and prototype development for MajorelleMystery started as part of the “Coding da Vinci Saar-Lor-Lux 2020” hackathon for open cultural data. Further development for this version 1.0 was made possible through the generous Coding da Vinci-Stipends.
+
+Escoria
+The game is based on the point & click adventure game framework for Godot Engine “Escoria” and has been built upon the demo video game “Escoria in Daïza” developed by Élisa de Castro Guerra, Cédric Gémy, Ariel Manzur, Camille \"nylnook\" Bissuel, Gaëtan \"Reptifur\" Hilt, Adrien \"Kooda\" Ramos licensed under the MIT License (MIT).
+
+We’d like to thank ...
+
+Our original team members - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the “helping hands”  Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
+
+Our testers  - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+
+… and of course the Coding da Vinci team and the Villa Majorelle for making this possible!
+
+The Villains Version 1.0 Development team: 
+Project Management  - Sonja Heinze
+Game design  - Sonja Heinze, UHH Steinfeltz
+Art design  - UHH Steinfeltz
+Character design  - UHH Steinfeltz
+2D UI design  - UHH Steinfeltz
+Room design* - UHH Steinfeltz
+Programming  - Sonja Heinze
+Music & Sound  - Sonja Heinze, UHH Steinfeltz
+Text & Scripting (English)  - Sonja Heinze, UHH Steinfeltz
+Translations (German and French) - UHH Steinfeltz, Sophie Toulouze
+
+ *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR. "
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,7 +190,7 @@ margin_bottom = 477.883
 rect_scale = Vector2( 0.3, 0.5 )
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.439216, 0.266667, 0.00784314, 1 )
 text = "UI_BACK"
@@ -124,4 +202,4 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/credits = SubResource( 4 )
+anims/credits = SubResource( 3 )

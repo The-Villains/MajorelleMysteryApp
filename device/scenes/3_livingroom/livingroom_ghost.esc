@@ -1,2 +1,22 @@
 :talk
-say telon livingroom_window_story:"Some background information about the window and why it is special." left_right avatar_jacques
+> [livingroom_introduced,!livingroom_jacques_story]
+ say telon livingroom_jacques_story:"livingroom_jacques_story" left_right avatar_jacques
+ set_global livingroom_jacques_story true
+ stop
+
+> [livingroom_jacques_story,!livingroom_jacques_story2]
+ say telon livingroom_jacques_story2:"livingroom_jacques_story2" left_right avatar_jacques
+ set_global livingroom_jacques_story2 true
+ stop
+
+> [livingroom_jacques_story,livingroom_jacques_story2,!looked_at_window,!window_puzzle_solved]
+ say telon livingroom_jacques_kiara:"livingroom_jacques_kiara" left_right avatar_jacques
+ stop
+
+> [livingroom_jacques_story2,looked_at_window,!window_puzzle_solved]
+ say telon livingroom_jacques_reminder:"livingroom_jacques_reminder" left_right avatar_jacques
+ stop
+
+> [livingroom_jacques_story,livingroom_jacques_story2,window_puzzle_solved]
+ say telon livingroom_jacques_continue:"livingroom_jacques_continue" left_right avatar_jacques
+ stop

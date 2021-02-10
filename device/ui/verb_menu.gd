@@ -8,11 +8,17 @@ var current_action
 
 #Input.set_custom_mouse_cursor(get_node(mouse_image).texture)
 
-func reset_mouse(p_current_action):
+func reset_mouse(_p_current_action):
 	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
 	for b in act_buttons:
 		b.set_pressed(false)
 	printt("reset mouse function")
+
+func something_picked():
+	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use2").texture)
+
+func reset_picked():
+	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use").texture)
 
 func set_action_name(action):
 	current_action = action

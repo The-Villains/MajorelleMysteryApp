@@ -13,6 +13,7 @@ font_data = ExtResource( 2 )
 [node name="book_with_lock" type="Sprite"]
 position = Vector2( 789.306, 552.277 )
 scale = Vector2( 1.5, 1.5 )
+z_as_relative = false
 texture = ExtResource( 3 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -20,6 +21,7 @@ __meta__ = {
 }
 tooltip = "locked photo album"
 global_id = "album_locked"
+use_custom_z = true
 
 [node name="bg" type="TextureRect" parent="."]
 margin_left = -256.0

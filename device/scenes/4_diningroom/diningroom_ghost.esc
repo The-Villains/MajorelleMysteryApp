@@ -1,2 +1,26 @@
 :talk
-say telon diningroom_jane_story:"Placeholder for a story from Jane in the dining room." left avatar_jane
+> [!diningroom_jane_2]
+ say telon diningroom_jane_2:"diningroom_jane_2" left_right avatar_jane
+ set_global diningroom_jane_2 true
+ stop
+
+> [diningroom_jane_2,!diningroom_jane_3]
+ say telon diningroom_jane_3:"diningroom_jane_3" left_right avatar_jane
+ set_global diningroom_jane_3 true
+ stop
+
+> [diningroom_jane_3,!diningroom_jane_4]
+ say telon diningroom_jane_4:"diningroom_jane_4" left_right avatar_jane
+ set_global diningroom_jane_4 true
+ stop
+
+> [diningroom_jane_2,diningroom_jane_3,diningroom_jane_4,!painting_solved]
+ say telon general_talk_to_kiara:"general_talk_to_kiara" left_right avatar_jane
+ stop
+
+> [diningroom_jane_2,diningroom_jane_3,diningroom_jane_4,painting_solved,!paper_solved]
+ say telon diningroom_jane_paper:"diningroom_jane_paper" left_right avatar_jane
+ stop
+
+> [diningroom_jane_2,diningroom_jane_3,diningroom_jane_4,painting_solved,paper_solved]
+ say telon diningroom_jane_continue:"diningroom_jane_continue" left_right avatar_jane

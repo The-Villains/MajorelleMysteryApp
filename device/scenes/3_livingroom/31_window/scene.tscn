@@ -723,10 +723,12 @@ texture = ExtResource( 38 )
 
 [node name="slot1" type="Node2D" parent="slots"]
 position = Vector2( -318.198, 801.859 )
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
 global_id = "slot1"
+use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot1"]
 margin_left = 498.0
@@ -897,6 +899,7 @@ __meta__ = {
 
 [node name="slot10" type="Node2D" parent="slots"]
 position = Vector2( -130.815, 493.56 )
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot10.esc"
@@ -904,6 +907,7 @@ global_id = "slot10"
 placeholders = {
 
 }
+use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot10"]
 margin_left = 362.0
@@ -1053,6 +1057,7 @@ __meta__ = {
 
 [node name="slot18" type="Node2D" parent="slots"]
 position = Vector2( -33.9411, 951.058 )
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot18.esc"
@@ -1060,6 +1065,7 @@ global_id = "slot18"
 placeholders = {
 
 }
+use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot18"]
 margin_left = 201.0
@@ -1073,6 +1079,7 @@ __meta__ = {
 
 [node name="slot19" type="Node2D" parent="slots"]
 position = Vector2( 49.4975, 1029.55 )
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot19.esc"
@@ -1080,6 +1087,7 @@ global_id = "slot19"
 placeholders = {
 
 }
+use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot19"]
 margin_left = 80.0
@@ -1110,6 +1118,7 @@ global_id = "window_confirm"
 
 [node name="kiara" parent="." instance=ExtResource( 42 )]
 position = Vector2( 0, 1200 )
+z_index = 4096
 events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

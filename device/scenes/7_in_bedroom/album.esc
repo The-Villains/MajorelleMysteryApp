@@ -3,8 +3,8 @@ cut_scene telon fade_out
 change_scene res://scenes/7_in_bedroom/71_album/scene.tscn
 cut_scene telon fade_in
 > [!looked_at_album]
- say telon bedroom_jeanne_locked:"Oh no! It’s locked..." default avatar_jane
- say telon bedroom_artur_dontworry:"Don’t worry, Madam, we’ll fix it!" left avatar_artur
+ say telon bedroom_jane_locked:"bedroom_jane_locked" right_right avatar_jane
+ say telon bedroom_artur_dontworry:"bedroom_artur_dontworry" left_left avatar_artur
 set_global looked_at_album true
 
 :use
@@ -12,6 +12,6 @@ cut_scene telon fade_out
 change_scene res://scenes/7_in_bedroom/71_album/scene.tscn
 cut_scene telon fade_in
 > [!looked_at_album]
- say telon bedroom_jeanne_locked:"Oh no! It’s locked" default avatar_jane
- say telon bedroom_artur_dontworry:"Don’t worry, Madam, we’ll fix it!" left avatar_artur
+ say telon bedroom_jane_locked:"bedroom_jane_locked" right_right avatar_jane
+ say telon bedroom_artur_dontworry:"bedroom_artur_dontworry" left_left avatar_artur
 set_global looked_at_album true

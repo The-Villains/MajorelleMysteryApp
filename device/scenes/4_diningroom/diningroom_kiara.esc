@@ -1,4 +1,39 @@
 :talk
-set_state kiara tip1
-say telon diningroom_kiara_tip:"Maybe we should look around." left
-set_state kiara default
+> [!diningroom_kiara_tip2,!looked_at_painting]
+ set_state kiara tip1
+ say telon diningroom_kiara_tip2:"diningroom_kiara_tip2" right_left
+ set_state kiara default
+ set_global diningroom_kiara_tip2 true
+ stop
+
+> [diningroom_kiara_tip2,!diningroom_kiara_tip3,!looked_at_painting]
+ set_state kiara tip1
+ say telon diningroom_kiara_tip3:"diningroom_kiara_tip3" right_left
+ set_state kiara default
+ set_global diningroom_kiara_tip3 true
+ stop
+
+> [diningroom_kiara_tip2,diningroom_kiara_tip3,!diningroom_kiara_tip4,!looked_at_painting]
+ set_state kiara tip1
+ say telon diningroom_kiara_tip4:"diningroom_kiara_tip4" right_left
+ set_state kiara default
+ set_global diningroom_kiara_tip4 true
+ stop
+
+> [painting_solved,!looked_at_paper]
+  set_state kiara tip1
+  say telon diningroom_kiara_tip6:"diningroom_kiara_tip6" right_left
+  set_state kiara default
+
+> [paper_solved,!diningroom_kiara_tip7]
+ set_state kiara tip2
+ say telon diningroom_kiara_tip7:"diningroom_kiara_tip7" right_left
+ set_state kiara default
+ set_global diningroom_kiara_tip7 true
+ stop
+
+> [paper_solved,diningroom_kiara_tip7]
+ set_state kiara tip2
+ say telon diningroom_kiara_tip8:"diningroom_kiara_tip8" right_left
+ set_state kiara default
+ stop

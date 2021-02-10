@@ -102,6 +102,7 @@ func clicked(obj, pos):
 		elif obj.inventory:
 			if current_action == "use" && obj.use_combine && current_tool == null:
 				set_current_tool(obj)
+				get_tree().call_group("verb_menu", "something_picked")
 			else:
 				interact([obj, current_action, current_tool])
 				printt("1 ",obj.name,current_action,current_tool)
@@ -112,10 +113,12 @@ func clicked(obj, pos):
 		elif !obj.inventory && current_action == "use":
 			if  obj.use_combine && current_tool == null:
 				set_current_tool(obj)
+				get_tree().call_group("verb_menu", "something_picked")
 			else:
 				printt("2 ",obj.name,current_action,current_tool)
 				if obj.is_in_group("puzzle") or obj.get_parent().is_in_group("puzzle"):
 					interact([obj, current_action, current_tool])
+					get_tree().call_group("verb_menu", "reset_picked")
 				else:
 					interact([obj, current_action, current_tool])
 					current_action=""

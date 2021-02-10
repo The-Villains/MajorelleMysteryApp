@@ -1,7 +1,26 @@
 :talk
-set_state kiara tip3
+
 > [!looked_at_lock]
- say telon "Let's have closer look at the album." left
-> [looked_at_lock]
- say telon "So we need a 4-digit number. Let’s look around the room for something that fits!" left
-set_state kiara default
+ set_state kiara tip2
+ say telon bedroom_album_kiara_tip1:"bedroom_album_kiara_tip1" right_left
+ set_state kiara default
+ stop
+
+> [looked_at_lock,!bedroom_album_kiara_tip2]
+ set_state kiara tip3
+ say telon bedroom_album_kiara_tip2:"bedroom_album_kiara_tip2" right_left
+ set_state kiara default
+ set_global bedroom_album_kiara_tip2 true
+ stop
+
+> [bedroom_album_kiara_tip2,looked_at_rose]
+ set_state kiara tip1
+ say telon bedroom_album_kiara_tip3:"bedroom_album_kiara_tip3" right_left
+ set_state kiara default
+ stop
+
+> [bedroom_album_kiara_tip2,!looked_at_rose]
+ set_state kiara tip1
+ say telon bedroom_album_kiara_tip4:"bedroom_album_kiara_tip4" right_left
+ set_state kiara default
+ stop

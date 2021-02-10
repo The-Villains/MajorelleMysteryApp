@@ -3,11 +3,10 @@ cut_scene telon fade_out
 change_scene res://scenes/4_diningroom/scene.tscn
 set_state diningroom_ghost jane
 cut_scene telon fade_in
+say telon diningroom_jane_1:"diningroom_jane_1" left_right avatar_jane
 
 :use
 
 :look
 
 :talk
-
-:use

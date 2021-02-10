@@ -1,7 +1,5 @@
 :load
-#cut_scene telon fade_out
-#change_scene res://scenes/1_entrance/11_flower_riddle/scene.tscn
-#cut_scene telon fade_in
+set_state bg_music "res://audio/sounds/intro.ogg"
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer1.tscn
@@ -18,23 +16,24 @@ wait 2
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer3.tscn
 cut_scene telon fade_in
-say telon trailer_1:"Arthur Benoit, private investigator, who am I speaking to?" info_l avatar_artur
+say telon trailer_1:"trailer_1" info_l
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer4.tscn
 cut_scene telon fade_in
-say telon trailer_2:"Hello, I am Jeanne Majorelle, wife of Louis Majorelle and mother of Jacques Majorelle. We own a beautiful Art Nouveau villa in Nancy." info_r avatar_jane
-say telon trailer_3:"Now here is the problem: The doors are overgrown and the plants don't disappear unless we solve some riddles. Maybe you could help us?" info_r avatar_jane
+say telon trailer_2:"trailer_2" info_r
+say telon trailer_3:"trailer_3" info_r
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer3.tscn
 cut_scene telon fade_in
-say telon trailer_4:"Of course, Madam, we'll come over as soon as possible." info_l avatar_artur
+say telon trailer_4:"trailer_4" info_l
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer5.tscn
+set_state bg_music "res://audio/sounds/MajorelleMysterySoundtrack.ogg"
 cut_scene telon fade_in
-say telon trailer_5:"We are the Majorelle family. Thank you very much for coming. Let's go right in!" info_m avatar_luis
+say telon trailer_5:"trailer_5" info_m avatar_luis
 wait 1
 set_active trailer_door true
 set_state fam_majorelle walk_in
@@ -43,25 +42,19 @@ wait 1.5
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer6.tscn
 cut_scene telon fade_in
-say telon trailer_6:"Hmm, these must be the plants Jeanne Majorelle was talking about..." right_right avatar_artur
+say telon trailer_6:"trailer_6" right_right avatar_artur
 
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/scene.tscn
 cut_scene telon fade_in
 
-
 # Workaround - Initial speaking for following main scene and Esc Script here
+
 set_state kiara tip1
-say telon entrance_kiara_01:"Nice entrance area. Although those tulips look like they don't belong here. Hmm... Let's talk to Louis." right_left
-#set_state kiara tip2
-#say telon entrance_kiara_2:"Let's ask Louis for instructions. And if you need any more tips from me later, just talk to me then." left
-#set_active kiara_tutorial true
-set_state kiara default
+say telon entrance_kiara_01:"entrance_kiara_01" right_left
 set_active entrance_ghost true
-#wait 1
-#set_active kiara_tutorial false
-wait 1
 set_active button_tutorial true
 teleport_pos button_tutorial 375 0
-wait 1
 set_active ghost_tutorial true
+say telon entrance_kiara_talk:"entrance_kiara_talk" right_left
+set_state kiara default

@@ -1,8 +1,8 @@
 :load
 > [paper_entrance,paper_hallway,paper_terrasse,paper_livingroom,paper_diningroom]
- say telon diningroom_solved_paper:"Thank you for restoring that!" default avatar_jane
+ say telon diningroom_solved_paper:"diningroom_solved_paper" right_left avatar_jane
+ set_global paper_solved true
  set_global i/inv_flower2 true
- say telon general_flower_reward:"Here is another flower as a reward." default avatar_jane
  cut_scene telon fade_out
  change_scene res://scenes/4_diningroom/scene.tscn
  set_state diningroom_paper flying
@@ -14,23 +14,23 @@
  set_active diningroom_door true
 
 > [!paper_entrance]
- say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ say telon diningroom_not_solved_paper:"diningroom_not_solved_paper" right_left avatar_jane
  stop
 
 > [!paper_hallway]
- say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ say telon diningroom_not_solved_paper:"diningroom_not_solved_paper" right_left avatar_jane
  stop
 
 > [!paper_livingroom]
- say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ say telon diningroom_not_solved_paper:"diningroom_not_solved_paper" right_left avatar_jane
  stop
 
 > [!paper_diningroom]
- say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+ say telon diningroom_not_solved_paper:"diningroom_not_solved_paper" right_left avatar_jane
  stop
 
-> [!paper_terrasse ]
- say telon diningroom_not_solved_paper:"Something is still not right." default avatar_jane
+> [!paper_terrasse]
+ say telon diningroom_not_solved_paper:"diningroom_not_solved_paper" right_left avatar_jane
  stop
 
 :talk

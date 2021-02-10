@@ -2,3 +2,5 @@
 cut_scene telon fade_out
 change_scene res://scenes/7_in_bedroom/72_painting/scene.tscn
 cut_scene telon fade_in
+
+set_global looked_at_rose true

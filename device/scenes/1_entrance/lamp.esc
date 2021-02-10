@@ -8,26 +8,29 @@ set_active lightbulb_tutorial false
 set_active lightbulb_missing false
 set_active lamp true
 
-say lamp entrance_light_on_edit:"Splendid! Now everything’s back in order here and in the corner of my eye I already see those plants blocking the hallway disappearing! Good luck in the other rooms!" right_left avatar_luis
+say lamp entrance_light_on:"entrance_light_on" right_left avatar_luis
 set_active entrance_ghost false
 
 set_state kiara tip2
-say telon kiara_tutorial_edit:"Okay, I think we are well prepared to free this villa from the plants now. I listened carefully to Louis and took notes." right_left
-say telon kiara_tutorial_edit2:"I will stay in the background, but you can ask me for advice and ideas anytime that you don’t know what to do next. Maybe my notes will be of use to you." right_left
-set_state kiara default
+say telon kiara_tutorial:"kiara_tutorial" right_left
+say telon kiara_tutorial2:"kiara_tutorial2" right_left
+set_active kiara false
 set_active kiara_tutorial true
-wait 2
+anim kiara_tutorial default
+wait 3.5
 
 cut_scene telon fade_out
 change_scene res://scenes/2_hallway/scene.tscn
 set_state hallway_ghost standing
+set_active kiara true
+set_state kiara default
 cut_scene telon fade_in
 set_state hallway_plants disappear
 wait 2
 set_active hallway_plants false
-say telon hallway_jacques:"Come follow me to the living room." left_right avatar_jacques
+say telon hallway_jacques:"hallway_jacques" left_right avatar_jacques
 set_state hallway_ghost default
 wait 3
 set_active hallway_ghost false
 
-say telon hallway_artur_edit:"Okay, let’s follow Jacques to the living room then!" right_right avatar_artur
+say telon hallway_artur:"hallway_artur" right_right avatar_artur

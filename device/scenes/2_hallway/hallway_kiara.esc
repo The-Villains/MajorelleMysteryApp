@@ -1,4 +1,20 @@
 :talk
-set_state kiara tip2
-say telon hallway_kiara:"I say, to follow Jacques, let's have a look at the opened living room door." left
-set_state kiara default
+> [!hallway_kiara1]
+ set_state kiara tip2
+ say telon hallway_kiara1:"hallway_kiara1" left
+ set_state kiara default
+ set_global hallway_kiara1 true
+ stop
+
+> [hallway_kiara1, !hallway_kiara2]
+ set_state kiara tip1
+ say telon hallway_kiara2:"hallway_kiara2" left
+ set_state kiara default
+ set_global hallway_kiara2 true
+ stop
+
+> [hallway_kiara1,hallway_kiara2]
+ set_state kiara tip3
+ say telon hallway_kiara3:"hallway_kiara3" left
+ set_state kiara default
+ stop

@@ -1,4 +1,12 @@
 :talk
-set_state staircase_kiara tip2
-say telon staircase_kiara_tip:"Let's look at that window. It seems a little scrambled." left
-set_state staircase_kiara default
+> [!looked_at_staircase_window]
+ set_state staircase_kiara tip2
+ say telon staircase_kiara_tip:"staircase_kiara_tip" right_left
+ set_state staircase_kiara default
+ stop
+
+> [looked_at_staircase_window,!staircase_window_solved]
+ set_state staircase_kiara tip2
+ say telon staircase_kiara_tip2:"staircase_kiara_tip2" right_left
+ set_state staircase_kiara default
+ stop

@@ -1,8 +1,16 @@
 :talk
-set_active entrance_ghost false
-set_active button_tutorial false
-set_active kiara_tutorial false
-set_state kiara tip1
-say telon entrance_kiara_tip:"Those tulips on the wall look like they don't belong here. Let's look at them." left
-set_state kiara default
-set_active entrance_ghost true
+> [!talked_to_kiara_1,!looked_at_flowers]
+ set_active entrance_ghost false
+ set_active button_tutorial false
+ set_active kiara_tutorial false
+ set_state kiara tip1
+ say telon entrance_kiara_tip:"Those tulips on the wall look like they don't belong here. Let's look at them." right_left
+ set_state kiara default
+ set_active entrance_ghost true
+ set_global talked_to_kiara_1 true
+
+> [talked_to_kiara_1,!right_flower_picked]
+ say telon entrance_kiara_goback:"entrance_kiara_goback" right_left
+
+> [i/inv_lightbulb]
+ say telon entrance_louis_repeat_use:"entrance_louis_repeat_use" right_left

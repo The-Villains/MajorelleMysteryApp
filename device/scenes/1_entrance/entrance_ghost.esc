@@ -1,9 +1,19 @@
 :talk
-set_active button_tutorial false
-set_active ghost_tutorial false
-say telon entrance_louis_1:"For the entrance area it should be all honesties as flowers on the wall. Let’s have a closer look at those tulips to fix that." right_left avatar_luis
-say telon entrance_louis_2:"To do so, you must first click the eye and then what you want to closer look at. Try it out!" right_left avatar_luis
-set_active button_tutorial true
-teleport_pos button_tutorial 121 0
-wait 1
-set_state flowers highlighted_flower
+> [!talked_to_louis]
+ set_active button_tutorial false
+ set_active ghost_tutorial false
+ say telon entrance_louis_1:"entrance_louis_1" right_left avatar_luis
+ set_active button_tutorial true
+ teleport_pos button_tutorial 121 0
+ set_state flowers highlighted_flower
+ say telon entrance_louis_2:"entrance_louis_2" right_left avatar_luis
+ set_global talked_to_louis true
+
+> [talked_to_louis,i/inv_lightbulb,!solved_lamp]
+ say telon entrance_louis_repeat_use:"entrance_louis_repeat_use" left_right avatar_luis
+
+> [talked_to_louis,right_flower_picked,!i/inv_lightbulb]
+ cut_scene telon fade_out
+ change_scene res://scenes/1_entrance/11_flower_riddle/lamp.tscn
+ cut_scene telon fade_in
+ say telon entrance_louis_lightbulb2:"entrance_louis_lightbulb2" left_right avatar_luis

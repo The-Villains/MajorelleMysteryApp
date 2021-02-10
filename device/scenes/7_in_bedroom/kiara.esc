@@ -1,4 +1,20 @@
 :talk
-set_state kiara tip2
-say telon bedroom_kiara_tip:"This is a placeholder for the bedroom." left
-set_state kiara default
+> [!looked_at_album]
+ set_state kiara tip1
+ say telon bedroom_kiara_tip1:"bedroom_kiara_tip1" right_left
+ set_state kiara default
+ set_global bedroom_kiara_tip1 true
+ stop
+
+> [looked_at_album,!bedroom_kiara_tip2]
+ set_state kiara tip2
+ say telon bedroom_kiara_tip2:"bedroom_kiara_tip2" right_left
+ set_state kiara default
+ set_global bedroom_kiara_tip2 true
+ stop
+
+> [looked_at_album,bedroom_kiara_tip2]
+ set_state kiara tip2
+ say telon bedroom_kiara_tip3:"bedroom_kiara_tip3" right_left
+ set_state kiara default
+ set_global bedroom_kiara_tip3 true

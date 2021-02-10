@@ -24,6 +24,8 @@ var event_table = {}
 
 var clicked = false
 
+var current_scene
+
 func is_clicked():
 	   return clicked
 
@@ -96,13 +98,27 @@ func area_input(_viewport, event, _shape_idx):
 	   input(event)
 
 func input(event):
+	#breaks the use combine function:
+	#if events_path == "" && event is InputEventMouseButton:
+	#	printt("This is a non interactable item.")
+	
+	#if events_path != "" && event is InputEventMouseButton && action =="":
+	#	printt("This is interactable, but no action is chosen.") 
+		
 	if event is InputEventMouseButton || event.is_action("ui_accept"):
+		#If, Else controls the focus vs. non focus of items when being clicked
+		#Everything gets to the if when being clicked as a node with the item.gd script
 		if event.is_pressed():
 			clicked = true
+			printt("input is",action, events_path,event)
 			get_tree().call_group("game", "clicked", self, (self as Node).get_position())
 			_check_focus(true, true)
+			printt("IF - Item clicked with mouse.",self.name)
 		else:
 			clicked = false
+			printt("ELSE - Item unclicked with mouse.",self.name)
+			#printt(self.name)
+			#get_parent().get_node("no_interaction").activate("no_action_chosen", null)
 			_check_focus(true, false)
 
 func _check_focus(focus, pressed):
@@ -371,7 +387,6 @@ func _ready():
 
 	call_deferred("_update_terrain")
 
-
-
-func _on_button_pressed():
-	pass # Replace with function body.
+#End of game button
+func _on_end_game_pressed():
+	get_node("/root/main").load_menu(ProjectSettings.get("ui/credits"))

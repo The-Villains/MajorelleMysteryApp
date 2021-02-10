@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://templates/ghost.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/3_livingroom/door.tscn" type="PackedScene" id=13]
+[ext_resource path="res://templates/no_interaction.tscn" type="PackedScene" id=14]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 2.79803, 1047.07, 540.798, 879.07, 558.798, 1119.07, 4.79803, 1249.07, 1604.8, 1253.07, 992.798, 1165.07, 726.798, 1107.07, 762.798, 1029.07, 1168.8, 1163.07, 1178.8, 1047.07, 1308.8, 1043.07, 1602.8, 1067.07, 1504.8, 845.07, 1608.8, 887.07, 1302.8, 911.07, 1334.8, 837.07, 592.798, 1065.07, 682.798, 1067.07 )
@@ -25,6 +26,8 @@ __meta__ = {
 "_edit_horizontal_guides_": [ 1252.5, 1619.46 ],
 "_edit_vertical_guides_": [ -131.674, -207.674, 1714.33, 1694.33 ]
 }
+
+[node name="no_interaction" parent="." instance=ExtResource( 14 )]
 
 [node name="background" type="TextureRect" parent="."]
 margin_left = -80.0
@@ -48,6 +51,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+action = "no_interaction"
 global_id = "livingroom_light"
 
 [node name="terrain" type="Navigation2D" parent="."]
@@ -88,6 +92,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 tooltip = "Tea table with butomaceae ornaments"
+action = "no_interaction"
 events_path = "res://scenes/3_livingroom/chair1.esc"
 global_id = "livingroom_table"
 placeholders = {
@@ -104,6 +109,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 tooltip = "armchair \"Pine cones\""
+action = "no_interaction"
 events_path = "res://scenes/3_livingroom/chair2.esc"
 global_id = "livingroom_chair2"
 placeholders = {
@@ -149,6 +155,7 @@ tooltip = "Moroccan-inspired stained glass"
 position = Vector2( 597.74, 609.632 )
 scale = Vector2( 1.55, 1.55 )
 tooltip = "overgrown area"
+action = "no_interaction"
 events_path = "res://scenes/3_livingroom/plants.esc"
 global_id = "livingroom_plants"
 

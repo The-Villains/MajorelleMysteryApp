@@ -3,6 +3,11 @@ cut_scene telon fade_out
 change_scene res://scenes/4_diningroom/scene.tscn
 cut_scene telon fade_in
 
+> [!painting_solved]
+ set_state kiara tip1
+ say telon diningroom_kiara_tip5:"diningroom_kiara_tip5" right_left
+ set_state kiara default
+
 :talk
 
 :use

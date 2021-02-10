@@ -4,13 +4,13 @@ set_global picked_item true
 set_active lightbulb false
 set_global i/inv_lightbulb true
 set_active lightbulb_missing true
-say lightbulb entrance_picked_lightbulb:"Well done! The lightbulb is now in your inventory." left_left avatar_luis
+say lightbulb entrance_picked_lightbulb:"entrance_picked_lightbulb" left_left avatar_luis
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/scene.tscn
 cut_scene telon fade_in
 set_active entrance_ghost true
-say entrance_ghost entrance_use_lamp:"Okay. Now let us use this lightbulb from our inventory." right_left avatar_luis
-say telon entrance_louis_use_explain:"Use the hand, click the item you want to use and then where you want to use or move it to… the same goes for switching two items." right_left avatar_luis
+say entrance_ghost entrance_use_lamp:"entrance_use_lamp" right_left avatar_luis
+say telon entrance_louis_use_explain:"entrance_louis_use_explain" right_left avatar_luis
 set_active button_tutorial true
 teleport_pos button_tutorial 250 0
 wait .5

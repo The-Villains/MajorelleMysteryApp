@@ -70,8 +70,7 @@ livingroom_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
 exit_living_32.tooltip,Back,Retour,Zurück
 exit_living_33.tooltip,Back,Retour,Zurück
 exit_living_34.tooltip,Back,Retour,Zurück
-livingroom_light.tooltip, , , 
-livingroom_window_story,The original stained glass broke during the first world war and we rebuilt it differently inspired by my stay in morocco!,Le vitrail fut cassée pendant la Première Guerre mondiale et nous l'avons reconstruit différemment. Il est inspiré par mon séjour au Maroc !,"Das Buntglasfenster ist im ersten Weltkrieg zerbrochen und wir haben es, inspiriert von meinem Marokko-Aufenthalt, anders wieder aufgebaut!"
+livingroom_light.tooltip, ,  , 
 livingroom_zoom_32,?,?,?
 livingroom_zoom_33,?,?,?
 livingroom_zoom_34,?,?,?
@@ -128,7 +127,7 @@ diningroom_pantry.tooltip,To the pantry (locked),Vers garde-manger (verrouillé)
 diningroom_buffet.tooltip,"buffet ""Wheat ears""","Buffet ""Épis de blés"" ","Buffet ""Weizenähren"""
 diningroom_sideboard_left,"buffet ""Wheat ears"" on the left","buffet ""Épis de blé"" de gauche","Buffet ""Weizenähren"" links"
 diningroom_sideboard_right,"buffet ""Wheat ears"" on the right","buffet ""Épis de blé"" de droite","Buffet ""Weizenähren"" rechts"
-diningroom_painting_closeup,decorative painting ,Peinture decorative de la salle à manger,Dekoratives Gemälde
+diningroom_painting_closeup, , , 
 d1.tooltip, , , 
 d2.tooltip, , , 
 d3.tooltip, , , 
@@ -160,7 +159,7 @@ dont_leave.tooltip,Back to the entrance and exit,Retour à l'entrée et à la so
 staircase_window.tooltip,"stained glass window ""honesty flowers""","Vitrail ""Monnaies du pape""","Glasmalerei ""Silbertaler"""
 staircase_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
 staircase_lamp.tooltip,"Lamp ""Algae""","Lampe ""aux Algues""","Lampe ""Algen"""
-staircase_cabinet.tooltip,some info about that cabinet behind Louis,Quelques informations sur le buffet derrrière Louis Majorelle,einige Informationen über diesen Schrank hinter Louis
+staircase_cabinet.tooltip,custom cabinet for the staircase,cabinet personnalisée pour l'escalier,maßgefertigter Schrank für das Treppenhaus
 staircase_flowers_glas.tooltip,"""honesty flowers"" themed stained glass","Vitrail à de décor de ""Monnaies du pape""","Glasmalerei mit Thema ""Silbertaler"""
 top_left.tooltip,window piece,morceau de vitrail,Fenster Stück
 top_middle.tooltip,window piece,morceau de vitrail,Fenster Stück
@@ -183,6 +182,7 @@ bedroom_painting.tooltip,Portrait of Jika Majorelle,Portrait de Jika Majorelle,P
 bedroom_dresser.tooltip,dresser,Commode,Kommode
 bedroom_dressingroom.tooltip,closet,penderie,Wandschrank
 bedroom_album_onbed.tooltip,photo album,album photo,Fotoalbum
+album_front_closeup.tooltip,locked photo album,album photo fermé à clé,verschlossenes Fotoalbum
 bedroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
 bedroom_door_mural.tooltip,"stained glass art ""honesty flowers""","Vitrail à de décor de ""Monnaies du pape""","Buntglaskunst ""Silbertaler"""
 bedroom_nightstand_closeup.tooltip,nightstand,Table de chevet,Nachttisch
@@ -191,7 +191,7 @@ exit_bedroom_album.tooltip,Back,Retour,Zurück
 exit_bedroom_painting.tooltip,Back,Retour,Zurück
 album_photo_right.tooltip,Jane Majorelle greeting two guests at the front door of the Villa Majorelle,Jane Majorelle accueillant deux invités à la porte d’entrée de la Villa Majorelle,Jane Majorelle begrüßt zwei Gäste an der Eingangstür der Villa Majorelle
 album_photo_left_top.tooltip,Jane and Louis Majorelle sitting in the terrace of the Villa Majorelle,Jane et Louis Majorelle assis dans la terrasse de la Villa Majorelle,Jane und Louis Majorelle sitzen auf der Terrasse der Villa Majorelle
-album_photo_left_bottom.tooltip,Jane Majorelle in the bedroom,,
+album_photo_left_bottom.tooltip,Jane Majorelle in the bedroom,Jane Majorelle dans la chambre à coucher,Jane Majorelle im Schlafzimmer
 album_confirm.tooltip,Confirm solution,Confirmer la solution,Bestätigen Lösung
 inv_lightbulb.tooltip,lightbulb,ampoule,Glühbirne
 inv_piece6.tooltip,puzzle piece,morceau de puzzle,Puzzleteil

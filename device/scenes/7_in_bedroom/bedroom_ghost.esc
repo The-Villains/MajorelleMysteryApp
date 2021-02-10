@@ -1,0 +1,21 @@
+:talk
+
+> [!bedroom_jane_story]
+ say telon bedroom_jane_story:"bedroom_jane_story" left_right avatar_jane
+ set_global bedroom_jane_story true
+ stop
+
+> [bedroom_jane_story,!bedroom_jane_story2]
+ say telon bedroom_jane_story2:"bedroom_jane_story2" left_right avatar_jane
+ set_global bedroom_jane_story2 true
+ stop
+
+> [bedroom_jane_story,bedroom_jane_story2,!looked_at_album]
+ say telon bedroom_jane_nostories:"bedroom_jane_nostories" left_right avatar_jane
+ set_global bedroom_jane_nostories true
+ stop
+
+> [bedroom_jane_story,bedroom_jane_story2,looked_at_album]
+ say telon bedroom_jane_story4:"bedroom_jane_story4" left_right avatar_jane
+ set_global bedroom_jane_story4 true
+ stop

@@ -123,6 +123,15 @@ tooltip = "Kiara"
 events_path = "res://scenes/5_staircase/kiara_fullsize.esc"
 global_id = "kiara_fullsize"
 
+[node name="area" type="TextureRect" parent="kiara_fullsize"]
+margin_left = 284.0
+margin_top = 292.0
+margin_right = 422.0
+margin_bottom = 920.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Sprite" type="Sprite" parent="kiara_fullsize"]
 position = Vector2( 352, 600 )
 scale = Vector2( 0.3, 0.3 )

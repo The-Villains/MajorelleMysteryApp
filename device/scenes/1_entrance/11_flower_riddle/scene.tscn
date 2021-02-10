@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/1_entrance/sprites/blumenraetsel_daisies.png" type="Texture" id=1]
-[ext_resource path="res://scenes/1_entrance/11_flower_riddle/lamp.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/1_entrance/sprites/gluehbirne_lobby.png" type="Texture" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/1_entrance/sprites/lobby_blur.png" type="Texture" id=4]
 [ext_resource path="res://scenes/1_entrance/11_flower_riddle/exit.tscn" type="PackedScene" id=5]
@@ -257,12 +257,26 @@ scale = Vector2( 0.8, 0.8 )
 tooltip = "tulips"
 events_path = "res://scenes/1_entrance/11_flower_riddle/tulips.esc"
 
-[node name="lightbulb" parent="." instance=ExtResource( 2 )]
+[node name="lightbulb" type="Node2D" parent="."]
 visible = false
-position = Vector2( 816, 542 )
+position = Vector2( -4, 0 )
+script = ExtResource( 10 )
 tooltip = "lightbulb"
 events_path = "res://scenes/1_entrance/11_flower_riddle/lightbulb.esc"
 global_id = "lightbulb"
+
+[node name="area" type="TextureButton" parent="lightbulb"]
+margin_left = 412.0
+margin_top = 152.0
+margin_right = 1190.0
+margin_bottom = 1028.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lightbulb" type="Sprite" parent="lightbulb"]
+position = Vector2( 792, 600 )
+texture = ExtResource( 2 )
 
 [node name="button_tutorial" parent="." instance=ExtResource( 18 )]
 position = Vector2( 125, 0 )

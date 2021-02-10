@@ -1,4 +1,28 @@
 :talk
-set_state kiara tip2
-say telon livingroom_window_kiara:"This is a placeholder for the puzzle." left
-set_state kiara default
+> [!livingroom_window_kiara1]
+ set_state kiara tip2
+ say telon livingroom_window_kiara1:"livingroom_window_kiara1" right_left
+ set_state kiara default
+ set_global livingroom_window_kiara1 true
+ stop
+
+> [livingroom_window_kiara1,!livingroom_window_kiara2,!livingroom_window_kiara3]
+ set_state kiara tip1
+ say telon livingroom_window_kiara2:"livingroom_window_kiara2" right_left
+ set_state kiara default
+ set_global livingroom_window_kiara2 true
+ stop
+
+> [livingroom_window_kiara1,livingroom_window_kiara2,!livingroom_window_kiara3]
+ set_state kiara tip1
+ say telon livingroom_window_kiara3:"livingroom_window_kiara3" right_left
+ set_state kiara default
+ set_global livingroom_window_kiara3 true
+ stop
+
+> [livingroom_window_kiara1,livingroom_window_kiara2,livingroom_window_kiara3]
+ set_state kiara tip3
+ say telon livingroom_window_kiara4:"livingroom_window_kiara4" right_left
+ set_state kiara default
+ set_global livingroom_window_kiara1 false
+ stop

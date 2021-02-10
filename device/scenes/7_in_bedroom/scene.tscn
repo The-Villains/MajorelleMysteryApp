@@ -135,6 +135,7 @@ placeholders = {
 [node name="ghost" parent="." index="10" instance=ExtResource( 8 )]
 position = Vector2( 202, 30 )
 tooltip = "Jane Majorelle"
+events_path = "res://scenes/7_in_bedroom/bedroom_ghost.esc"
 global_id = "bedroom_ghost"
 
 [node name="kiara" parent="." index="11" instance=ExtResource( 9 )]

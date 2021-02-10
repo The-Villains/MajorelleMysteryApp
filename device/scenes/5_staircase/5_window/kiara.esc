@@ -1,4 +1,23 @@
 :talk
-set_state kiara tip1
-say telon staircase_window_kiara:"This is a placeholder for the switch puzzle." left
-set_state kiara default
+> [!staircase_window_kiara1]
+ set_state kiara tip1
+ say telon staircase_window_kiara1:"staircase_window_kiara1" right_left
+ set_state kiara default
+ set_global staircase_window_kiara1 true
+ set_global staircase_window_kiara3 false
+ stop
+
+> [staircase_window_kiara1,!staircase_window_kiara2]
+ set_state kiara tip1
+ say telon staircase_window_kiara2:"staircase_window_kiara2" right_left
+ set_state kiara default
+ set_global staircase_window_kiara2 true
+ stop
+
+> [staircase_window_kiara2,!staircase_window_kiara3]
+ set_state kiara tip1
+ say telon staircase_window_kiara3:"staircase_window_kiara3" right_left
+ set_state kiara default
+ set_global staircase_window_kiara3 true
+ set_global staircase_window_kiara1 false
+ stop

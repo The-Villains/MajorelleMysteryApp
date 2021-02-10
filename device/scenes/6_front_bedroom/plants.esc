@@ -1,10 +1,1 @@
-:look
->  [flower1,flower2,flower3,flower4]
- cut_scene telon fade_out
- change_scene res://scenes/7_in_bedroom/scene.tscn
- set_state bedroom_ghost jane
- cut_scene telon fade_in
- say telon bedroom_jeanne_album2:"Thank you very much! There is a photo album on the bed as a reward. Take it!"
 
-> [!flower1,!flower2,!flower3,!flower4]
-  say telon frontbedroom_not_all_flowers:"Seems like some flowers are missing."

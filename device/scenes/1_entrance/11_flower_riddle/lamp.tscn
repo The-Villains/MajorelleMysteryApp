@@ -1,21 +1,56 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/1_entrance/sprites/gluehbirne_lobby.png" type="Texture" id=2]
+[ext_resource path="res://scenes/1_entrance/sprites/lobby_blur.png" type="Texture" id=3]
+[ext_resource path="res://globals/scene.gd" type="Script" id=4]
+[ext_resource path="res://globals/game.scn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/1_entrance/11_flower_riddle/exit.tscn" type="PackedScene" id=6]
 
 [node name="lightbulb" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1168.78 ]
+}
 
-[node name="area" type="TextureButton" parent="."]
-margin_left = -214.0
-margin_top = -386.0
-margin_right = 220.0
-margin_bottom = 402.0
+[node name="background" type="TextureRect" parent="."]
+margin_right = 1600.0
+margin_bottom = 1200.0
+texture = ExtResource( 3 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="animation" type="AnimationPlayer" parent="."]
+[node name="lightbulb" type="Node2D" parent="."]
+script = ExtResource( 1 )
+tooltip = "lightbulb"
+events_path = "res://scenes/1_entrance/11_flower_riddle/lightbulb.esc"
+global_id = "lightbulb"
 
-[node name="_focus_out" type="Sprite" parent="."]
+[node name="area" type="TextureButton" parent="lightbulb"]
+margin_left = 412.0
+margin_top = 152.0
+margin_right = 1190.0
+margin_bottom = 1028.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="lightbulb"]
+
+[node name="lightbulb" type="Sprite" parent="lightbulb"]
+position = Vector2( 792, 600 )
 texture = ExtResource( 2 )
+
+[node name="exit" parent="." instance=ExtResource( 6 )]
+position = Vector2( 104, 1116 )
+scale = Vector2( 0.5, 0.5 )
+tooltip = "Back"
+events_path = "res://scenes/1_entrance/11_flower_riddle/exit.esc"
+global_id = "exit_lamp"
+placeholders = {
+
+}
+
+[node name="game" parent="." instance=ExtResource( 5 )]

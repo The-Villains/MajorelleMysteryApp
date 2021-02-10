@@ -15,7 +15,7 @@ use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 36
+size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
@@ -32,21 +32,21 @@ use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 42
+size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=7]
-size = 42
+size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=8]
-size = 42
+size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
@@ -58,7 +58,7 @@ use_filter = true
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=10]
-size = 42
+size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
