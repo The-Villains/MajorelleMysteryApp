@@ -90,7 +90,7 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 11
+frame = 3
 playing = true
 
 [node name="CREDITS" type="RichTextLabel" parent="."]

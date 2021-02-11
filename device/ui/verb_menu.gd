@@ -6,19 +6,27 @@ var act_buttons = []
 
 var current_action
 
-#Input.set_custom_mouse_cursor(get_node(mouse_image).texture)
+func set_mouse(p_current_action):
+	if p_current_action == "look":
+		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/look").texture),0,Vector2(20,14))
+	elif p_current_action == "talk":
+		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/talk").texture),0,Vector2(24,15))
+	elif p_current_action == "use":
+		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/use").texture),0,Vector2(10,14))
+	elif p_current_action == null or "":
+		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/normal").texture),0,Vector2(16,9))
 
 func reset_mouse(_p_current_action):
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+	set_mouse(null)
 	for b in act_buttons:
 		b.set_pressed(false)
 	printt("reset mouse function")
 
 func something_picked():
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use2").texture)
+	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use2").texture,0,Vector2(10,60))
 
 func reset_picked():
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use").texture)
+	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use").texture,0,Vector2(10,14))
 
 func set_action_name(action):
 	current_action = action
@@ -32,7 +40,7 @@ func action_changed(action):
 		b.set_pressed(b.get_name() == action)
 		printt("Inside b",b.name)
 	
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+action).texture)
+	set_mouse(action)
 	set_action_name(action)
 	printt("End of action changed")
 	#reset_action()
@@ -41,35 +49,35 @@ func action_changed(action):
 # Entering that area sets the cursor to "Normal" and Exiting the area sets it back to the current selected action if one is active, else the cursor remains normal
 
 func _on_look_mouse_entered():
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+	set_mouse(null)
 
 func _on_use_mouse_entered():
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+	set_mouse(null)
 
 func _on_talk_mouse_entered():
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+	set_mouse(null)
 
 func _on_look_mouse_exited():
 	if current_action != null:
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+current_action).texture)
+		set_mouse(current_action)
 	else:
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+		set_mouse(null)
 
 func _on_use_mouse_exited():
 	if current_action != null:
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+current_action).texture)
+		set_mouse(current_action)
 	else:
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+		set_mouse(null)
 
 func _on_talk_mouse_exited():
 	if current_action != null:
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+current_action).texture)
+		set_mouse(current_action)
 	else:
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+		set_mouse(null)
 
 func _process(_delta):
 	if current_action == null or current_action == "":
-		Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/normal").texture)
+		set_mouse(null)
 	#else:
 	#	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+current_action).texture)
 
