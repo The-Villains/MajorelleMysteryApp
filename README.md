@@ -10,6 +10,21 @@ Presentation CDV Award Ceremony in Saarbrücken: [Slides](AwardCeremony.pdf)
 
 ## Credits
 
+### The Villains Version 1.0 Development team
+
+**Project Management** - Sonja "soheinze" Heinze  
+**Game design** - Sonja "soheinze" Heinze, UHH Steinfeltz  
+**Art design** - UHH Steinfeltz  
+**Character design** - UHH Steinfeltz  
+**2D UI design** - UHH Steinfeltz  
+**Room design**- UHH Steinfeltz  
+**Programming** - Sonja "soheinze" Heinze  
+**Music & Sound** - Sonja "soheinze" Heinze, UHH Steinfeltz  
+**Text (English)** - Sonja "soheinze" Heinze, UHH Steinfeltz  
+**Translations (German and French)** - UHH Steinfeltz  
+**Project review** - Sophie Toulouze  
+
+
 ### Coding da Vinci
 
 The idea and prototype development for MajorelleMystery started as part of the “Coding da Vinci Saar-Lor-Lux 2020” hackathon for open cultural data. Further development for this version 1.0 was made possible through the generous Coding da Vinci-Stipends.
