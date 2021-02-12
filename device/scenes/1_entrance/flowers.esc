@@ -6,5 +6,5 @@ change_scene res://scenes/1_entrance/11_flower_riddle/scene.tscn
 cut_scene telon fade_in
 wait 0.5
 set_active button_tutorial true
-teleport_pos button_tutorial 250 0
+teleport_pos button_tutorial 961 1055.5
 say telon entrance_louis_riddle:"Here you have to pick the correct answer with the hand. This can also be used to pick up things." left_left avatar_luis

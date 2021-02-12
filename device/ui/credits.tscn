@@ -66,8 +66,9 @@ __meta__ = {
 }
 
 [node name="bg" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_top = 2.0
+margin_right = 4000.0
+margin_bottom = 3002.0
 rect_scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 10 )
 __meta__ = {
@@ -90,7 +91,7 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 3
+frame = 7
 playing = true
 
 [node name="CREDITS" type="RichTextLabel" parent="."]
@@ -109,6 +110,21 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[b]CREDITS  [BETA TEST VERSION][/b]
 
+[b]The Villains Version 1.0 Development team[/b] 
+
+[b]Project Management[/b]  - Sonja Heinze
+[b]Game design[/b]  - Sonja Heinze, UHH Steinfeltz
+[b]Art design[/b]  - UHH Steinfeltz
+[b]Character design[/b]  - UHH Steinfeltz
+[b]2D UI design[/b]  - UHH Steinfeltz
+[b]Room design*[/b] - UHH Steinfeltz
+[b]Programming [/b] - Sonja Heinze
+[b]Music & Sound[/b]  - Sonja Heinze, UHH Steinfeltz
+[b]Text & Scripting (English) [/b] - Sonja Heinze, UHH Steinfeltz
+[b]Translations (German and French)[/b] - UHH Steinfeltz, Sophie Toulouze
+
+[i] *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR.[/i] 
+
 [b]Coding da Vinci[/b]
 The idea and prototype development for MajorelleMystery started as part of the “Coding da Vinci Saar-Lor-Lux 2020” hackathon for open cultural data. Further development for this version 1.0 was made possible through the generous Coding da Vinci-Stipends.
 
@@ -121,22 +137,23 @@ The game is based on the point & click adventure game framework for Godot Engine
 
 [b]Our testers [/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
 
-[b]… and of course the Coding da Vinci team and the Villa Majorelle for making this possible![/b]
-
-[b]The Villains Version 1.0 Development team:[/b] 
-[b]Project Management[/b]  - Sonja Heinze
-[b]Game design[/b]  - Sonja Heinze, UHH Steinfeltz
-[b]Art design[/b]  - UHH Steinfeltz
-[b]Character design[/b]  - UHH Steinfeltz
-[b]2D UI design[/b]  - UHH Steinfeltz
-[b]Room design*[/b] - UHH Steinfeltz
-[b]Programming [/b] - Sonja Heinze
-[b]Music & Sound[/b]  - Sonja Heinze, UHH Steinfeltz
-[b]Text & Scripting (English) [/b] - Sonja Heinze, UHH Steinfeltz
-[b]Translations (German and French)[/b] - UHH Steinfeltz, Sophie Toulouze
-
-[i] *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR.[/i] "
+[b]… and of course the Coding da Vinci team and the Villa Majorelle for making this possible![/b]"
 text = "CREDITS  [BETA TEST VERSION]
+
+The Villains Version 1.0 Development team 
+
+Project Management  - Sonja Heinze
+Game design  - Sonja Heinze, UHH Steinfeltz
+Art design  - UHH Steinfeltz
+Character design  - UHH Steinfeltz
+2D UI design  - UHH Steinfeltz
+Room design* - UHH Steinfeltz
+Programming  - Sonja Heinze
+Music & Sound  - Sonja Heinze, UHH Steinfeltz
+Text & Scripting (English)  - Sonja Heinze, UHH Steinfeltz
+Translations (German and French) - UHH Steinfeltz, Sophie Toulouze
+
+ *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR. 
 
 Coding da Vinci
 The idea and prototype development for MajorelleMystery started as part of the “Coding da Vinci Saar-Lor-Lux 2020” hackathon for open cultural data. Further development for this version 1.0 was made possible through the generous Coding da Vinci-Stipends.
@@ -150,21 +167,7 @@ Our original team members - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic,
 
 Our testers  - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
 
-… and of course the Coding da Vinci team and the Villa Majorelle for making this possible!
-
-The Villains Version 1.0 Development team: 
-Project Management  - Sonja Heinze
-Game design  - Sonja Heinze, UHH Steinfeltz
-Art design  - UHH Steinfeltz
-Character design  - UHH Steinfeltz
-2D UI design  - UHH Steinfeltz
-Room design* - UHH Steinfeltz
-Programming  - Sonja Heinze
-Music & Sound  - Sonja Heinze, UHH Steinfeltz
-Text & Scripting (English)  - Sonja Heinze, UHH Steinfeltz
-Translations (German and French) - UHH Steinfeltz, Sophie Toulouze
-
- *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR. "
+… and of course the Coding da Vinci team and the Villa Majorelle for making this possible!"
 __meta__ = {
 "_edit_use_anchors_": false
 }

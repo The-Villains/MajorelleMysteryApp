@@ -13,6 +13,8 @@ func set_mouse(p_current_action):
 		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/talk").texture),0,Vector2(24,15))
 	elif p_current_action == "use":
 		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/use").texture),0,Vector2(10,14))
+	elif p_current_action == "normal":
+		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/normal").texture),0,Vector2(16,9))
 	elif p_current_action == null or "":
 		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/normal").texture),0,Vector2(16,9))
 
@@ -23,7 +25,7 @@ func reset_mouse(_p_current_action):
 	printt("reset mouse function")
 
 func something_picked():
-	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use2").texture,0,Vector2(10,60))
+	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use2").texture,0,Vector2(9,30))
 
 func reset_picked():
 	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/use").texture,0,Vector2(10,14))
@@ -49,35 +51,35 @@ func action_changed(action):
 # Entering that area sets the cursor to "Normal" and Exiting the area sets it back to the current selected action if one is active, else the cursor remains normal
 
 func _on_look_mouse_entered():
-	set_mouse(null)
+	set_mouse("normal")
 
 func _on_use_mouse_entered():
-	set_mouse(null)
+	set_mouse("normal")
 
 func _on_talk_mouse_entered():
-	set_mouse(null)
+	set_mouse("normal")
 
 func _on_look_mouse_exited():
 	if current_action != null:
 		set_mouse(current_action)
 	else:
-		set_mouse(null)
+		set_mouse("normal")
 
 func _on_use_mouse_exited():
 	if current_action != null:
 		set_mouse(current_action)
 	else:
-		set_mouse(null)
+		set_mouse("normal")
 
 func _on_talk_mouse_exited():
 	if current_action != null:
 		set_mouse(current_action)
 	else:
-		set_mouse(null)
+		set_mouse("normal")
 
 func _process(_delta):
 	if current_action == null or current_action == "":
-		set_mouse(null)
+		set_mouse("normal")
 	#else:
 	#	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+current_action).texture)
 

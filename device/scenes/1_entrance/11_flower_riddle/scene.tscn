@@ -279,7 +279,9 @@ position = Vector2( 792, 600 )
 texture = ExtResource( 2 )
 
 [node name="button_tutorial" parent="." instance=ExtResource( 18 )]
-position = Vector2( 125, 0 )
+visible = false
+position = Vector2( 961, 1056 )
+scale = Vector2( 0.12, 0.12 )
 tooltip = " "
 
 [node name="exit" parent="." instance=ExtResource( 5 )]

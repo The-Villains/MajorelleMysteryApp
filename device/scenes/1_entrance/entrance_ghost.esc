@@ -4,7 +4,7 @@
  set_active ghost_tutorial false
  say telon entrance_louis_1:"entrance_louis_1" right_left avatar_luis
  set_active button_tutorial true
- teleport_pos button_tutorial 121 0
+ teleport_pos button_tutorial 837 1055.5
  set_state flowers highlighted_flower
  say telon entrance_louis_2:"entrance_louis_2" right_left avatar_luis
  set_global talked_to_louis true

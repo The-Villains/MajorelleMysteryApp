@@ -10,13 +10,13 @@
 [ext_resource path="res://scenes/1_entrance/lightbulb_missing.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/1_entrance/ghost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/1_entrance/lamp.tscn" type="PackedScene" id=10]
-[ext_resource path="res://globals/sprites/knoepfe und co/kiara_button_highlighted.png" type="Texture" id=11]
+[ext_resource path="res://scenes/1_entrance/sprites/kiara_button.png" type="Texture" id=11]
 [ext_resource path="res://scenes/1_entrance/player_talk.tscn" type="PackedScene" id=12]
 [ext_resource path="res://globals/item.gd" type="Script" id=13]
-[ext_resource path="res://scenes/1_entrance/sprites/louis_far_red.png" type="Texture" id=14]
+[ext_resource path="res://scenes/1_entrance/sprites/highlight_maj.png" type="Texture" id=14]
 [ext_resource path="res://scenes/1_entrance/sprites/blume_rot.png" type="Texture" id=15]
-[ext_resource path="res://scenes/1_entrance/sprites/lampe_rot.png" type="Texture" id=16]
-[ext_resource path="res://scenes/1_entrance/sprites/suitcase_red_trimmed.png" type="Texture" id=17]
+[ext_resource path="res://scenes/1_entrance/sprites/leere lampe m highlight.png" type="Texture" id=16]
+[ext_resource path="res://scenes/1_entrance/sprites/highlight_suitcase.png" type="Texture" id=17]
 [ext_resource path="res://templates/no_interaction.tscn" type="PackedScene" id=18]
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=19]
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=21]
@@ -38,7 +38,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 2500, 2500 ), Vector2( 1436, 1436 ) ]
+"values": [ Vector2( 2500, 2500 ), Vector2( 1000, 1000 ) ]
 }
 tracks/1/type = "bezier"
 tracks/1/path = NodePath("area:rect_position:x")
@@ -47,7 +47,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( -4000, -0.25, 0, 0.25, 0, -726.835, -0.25, 0, 0.25, 0 ),
+"points": PoolRealArray( -4000, -0.25, 0, 0.25, 0, -500, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 1 )
 }
 tracks/2/type = "bezier"
@@ -57,7 +57,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"points": PoolRealArray( -750, -0.25, 0, 0.25, 0, -599.523, -0.25, 0, 0.25, 0 ),
+"points": PoolRealArray( -750, -0.25, 0, 0.25, 0, -420, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 1 )
 }
 
@@ -65,7 +65,7 @@ tracks/2/keys = {
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 1199.87, 130.897, -1.78799 ],
-"_edit_vertical_guides_": [ 1468.62, 1598.5 ]
+"_edit_vertical_guides_": [ 1661.14, 1662.56 ]
 }
 
 [node name="background" type="TextureRect" parent="."]
@@ -92,16 +92,19 @@ navpoly = SubResource( 1 )
 visible = false
 scale = Vector2( 0.3, 0.3 )
 script = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
 global_id = "ghost_tutorial"
 
 [node name="area" type="TextureRect" parent="ghost_tutorial"]
-margin_left = 553.322
-margin_top = 814.674
-margin_right = 2220.32
-margin_bottom = 4140.68
-rect_scale = Vector2( 1.05, 1.05 )
+margin_left = 318.51
+margin_top = 828.481
+margin_right = 2798.51
+margin_bottom = 4336.48
 texture = ExtResource( 14 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -113,13 +116,16 @@ margin_bottom = 7746.0
 rect_scale = Vector2( 0.1, 0.1 )
 script = ExtResource( 13 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 tooltip = "locked door"
 global_id = "entrance_door"
 
 [node name="button_tutorial" parent="." instance=ExtResource( 19 )]
-position = Vector2( 121, 0 )
+visible = false
+position = Vector2( 837, 1055.5 )
+scale = Vector2( 0.12, 0.12 )
 
 [node name="flower_tutorial" type="Node2D" parent="."]
 visible = false
@@ -140,7 +146,7 @@ __meta__ = {
 [node name="flowers" parent="." instance=ExtResource( 7 )]
 position = Vector2( 832.78, 601.202 )
 scale = Vector2( 1.5, 1.5 )
-tooltip = "odd looking flowers"
+tooltip = "odd flowers"
 events_path = "res://scenes/1_entrance/flowers.esc"
 global_id = "flowers"
 
@@ -182,9 +188,9 @@ tooltip = "missing lightbulb"
 visible = false
 
 [node name="player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1464.15, 1171.6 )
+position = Vector2( 1454.25, 1180.09 )
 scale = Vector2( 0.45, 0.45 )
-z_index = 1171
+z_index = 1180
 placeholders = {
 
 }
@@ -192,8 +198,8 @@ placeholders = {
 [node name="inventory_tutorial" type="Sprite" parent="."]
 visible = false
 light_mask = -2147483645
-position = Vector2( 1226.1, 1239.12 )
-scale = Vector2( 0.34, 0.34 )
+position = Vector2( 1238.83, 1232.05 )
+scale = Vector2( 0.32, 0.32 )
 z_index = 4000
 z_as_relative = false
 texture = ExtResource( 17 )
@@ -217,10 +223,10 @@ tooltip = " "
 global_id = "kiara_tutorial"
 
 [node name="area" type="TextureRect" parent="kiara_tutorial"]
-margin_left = -4000.0
-margin_top = -750.0
-margin_right = -1500.0
-margin_bottom = 1750.0
+margin_left = -500.0
+margin_top = -420.0
+margin_right = 500.0
+margin_bottom = 580.0
 texture = ExtResource( 11 )
 expand = true
 __meta__ = {

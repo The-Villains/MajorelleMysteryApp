@@ -1,6 +1,11 @@
 :load
 set_state bg_music "res://audio/sounds/intro.ogg"
 
+#cut_scene telon fade_out
+#change_scene res://scenes/7_in_bedroom/71_album/scene.tscn
+#cut_scene telon fade_in
+#stop
+
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer1.tscn
 cut_scene telon fade_in
@@ -54,7 +59,7 @@ set_state kiara tip1
 say telon entrance_kiara_01:"entrance_kiara_01" right_left
 set_active entrance_ghost true
 set_active button_tutorial true
-teleport_pos button_tutorial 375 0
+teleport_pos button_tutorial 1085 1055.5
 set_active ghost_tutorial true
 say telon entrance_kiara_talk:"entrance_kiara_talk" right_left
 set_state kiara default

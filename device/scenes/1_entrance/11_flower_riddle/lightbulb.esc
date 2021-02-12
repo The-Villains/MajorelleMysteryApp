@@ -12,7 +12,7 @@ set_active entrance_ghost true
 say entrance_ghost entrance_use_lamp:"entrance_use_lamp" right_left avatar_luis
 say telon entrance_louis_use_explain:"entrance_louis_use_explain" right_left avatar_luis
 set_active button_tutorial true
-teleport_pos button_tutorial 250 0
+teleport_pos button_tutorial 961 1055.5
 wait .5
 set_active inventory_tutorial true
 wait .5

@@ -41,8 +41,8 @@ __meta__ = {
 }
 
 [node name="MAP_PUZZLE" type="Label" parent="."]
-margin_left = 642.0
-margin_top = 788.0
+margin_left = 636.0
+margin_top = 751.0
 margin_right = 914.0
 margin_bottom = 1005.0
 theme = ExtResource( 16 )

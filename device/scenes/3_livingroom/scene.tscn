@@ -23,8 +23,8 @@ outlines = [ PoolVector2Array( 2.79803, 1047.07, 4.79803, 1249.07, 1604.8, 1253.
 [node name="scene" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 1252.5, 1619.46 ],
-"_edit_vertical_guides_": [ -131.674, -207.674, 1714.33, 1694.33 ]
+"_edit_horizontal_guides_": [ 1252.5 ],
+"_edit_vertical_guides_": [ -131.674, 1694.33 ]
 }
 
 [node name="no_interaction" parent="." instance=ExtResource( 14 )]

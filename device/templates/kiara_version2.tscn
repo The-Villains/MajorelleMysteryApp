@@ -370,7 +370,7 @@ tracks/6/keys = {
 }
 
 [node name="kiara_2" type="Node2D"]
-z_index = 3000
+z_index = 4096
 z_as_relative = false
 script = ExtResource( 1 )
 __meta__ = {

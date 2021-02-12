@@ -7,16 +7,17 @@ talk.id,Talk to %1,Parler à %1,Spreche mit %1
 UI_CONTINUE,Continue,Continuer,Weiter
 UI_NEW_GAME,New Game,Nouveau jeu,Neues Spiel
 UI_QUIT,Quit,Quitter,Beenden
+UI_QUIT_GAME,Quit Game,Quitter le jeu,Spiel beenden
 UI_YES,Yes,Oui,Ja
 UI_NO,No,Non,Nein
-UI_QUIT_CONFIRM,Do you want to quit the game ?,Veux-tu vraiment quitter le jeu ?,Möchten Sie das Spiel beenden ?
+UI_QUIT_CONFIRM,Do you want to quit the game ?,Veux-tu vraiment quitter le jeu ?,Möchtest du das Spiel beenden ?
 UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer un nouveau jeu ? Toute progression sera perdue.,Neues Spiel starten? Alle Fortschritte gehen verloren.
 UI_BACK,Back to the main menu,Retour au menu principal,Zurück zum Hauptmenü
 UI_CREDITS,Credits,Crédits,Credits
 CREDITS,"/// This is an unofficial beta testing version. Official credits and licensing is in revision. //// Game is based on: Escoria in Daïza that was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","/// Il s'agit d'une version bêta-test non officielle. Les crédits et licences officiels sont en cours de révision. //// Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai.","/// Dies ist eine inoffizielle Beta-Test-Version. Offizielle Kredite und Lizenzierung ist in Revision. //// Spiel basiert auf: escoria in Daiza, die von Elisa de Castro Guerra, Cédric Gemy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt und Adrien ""Kooda"" Ramos in Rennes für das „Erstellen von Punkt erstellt wurde, und klicken Spiele mit escoria“booksprint vom 22. August bis 26 in Rennes, Frankreich. Beiträge zur Übersetzung: Ranito und Chaosprower. 2018 Verbesserungen von bosinpai."
 FLOWER_RIDDLE,Which flowers match the decoration in the entrance area that Louis Majorelle chose?,Quelles sont les fleurs correspondant à la décoration choisie par Louis Majorellee dans d'entrée?,"Welche dieser Blumen passen zu der Eingangsdekoration, die Louis Majorelle ausgesucht hat?"
 WINDOW_PUZZLE,Repair the stained glass art and move the pieces to the right spots.,Reconstitue le vitrail en plaçant les pièces au bon endroit.,Repariere die Glasmalerei indem du die Stücke an die richtige Stelle bewegst.
-PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouve les cinq différences dans le tableau du bas.,Finde die Unterschiede und wähle sie im unteren Bild aus!
+PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouve les cinq différences dans le tableau du bas.,Finde die fünf Unterschiede und wähle sie im unteren Bild aus!
 MAP_PUZZLE,Assign the correct labels to the rooms.,Distribue les étiquettes correctes aux différentes chambres.,Ordne die Labels den richtigen Räumen zu.
 WINDOW_SWITCH,"Switch the window pieces until you have restored the stained glass art ""honesty flowers""","Réarrange les pièces de verre pour retrouver le dessin du vitrail ""monnaie du pape""","Tausche die Fensterteile miteinander, bis du die Glasmalerei ""Silbertaler"" wiederhergestellt hast."
 P_ENTRANCE,Entrance,entrée,Eingang
@@ -71,9 +72,9 @@ exit_living_32.tooltip,Back,Retour,Zurück
 exit_living_33.tooltip,Back,Retour,Zurück
 exit_living_34.tooltip,Back,Retour,Zurück
 livingroom_light.tooltip, ,  , 
-livingroom_zoom_32,?,?,?
-livingroom_zoom_33,?,?,?
-livingroom_zoom_34,?,?,?
+livingroom_zoom_32,,,
+livingroom_zoom_33,,,
+livingroom_zoom_34,,,
 inv_piece1.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_piece2.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_piece3.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
@@ -93,6 +94,25 @@ inv_piece16.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_piece17.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_piece18.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 inv_piece19.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
+piece1.tooltip, , , 
+piece2.tooltip, , , 
+piece3.tooltip, , , 
+piece4.tooltip, , , 
+piece5.tooltip, , , 
+piece6.tooltip, , , 
+piece7.tooltip, , , 
+piece8.tooltip, , , 
+piece9.tooltip, , , 
+piece10.tooltip, , , 
+piece11.tooltip, , , 
+piece12.tooltip, , , 
+piece13.tooltip, , , 
+piece14.tooltip, , , 
+piece15.tooltip, , , 
+piece16.tooltip, , , 
+piece17.tooltip, , , 
+piece18.tooltip, , , 
+piece19.tooltip, , , 
 slot1.tooltip,broken window,fenêtre cassée,kaputtes Fenster
 slot2.tooltip,broken window,fenêtre cassée,kaputtes Fenster
 slot3.tooltip,broken window,fenêtre cassée,kaputtes Fenster
@@ -121,13 +141,13 @@ diningroom_door.tooltip,To the staircase,Pour l'escalier,Zur Treppe
 diningroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
 diningroom_painting.tooltip,decorative painting of the dining room,Peinture decorative de la salle à manger,Dekoratives Gemälde des Esszimmers
 diningroom_tablearea.tooltip,"table ""Wheat ears""","table ""Épis de blé""","Tisch ""Weißenähren"""
-diningroom_small_painting1.tooltip,painting of house at the water,peinture d'une maison au bord de l'eau,Malerei eines Haus am Rande des Wassers
-diningroom_small_painting2.tooltip,painting of a boat,peinture d'un bateau,Malerei eines Bootes
+diningroom_small_painting1.tooltip,decorative painting by Jacques Majorelle,Peinture decorative par Jacques Majorelle,dekorative Malerei von Jacques Majorelle
+diningroom_small_painting2.tooltip,decorative painting by Jacques Majorelle,Peinture decorative par Jacques Majorelle,dekorative Malerei von Jacques Majorelle
 diningroom_pantry.tooltip,To the pantry (locked),Vers garde-manger (verrouillé),Zur Speisekammer (abgesperrt)
 diningroom_buffet.tooltip,"buffet ""Wheat ears""","Buffet ""Épis de blés"" ","Buffet ""Weizenähren"""
-diningroom_sideboard_left,"buffet ""Wheat ears"" on the left","buffet ""Épis de blé"" de gauche","Buffet ""Weizenähren"" links"
-diningroom_sideboard_right,"buffet ""Wheat ears"" on the right","buffet ""Épis de blé"" de droite","Buffet ""Weizenähren"" rechts"
-diningroom_painting_closeup, , , 
+diningroom_sideboard_left.tooltip,"buffet ""Wheat ears"" on the left","buffet ""Épis de blé"" de gauche","Buffet ""Weizenähren"" links"
+diningroom_sideboard_right.tooltip,"buffet ""Wheat ears"" on the right","buffet ""Épis de blé"" de droite","Buffet ""Weizenähren"" rechts"
+diningroom_painting_closeup.tooltip,   ,   ,   
 d1.tooltip, , , 
 d2.tooltip, , , 
 d3.tooltip, , , 
@@ -172,6 +192,8 @@ bottom_middle.tooltip,window piece,morceau de vitrail,Fenster Stück
 bottom_right.tooltip,window piece,morceau de vitrail,Fenster Stück
 staircase_window_confirm.tooltip,Confirm solution,Confirmer la solution,Lösung bestätigen
 exit_staircase.tooltip,Back,Retour,Zurück
+kiara_fullsize.tooltip,Kiara,Kiara,Kiara
+front_bedroom_door.tooltip,To the  bedroom,Vers la chambre,Zum Schlafzimmer
 bedroom_spot1.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot2.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot3.tooltip,missing flower,fleur manquante,fehlende Blume
@@ -183,6 +205,8 @@ bedroom_dresser.tooltip,dresser,Commode,Kommode
 bedroom_dressingroom.tooltip,closet,penderie,Wandschrank
 bedroom_album_onbed.tooltip,photo album,album photo,Fotoalbum
 album_front_closeup.tooltip,locked photo album,album photo fermé à clé,verschlossenes Fotoalbum
+album_locked.tooltip,locked photo album,album photo fermé à clé,verschlossenes Fotoalbum
+album_open.tooltip,  , , 
 bedroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
 bedroom_door_mural.tooltip,"stained glass art ""honesty flowers""","Vitrail à de décor de ""Monnaies du pape""","Buntglaskunst ""Silbertaler"""
 bedroom_nightstand_closeup.tooltip,nightstand,Table de chevet,Nachttisch
@@ -205,4 +229,6 @@ hallway_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
 livingroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
 diningroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
 staircase_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
-frontbedroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
+bedroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
+web.tooltip,To the website of Villa Majorelle,Vers le site de la Villa Majorelle,Zur Website der Villa Majorelle
+end_game.tooltip,Quit Game,Quitter le jeu,Spiel beenden

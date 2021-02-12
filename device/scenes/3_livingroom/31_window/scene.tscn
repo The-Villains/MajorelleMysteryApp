@@ -114,10 +114,10 @@ __meta__ = {
 }
 
 [node name="WINDOW_PUZZLE" type="Label" parent="Control"]
-margin_left = 78.0
-margin_top = 102.0
-margin_right = 273.0
-margin_bottom = 422.0
+margin_left = 80.0
+margin_top = 92.0
+margin_right = 275.0
+margin_bottom = 412.0
 theme = ExtResource( 43 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "WINDOW_PUZZLE"

@@ -54,6 +54,7 @@ global_id = "front_bedroom_door"
 [node name="plants" parent="." instance=ExtResource( 5 )]
 position = Vector2( 792.828, 603.615 )
 scale = Vector2( 1.14, 1.14 )
+tooltip = "overgrown area"
 
 [node name="flower1" parent="." instance=ExtResource( 11 )]
 light_mask = 2

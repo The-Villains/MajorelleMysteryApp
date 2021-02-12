@@ -7,7 +7,7 @@
  stop
 
 > [looked_at_lock,!bedroom_album_kiara_tip2]
- set_state kiara tip3
+ set_state kiara tip1
  say telon bedroom_album_kiara_tip2:"bedroom_album_kiara_tip2" right_left
  set_state kiara default
  set_global bedroom_album_kiara_tip2 true

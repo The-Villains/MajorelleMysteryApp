@@ -42,6 +42,8 @@ texture = ExtResource( 13 )
 flip_h = true
 
 [node name="album_front_closeup" type="Node2D" parent="."]
+z_index = 1
+z_as_relative = false
 script = ExtResource( 8 )
 tooltip = "locked photo album"
 events_path = "res://scenes/7_in_bedroom/71_album/album_closeup.esc"
@@ -62,22 +64,7 @@ texture = ExtResource( 9 )
 
 [node name="book_with_lock" parent="." instance=ExtResource( 14 )]
 visible = false
-z_index = 1
-
-[node name="confirm" parent="." instance=ExtResource( 10 )]
-visible = false
-position = Vector2( 1180, 712 )
-scale = Vector2( 0.1, 0.1 )
-script = ExtResource( 8 )
-events_path = "res://scenes/7_in_bedroom/71_album/confirm.esc"
-global_id = "album_confirm"
-
-[node name="exit" parent="." instance=ExtResource( 1 )]
-position = Vector2( 100, 1124 )
-scale = Vector2( 0.4, 0.4 )
-placeholders = {
-
-}
+z_index = 2
 
 [node name="end_game" type="TextureButton" parent="."]
 visible = false
@@ -92,23 +79,49 @@ __meta__ = {
 }
 global_id = "end_game"
 
-[node name="UI_BACK" type="Label" parent="end_game"]
-margin_left = 76.0
-margin_top = 240.0
-margin_right = 455.0
-margin_bottom = 314.0
+[node name="UI_QUIT_GAME" type="Label" parent="end_game"]
+margin_left = 88.0
+margin_top = 250.0
+margin_right = 435.0
+margin_bottom = 306.0
 theme = ExtResource( 6 )
-text = "UI_BACK"
+text = "UI_QUIT_GAME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="confirm" parent="." instance=ExtResource( 10 )]
+visible = false
+position = Vector2( 1178, 528 )
+scale = Vector2( 0.1, 0.1 )
+z_index = 50
+z_as_relative = false
+script = ExtResource( 8 )
+events_path = "res://scenes/7_in_bedroom/71_album/confirm.esc"
+global_id = "album_confirm"
+
+[node name="exit" parent="." instance=ExtResource( 1 )]
+position = Vector2( 100, 1124 )
+scale = Vector2( 0.4, 0.4 )
+z_index = 60
+z_as_relative = false
+placeholders = {
+
+}
 
 [node name="open_album" parent="." instance=ExtResource( 11 )]
 visible = false
 position = Vector2( 0, 2 )
+z_index = 70
+z_as_relative = false
+tooltip = " "
 global_id = "album_open"
 
 [node name="kiara" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, 1200 )
-z_index = 4096
+z_index = 3000
 events_path = "res://scenes/7_in_bedroom/71_album/album_kiara.esc"
+use_custom_z = false
 
 [node name="game" parent="." instance=ExtResource( 4 )]
 [connection signal="pressed" from="end_game" to="end_game" method="_on_end_game_pressed"]

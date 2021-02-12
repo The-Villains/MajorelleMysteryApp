@@ -121,10 +121,10 @@ events_path = "res://scenes/4_diningroom/41_painting/diff1.esc"
 global_id = "d1"
 
 [node name="area" type="TextureButton" parent="d1"]
-margin_left = 988.9
-margin_top = 789.243
-margin_right = 1061.9
-margin_bottom = 857.243
+margin_left = 968.0
+margin_top = 769.0
+margin_right = 1079.0
+margin_bottom = 874.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -140,10 +140,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="d2"]
-margin_left = 742.0
-margin_top = 738.0
-margin_right = 834.0
-margin_bottom = 822.0
+margin_left = 728.996
+margin_top = 741.997
+margin_right = 836.996
+margin_bottom = 839.997
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -159,10 +159,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="d3"]
-margin_left = 826.265
-margin_top = 690.248
-margin_right = 899.265
-margin_bottom = 758.248
+margin_left = 833.0
+margin_top = 685.0
+margin_right = 915.0
+margin_bottom = 778.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -178,10 +178,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="d4"]
-margin_left = 556.0
+margin_left = 504.0
 margin_top = 604.0
-margin_right = 658.0
-margin_bottom = 679.0
+margin_right = 692.0
+margin_bottom = 694.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -197,10 +197,10 @@ placeholders = {
 }
 
 [node name="area" type="TextureButton" parent="d5"]
-margin_left = 246.0
-margin_top = 798.0
-margin_right = 340.0
-margin_bottom = 886.0
+margin_left = 235.0
+margin_top = 788.0
+margin_right = 362.0
+margin_bottom = 908.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

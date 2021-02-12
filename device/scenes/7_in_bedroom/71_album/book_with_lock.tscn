@@ -11,13 +11,15 @@ size = 64
 font_data = ExtResource( 2 )
 
 [node name="book_with_lock" type="Sprite"]
-position = Vector2( 789.306, 552.277 )
-scale = Vector2( 1.5, 1.5 )
+position = Vector2( 810, 380 )
+rotation = -0.00174533
+scale = Vector2( 1.4, 1.4 )
+z_index = 100
 z_as_relative = false
 texture = ExtResource( 3 )
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 766.089 ]
+"_edit_horizontal_guides_": [ 766.089, 572.0 ]
 }
 tooltip = "locked photo album"
 global_id = "album_locked"

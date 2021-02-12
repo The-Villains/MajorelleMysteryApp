@@ -62,7 +62,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "painting of house at the water"
+tooltip = "painting of house at the water by Jacques Majorelle"
 global_id = "diningroom_small_painting1"
 placeholders = {
 
@@ -77,7 +77,7 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-tooltip = "painting of a boat"
+tooltip = "painting of a boat by Jacques Majorelle"
 global_id = "diningroom_small_painting2"
 placeholders = {
 
