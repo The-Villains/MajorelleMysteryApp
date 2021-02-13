@@ -30,14 +30,6 @@ func is_clicked():
 	   return clicked
 
 
-#func _set(name, val):
-#	if name == "events_path":
-#		event_table = vm.compile(val)
-#		events_path = val
-#		return
-#	if name in self:
-#		self[name] = val
-
 func get_interact_position():
 	if has_node("interact_pos"):
 		return get_node("interact_pos").get_global_position()

@@ -7,7 +7,7 @@ talk.id,Talk to %1,Parler à %1,Spreche mit %1
 UI_CONTINUE,Continue,Continuer,Weiter
 UI_NEW_GAME,New Game,Nouveau jeu,Neues Spiel
 UI_QUIT,Quit,Quitter,Beenden
-UI_QUIT_GAME,Quit Game,Quitter le jeu,Spiel beenden
+ ,Quit Game,Quitter le jeu,Spiel beenden
 UI_YES,Yes,Oui,Ja
 UI_NO,No,Non,Nein
 UI_QUIT_CONFIRM,Do you want to quit the game ?,Veux-tu vraiment quitter le jeu ?,Möchtest du das Spiel beenden ?
@@ -15,7 +15,7 @@ UI_NEW_GAME_CONFIRM,Start new game? Your unsaved progress will be lost,Commencer
 UI_BACK,Back to the main menu,Retour au menu principal,Zurück zum Hauptmenü
 UI_CREDITS,Credits,Crédits,Credits
 CREDITS,"/// This is an unofficial beta testing version. Official credits and licensing is in revision. //// Game is based on: Escoria in Daïza that was created by Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt and Adrien ""Kooda"" Ramos in Rennes for the ""Creating Point and Click Games with Escoria"" booksprint from August 22 to 26 in Rennes, France. Contributions to translation : Ranito and Chaosprower. 2018 improvements by bosinpai.","/// Il s'agit d'une version bêta-test non officielle. Les crédits et licences officiels sont en cours de révision. //// Escoria en Daïza a été créé par Elisa de Castro Guerra, Cédric Gémy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt et Adrien ""Kooda"" Ramos à Rennes pour le booksprint « Creating Point and Click Games with Escoria » du 22 au 26 août 2016 à Rennes, France. Contributions aux traductions : Ranito and Chaosprower. Améliorations en 2018 par bosinpai.","/// Dies ist eine inoffizielle Beta-Test-Version. Offizielle Kredite und Lizenzierung ist in Revision. //// Spiel basiert auf: escoria in Daiza, die von Elisa de Castro Guerra, Cédric Gemy, Camille ""nylnook"" Bissuel, Gaëtan ""Reptifur"" Hilt und Adrien ""Kooda"" Ramos in Rennes für das „Erstellen von Punkt erstellt wurde, und klicken Spiele mit escoria“booksprint vom 22. August bis 26 in Rennes, Frankreich. Beiträge zur Übersetzung: Ranito und Chaosprower. 2018 Verbesserungen von bosinpai."
-FLOWER_RIDDLE,Which flowers match the decoration in the entrance area that Louis Majorelle chose?,Quelles sont les fleurs correspondant à la décoration choisie par Louis Majorellee dans d'entrée?,"Welche dieser Blumen passen zu der Eingangsdekoration, die Louis Majorelle ausgesucht hat?"
+FLOWER_RIDDLE,Which flowers match the decoration in the entrance area that Louis Majorelle chose?,Quelles sont les fleurs correspondant à la décoration choisie par Louis Majorelle dans l'entrée?,"Welche dieser Blumen passen zu der Eingangsdekoration, die Louis Majorelle ausgesucht hat?"
 WINDOW_PUZZLE,Repair the stained glass art and move the pieces to the right spots.,Reconstitue le vitrail en plaçant les pièces au bon endroit.,Repariere die Glasmalerei indem du die Stücke an die richtige Stelle bewegst.
 PAINTING_DIFFERENCES,Find the five differences in the bottom painting.,Trouve les cinq différences dans le tableau du bas.,Finde die fünf Unterschiede und wähle sie im unteren Bild aus!
 MAP_PUZZLE,Assign the correct labels to the rooms.,Distribue les étiquettes correctes aux différentes chambres.,Ordne die Labels den richtigen Räumen zu.
@@ -208,11 +208,12 @@ album_front_closeup.tooltip,locked photo album,album photo fermé à clé,versch
 album_locked.tooltip,locked photo album,album photo fermé à clé,verschlossenes Fotoalbum
 album_open.tooltip,  , , 
 bedroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
-bedroom_door_mural.tooltip,"stained glass art ""honesty flowers""","Vitrail à de décor de ""Monnaies du pape""","Buntglaskunst ""Silbertaler"""
+bedroom_door_mural.tooltip,"stained glass art ""honesty flowers""","Vitrail à décor de ""Monnaies du pape""","Buntglaskunst ""Silbertaler"""
 bedroom_nightstand_closeup.tooltip,nightstand,Table de chevet,Nachttisch
 bedroom_dresser_closeup.tooltip,dresser,Commode,Kommode
 exit_bedroom_album.tooltip,Back,Retour,Zurück
 exit_bedroom_painting.tooltip,Back,Retour,Zurück
+exit_bedroom_nightstand.tooltip,Back,Retour,Zurück
 album_photo_right.tooltip,Jane Majorelle greeting two guests at the front door of the Villa Majorelle,Jane Majorelle accueillant deux invités à la porte d’entrée de la Villa Majorelle,Jane Majorelle begrüßt zwei Gäste an der Eingangstür der Villa Majorelle
 album_photo_left_top.tooltip,Jane and Louis Majorelle sitting in the terrace of the Villa Majorelle,Jane et Louis Majorelle assis dans la terrasse de la Villa Majorelle,Jane und Louis Majorelle sitzen auf der Terrasse der Villa Majorelle
 album_photo_left_bottom.tooltip,Jane Majorelle in the bedroom,Jane Majorelle dans la chambre à coucher,Jane Majorelle im Schlafzimmer

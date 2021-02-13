@@ -28,7 +28,7 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=2]
 size = 20
 outline_color = Color( 1, 1, 1, 0 )
 use_filter = true
@@ -36,7 +36,7 @@ extra_spacing_top = 3
 extra_spacing_bottom = 3
 font_data = ExtResource( 19 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 24
 outline_color = Color( 1, 1, 1, 0 )
 use_filter = true
@@ -44,7 +44,7 @@ extra_spacing_top = 3
 extra_spacing_bottom = 3
 font_data = ExtResource( 13 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=4]
 size = 24
 outline_color = Color( 1, 1, 1, 0 )
 use_filter = true
@@ -52,14 +52,16 @@ extra_spacing_top = 3
 extra_spacing_bottom = 3
 font_data = ExtResource( 18 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=5]
 size = 72
 use_filter = true
 font_data = ExtResource( 18 )
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=6]
 
-[node name="scene" type="Node2D"]
+[node name="scene" type="Node2D" groups=[
+"ui",
+]]
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_vertical_guides_": [ 600.851, 999.659, 801.669 ]
@@ -91,37 +93,39 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 7
+frame = 1
 playing = true
 
-[node name="CREDITS" type="RichTextLabel" parent="."]
+[node name="Credits_EN" type="RichTextLabel" parent="."]
+visible = false
 margin_left = 332.0
 margin_top = 278.0
 margin_right = 1421.0
 margin_bottom = 1052.0
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/italics_font = SubResource( 6 )
-custom_fonts/bold_font = SubResource( 4 )
-custom_fonts/normal_font = SubResource( 5 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "[b]CREDITS  [BETA TEST VERSION][/b]
+bbcode_text = "[b]CREDITS  [BETA][/b]
 
 [b]The Villains Version 1.0 Development team[/b] 
 
 [b]Project Management[/b]  - Sonja Heinze
-[b]Game design[/b]  - Sonja Heinze, UHH Steinfeltz
-[b]Art design[/b]  - UHH Steinfeltz
-[b]Character design[/b]  - UHH Steinfeltz
-[b]2D UI design[/b]  - UHH Steinfeltz
-[b]Room design*[/b] - UHH Steinfeltz
+[b]Game design[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Art design[/b]  - Marie-Laure Steinfeltz
+[b]Character design[/b]  - Marie-Laure Steinfeltz
+[b]2D UI design[/b]  - Marie-Laure Steinfeltz
+[b]Room design*[/b] - Marie-Laure Steinfeltz
 [b]Programming [/b] - Sonja Heinze
-[b]Music & Sound[/b]  - Sonja Heinze, UHH Steinfeltz
-[b]Text & Scripting (English) [/b] - Sonja Heinze, UHH Steinfeltz
-[b]Translations (German and French)[/b] - UHH Steinfeltz, Sophie Toulouze
+[b]Music & Sound[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Text & Scripting (English) [/b] - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Translations (German and French)[/b] - Marie-Laure Steinfeltz
+[b]Project review[/b] - Sophie Toulouze
 
 [i] *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR.[/i] 
 
@@ -138,20 +142,21 @@ The game is based on the point & click adventure game framework for Godot Engine
 [b]Our testers [/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
 
 [b]… and of course the Coding da Vinci team and the Villa Majorelle for making this possible![/b]"
-text = "CREDITS  [BETA TEST VERSION]
+text = "CREDITS  [BETA]
 
 The Villains Version 1.0 Development team 
 
 Project Management  - Sonja Heinze
-Game design  - Sonja Heinze, UHH Steinfeltz
-Art design  - UHH Steinfeltz
-Character design  - UHH Steinfeltz
-2D UI design  - UHH Steinfeltz
-Room design* - UHH Steinfeltz
+Game design  - Sonja Heinze, Marie-Laure Steinfeltz
+Art design  - Marie-Laure Steinfeltz
+Character design  - Marie-Laure Steinfeltz
+2D UI design  - Marie-Laure Steinfeltz
+Room design* - Marie-Laure Steinfeltz
 Programming  - Sonja Heinze
-Music & Sound  - Sonja Heinze, UHH Steinfeltz
-Text & Scripting (English)  - Sonja Heinze, UHH Steinfeltz
-Translations (German and French) - UHH Steinfeltz, Sophie Toulouze
+Music & Sound  - Sonja Heinze, Marie-Laure Steinfeltz
+Text & Scripting (English)  - Sonja Heinze, Marie-Laure Steinfeltz
+Translations (German and French) - Marie-Laure Steinfeltz
+Project review - Sophie Toulouze
 
  *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR. 
 
@@ -168,6 +173,168 @@ Our original team members - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic,
 Our testers  - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
 
 … and of course the Coding da Vinci team and the Villa Majorelle for making this possible!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits_DE" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 332.0
+margin_top = 278.0
+margin_right = 1421.0
+margin_bottom = 1052.0
+mouse_filter = 1
+size_flags_vertical = 0
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]CREDITS  [BETA] [/b]
+
+[b]\"The Villains\" Version 1.0 Entwicklungsteam[/b] 
+
+[b]Projektmanagement[/b]  - Sonja Heinze
+[b]Spielgestaltung[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Künstlerische Gestaltung [/b]  - Marie-Laure Steinfeltz
+[b]Charakterdesign[/b]  - Marie-Laure Steinfeltz
+[b]2D UI Gestaltung[/b]  - Marie-Laure Steinfeltz
+[b]Raumdesign*[/b] - Marie-Laure Steinfeltz
+[b]Programmierung [/b] - Sonja Heinze
+[b]Musik & Ton[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Text (Englisch) [/b] - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Übersetzungen (Deutsch und Französisch)[/b] - Marie-Laure Steinfeltz
+[b]Projektabnahme[/b] - Sophie Toulouze
+
+[i] *Das Raumdesign und bestimmte Objektdesigns, wie Möbel und Gemälde, sowie Bilder der Familie Majorelle basieren auf dem 2020 Saar-Lor-Lux Coding da Vinci Datensatz der Villa Majorelle, der unter CC BY-SA 3.0 FR lizenziert ist.[/i] 
+
+[b]Coding da Vinci[/b]
+Die Idee und Prototypentwicklung für MajorelleMystery begann im Rahmen des \"Coding da Vinci Saar-Lor-Lux 2020\" Hackathons für offene Kulturdaten. Die weitere Entwicklung für diese Version 1.0 wurde durch die großzügigen Coding da Vinci-Stipendien ermöglicht.
+
+[b]Escoria[/b]
+Das Spiel basiert auf dem Point & Click-Adventure-Game-Framework für die Godot Engine \"Escoria\" und wurde auf dem Demo-Videospiel \"Escoria in Daïza\" aufgebaut, das von Élisa de Castro Guerra, Cédric Gémy, Ariel Manzur, Camille \"nylnook\" Bissuel, Gaëtan \"Reptifur\" Hilt, Adrien \"Kooda\" Ramos unter der MIT-Lizenz (MIT) lizenziert wurde.
+
+[b]Wir möchten uns außerdem herzlich bei folgenden Personen bedanken ...[/b]
+
+[b]Unsere ursprünglichen Teammitglieder [/b] - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze und die [b]“und die \"helfenden Hände\" [/b] Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
+
+[b]Unsere Tester[/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+
+[b]… ... und natürlich bei dem Team von Coding da Vinci und der Villa Majorelle, ohne die das alles nicht möglich gewesen wäre![/b]"
+text = "CREDITS  [BETA] 
+
+\"The Villains\" Version 1.0 Entwicklungsteam 
+
+Projektmanagement  - Sonja Heinze
+Spielgestaltung  - Sonja Heinze, Marie-Laure Steinfeltz
+Künstlerische Gestaltung   - Marie-Laure Steinfeltz
+Charakterdesign  - Marie-Laure Steinfeltz
+2D UI Gestaltung  - Marie-Laure Steinfeltz
+Raumdesign* - Marie-Laure Steinfeltz
+Programmierung  - Sonja Heinze
+Musik & Ton  - Sonja Heinze, Marie-Laure Steinfeltz
+Text (Englisch)  - Sonja Heinze, Marie-Laure Steinfeltz
+Übersetzungen (Deutsch und Französisch) - Marie-Laure Steinfeltz
+Projektabnahme - Sophie Toulouze
+
+ *Das Raumdesign und bestimmte Objektdesigns, wie Möbel und Gemälde, sowie Bilder der Familie Majorelle basieren auf dem 2020 Saar-Lor-Lux Coding da Vinci Datensatz der Villa Majorelle, der unter CC BY-SA 3.0 FR lizenziert ist. 
+
+Coding da Vinci
+Die Idee und Prototypentwicklung für MajorelleMystery begann im Rahmen des \"Coding da Vinci Saar-Lor-Lux 2020\" Hackathons für offene Kulturdaten. Die weitere Entwicklung für diese Version 1.0 wurde durch die großzügigen Coding da Vinci-Stipendien ermöglicht.
+
+Escoria
+Das Spiel basiert auf dem Point & Click-Adventure-Game-Framework für die Godot Engine \"Escoria\" und wurde auf dem Demo-Videospiel \"Escoria in Daïza\" aufgebaut, das von Élisa de Castro Guerra, Cédric Gémy, Ariel Manzur, Camille \"nylnook\" Bissuel, Gaëtan \"Reptifur\" Hilt, Adrien \"Kooda\" Ramos unter der MIT-Lizenz (MIT) lizenziert wurde.
+
+Wir möchten uns außerdem herzlich bei folgenden Personen bedanken ...
+
+Unsere ursprünglichen Teammitglieder  - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze und die “und die \"helfenden Hände\"  Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
+
+Unsere Tester - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+
+… ... und natürlich bei dem Team von Coding da Vinci und der Villa Majorelle, ohne die das alles nicht möglich gewesen wäre!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits_FR" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 332.0
+margin_top = 278.0
+margin_right = 1421.0
+margin_bottom = 1052.0
+mouse_filter = 1
+size_flags_vertical = 0
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[b]Générique  [BETA][/b]
+
+[b]L'équipe de développement de la version 1.0 de Villains[/b] 
+
+[b]Gestion de projet[/b]  - Sonja Heinze
+[b]Conception de jeux[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Conception artistique[/b]  - Marie-Laure Steinfeltz
+[b]Conception des personnages[/b]  - Marie-Laure Steinfeltz
+[b]2D UI design[/b]  - Marie-Laure Steinfeltz
+[b]Design des pièces de la villa*[/b] - Marie-Laure Steinfeltz
+[b]Programmation [/b] - Sonja Heinze
+[b]Musique et son[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Texte (anglais)[/b] - Sonja Heinze, Marie-Laure Steinfeltz
+[b]Traductions (allemand et français)[/b] - Marie-Laure Steinfeltz
+[b]Réception du projet[/b] - Sophie Toulouze
+
+[i] *La design des pièces et de certains objets, tels que des meubles et les tableaux, ainsi que les photos de la famille Majorelle sont fondés sur l'ensemble de données Saar-Lor-Lux Coding da Vinci 2020 de la Villa Majorelle, qui est sous licence CC BY-SA 3.0 FR.[/i] 
+
+[b]Coding da Vinci[/b]
+L'idée et le développement du prototype de MajorelleMystery ont débuté dans le cadre du \"Coding da Vinci Saar-Lor-Lux 2020\", un hackathon pour les données culturelles ouvertes. Le développement de cette version 1.0 a été rendu possible grâce aux généreuses bourses distribuées par Coding da Vinci.
+
+[b]Escoria[/b]
+Le jeu est fondé sur le framework de jeu d'aventure point & click pour Godot. \"Escoria\" et a été construit sur la base du jeu vidéo de démonstration \"Escoria in Daïza\" développé par Élisa de Castro Guerra, Cédric Gémy, Ariel Manzur, Camille \"nylnook\" Bissuel, Gaëtan \"Reptifur\" Hilt, Adrien \"Kooda\" Ramos sous la licence MIT (MIT).
+
+[b]Nous tenons à remercier ...[/b]
+
+[b]Les membres de notre équipe d'origine [/b] - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the [b]et les \"mains de secours\" [/b] Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
+
+[b]Nos testeurs[/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+
+[b]... et bien sûr l'équipe de Coding da Vinci et la Villa Majorelle sans lesquels ce projet n'aurait pas été réalisable![/b]"
+text = "Générique  [BETA]
+
+L'équipe de développement de la version 1.0 de Villains 
+
+Gestion de projet  - Sonja Heinze
+Conception de jeux  - Sonja Heinze, Marie-Laure Steinfeltz
+Conception artistique  - Marie-Laure Steinfeltz
+Conception des personnages  - Marie-Laure Steinfeltz
+2D UI design  - Marie-Laure Steinfeltz
+Design des pièces de la villa* - Marie-Laure Steinfeltz
+Programmation  - Sonja Heinze
+Musique et son  - Sonja Heinze, Marie-Laure Steinfeltz
+Texte (anglais) - Sonja Heinze, Marie-Laure Steinfeltz
+Traductions (allemand et français) - Marie-Laure Steinfeltz
+Réception du projet - Sophie Toulouze
+
+ *La design des pièces et de certains objets, tels que des meubles et les tableaux, ainsi que les photos de la famille Majorelle sont fondés sur l'ensemble de données Saar-Lor-Lux Coding da Vinci 2020 de la Villa Majorelle, qui est sous licence CC BY-SA 3.0 FR. 
+
+Coding da Vinci
+L'idée et le développement du prototype de MajorelleMystery ont débuté dans le cadre du \"Coding da Vinci Saar-Lor-Lux 2020\", un hackathon pour les données culturelles ouvertes. Le développement de cette version 1.0 a été rendu possible grâce aux généreuses bourses distribuées par Coding da Vinci.
+
+Escoria
+Le jeu est fondé sur le framework de jeu d'aventure point & click pour Godot. \"Escoria\" et a été construit sur la base du jeu vidéo de démonstration \"Escoria in Daïza\" développé par Élisa de Castro Guerra, Cédric Gémy, Ariel Manzur, Camille \"nylnook\" Bissuel, Gaëtan \"Reptifur\" Hilt, Adrien \"Kooda\" Ramos sous la licence MIT (MIT).
+
+Nous tenons à remercier ...
+
+Les membres de notre équipe d'origine  - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the et les \"mains de secours\"  Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
+
+Nos testeurs - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+
+... et bien sûr l'équipe de Coding da Vinci et la Villa Majorelle sans lesquels ce projet n'aurait pas été réalisable!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -193,7 +360,7 @@ margin_bottom = 477.883
 rect_scale = Vector2( 0.3, 0.5 )
 mouse_filter = 1
 size_flags_vertical = 0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 5 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.439216, 0.266667, 0.00784314, 1 )
 text = "UI_BACK"
@@ -205,4 +372,4 @@ __meta__ = {
 }
 
 [node name="animation" type="AnimationPlayer" parent="."]
-anims/credits = SubResource( 3 )
+anims/credits = SubResource( 6 )

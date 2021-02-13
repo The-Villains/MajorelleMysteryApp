@@ -60,6 +60,9 @@ tracks/1/keys = {
 
 [node name="flowers" type="Node2D"]
 script = ExtResource( 1 )
+tooltip = "odd flowers"
+events_path = "res://scenes/1_entrance/flowers.esc"
+global_id = "flowers"
 
 [node name="area" type="TextureButton" parent="."]
 margin_left = -104.0

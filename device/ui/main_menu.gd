@@ -47,6 +47,7 @@ func settings_pressed():
 
 func credits_pressed():
 	button_clicked()
+	#get_tree().call_group("ui", "set_credit_lang",vm.settings.text_lang)
 	root.load_menu(ProjectSettings.get("ui/credits"))
 
 func close():

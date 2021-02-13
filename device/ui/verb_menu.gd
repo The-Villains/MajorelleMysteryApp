@@ -19,7 +19,7 @@ func set_mouse(p_current_action):
 		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/normal").texture),0,Vector2(16,9))
 
 func reset_mouse(_p_current_action):
-	set_mouse(null)
+	set_mouse("normal")
 	for b in act_buttons:
 		b.set_pressed(false)
 	printt("reset mouse function")
@@ -77,9 +77,9 @@ func _on_talk_mouse_exited():
 	else:
 		set_mouse("normal")
 
-func _process(_delta):
-	if current_action == null or current_action == "":
-		set_mouse("normal")
+#func _process(_delta):
+#	if current_action == null or current_action == "":
+#		Input.set_custom_mouse_cursor((get_parent().get_parent().get_node("mouse/normal").texture),0,Vector2(16,9))
 	#else:
 	#	Input.set_custom_mouse_cursor(get_parent().get_parent().get_node("mouse/"+current_action).texture)
 
