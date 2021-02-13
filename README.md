@@ -35,12 +35,14 @@ The game is based on the point & click adventure game framework for Godot Engine
 
 ### We’d like to thank ...
 
-**Our original team members** - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze
+* Our original team members - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze
 and the “helping hands” Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger
 
-**Our testers** - Sophie Toulouze, Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+* Our testers - Sophie Toulouze, Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
 
-**… and of course the Coding da Vinci team and the Villa Majorelle for making this possible!**
+* Cristina Navarro for mentoring us and guiding us through the process of the game design
+
+* … and of course the Coding da Vinci team and the Villa Majorelle for making this possible!
 
 ## Attributions
 
