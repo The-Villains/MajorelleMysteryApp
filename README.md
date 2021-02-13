@@ -1,4 +1,4 @@
-# "Majorelle Mystery" - Free the villa !
+# "Majorelle Mystery" | Free the villa !
 
 ![Haunted Villa Majorelle](https://media.giphy.com/media/gHhnciHpylggmI4TjH/giphy.gif)
 
@@ -18,9 +18,9 @@ Presentation CDV Award Ceremony in Saarbrücken: [Slides](AwardCeremony.pdf)
 **Character design** - Benjamin Steinfeltz  
 **2D UI design** - Benjamin Steinfeltz  
 **Room design**- Benjamin Steinfeltz  
-**Programming** - Benjamin "soheinze" Heinze  
-**Music & Sound** - Benjamin "soheinze" Heinze, UHH Steinfeltz  
-**Text (English)** - Benjamin "soheinze" Heinze, UHH Steinfeltz  
+**Programming** - Sonja "soheinze" Heinze  
+**Music & Sound** -  Sonja "soheinze" Heinze, Benjamin Steinfeltz  
+**Text (English)** - Sonja"soheinze" Heinze, Benjamin Steinfeltz  
 **Translations (German and French)** - Benjamin Steinfeltz  
 **Project review** - Sophie Toulouze  
 
