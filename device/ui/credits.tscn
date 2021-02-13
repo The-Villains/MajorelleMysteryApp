@@ -116,15 +116,15 @@ bbcode_text = "[b]CREDITS  [BETA][/b]
 [b]The Villains Version 1.0 Development team[/b] 
 
 [b]Project Management[/b]  - Sonja Heinze
-[b]Game design[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Art design[/b]  - Marie-Laure Steinfeltz
-[b]Character design[/b]  - Marie-Laure Steinfeltz
-[b]2D UI design[/b]  - Marie-Laure Steinfeltz
-[b]Room design*[/b] - Marie-Laure Steinfeltz
+[b]Game design[/b]  - Sonja Heinze, Benjamin Steinfeltz
+[b]Art design[/b]  - Benjamin Steinfeltz
+[b]Character design[/b]  - Benjamin Steinfeltz
+[b]2D UI design[/b]  - Benjamin Steinfeltz
+[b]Room design*[/b] - Benjamin Steinfeltz
 [b]Programming [/b] - Sonja Heinze
-[b]Music & Sound[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Text & Scripting (English) [/b] - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Translations (German and French)[/b] - Marie-Laure Steinfeltz
+[b]Music & Sound[/b]  - Sonja Heinze, Benjamin Steinfeltz
+[b]Text & Scripting (English) [/b] - Sonja Heinze, Benjamin Steinfeltz
+[b]Translations (German and French)[/b] - Benjamin Steinfeltz
 [b]Project review[/b] - Sophie Toulouze
 
 [i] *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR.[/i] 
@@ -147,15 +147,15 @@ text = "CREDITS  [BETA]
 The Villains Version 1.0 Development team 
 
 Project Management  - Sonja Heinze
-Game design  - Sonja Heinze, Marie-Laure Steinfeltz
-Art design  - Marie-Laure Steinfeltz
-Character design  - Marie-Laure Steinfeltz
-2D UI design  - Marie-Laure Steinfeltz
-Room design* - Marie-Laure Steinfeltz
+Game design  - Sonja Heinze, Benjamin Steinfeltz
+Art design  - Benjamin Steinfeltz
+Character design  - Benjamin Steinfeltz
+2D UI design  - Benjamin Steinfeltz
+Room design* - Benjamin Steinfeltz
 Programming  - Sonja Heinze
-Music & Sound  - Sonja Heinze, Marie-Laure Steinfeltz
-Text & Scripting (English)  - Sonja Heinze, Marie-Laure Steinfeltz
-Translations (German and French) - Marie-Laure Steinfeltz
+Music & Sound  - Sonja Heinze, Benjamin Steinfeltz
+Text & Scripting (English)  - Sonja Heinze, Benjamin Steinfeltz
+Translations (German and French) - Benjamin Steinfeltz
 Project review - Sophie Toulouze
 
  *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR. 
@@ -197,15 +197,15 @@ bbcode_text = "[b]CREDITS  [BETA] [/b]
 [b]\"The Villains\" Version 1.0 Entwicklungsteam[/b] 
 
 [b]Projektmanagement[/b]  - Sonja Heinze
-[b]Spielgestaltung[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Künstlerische Gestaltung [/b]  - Marie-Laure Steinfeltz
-[b]Charakterdesign[/b]  - Marie-Laure Steinfeltz
-[b]2D UI Gestaltung[/b]  - Marie-Laure Steinfeltz
-[b]Raumdesign*[/b] - Marie-Laure Steinfeltz
+[b]Spielgestaltung[/b]  - Sonja Heinze, Benjamin Steinfeltz
+[b]Künstlerische Gestaltung [/b]  - Benjamin Steinfeltz
+[b]Charakterdesign[/b]  - Benjamin Steinfeltz
+[b]2D UI Gestaltung[/b]  - Benjamin Steinfeltz
+[b]Raumdesign*[/b] - Benjamin Steinfeltz
 [b]Programmierung [/b] - Sonja Heinze
-[b]Musik & Ton[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Text (Englisch) [/b] - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Übersetzungen (Deutsch und Französisch)[/b] - Marie-Laure Steinfeltz
+[b]Musik & Ton[/b]  - Sonja Heinze, Benjamin Steinfeltz
+[b]Text (Englisch) [/b] - Sonja Heinze, Benjamin Steinfeltz
+[b]Übersetzungen (Deutsch und Französisch)[/b] - Benjamin Steinfeltz
 [b]Projektabnahme[/b] - Sophie Toulouze
 
 [i] *Das Raumdesign und bestimmte Objektdesigns, wie Möbel und Gemälde, sowie Bilder der Familie Majorelle basieren auf dem 2020 Saar-Lor-Lux Coding da Vinci Datensatz der Villa Majorelle, der unter CC BY-SA 3.0 FR lizenziert ist.[/i] 
@@ -228,15 +228,15 @@ text = "CREDITS  [BETA]
 \"The Villains\" Version 1.0 Entwicklungsteam 
 
 Projektmanagement  - Sonja Heinze
-Spielgestaltung  - Sonja Heinze, Marie-Laure Steinfeltz
-Künstlerische Gestaltung   - Marie-Laure Steinfeltz
-Charakterdesign  - Marie-Laure Steinfeltz
-2D UI Gestaltung  - Marie-Laure Steinfeltz
-Raumdesign* - Marie-Laure Steinfeltz
+Spielgestaltung  - Sonja Heinze, Benjamin Steinfeltz
+Künstlerische Gestaltung   - Benjamin Steinfeltz
+Charakterdesign  - Benjamin Steinfeltz
+2D UI Gestaltung  - Benjamin Steinfeltz
+Raumdesign* - Benjamin Steinfeltz
 Programmierung  - Sonja Heinze
-Musik & Ton  - Sonja Heinze, Marie-Laure Steinfeltz
-Text (Englisch)  - Sonja Heinze, Marie-Laure Steinfeltz
-Übersetzungen (Deutsch und Französisch) - Marie-Laure Steinfeltz
+Musik & Ton  - Sonja Heinze, Benjamin Steinfeltz
+Text (Englisch)  - Sonja Heinze, Benjamin Steinfeltz
+Übersetzungen (Deutsch und Französisch) - Benjamin Steinfeltz
 Projektabnahme - Sophie Toulouze
 
  *Das Raumdesign und bestimmte Objektdesigns, wie Möbel und Gemälde, sowie Bilder der Familie Majorelle basieren auf dem 2020 Saar-Lor-Lux Coding da Vinci Datensatz der Villa Majorelle, der unter CC BY-SA 3.0 FR lizenziert ist. 
@@ -278,15 +278,15 @@ bbcode_text = "[b]Générique  [BETA][/b]
 [b]L'équipe de développement de la version 1.0 de Villains[/b] 
 
 [b]Gestion de projet[/b]  - Sonja Heinze
-[b]Conception de jeux[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Conception artistique[/b]  - Marie-Laure Steinfeltz
-[b]Conception des personnages[/b]  - Marie-Laure Steinfeltz
-[b]2D UI design[/b]  - Marie-Laure Steinfeltz
-[b]Design des pièces de la villa*[/b] - Marie-Laure Steinfeltz
+[b]Conception de jeux[/b]  - Sonja Heinze, Benjamin Steinfeltz
+[b]Conception artistique[/b]  - Benjamin Steinfeltz
+[b]Conception des personnages[/b]  - Benjamin Steinfeltz
+[b]2D UI design[/b]  - Benjamin Steinfeltz
+[b]Design des pièces de la villa*[/b] - Benjamin Steinfeltz
 [b]Programmation [/b] - Sonja Heinze
-[b]Musique et son[/b]  - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Texte (anglais)[/b] - Sonja Heinze, Marie-Laure Steinfeltz
-[b]Traductions (allemand et français)[/b] - Marie-Laure Steinfeltz
+[b]Musique et son[/b]  - Sonja Heinze, Benjamin Steinfeltz
+[b]Texte (anglais)[/b] - Sonja Heinze, Benjamin Steinfeltz
+[b]Traductions (allemand et français)[/b] - Benjamin Steinfeltz
 [b]Réception du projet[/b] - Sophie Toulouze
 
 [i] *La design des pièces et de certains objets, tels que des meubles et les tableaux, ainsi que les photos de la famille Majorelle sont fondés sur l'ensemble de données Saar-Lor-Lux Coding da Vinci 2020 de la Villa Majorelle, qui est sous licence CC BY-SA 3.0 FR.[/i] 
@@ -309,15 +309,15 @@ text = "Générique  [BETA]
 L'équipe de développement de la version 1.0 de Villains 
 
 Gestion de projet  - Sonja Heinze
-Conception de jeux  - Sonja Heinze, Marie-Laure Steinfeltz
-Conception artistique  - Marie-Laure Steinfeltz
-Conception des personnages  - Marie-Laure Steinfeltz
-2D UI design  - Marie-Laure Steinfeltz
-Design des pièces de la villa* - Marie-Laure Steinfeltz
+Conception de jeux  - Sonja Heinze, Benjamin Steinfeltz
+Conception artistique  - Benjamin Steinfeltz
+Conception des personnages  - Benjamin Steinfeltz
+2D UI design  - Benjamin Steinfeltz
+Design des pièces de la villa* - Benjamin Steinfeltz
 Programmation  - Sonja Heinze
-Musique et son  - Sonja Heinze, Marie-Laure Steinfeltz
-Texte (anglais) - Sonja Heinze, Marie-Laure Steinfeltz
-Traductions (allemand et français) - Marie-Laure Steinfeltz
+Musique et son  - Sonja Heinze, Benjamin Steinfeltz
+Texte (anglais) - Sonja Heinze, Benjamin Steinfeltz
+Traductions (allemand et français) - Benjamin Steinfeltz
 Réception du projet - Sophie Toulouze
 
  *La design des pièces et de certains objets, tels que des meubles et les tableaux, ainsi que les photos de la famille Majorelle sont fondés sur l'ensemble de données Saar-Lor-Lux Coding da Vinci 2020 de la Villa Majorelle, qui est sous licence CC BY-SA 3.0 FR. 
