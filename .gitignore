@@ -12,6 +12,8 @@ thumbs.db
 *.zip
 *.dmg
 Spieldateien/*
+screenshots/*
+Sticker/*
 
 device/Majorelle Mys 2.app/Contents/MacOS/Majorelle Mys
 device/Majorelle Mys 2.app/Contents/PkgInfo
