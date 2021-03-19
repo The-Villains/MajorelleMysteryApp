@@ -35,16 +35,16 @@ func set_action_name(action):
 
 func action_changed(action):
 	get_tree().call_group("game", "set_current_action", action)
-	printt("After setting...")
+	# printt("After setting...")
 
 	#If just clicking Button and then item it doesn't get to the print statement
 	for b in act_buttons:
 		b.set_pressed(b.get_name() == action)
-		printt("Inside b",b.name)
-	
+		# printt("Inside b",b.name)
+
 	set_mouse(action)
 	set_action_name(action)
-	printt("End of action changed")
+	# printt("End of action changed")
 	#reset_action()
 
 # Modified behaviour when entering the verb_menu area aka the look, use and talk buttons to show the default or normal mouse cursor
@@ -85,17 +85,17 @@ func _on_talk_mouse_exited():
 
 func _ready():
 	vm = get_node("/root/vm")
-	
+
 	add_to_group("verb_menu")
-	
+
 	var acts = get_node("actions")
 	for i in range(acts.get_child_count()):
 		var c = acts.get_child(i)
-		printt("this is c",c.name)
+		# printt("this is c",c.name)
 		if !(c is BaseButton):
 			continue
 		c.connect("pressed", self, "action_changed", [c.get_name()])
 		#c.disconnect()
-		printt("After pressed")
+		# printt("After pressed")
 		act_buttons.push_back(c)
-		printt("push_back",c,act_buttons[0])
+		# printt("push_back",c,act_buttons[0])

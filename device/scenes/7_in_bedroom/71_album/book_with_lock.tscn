@@ -25,6 +25,15 @@ tooltip = "locked photo album"
 global_id = "album_locked"
 use_custom_z = true
 
+[node name="area" type="Control" parent="."]
+margin_left = -509.52
+margin_top = -189.723
+margin_right = 490.48
+margin_bottom = 210.277
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="bg" type="TextureRect" parent="."]
 margin_left = -256.0
 margin_top = 49.0

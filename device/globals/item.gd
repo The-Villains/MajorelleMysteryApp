@@ -93,10 +93,10 @@ func input(event):
 	#breaks the use combine function:
 	#if events_path == "" && event is InputEventMouseButton:
 	#	printt("This is a non interactable item.")
-	
+
 	#if events_path != "" && event is InputEventMouseButton && action =="":
-	#	printt("This is interactable, but no action is chosen.") 
-		
+	#	printt("This is interactable, but no action is chosen.")
+
 	if event is InputEventMouseButton || event.is_action("ui_accept"):
 		#If, Else controls the focus vs. non focus of items when being clicked
 		#Everything gets to the if when being clicked as a node with the item.gd script
@@ -104,14 +104,14 @@ func input(event):
 			clicked = true
 			printt("input is",action, events_path,event)
 			get_tree().call_group("game", "clicked", self, (self as Node).get_position())
-			_check_focus(true, true)
-			printt("IF - Item clicked with mouse.",self.name)
+			#_check_focus(true, true)
+			# printt("IF - Item clicked with mouse.",self.name)
 		else:
 			clicked = false
-			printt("ELSE - Item unclicked with mouse.",self.name)
+			#  printt("ELSE - Item unclicked with mouse.",self.name)
 			#printt(self.name)
 			#get_parent().get_node("no_interaction").activate("no_action_chosen", null)
-			_check_focus(true, false)
+			#_check_focus(true, false)
 
 func _check_focus(focus, pressed):
 	if has_node("_focus_in"):
@@ -361,6 +361,7 @@ func _ready():
 	if area is Area2D:
 		area.connect("gui_input", self, "area_input")
 	else:
+		#printt("this is:",area.name,area.get_parent().name)
 		area.connect("gui_input", self, "input")
 	area.connect("mouse_entered", self, "mouse_enter")
 	area.connect("mouse_exited", self, "mouse_exit")

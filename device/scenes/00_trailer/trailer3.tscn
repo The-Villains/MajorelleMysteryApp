@@ -20,8 +20,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="trailer3" type="Node2D" parent="."]
+[node name="area" type="Control" parent="."]
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 events_path = "res://scenes/00_trailer/trailer.esc"
 global_id = "trailer3"
 

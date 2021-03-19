@@ -30,25 +30,21 @@ tracks/1/keys = {
 "values": [  ]
 }
 
+[sub_resource type="StreamTexture" id=2]
+flags = 5
+
 [sub_resource type="StreamTexture" id=3]
 flags = 5
-load_path = "res://.import/photo_2021-01-10_23-33-17.jpg-f877d970ddb0e0f1b2f8771794022a10.stex"
 
 [sub_resource type="StreamTexture" id=4]
 flags = 5
-load_path = "res://.import/photo_2021-01-10_23-33-19.jpg-f4e100f20c4b7b99505b5af25b2aa0f9.stex"
 
 [sub_resource type="StreamTexture" id=5]
 flags = 5
-load_path = "res://.import/photo_2021-01-10_23-33-21.jpg-982953da4004546973c4a638f9cd3b3c.stex"
 
-[sub_resource type="StreamTexture" id=6]
-flags = 5
-load_path = "res://.import/photo_2021-01-10_23-33-23.jpg-3e4f3359550ba15392facee7bac92f60.stex"
-
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -67,5 +63,5 @@ anims/tell_story = SubResource( 1 )
 
 [node name="story" type="AnimatedSprite" parent="."]
 scale = Vector2( 1.5, 1.5 )
-frames = SubResource( 2 )
+frames = SubResource( 6 )
 centered = false

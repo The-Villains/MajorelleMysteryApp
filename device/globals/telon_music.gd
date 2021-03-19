@@ -1,4 +1,4 @@
-extends "res://game/objects/item.gd"
+extends "res://globals/item.gd"
 
 func game_cleared():
 	set_state("clear", true)
@@ -33,5 +33,3 @@ func rand_seek(p_node = null):
 
 func _ready():
 	add_to_group("game")
-
-

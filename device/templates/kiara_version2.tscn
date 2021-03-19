@@ -387,20 +387,13 @@ anims/tip1 = SubResource( 2 )
 anims/tip2 = SubResource( 3 )
 anims/tip3 = SubResource( 4 )
 
-[node name="default" type="TextureRect" parent="."]
-margin_left = 1399.0
-margin_top = -1150.35
-margin_right = 2399.0
-margin_bottom = -151.35
-rect_scale = Vector2( 0.15, 0.15 )
+[node name="default" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1457.13, -1062.68 )
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
-stretch_mode = 4
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="tip1" type="Sprite" parent="."]
-visible = false
 position = Vector2( 0, -664 )
 scale = Vector2( 0.6, 0.6 )
 z_as_relative = false

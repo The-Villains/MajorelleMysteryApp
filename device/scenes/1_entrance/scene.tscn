@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://globals/scene.gd" type="Script" id=1]
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
@@ -11,13 +11,11 @@
 [ext_resource path="res://scenes/1_entrance/ghost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/1_entrance/lamp.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/1_entrance/sprites/kiara_button.png" type="Texture" id=11]
-[ext_resource path="res://scenes/1_entrance/player_talk.tscn" type="PackedScene" id=12]
 [ext_resource path="res://globals/item.gd" type="Script" id=13]
 [ext_resource path="res://scenes/1_entrance/sprites/highlight_maj.png" type="Texture" id=14]
 [ext_resource path="res://scenes/1_entrance/sprites/blume_rot.png" type="Texture" id=15]
 [ext_resource path="res://scenes/1_entrance/sprites/leere lampe m highlight.png" type="Texture" id=16]
 [ext_resource path="res://scenes/1_entrance/sprites/highlight_suitcase.png" type="Texture" id=17]
-[ext_resource path="res://templates/no_interaction.tscn" type="PackedScene" id=18]
 [ext_resource path="res://templates/button_tutorial.tscn" type="PackedScene" id=19]
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=21]
 
@@ -146,9 +144,6 @@ __meta__ = {
 [node name="flowers" parent="." instance=ExtResource( 7 )]
 position = Vector2( 832.78, 601.202 )
 scale = Vector2( 1.5, 1.5 )
-tooltip = "odd flowers"
-events_path = "res://scenes/1_entrance/flowers.esc"
-global_id = "flowers"
 
 [node name="ghost" parent="." instance=ExtResource( 9 )]
 position = Vector2( 467.237, 774.604 )
@@ -184,9 +179,6 @@ __meta__ = {
 position = Vector2( 1146.41, 224 )
 tooltip = "missing lightbulb"
 
-[node name="player_talk" parent="." instance=ExtResource( 12 )]
-visible = false
-
 [node name="player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1454.25, 1180.09 )
 scale = Vector2( 0.45, 0.45 )
@@ -195,16 +187,19 @@ placeholders = {
 
 }
 
-[node name="inventory_tutorial" type="Sprite" parent="."]
+[node name="inventory_tutorial" type="TextureRect" parent="."]
 visible = false
 light_mask = -2147483645
-position = Vector2( 1238.83, 1232.05 )
-scale = Vector2( 0.32, 0.32 )
-z_index = 4000
-z_as_relative = false
+margin_left = 1225.73
+margin_top = 871.031
+margin_right = 2425.73
+margin_bottom = 2071.03
+rect_scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 17 )
-offset = Vector2( 522.032, -558.678 )
 script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 tooltip = " "
 global_id = "inventory_tutorial"
 
@@ -235,7 +230,5 @@ __meta__ = {
 
 [node name="animation" type="AnimationPlayer" parent="kiara_tutorial"]
 anims/default = SubResource( 2 )
-
-[node name="no_interaction" parent="." instance=ExtResource( 18 )]
 
 [node name="game" parent="." instance=ExtResource( 3 )]

@@ -1118,7 +1118,6 @@ global_id = "window_confirm"
 
 [node name="kiara" parent="." instance=ExtResource( 42 )]
 position = Vector2( 0, 1200 )
-z_index = 4096
 events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
 
 [node name="game" parent="." instance=ExtResource( 3 )]

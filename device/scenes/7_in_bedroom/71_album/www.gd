@@ -1,6 +1,5 @@
 extends TextureButton
 
-
 var root
 var current_scene
 
@@ -10,6 +9,6 @@ func _ready():
 	root = get_node("/root/main")
 
 func _pressed():
-	OS.shell_open("https://musee-ecole-de-nancy.nancy.fr/la-villa-majorelle-2887.html")
+	var _website = OS.shell_open("https://musee-ecole-de-nancy.nancy.fr/la-villa-majorelle-2887.html")
 	current_scene.hide()
 	root.load_menu(ProjectSettings.get("ui/credits"))

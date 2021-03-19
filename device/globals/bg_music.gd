@@ -6,7 +6,8 @@ export var global_id = "bg_music"
 
 func game_cleared():
 	set_state("off", true)
-	self.disconnect("tree_exited", vm, "object_exit_scene")
+	#commented line bc debugging error, game still works - not sure about functionality
+	#self.disconnect("tree_exited", vm, "object_exit_scene")
 	vm.register_object(global_id, self)
 
 func set_state(p_state, p_force = false):

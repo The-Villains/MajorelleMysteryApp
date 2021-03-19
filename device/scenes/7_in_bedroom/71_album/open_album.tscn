@@ -61,22 +61,20 @@ placeholders = {
 }
 
 [node name="album" type="Sprite" parent="."]
-position = Vector2( 724, 522 )
+position = Vector2( 744.75, 553.923 )
 texture = ExtResource( 5 )
 
-[node name="web" type="TextureRect" parent="."]
+[node name="web" type="Control" parent="."]
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 tooltip = "To the website of Villa Majorelle"
 global_id = "web"
 
 [node name="www" type="TextureButton" parent="web"]
-margin_left = 1057.88
-margin_top = 697.293
-margin_right = 1215.88
-margin_bottom = 890.293
+margin_left = 1081.54
+margin_top = 729.316
+margin_right = 1239.54
+margin_bottom = 922.316
+toggle_mode = true
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 6 )
