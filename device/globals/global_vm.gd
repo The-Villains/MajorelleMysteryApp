@@ -149,6 +149,8 @@ func update_camera(time):
 	if camera == null:
 		return
 	var target = cam_target
+	printt("target is", target)
+	
 	if target == null:
 		target = get_object("player")
 
@@ -156,6 +158,7 @@ func update_camera(time):
 		target = Vector2(0, 0)
 
 	var pos
+	printt("pos is", pos)
 	if typeof(target) == typeof(Vector2()):
 		pos = target
 	elif typeof(target) == typeof([]):
@@ -168,6 +171,8 @@ func update_camera(time):
 				pos += obj.get_position()
 		if count > 0:
 			pos = pos / count
+	elif target == null:
+		pass	
 	else:
 		pos = target.get_position()
 
@@ -386,8 +391,8 @@ func check_event_queue(time):
 func _process(time):
 	check_event_queue(time)
 	run()
-	#check_autosave()
-	update_camera(time)
+	# check_autosave()
+	# update_camera(time)
 
 func run_top():
 	var top = stack[stack.size()-1]

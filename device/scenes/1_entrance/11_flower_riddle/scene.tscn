@@ -1,13 +1,10 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=17 format=2]
 
+[ext_resource path="res://globals/background.gd" type="Script" id=1]
 [ext_resource path="res://scenes/1_entrance/sprites/gluehbirne_lobby.png" type="Texture" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/1_entrance/sprites/lobby_blur.png" type="Texture" id=4]
 [ext_resource path="res://scenes/1_entrance/11_flower_riddle/exit.tscn" type="PackedScene" id=5]
-[ext_resource path="res://globals/sprites/arrow-pressed.png" type="Texture" id=6]
-[ext_resource path="res://globals/sprites/arrow-left-pressed.png" type="Texture" id=7]
-[ext_resource path="res://globals/sprites/arrow.png" type="Texture" id=8]
-[ext_resource path="res://globals/sprites/arrow-left.png" type="Texture" id=9]
 [ext_resource path="res://globals/item.gd" type="Script" id=10]
 [ext_resource path="res://scenes/1_entrance/11_flower_riddle/daisies.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/1_entrance/11_flower_riddle/roses.tscn" type="PackedScene" id=12]
@@ -87,6 +84,7 @@ margin_right = 1600.0
 margin_bottom = 1200.0
 texture = ExtResource( 4 )
 expand = true
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -124,32 +122,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="right" type="TextureButton" parent="."]
-visible = false
-margin_left = 1313.62
-margin_top = 451.266
-margin_right = 1481.62
-margin_bottom = 599.266
-rect_scale = Vector2( 0.15, 0.15 )
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="left" type="TextureButton" parent="."]
-visible = false
-margin_left = 37.0905
-margin_top = 451.266
-margin_right = 205.09
-margin_bottom = 599.266
-rect_scale = Vector2( 0.15, 0.15 )
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="highlight_daisies" type="TextureRect" parent="."]
 visible = false
 margin_left = -269.0
@@ -178,7 +150,6 @@ __meta__ = {
 }
 global_id = "highlight_roses"
 placeholders = {
-
 }
 
 [node name="highlight_tulips" type="TextureRect" parent="."]
@@ -195,7 +166,6 @@ __meta__ = {
 }
 global_id = "highlight_tulips"
 placeholders = {
-
 }
 
 [node name="highlight_original" type="TextureRect" parent="."]
@@ -212,7 +182,6 @@ __meta__ = {
 }
 global_id = "highlight_original"
 placeholders = {
-
 }
 
 [node name="daisies" parent="." groups=[
@@ -281,7 +250,6 @@ tooltip = "Back"
 events_path = "res://scenes/1_entrance/11_flower_riddle/exit.esc"
 global_id = "exit_flowerriddle"
 placeholders = {
-
 }
 
 [node name="confirm" parent="." instance=ExtResource( 16 )]
@@ -293,5 +261,3 @@ tooltip = "Confirm"
 global_id = "flowerriddle_confirm"
 
 [node name="game" parent="." instance=ExtResource( 3 )]
-[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
-[connection signal="pressed" from="left" to="." method="_on_left_pressed"]

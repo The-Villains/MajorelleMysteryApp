@@ -248,7 +248,7 @@ func set_speaking(p_speaking):
 	pass
 
 func set_state(p_state, p_force = false):
-	printt("set state ", global_id, state, p_state, p_force)
+	#printt("set state ", global_id, state, p_state, p_force)
 	#print_stack()
 	if state == p_state && !p_force:
 		return

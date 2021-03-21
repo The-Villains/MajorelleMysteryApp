@@ -105,17 +105,17 @@ func clicked(obj, pos):
 				get_tree().call_group("verb_menu", "something_picked")
 			else:
 				interact([obj, current_action, current_tool])
-				printt("1 ",obj.name,current_action,current_tool)
+				#printt("1 ",obj.name,current_action,current_tool)
 				current_action=""
 				get_tree().call_group("verb_menu", "reset_mouse",current_action)
-				
+
 		# Added Use_Combine functionality for items that are not in the inventory /sh
 		elif !obj.inventory && current_action == "use":
 			if  obj.use_combine && current_tool == null:
 				set_current_tool(obj)
 				get_tree().call_group("verb_menu", "something_picked")
 			else:
-				printt("2 ",obj.name,current_action,current_tool)
+				#printt("2 ",obj.name,current_action,current_tool)
 				if obj.is_in_group("puzzle") or obj.get_parent().is_in_group("puzzle"):
 					interact([obj, current_action, current_tool])
 					get_tree().call_group("verb_menu", "reset_picked")
@@ -123,22 +123,22 @@ func clicked(obj, pos):
 					interact([obj, current_action, current_tool])
 					current_action=""
 					get_tree().call_group("verb_menu", "reset_mouse",current_action)
-					printt("Mouse should be reset.")
-		
+					#printt("Mouse should be reset.")
+
 		elif action != "":
 			player.interact([obj, action, current_tool])
-			printt("3 ",obj.name,action,current_tool)
+			#printt("3 ",obj.name,action,current_tool)
 			action=""
 			get_tree().call_group("verb_menu", "reset_mouse",current_action)
-			printt("Mouse should be reset.")
+			#printt("Mouse should be reset.")
 
 		elif current_action != "":
 			player.interact([obj, current_action, current_tool])
-			printt("4 ",obj.name,current_action,current_tool)
+			#printt("4 ",obj.name,current_action,current_tool)
 			current_action=""
 			get_tree().call_group("verb_menu", "reset_mouse",current_action)
-			printt("Mouse should be reset.")
-		
+			#printt("Mouse should be reset.")
+
 		elif action_menu == null:
 
 			# same as action == "walk"

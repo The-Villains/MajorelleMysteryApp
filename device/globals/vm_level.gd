@@ -105,7 +105,9 @@ func inventory_open(params):
 	vm.emit_signal("open_inventory", params[0])
 
 func set_active(params):
+	printt("params are",params[0],params[1])
 	var obj = vm.get_object(params[0])
+	printt("object before active is:" , obj)
 	if obj != null:
 		obj.set_active(params[1])
 	vm.set_active(params[0], params[1])

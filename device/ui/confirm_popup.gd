@@ -35,6 +35,7 @@ func close():
 # warning-ignore:unused_argument
 func anim_finished(anim_name):
 	if anim_name == "close":
+		printt("anim queue")
 		queue_free()
 
 func input(event):
@@ -50,4 +51,3 @@ func _ready():
 	get_node("no").connect("pressed", self, "button_pressed", [false])
 	anim = get_node("animation")
 	anim.connect("animation_finished", self, "anim_finished")
-

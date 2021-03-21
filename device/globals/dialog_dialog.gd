@@ -111,11 +111,11 @@ func start(params, p_context):
 	ready = false
 	animation.play("show")
 	animation.seek(0, true)
-	
+
 func _on_mouse_enter(button):
 	button.get_node("label").add_color_override("font_color", mouse_enter_color)
 	button.get_node("label").add_color_override("font_color_shadow", mouse_enter_shadow_color)
-	
+
 func _on_mouse_exit(button):
 	button.get_node("label").add_color_override("font_color", mouse_exit_color)
 	button.get_node("label").add_color_override("font_color_shadow", mouse_exit_shadow_color)
@@ -127,9 +127,11 @@ func stop():
 		container.remove_child(c)
 		c.free()
 	vm.request_autosave()
+	printt("func stop queue free")
 	queue_free()
 
 func game_cleared():
+	printt("game cleared queue_free")
 	queue_free()
 
 # warning-ignore:unused_argument
@@ -166,4 +168,3 @@ func _ready():
 	animation.connect("animation_finished", self, "anim_finished")
 	#get_node("anchor/scroll").set_theme(preload("res://game/globals/dialog_theme.xml"))
 	add_to_group("game")
-

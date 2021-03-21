@@ -65,6 +65,7 @@ func finish():
 		var anim = get_node("animation")
 		if anim.has_animation("hide"):
 			anim.play("hide")
+	printt("finish_func queue free")
 	_queue_free()
 
 func init(p_params, p_context, p_intro, p_outro):
@@ -188,6 +189,7 @@ func game_paused(p_pause):
 
 
 func _queue_free():
+	printt("queue_free in dialog_instance")
 	queue_free()
 	get_tree().call_group("game", "set_mode", "default")
 	vm.finished(context)

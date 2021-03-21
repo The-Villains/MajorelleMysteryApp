@@ -184,7 +184,6 @@ position = Vector2( 1454.25, 1180.09 )
 scale = Vector2( 0.45, 0.45 )
 z_index = 1180
 placeholders = {
-
 }
 
 [node name="inventory_tutorial" type="TextureRect" parent="."]
