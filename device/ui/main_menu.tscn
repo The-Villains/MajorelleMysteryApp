@@ -1,86 +1,88 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
 [ext_resource path="res://font/kalam-font/KalamLight.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://globals/sprites/bg-button_grey.png" type="Texture" id=3]
 [ext_resource path="res://ui/villa-entry.tscn" type="PackedScene" id=4]
+[ext_resource path="res://font/kalam-font/Kalam.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://globals/sprites/igge-button.png" type="Texture" id=6]
 [ext_resource path="res://globals/sprites/speechbubble.png" type="Texture" id=7]
 [ext_resource path="res://globals/sprites/menu_bg.png" type="Texture" id=8]
 [ext_resource path="res://globals/sprites/menu_deko.png" type="Texture" id=9]
 [ext_resource path="res://font/kalam-font/KalamBold.ttf" type="DynamicFontData" id=10]
 
-[sub_resource type="DynamicFontData" id=3]
+[sub_resource type="DynamicFontData" id=1]
 font_path = "res://font/kalam-font/Kalam.ttf"
-
-[sub_resource type="DynamicFont" id=1]
-size = 42
-use_filter = true
-font_data = SubResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 42
 use_filter = true
-font_data = SubResource( 3 )
+font_data = SubResource( 1 )
 
-[sub_resource type="DynamicFont" id=11]
+[sub_resource type="DynamicFont" id=3]
+size = 42
+use_filter = true
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
 size = 36
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
-font_data = SubResource( 3 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 42
-use_filter = true
-font_data = SubResource( 3 )
+font_data = SubResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 42
 use_filter = true
-font_data = SubResource( 3 )
+font_data = SubResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 40
+size = 42
 use_filter = true
-extra_spacing_top = 3
-extra_spacing_bottom = 3
-font_data = ExtResource( 10 )
+font_data = SubResource( 1 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
-font_data = ExtResource( 2 )
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
-font_data = SubResource( 3 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 42
-use_filter = true
-font_data = SubResource( 3 )
-
-[sub_resource type="DynamicFont" id=10]
 size = 40
 use_filter = true
 extra_spacing_top = 3
 extra_spacing_bottom = 3
-font_data = SubResource( 3 )
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 42
+use_filter = true
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 40
+use_mipmaps = true
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 3
+font_data = SubResource( 1 )
 
 [sub_resource type="Theme" id=12]
-default_font = SubResource( 10 )
+default_font = SubResource( 11 )
 Button/colors/font_color = Color( 0, 0, 0, 1 )
 Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
 Button/colors/font_color_hover = Color( 0, 0, 0, 1 )
 Button/colors/font_color_pressed = Color( 0, 0, 0, 1 )
 Button/constants/hseparation = 2
-Button/fonts/font = SubResource( 1 )
+Button/fonts/font = SubResource( 2 )
 Button/styles/disabled = null
 Button/styles/focus = null
 Button/styles/hover = null
@@ -156,7 +158,7 @@ FileDialog/icons/parent_folder = null
 FileDialog/icons/reload = null
 FileDialog/icons/toggle_hidden = null
 Fonts/fonts/large = null
-Fonts/fonts/normal = SubResource( 2 )
+Fonts/fonts/normal = SubResource( 3 )
 GraphEdit/colors/activity = Color( 0, 0, 0, 1 )
 GraphEdit/colors/grid_major = Color( 0, 0, 0, 1 )
 GraphEdit/colors/grid_minor = Color( 0, 0, 0, 1 )
@@ -237,7 +239,7 @@ Label/constants/line_spacing = 3
 Label/constants/shadow_as_outline = 0
 Label/constants/shadow_offset_x = 1
 Label/constants/shadow_offset_y = 1
-Label/fonts/font = SubResource( 11 )
+Label/fonts/font = SubResource( 4 )
 Label/styles/normal = null
 LineEdit/colors/clear_button_color = Color( 0, 0, 0, 1 )
 LineEdit/colors/clear_button_color_pressed = Color( 0, 0, 0, 1 )
@@ -247,7 +249,7 @@ LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
 LineEdit/colors/font_color_uneditable = Color( 0, 0, 0, 1 )
 LineEdit/colors/selection_color = Color( 0, 0, 0, 1 )
 LineEdit/constants/minimum_spaces = 12
-LineEdit/fonts/font = SubResource( 4 )
+LineEdit/fonts/font = SubResource( 5 )
 LineEdit/icons/clear = null
 LineEdit/styles/focus = null
 LineEdit/styles/normal = null
@@ -279,7 +281,7 @@ OptionButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
 OptionButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
 OptionButton/constants/arrow_margin = 2
 OptionButton/constants/hseparation = 2
-OptionButton/fonts/font = SubResource( 5 )
+OptionButton/fonts/font = SubResource( 6 )
 OptionButton/icons/arrow = null
 OptionButton/styles/disabled = null
 OptionButton/styles/focus = null
@@ -323,11 +325,11 @@ RichTextLabel/constants/shadow_offset_x = 1
 RichTextLabel/constants/shadow_offset_y = 1
 RichTextLabel/constants/table_hseparation = 3
 RichTextLabel/constants/table_vseparation = 3
-RichTextLabel/fonts/bold_font = SubResource( 6 )
+RichTextLabel/fonts/bold_font = SubResource( 7 )
 RichTextLabel/fonts/bold_italics_font = null
-RichTextLabel/fonts/italics_font = SubResource( 7 )
+RichTextLabel/fonts/italics_font = SubResource( 8 )
 RichTextLabel/fonts/mono_font = null
-RichTextLabel/fonts/normal_font = SubResource( 8 )
+RichTextLabel/fonts/normal_font = SubResource( 9 )
 RichTextLabel/styles/focus = null
 RichTextLabel/styles/normal = null
 ScrollContainer/styles/bg = null
@@ -424,7 +426,7 @@ TooltipLabel/colors/font_color = Color( 0, 0, 0, 1 )
 TooltipLabel/colors/font_color_shadow = Color( 0, 0, 0, 1 )
 TooltipLabel/constants/shadow_offset_x = 1
 TooltipLabel/constants/shadow_offset_y = 1
-TooltipLabel/fonts/font = SubResource( 9 )
+TooltipLabel/fonts/font = SubResource( 10 )
 TooltipPanel/styles/panel = null
 Tree/colors/custom_button_font_highlight = Color( 0, 0, 0, 1 )
 Tree/colors/drop_position_color = Color( 0, 0, 0, 1 )
@@ -503,6 +505,13 @@ extra_spacing_top = 12
 extra_spacing_bottom = 12
 font_data = ExtResource( 10 )
 
+[sub_resource type="DynamicFont" id=14]
+size = 72
+use_filter = true
+extra_spacing_top = 3
+extra_spacing_bottom = 3
+font_data = ExtResource( 5 )
+
 [node name="main_menu" type="Control"]
 margin_right = 1600.0
 margin_bottom = 1200.0
@@ -536,7 +545,6 @@ position = Vector2( 854.039, 759.706 )
 scale = Vector2( 1.78, 1.78 )
 z_as_relative = false
 placeholders = {
-
 }
 use_custom_z = true
 
@@ -594,6 +602,7 @@ margin_right = 2470.96
 margin_bottom = 1834.93
 custom_fonts/normal_font = SubResource( 13 )
 custom_colors/default_color = Color( 0.223529, 0.223529, 0.184314, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0 )
 text = "
 Wähle eine Sprache 
 
@@ -619,13 +628,13 @@ __meta__ = {
 }
 
 [node name="UI_CREDITS" type="Label" parent="credits"]
-margin_left = -46.9951
-margin_top = 225.428
-margin_right = 565.005
-margin_bottom = 409.428
+margin_left = -48.2666
+margin_top = 215.563
+margin_right = 563.734
+margin_bottom = 399.563
 mouse_filter = 1
 size_flags_vertical = 1
-theme = SubResource( 12 )
+custom_fonts/font = SubResource( 14 )
 custom_colors/font_color = Color( 0.223529, 0.223529, 0.184314, 1 )
 custom_colors/font_color_shadow = Color( 0.443137, 0.266667, 0.00784314, 1 )
 text = "UI_CREDITS"
@@ -797,6 +806,7 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="en" to="." method="_on_language_selected" binds= [ "en" ]]
 [connection signal="pressed" from="fr" to="." method="_on_language_selected" binds= [ "fr" ]]
 [connection signal="pressed" from="de" to="." method="_on_language_selected" binds= [ "de" ]]

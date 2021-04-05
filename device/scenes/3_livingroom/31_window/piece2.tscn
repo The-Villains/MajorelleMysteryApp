@@ -6,7 +6,6 @@
 [node name="piece2" type="Node2D"]
 script = ExtResource( 1 )
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="."]
@@ -22,4 +21,5 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1.41422, -2.8284 )
+z_as_relative = false
 texture = ExtResource( 2 )

@@ -3,7 +3,7 @@ cut_scene telon fade_out
 change_scene res://scenes/7_in_bedroom/scene.tscn
 set_state bedroom_ghost jane
 cut_scene telon fade_in
-say telon bedroom_jane_givealbum:"bedroom_jane_givealbum"
+say telon bedroom_jane_givealbum:"bedroom_jane_givealbum" left_right avatar_jane
 
 :use
 

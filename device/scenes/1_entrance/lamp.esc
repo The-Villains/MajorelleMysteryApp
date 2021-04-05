@@ -12,8 +12,8 @@ say lamp entrance_light_on:"entrance_light_on" right_left avatar_luis
 set_active entrance_ghost false
 
 set_state kiara tip2
-say telon kiara_tutorial:"kiara_tutorial" right_left
-say telon kiara_tutorial2:"kiara_tutorial2" right_left
+say telon kiara_tutorial:"kiara_tutorial" kiara
+say telon kiara_tutorial2:"kiara_tutorial2" kiara
 set_active kiara false
 set_active kiara_tutorial true
 anim kiara_tutorial default
@@ -28,9 +28,9 @@ cut_scene telon fade_in
 set_state hallway_plants disappear
 wait 2
 set_active hallway_plants false
-say telon hallway_jacques:"hallway_jacques" left_right avatar_jacques
+say telon hallway_jacques:"hallway_jacques" small avatar_jacques
 set_state hallway_ghost default
 wait 3
 set_active hallway_ghost false
 
-say telon hallway_artur:"hallway_artur" right_right avatar_artur
+say telon hallway_artur:"hallway_artur" small avatar_artur

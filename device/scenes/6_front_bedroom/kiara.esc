@@ -1,7 +1,7 @@
 :talk
 > [!frontbedroom_kiara_tip,!flowers_solved]
  set_state kiara tip1
- say telon frontbedroom_kiara_tip:"frontbedroom_kiara_tip" left
+ say telon frontbedroom_kiara_tip:"frontbedroom_kiara_tip" kiara
  set_state kiara default
  set_global frontbedroom_kiara_tip true
  set_global frontbedroom_kiara_tip2 false
@@ -9,7 +9,7 @@
 
 > [frontbedroom_kiara_tip,!frontbedroom_kiara_tip2,!flowers_solved]
  set_state kiara tip2
- say telon frontbedroom_kiara_tip2:"frontbedroom_kiara_tip2" left
+ say telon frontbedroom_kiara_tip2:"frontbedroom_kiara_tip2" kiara
  set_state kiara default
  set_global frontbedroom_kiara_tip2 true
  set_global frontbedroom_kiara_tip false
@@ -17,5 +17,5 @@
 
 > [flowers_solved]
  set_state kiara tip3
- say telon frontbedroom_kiara_tip3:"frontbedroom_kiara_tip3" left
+ say telon frontbedroom_kiara_tip3:"frontbedroom_kiara_tip3" kiara
  set_state kiara default

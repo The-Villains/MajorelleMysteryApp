@@ -40,6 +40,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="villa" type="Label" parent="."]
+margin_left = 199.0
+margin_top = 150.0
+margin_right = 465.0
+margin_bottom = 250.0
+theme = ExtResource( 16 )
+text = "Villa
+Majorelle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="MAP_PUZZLE" type="Label" parent="."]
 margin_left = 636.0
 margin_top = 751.0
@@ -119,7 +131,6 @@ events_path = "res://scenes/4_diningroom/42_paper/hallway.esc"
 global_id = "map_hallway"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="map_hallway"]
@@ -140,7 +151,6 @@ events_path = "res://scenes/4_diningroom/42_paper/terrasse.esc"
 global_id = "map_terrasse"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="map_terrasse"]
@@ -161,7 +171,6 @@ events_path = "res://scenes/4_diningroom/42_paper/livingroom.esc"
 global_id = "map_livingroom"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="map_livingroom"]
@@ -182,7 +191,6 @@ events_path = "res://scenes/4_diningroom/42_paper/diningroom.esc"
 global_id = "map_diningroom"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="map_diningroom"]
@@ -206,7 +214,6 @@ scale = Vector2( 0.4, 0.4 )
 z_index = 2000
 z_as_relative = false
 placeholders = {
-
 }
 
 [node name="livingroom" parent="." instance=ExtResource( 13 )]
@@ -215,7 +222,6 @@ scale = Vector2( 0.4, 0.4 )
 z_index = 2000
 z_as_relative = false
 placeholders = {
-
 }
 
 [node name="diningroom" parent="." instance=ExtResource( 14 )]
@@ -224,7 +230,6 @@ scale = Vector2( 0.4, 0.4 )
 z_index = 2000
 z_as_relative = false
 placeholders = {
-
 }
 
 [node name="terrasse" parent="." instance=ExtResource( 15 )]
@@ -233,7 +238,6 @@ scale = Vector2( 0.4, 0.4 )
 z_index = 2000
 z_as_relative = false
 placeholders = {
-
 }
 
 [node name="confirm" parent="." instance=ExtResource( 6 )]
@@ -250,7 +254,6 @@ tooltip = "Back"
 events_path = "res://scenes/4_diningroom/42_paper/exit.esc"
 global_id = "exit_diningroom_paper"
 placeholders = {
-
 }
 
 [node name="game" parent="." instance=ExtResource( 3 )]

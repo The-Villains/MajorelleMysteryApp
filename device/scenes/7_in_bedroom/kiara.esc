@@ -1,20 +1,20 @@
 :talk
 > [!looked_at_album]
  set_state kiara tip1
- say telon bedroom_kiara_tip1:"bedroom_kiara_tip1" right_left
+ say telon bedroom_kiara_tip1:"bedroom_kiara_tip1" kiara
  set_state kiara default
  set_global bedroom_kiara_tip1 true
  stop
 
 > [looked_at_album,!bedroom_kiara_tip2]
  set_state kiara tip2
- say telon bedroom_kiara_tip2:"bedroom_kiara_tip2" right_left
+ say telon bedroom_kiara_tip2:"bedroom_kiara_tip2" kiara
  set_state kiara default
  set_global bedroom_kiara_tip2 true
  stop
 
 > [looked_at_album,bedroom_kiara_tip2]
  set_state kiara tip2
- say telon bedroom_kiara_tip3:"bedroom_kiara_tip3" right_left
+ say telon bedroom_kiara_tip3:"bedroom_kiara_tip3" kiara
  set_state kiara default
  set_global bedroom_kiara_tip3 true

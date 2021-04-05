@@ -7,7 +7,6 @@ talk.id,Talk to %1,Parler à %1,Spreche mit %1
 UI_CONTINUE,Continue,Continuer,Weiter
 UI_NEW_GAME,New Game,Nouveau jeu,Neues Spiel
 UI_QUIT,Quit,Quitter,Beenden
- ,Quit Game,Quitter le jeu,Spiel beenden
 UI_YES,Yes,Oui,Ja
 UI_NO,No,Non,Nein
 UI_QUIT_CONFIRM,Do you want to quit the game ?,Veux-tu vraiment quitter le jeu ?,Möchtest du das Spiel beenden ?
@@ -22,7 +21,7 @@ MAP_PUZZLE,Assign the correct labels to the rooms.,Distribue les étiquettes cor
 WINDOW_SWITCH,"Switch the window pieces until you have restored the stained glass art ""honesty flowers""","Réarrange les pièces de verre pour retrouver le dessin du vitrail ""monnaie du pape""","Tausche die Fensterteile miteinander, bis du die Glasmalerei ""Silbertaler"" wiederhergestellt hast."
 P_ENTRANCE,Entrance,entrée,Eingang
 P_HALLWAY,Hallway,Couloir,Flur
-P_LIVINGROOM,Living Room,Salon,Wohnzimmer
+P_LIVINGROOM,Living Room,Le salon,Wohnzimmer
 P_DININGROOM,Dining Room,Salle à manger,Esszimmer
 P_TERRASSE,Terrace,Terrasse,Terrasse
 old_man.tooltip,A wise old forest man,Un vieux sage de la forêt,ein weiser alter Mann aus dem Wald
@@ -57,15 +56,15 @@ tulips.tooltip,tulips,tulipes,Tulpen
 flower_instruction.tooltip, , , 
 lightbulb.tooltip,lightbulb,ampoule,Glühbirne
 exit_flowerriddle.tooltip,Back,Retour,Zurück
-hallway_door.tooltip,To the living room,Vers la salle de séjour,Zum Wohnzimmer
+hallway_door.tooltip,the door to the living room,la porte vers la salle de séjour,die Tür zum Wohnzimmer
 hallway_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
 hallway_kiara.tooltip,Kiara,Kiara,Kiara
-livingroom_door.tooltip,To the dining room,Vers la salle à manger,Zum Esszimmer
+livingroom_door.tooltip,the door to the dining room,la porte vers la salle à manger,die Tür zum Esszimmer
 livingroom_lamp.tooltip,dragonfly lamp,lampe libellule,Libellen-Lampe
 livingroom_table.tooltip,Tea table with butomaceae ornaments,Table à thé avec décor de butomées,Teetisch mit Schwanenblumenmuster
 livingroom_chair2.tooltip,"armchair ""Pine cones""","Fauteuil  ""Pommes de pin""","Sessel ""Tannenzapfen"""
 livingroom_chair3.tooltip,"armchair ""Pine cones""","Fauteuil  ""Pommes de pin""","Sessel ""Tannenzapfen"""
-livingroom_sideboard.tooltip,"buffet ""Pine cones""","Buffet ""Pommes de pin""",Buffet „Tannenzapfen“
+livingroom_sideboard.tooltip,"buffet ""Pine cones""","Buffet ""Pommes de pin""","Buffet ""Tannenzapfen"""
 livingroom_window.tooltip,Moroccan-inspired stained glass,Vitrail d'inspiration orientale,marrokanisch inspirierte Glasmalerei
 livingroom_ghost.tooltip,Jacques Majorelle,Jacques Majorelle,Jacques Majorelle
 exit_living_32.tooltip,Back,Retour,Zurück
@@ -137,7 +136,7 @@ window_confirm.tooltip,Confirm solution,Confirmer solution,Lösung bestätigen
 missing_piece1.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 missing_piece2.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
 missing_piece3.tooltip,puzzle piece,morceau de puzzle,Puzzleteil
-diningroom_door.tooltip,To the staircase,Pour l'escalier,Zur Treppe
+diningroom_door.tooltip,the door to the staircase,la porte à l'escalier,die Tür zum Treppenhaus
 diningroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
 diningroom_painting.tooltip,decorative painting of the dining room,Peinture decorative de la salle à manger,Dekoratives Gemälde des Esszimmers
 diningroom_tablearea.tooltip,"table ""Wheat ears""","table ""Épis de blé""","Tisch ""Weißenähren"""
@@ -174,13 +173,13 @@ map_entrance.tooltip,missing room label,label de pièce manquante,fehlendes Raum
 exit_diningroom_paper.tooltip,Back,Retour,Zurück
 confirm_diningroom_paper.tooltip,Confirm solution,Confirmer la solution,Lösung bestätigen
 stack.tooltip,stack,pile,Stapel
-upstairs.tooltip,To the first floor,Vers le premier étage,Zum ersten Stock
-dont_leave.tooltip,Back to the entrance and exit,Retour à l'entrée et à la sortie,Zurück zum Eingang und Ausgang
+upstairs.tooltip,the stairs to the first floor,les escaliers vers le premier étage,die Treppe zum ersten Stock
+dont_leave.tooltip,back to the entrance and exit,retour à l'entrée et à la sortie,zurück zum Eingang und Ausgang
 staircase_window.tooltip,"stained glass window ""honesty flowers""","Vitrail ""Monnaies du pape""","Glasmalerei ""Silbertaler"""
 staircase_ghost.tooltip,Louis Majorelle,Louis Majorelle,Louis Majorelle
 staircase_lamp.tooltip,"Lamp ""Algae""","Lampe ""aux Algues""","Lampe ""Algen"""
 staircase_cabinet.tooltip,custom cabinet for the staircase,cabinet personnalisée pour l'escalier,maßgefertigter Schrank für das Treppenhaus
-staircase_flowers_glas.tooltip,"""honesty flowers"" themed stained glass","Vitrail à de décor de ""Monnaies du pape""","Glasmalerei mit Thema ""Silbertaler"""
+staircase_flowers_glas.tooltip,"""honesty flowers"" themed stained glass","vitrail à de décor de ""Monnaies du pape""","Glasmalerei mit Thema ""Silbertaler"""
 top_left.tooltip,window piece,morceau de vitrail,Fenster Stück
 top_middle.tooltip,window piece,morceau de vitrail,Fenster Stück
 top_right.tooltip,window piece,morceau de vitrail,Fenster Stück
@@ -193,7 +192,7 @@ bottom_right.tooltip,window piece,morceau de vitrail,Fenster Stück
 staircase_window_confirm.tooltip,Confirm solution,Confirmer la solution,Lösung bestätigen
 exit_staircase.tooltip,Back,Retour,Zurück
 kiara_fullsize.tooltip,Kiara,Kiara,Kiara
-front_bedroom_door.tooltip,To the  bedroom,Vers la chambre,Zum Schlafzimmer
+front_bedroom_door.tooltip,the door to the  bedroom,la porte vers la chambre,die Tür zum Schlafzimmer
 bedroom_spot1.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot2.tooltip,missing flower,fleur manquante,fehlende Blume
 bedroom_spot3.tooltip,missing flower,fleur manquante,fehlende Blume
@@ -208,7 +207,7 @@ album_front_closeup.tooltip,locked photo album,album photo fermé à clé,versch
 album_locked.tooltip,locked photo album,album photo fermé à clé,verschlossenes Fotoalbum
 album_open.tooltip,  , , 
 bedroom_ghost.tooltip,Jane Majorelle,Jane Majorelle,Jane Majorelle
-bedroom_door_mural.tooltip,"stained glass art ""honesty flowers""","Vitrail à décor de ""Monnaies du pape""","Buntglaskunst ""Silbertaler"""
+bedroom_door_mural.tooltip,"stained glass art ""honesty flowers""","vitrail à décor de ""Monnaies du pape""","Buntglaskunst ""Silbertaler"""
 bedroom_nightstand_closeup.tooltip,nightstand,Table de chevet,Nachttisch
 bedroom_dresser_closeup.tooltip,dresser,Commode,Kommode
 exit_bedroom_album.tooltip,Back,Retour,Zurück
@@ -231,5 +230,5 @@ livingroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
 diningroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
 staircase_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
 bedroom_plants.tooltip,overgrown area,zone envahie,zugewachsener Bereich
-web.tooltip,To the website of Villa Majorelle,Vers le site de la Villa Majorelle,Zur Website der Villa Majorelle
+web.tooltip,to the website of Villa Majorelle,vers le site de la Villa Majorelle,zur Website der Villa Majorelle
 end_game.tooltip,Quit Game,Quitter le jeu,Spiel beenden

@@ -388,12 +388,12 @@ anims/tip2 = SubResource( 3 )
 anims/tip3 = SubResource( 4 )
 
 [node name="default" type="Sprite" parent="."]
-visible = false
 position = Vector2( 1457.13, -1062.68 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 
 [node name="tip1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 0, -664 )
 scale = Vector2( 0.6, 0.6 )
 z_as_relative = false

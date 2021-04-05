@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/6_front_bedroom/sprites/plants_only.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "default"
+
+[node name="plants_only" type="Node2D"]
+position = Vector2( 792.828, 603.615 )
+scale = Vector2( 1.14, 1.14 )
+z_as_relative = false
+script = ExtResource( 1 )
+tooltip = "overgrown area"
+events_path = "res://scenes/6_front_bedroom/plants.esc"
+global_id = "bedroom_plants"
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -344.0
+margin_top = -535.0
+margin_right = 412.0
+margin_bottom = 538.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

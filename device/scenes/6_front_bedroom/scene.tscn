@@ -4,7 +4,6 @@
 [ext_resource path="res://globals/background.gd" type="Script" id=2]
 [ext_resource path="res://globals/game.scn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/6_front_bedroom/sprites/door.png" type="Texture" id=4]
-[ext_resource path="res://scenes/6_front_bedroom/plants.tscn" type="PackedScene" id=5]
 [ext_resource path="res://templates/player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://globals/terrain.gd" type="Script" id=7]
 [ext_resource path="res://scenes/6_front_bedroom/flower4.tscn" type="PackedScene" id=8]
@@ -14,8 +13,9 @@
 [ext_resource path="res://globals/item.gd" type="Script" id=12]
 [ext_resource path="res://templates/kiara_version2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://templates/door.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/6_front_bedroom/plants.tscn" type="PackedScene" id=16]
 
-[sub_resource type="NavigationPolygon" id=1]
+[sub_resource type="NavigationPolygon" id=3]
 vertices = PoolVector2Array( 1255, 971.769, 1641.29, 757.976, 1629.29, 1099.98, 1253, 1209.77, 1633.29, 1373.98, 523.288, 1375.98, 1023, 1211.41, 731, 1213.41, 509, 1215.41 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 2, 4 ), PoolIntArray( 3, 4, 5, 6 ), PoolIntArray( 7, 6, 5, 8 ) ]
 outlines = [ PoolVector2Array( 509, 1215.41, 523.288, 1375.98, 1633.29, 1373.98, 1629.29, 1099.98, 1641.29, 757.976, 1255, 971.769, 1253, 1209.77, 1023, 1211.41, 731, 1213.41 ) ]
@@ -42,7 +42,7 @@ scale_max = 0.5
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="terrain"]
 visible = false
 position = Vector2( -3.05176e-05, 2.00006 )
-navpoly = SubResource( 1 )
+navpoly = SubResource( 3 )
 
 [node name="door" parent="." instance=ExtResource( 14 )]
 position = Vector2( 813.623, 769.706 )
@@ -51,10 +51,9 @@ tooltip = "To the  bedroom"
 events_path = "res://scenes/6_front_bedroom/door.esc"
 global_id = "front_bedroom_door"
 
-[node name="plants" parent="." instance=ExtResource( 5 )]
-position = Vector2( 792.828, 603.615 )
-scale = Vector2( 1.14, 1.14 )
-tooltip = "overgrown area"
+[node name="plants" parent="." instance=ExtResource( 16 )]
+placeholders = {
+}
 
 [node name="flower1" parent="." instance=ExtResource( 11 )]
 light_mask = 2
@@ -116,7 +115,6 @@ tooltip = "missing flower"
 events_path = "res://scenes/6_front_bedroom/flower2.esc"
 global_id = "bedroom_spot2"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="spot2"]
@@ -138,7 +136,6 @@ tooltip = "missing flower"
 events_path = "res://scenes/6_front_bedroom/flower3.esc"
 global_id = "bedroom_spot3"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="spot3"]
@@ -160,7 +157,6 @@ tooltip = "missing flower"
 events_path = "res://scenes/6_front_bedroom/flower4.esc"
 global_id = "bedroom_spot4"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="spot4"]
@@ -181,7 +177,6 @@ position = Vector2( 1424, 1328 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 1328
 placeholders = {
-
 }
 
 [node name="game" parent="." instance=ExtResource( 3 )]

@@ -8,7 +8,7 @@ cut_scene telon fade_in
 
 > [right_flower_picked,!i/inv_lightbulb]
  set_state kiara tip3
- say telon entrance_kiara_missing_lightbulb:"entrance_kiara_missing_lightbulb"
+ say telon entrance_kiara_missing_lightbulb:"entrance_kiara_missing_lightbulb" kiara
  set_state kiara default
 
 :talk

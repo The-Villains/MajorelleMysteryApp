@@ -93,7 +93,7 @@ position = Vector2( 799.712, 171.98 )
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 1 )
 animation = "villa"
-frame = 1
+frame = 3
 playing = true
 
 [node name="Credits_EN" type="RichTextLabel" parent="."]
@@ -111,11 +111,10 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "[b]CREDITS  [BETA][/b]
+bbcode_text = "[b]CREDITS[/b]
 
 [b]The Villains Version 1.0 Development team[/b] 
 
-[b]Project Management[/b]  - Sonja Heinze
 [b]Game design[/b]  - Sonja Heinze, Benjamin Steinfeltz
 [b]Art design[/b]  - Benjamin Steinfeltz
 [b]Character design[/b]  - Benjamin Steinfeltz
@@ -125,6 +124,8 @@ bbcode_text = "[b]CREDITS  [BETA][/b]
 [b]Music & Sound[/b]  - Sonja Heinze, Benjamin Steinfeltz
 [b]Text & Scripting (English) [/b] - Sonja Heinze, Benjamin Steinfeltz
 [b]Translations (German and French)[/b] - Benjamin Steinfeltz
+[b]Project Management[/b]  - Sonja Heinze
+[b]Social Media[/b]  - Sonja Heinze
 [b]Project review[/b] - Sophie Toulouze
 
 [i] *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR.[/i] 
@@ -139,14 +140,13 @@ The game is based on the point & click adventure game framework for Godot Engine
 
 [b]Our original team members[/b] - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the [b]“helping hands” [/b] Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
 
-[b]Our testers [/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+[b]Our testers [/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, Timoléon, GameReviewer, Philippe, Heike Heinze, Achim Pinkepinke, Irene, Andreas
 
 [b]… and of course the Coding da Vinci team and the Villa Majorelle for making this possible![/b]"
-text = "CREDITS  [BETA]
+text = "CREDITS
 
 The Villains Version 1.0 Development team 
 
-Project Management  - Sonja Heinze
 Game design  - Sonja Heinze, Benjamin Steinfeltz
 Art design  - Benjamin Steinfeltz
 Character design  - Benjamin Steinfeltz
@@ -156,6 +156,8 @@ Programming  - Sonja Heinze
 Music & Sound  - Sonja Heinze, Benjamin Steinfeltz
 Text & Scripting (English)  - Sonja Heinze, Benjamin Steinfeltz
 Translations (German and French) - Benjamin Steinfeltz
+Project Management  - Sonja Heinze
+Social Media  - Sonja Heinze
 Project review - Sophie Toulouze
 
  *The room design and certain object designs, such as furniture and paintings, as well as pictures of the Family Majorelle are based on the 2020 Saar-Lor-Lux Coding da Vinci Dataset by the Villa Majorelle which is licensed under CC BY-SA 3.0 FR. 
@@ -170,7 +172,7 @@ We’d like to thank ...
 
 Our original team members - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the “helping hands”  Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
 
-Our testers  - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+Our testers  - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, Timoléon, GameReviewer, Philippe, Heike Heinze, Achim Pinkepinke, Irene, Andreas
 
 … and of course the Coding da Vinci team and the Villa Majorelle for making this possible!"
 __meta__ = {
@@ -192,11 +194,10 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "[b]CREDITS  [BETA] [/b]
+bbcode_text = "[b]CREDITS [/b]
 
 [b]\"The Villains\" Version 1.0 Entwicklungsteam[/b] 
 
-[b]Projektmanagement[/b]  - Sonja Heinze
 [b]Spielgestaltung[/b]  - Sonja Heinze, Benjamin Steinfeltz
 [b]Künstlerische Gestaltung [/b]  - Benjamin Steinfeltz
 [b]Charakterdesign[/b]  - Benjamin Steinfeltz
@@ -206,6 +207,8 @@ bbcode_text = "[b]CREDITS  [BETA] [/b]
 [b]Musik & Ton[/b]  - Sonja Heinze, Benjamin Steinfeltz
 [b]Text (Englisch) [/b] - Sonja Heinze, Benjamin Steinfeltz
 [b]Übersetzungen (Deutsch und Französisch)[/b] - Benjamin Steinfeltz
+[b]Projektmanagement[/b]  - Sonja Heinze
+[b]Social Media[/b]  - Sonja Heinze
 [b]Projektabnahme[/b] - Sophie Toulouze
 
 [i] *Das Raumdesign und bestimmte Objektdesigns, wie Möbel und Gemälde, sowie Bilder der Familie Majorelle basieren auf dem 2020 Saar-Lor-Lux Coding da Vinci Datensatz der Villa Majorelle, der unter CC BY-SA 3.0 FR lizenziert ist.[/i] 
@@ -220,14 +223,13 @@ Das Spiel basiert auf dem Point & Click-Adventure-Game-Framework für die Godot 
 
 [b]Unsere ursprünglichen Teammitglieder [/b] - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze und die [b]“und die \"helfenden Hände\" [/b] Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
 
-[b]Unsere Tester[/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+[b]Unsere Tester[/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, Timoléon, GameReviewer, Philippe, Heike Heinze, Achim Pinkepinke, Irene, Andreas
 
 [b]… ... und natürlich bei dem Team von Coding da Vinci und der Villa Majorelle, ohne die das alles nicht möglich gewesen wäre![/b]"
-text = "CREDITS  [BETA] 
+text = "CREDITS 
 
 \"The Villains\" Version 1.0 Entwicklungsteam 
 
-Projektmanagement  - Sonja Heinze
 Spielgestaltung  - Sonja Heinze, Benjamin Steinfeltz
 Künstlerische Gestaltung   - Benjamin Steinfeltz
 Charakterdesign  - Benjamin Steinfeltz
@@ -237,6 +239,8 @@ Programmierung  - Sonja Heinze
 Musik & Ton  - Sonja Heinze, Benjamin Steinfeltz
 Text (Englisch)  - Sonja Heinze, Benjamin Steinfeltz
 Übersetzungen (Deutsch und Französisch) - Benjamin Steinfeltz
+Projektmanagement  - Sonja Heinze
+Social Media  - Sonja Heinze
 Projektabnahme - Sophie Toulouze
 
  *Das Raumdesign und bestimmte Objektdesigns, wie Möbel und Gemälde, sowie Bilder der Familie Majorelle basieren auf dem 2020 Saar-Lor-Lux Coding da Vinci Datensatz der Villa Majorelle, der unter CC BY-SA 3.0 FR lizenziert ist. 
@@ -251,7 +255,7 @@ Wir möchten uns außerdem herzlich bei folgenden Personen bedanken ...
 
 Unsere ursprünglichen Teammitglieder  - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze und die “und die \"helfenden Hände\"  Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
 
-Unsere Tester - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+Unsere Tester - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, Timoléon, GameReviewer, Philippe, Heike Heinze, Achim Pinkepinke, Irene, Andreas
 
 … ... und natürlich bei dem Team von Coding da Vinci und der Villa Majorelle, ohne die das alles nicht möglich gewesen wäre!"
 __meta__ = {
@@ -273,11 +277,10 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_colors/selection_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "[b]Générique  [BETA][/b]
+bbcode_text = "[b]Générique][/b]
 
 [b]L'équipe de développement de la version 1.0 de Villains[/b] 
 
-[b]Gestion de projet[/b]  - Sonja Heinze
 [b]Conception de jeux[/b]  - Sonja Heinze, Benjamin Steinfeltz
 [b]Conception artistique[/b]  - Benjamin Steinfeltz
 [b]Conception des personnages[/b]  - Benjamin Steinfeltz
@@ -287,6 +290,8 @@ bbcode_text = "[b]Générique  [BETA][/b]
 [b]Musique et son[/b]  - Sonja Heinze, Benjamin Steinfeltz
 [b]Texte (anglais)[/b] - Sonja Heinze, Benjamin Steinfeltz
 [b]Traductions (allemand et français)[/b] - Benjamin Steinfeltz
+[b]Gestion de projet[/b]  - Sonja Heinze
+[b]Médias sociaux[/b]  - Sonja Heinze
 [b]Réception du projet[/b] - Sophie Toulouze
 
 [i] *La design des pièces et de certains objets, tels que des meubles et les tableaux, ainsi que les photos de la famille Majorelle sont fondés sur l'ensemble de données Saar-Lor-Lux Coding da Vinci 2020 de la Villa Majorelle, qui est sous licence CC BY-SA 3.0 FR.[/i] 
@@ -301,14 +306,13 @@ Le jeu est fondé sur le framework de jeu d'aventure point & click pour Godot. \
 
 [b]Les membres de notre équipe d'origine [/b] - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the [b]et les \"mains de secours\" [/b] Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
 
-[b]Nos testeurs[/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+[b]Nos testeurs[/b] - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, Timoléon, GameReviewer, Philippe, Heike Heinze, Achim Pinkepinke, Irene, Andreas
 
 [b]... et bien sûr l'équipe de Coding da Vinci et la Villa Majorelle sans lesquels ce projet n'aurait pas été réalisable![/b]"
-text = "Générique  [BETA]
+text = "Générique]
 
 L'équipe de développement de la version 1.0 de Villains 
 
-Gestion de projet  - Sonja Heinze
 Conception de jeux  - Sonja Heinze, Benjamin Steinfeltz
 Conception artistique  - Benjamin Steinfeltz
 Conception des personnages  - Benjamin Steinfeltz
@@ -318,6 +322,8 @@ Programmation  - Sonja Heinze
 Musique et son  - Sonja Heinze, Benjamin Steinfeltz
 Texte (anglais) - Sonja Heinze, Benjamin Steinfeltz
 Traductions (allemand et français) - Benjamin Steinfeltz
+Gestion de projet  - Sonja Heinze
+Médias sociaux  - Sonja Heinze
 Réception du projet - Sophie Toulouze
 
  *La design des pièces et de certains objets, tels que des meubles et les tableaux, ainsi que les photos de la famille Majorelle sont fondés sur l'ensemble de données Saar-Lor-Lux Coding da Vinci 2020 de la Villa Majorelle, qui est sous licence CC BY-SA 3.0 FR. 
@@ -332,7 +338,7 @@ Nous tenons à remercier ...
 
 Les membres de notre équipe d'origine  - Lea-Kathrin Gleissner, Paul Hermann, Melisa Kujevic, Jörg Reichert, Berenike Reisinghoff, Sophie Toulouze and the et les \"mains de secours\"  Torsten Röder, Anastasia Bauch, Daniel Haas, Annika Rockenberger.
 
-Nos testeurs - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, ...
+Nos testeurs - Anne und Thomas Steinfeltz, Christian Hartmann, Sarah Grau, Stephen Bett, Autumn Abbas, VioVodka, Timoléon, GameReviewer, Philippe, Heike Heinze, Achim Pinkepinke, Irene, Andreas
 
 ... et bien sûr l'équipe de Coding da Vinci et la Villa Majorelle sans lesquels ce projet n'aurait pas été réalisable!"
 __meta__ = {

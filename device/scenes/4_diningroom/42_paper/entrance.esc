@@ -1,15 +1,15 @@
 :use paper_entrance
-teleport_pos paper_entrance 310 456
+teleport_pos paper_entrance 312 458
 set_global paper_entrance true
 
 :use paper_hallway
-teleport_pos paper_hallway 310 456
+teleport_pos paper_hallway 312 458
 
 :use paper_terrasse
-teleport_pos paper_terrasse 310 456
+teleport_pos paper_terrasse 312 458
 
 :use paper_livingroom
-teleport_pos paper_livingroom 310 456
+teleport_pos paper_livingroom 312 458
 
 :use paper_diningroom
-teleport_pos paper_diningroom 310 456
+teleport_pos paper_diningroom 312 458

@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://globals/item.gd" type="Script" id=1]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/corner_beige.png" type="Texture" id=2]
+[ext_resource path="res://ui/font.tres" type="Theme" id=3]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/book_real.png" type="Texture" id=5]
 [ext_resource path="res://scenes/7_in_bedroom/sprites/corner_green.png" type="Texture" id=6]
 [ext_resource path="res://scenes/7_in_bedroom/71_album/www.gd" type="Script" id=7]
+
+[sub_resource type="GradientTexture" id=1]
 
 [node name="open_album" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,7 +25,7 @@ __meta__ = {
 margin_left = 274.0
 margin_top = 188.0
 margin_right = 688.0
-margin_bottom = 490.0
+margin_bottom = 511.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -32,9 +35,9 @@ global_id = "album_photo_left_top"
 
 [node name="photo_left_bottom" type="TextureRect" parent="."]
 margin_left = 340.0
-margin_top = 520.0
+margin_top = 547.0
 margin_right = 660.0
-margin_bottom = 876.0
+margin_bottom = 891.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -42,14 +45,13 @@ __meta__ = {
 tooltip = "Jane Majorelle in the bedroom"
 global_id = "album_photo_left_bottom"
 placeholders = {
-
 }
 
 [node name="photo_right" type="TextureRect" parent="."]
 margin_left = 788.0
 margin_top = 248.0
 margin_right = 1150.0
-margin_bottom = 686.0
+margin_bottom = 715.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -57,7 +59,6 @@ __meta__ = {
 tooltip = "Jane Majorelle greeting two guests at the front door of the Villa Majorelle"
 global_id = "album_photo_right"
 placeholders = {
-
 }
 
 [node name="album" type="Sprite" parent="."]
@@ -66,20 +67,41 @@ texture = ExtResource( 5 )
 
 [node name="web" type="Control" parent="."]
 script = ExtResource( 1 )
-tooltip = "To the website of Villa Majorelle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = " Website \"Villa Majorelle\""
 global_id = "web"
 
 [node name="www" type="TextureButton" parent="web"]
-margin_left = 1081.54
-margin_top = 729.316
-margin_right = 1239.54
-margin_bottom = 922.316
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 1082.57
+margin_top = 730.495
+margin_right = 1295.57
+margin_bottom = 980.495
+grow_horizontal = 0
 toggle_mode = true
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 6 )
 texture_hover = ExtResource( 6 )
+texture_disabled = SubResource( 1 )
 texture_focused = ExtResource( 6 )
 script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+tooltip = "Website \"Villa Majorelle\""
+
+[node name="Label" type="Label" parent="."]
+margin_left = 755.171
+margin_top = 941.436
+margin_right = 1236.17
+margin_bottom = 996.436
+theme = ExtResource( 3 )
+text = "www -> Website \"Villa Majorelle\""
 __meta__ = {
 "_edit_use_anchors_": false
 }

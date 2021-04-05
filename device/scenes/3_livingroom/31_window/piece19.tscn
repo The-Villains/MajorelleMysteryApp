@@ -6,7 +6,6 @@
 [node name="piece19" type="Node2D"]
 script = ExtResource( 1 )
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="."]
@@ -21,4 +20,5 @@ __meta__ = {
 [node name="animation" type="AnimationPlayer" parent="."]
 
 [node name="Sprite" type="Sprite" parent="."]
+z_as_relative = false
 texture = ExtResource( 2 )

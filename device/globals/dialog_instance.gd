@@ -6,7 +6,7 @@ var elapsed = 0
 var total_time
 var character
 var vm
-var speed = 23.0 # characters per second
+var speed = 25.0 # characters per second
 var finished = false
 var play_intro = true
 var play_outro = true

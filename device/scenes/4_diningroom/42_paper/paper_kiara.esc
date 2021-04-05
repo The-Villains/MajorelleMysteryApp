@@ -1,20 +1,20 @@
 :talk
 > [!paper_entrance,!paper_hallway,!paper_terrasse,!paper_livingroom,!paper_diningroom]
  set_state kiara tip2
- say telon diningroom_kiara_paper1:"diningroom_kiara_paper1" right_left
+ say telon diningroom_kiara_paper1:"diningroom_kiara_paper1" kiara
  set_state kiara default
  set_global diningroom_kiara_paper1 true
  stop
 
 > [!paper_entrance,!diningroom_kiara_paper2]
  set_state kiara tip1
- say telon diningroom_kiara_paper2:"diningroom_kiara_paper2" right_left
+ say telon diningroom_kiara_paper2:"diningroom_kiara_paper2" kiara
  set_state kiara default
  set_global diningroom_kiara_paper2 true
  stop
 
 >
  set_state kiara tip1
- say telon diningroom_kiara_paper3:"diningroom_kiara_paper3" right_left
+ say telon diningroom_kiara_paper3:"diningroom_kiara_paper3" kiara
  set_state kiara default
  set_global diningroom_kiara_paper2 false

@@ -54,7 +54,6 @@ tooltip = "curtain"
 events_path = "res://scenes/7_in_bedroom/curtain.esc"
 global_id = "bedroom_curtain"
 placeholders = {
-
 }
 
 [node name="painting" type="TextureButton" parent="." index="4"]
@@ -70,7 +69,6 @@ tooltip = "Portrait of Jika Majorelle"
 events_path = "res://scenes/7_in_bedroom/painting.esc"
 global_id = "bedroom_painting"
 placeholders = {
-
 }
 
 [node name="dresser" type="TextureButton" parent="." index="5"]
@@ -86,7 +84,6 @@ tooltip = "dresser"
 events_path = "res://scenes/7_in_bedroom/dresser.esc"
 global_id = "bedroom_dresser"
 placeholders = {
-
 }
 
 [node name="dressingroom" type="TextureButton" parent="." index="6"]
@@ -102,7 +99,6 @@ tooltip = "closet"
 events_path = "res://scenes/7_in_bedroom/dressingroom.esc"
 global_id = "bedroom_dressingroom"
 placeholders = {
-
 }
 
 [node name="door_mural" type="TextureButton" parent="." index="7"]
@@ -117,7 +113,6 @@ __meta__ = {
 tooltip = "stained glass art \"honesty flowers\""
 global_id = "bedroom_door_mural"
 placeholders = {
-
 }
 
 [node name="album" parent="." index="8" instance=ExtResource( 4 )]
@@ -129,7 +124,6 @@ global_id = "bedroom_album_onbed"
 position = Vector2( 1506, 1190 )
 z_index = 1190
 placeholders = {
-
 }
 
 [node name="ghost" parent="." index="10" instance=ExtResource( 8 )]

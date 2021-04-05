@@ -4,13 +4,13 @@
  set_active button_tutorial false
  set_active kiara_tutorial false
  set_state kiara tip1
- say telon entrance_kiara_tip:"entrance_kiara_tip" right_left
+ say telon entrance_kiara_tip:"entrance_kiara_tip" kiara
  set_state kiara default
  set_active entrance_ghost true
  set_global talked_to_kiara_1 true
 
 > [talked_to_kiara_1,!right_flower_picked]
- say telon entrance_kiara_goback:"entrance_kiara_goback" right_left
+ say telon entrance_kiara_goback:"entrance_kiara_goback" kiara
 
 > [i/inv_lightbulb]
- say telon entrance_louis_repeat_use:"entrance_louis_repeat_use" right_left
+ say telon entrance_louis_repeat_use:"entrance_louis_repeat_use" kiara

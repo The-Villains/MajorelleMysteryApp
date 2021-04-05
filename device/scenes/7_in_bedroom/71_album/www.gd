@@ -2,6 +2,7 @@ extends TextureButton
 
 var root
 var current_scene
+export var tooltip = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

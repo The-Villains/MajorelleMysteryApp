@@ -5,5 +5,5 @@ set_global i/inv_piece8 true
 
 > [i/inv_piece6,i/inv_piece7,i/inv_piece8]
  set_state kiara tip2
- say telon livingroom_kiara_zoom3:"livingroom_kiara_zoom3" right_left
+ say telon livingroom_kiara_zoom3:"livingroom_kiara_zoom3" kiara
  set_state kiara default

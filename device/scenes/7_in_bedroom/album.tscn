@@ -63,4 +63,3 @@ anims/plants = SubResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )
-frame = 1

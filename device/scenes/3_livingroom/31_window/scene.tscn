@@ -93,9 +93,9 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1220.0
-margin_top = 152.0
+margin_top = 180.0
 margin_right = 1220.0
-margin_bottom = 152.0
+margin_bottom = 180.0
 __meta__ = {
 "_edit_horizontal_guides_": [ 600.707 ],
 "_edit_use_anchors_": false,
@@ -103,11 +103,11 @@ __meta__ = {
 }
 
 [node name="background" type="TextureRect" parent="Control"]
-margin_left = 6.0
-margin_top = 6.0
-margin_right = 1760.0
-margin_bottom = 2486.0
-rect_scale = Vector2( 0.2, 0.2 )
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 1757.0
+margin_bottom = 2483.0
+rect_scale = Vector2( 0.21, 0.22 )
 texture = ExtResource( 44 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -117,7 +117,7 @@ __meta__ = {
 margin_left = 80.0
 margin_top = 92.0
 margin_right = 275.0
-margin_bottom = 412.0
+margin_bottom = 422.0
 theme = ExtResource( 43 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "WINDOW_PUZZLE"
@@ -127,10 +127,12 @@ __meta__ = {
 }
 
 [node name="show_pieces" type="Node2D" parent="."]
+z_as_relative = false
 
 [node name="piece1" type="Node2D" parent="show_pieces"]
 visible = false
 position = Vector2( -317.594, 800.337 )
+z_as_relative = false
 script = ExtResource( 45 )
 global_id = "piece1"
 use_combine = true
@@ -145,33 +147,34 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="show_pieces/piece1"]
+z_as_relative = false
 texture = ExtResource( 27 )
 
 [node name="piece2" parent="show_pieces" instance=ExtResource( 12 )]
 visible = false
 position = Vector2( 186.677, 650.124 )
+z_as_relative = false
 global_id = "piece2"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece3" parent="show_pieces" instance=ExtResource( 21 )]
 visible = false
 position = Vector2( 79.112, 508.874 )
+z_as_relative = false
 global_id = "piece3"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece4" parent="show_pieces" instance=ExtResource( 25 )]
 visible = false
 position = Vector2( -88.704, 680.222 )
+z_as_relative = false
 global_id = "piece4"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece5" parent="show_pieces" instance=ExtResource( 20 )]
@@ -180,7 +183,6 @@ position = Vector2( -33.398, 806.11 )
 global_id = "piece5"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece6" parent="show_pieces" instance=ExtResource( 17 )]
@@ -189,7 +191,6 @@ position = Vector2( 260, 271 )
 global_id = "piece6"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece7" parent="show_pieces" instance=ExtResource( 24 )]
@@ -198,7 +199,6 @@ position = Vector2( -139, 919 )
 global_id = "piece7"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece8" parent="show_pieces" instance=ExtResource( 9 )]
@@ -207,7 +207,6 @@ position = Vector2( 327, 552 )
 global_id = "piece8"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece9" parent="show_pieces" instance=ExtResource( 10 )]
@@ -216,16 +215,15 @@ position = Vector2( -67.231, 280.916 )
 global_id = "piece9"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece10" parent="show_pieces" instance=ExtResource( 14 )]
 visible = false
 position = Vector2( -130.731, 493.83 )
+z_as_relative = false
 global_id = "piece10"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece11" parent="show_pieces" instance=ExtResource( 28 )]
@@ -234,7 +232,6 @@ position = Vector2( -33.2335, 814.587 )
 global_id = "piece11"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece12" parent="show_pieces" instance=ExtResource( 26 )]
@@ -243,7 +240,6 @@ position = Vector2( 321.027, 1124.3 )
 global_id = "piece12"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece13" parent="show_pieces" instance=ExtResource( 23 )]
@@ -252,7 +248,6 @@ position = Vector2( 199.404, 657.609 )
 global_id = "piece13"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece14" parent="show_pieces" instance=ExtResource( 13 )]
@@ -261,7 +256,6 @@ position = Vector2( 408.708, 271.529 )
 global_id = "piece14"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece15" parent="show_pieces" instance=ExtResource( 19 )]
@@ -270,7 +264,6 @@ position = Vector2( 246.073, 284.964 )
 global_id = "piece15"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece16" parent="show_pieces" instance=ExtResource( 18 )]
@@ -279,34 +272,33 @@ position = Vector2( 226.981, 298.4 )
 global_id = "piece16"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece17" parent="show_pieces" instance=ExtResource( 15 )]
 visible = false
 position = Vector2( -86.2665, 338.705 )
+z_as_relative = false
 global_id = "piece17"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece18" parent="show_pieces" instance=ExtResource( 16 )]
 visible = false
 position = Vector2( -34.6481, 951.058 )
+z_as_relative = false
 global_id = "piece18"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="piece19" parent="show_pieces" instance=ExtResource( 22 )]
 visible = false
 position = Vector2( 53.033, 1030.25 )
+z_as_relative = false
 global_id = "piece19"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="inv_pieces" type="Node2D" parent="."]
@@ -321,7 +313,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece1"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece1"]
@@ -345,7 +336,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece2"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece2"]
@@ -370,7 +360,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece3"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece3"]
@@ -395,7 +384,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece4"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece4"]
@@ -421,7 +409,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece5"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece5"]
@@ -446,7 +433,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece9"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece9"]
@@ -472,7 +458,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece10"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece10"]
@@ -498,7 +483,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece11"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece11"]
@@ -524,7 +508,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece12"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece12"]
@@ -549,7 +532,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece13"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece13"]
@@ -574,7 +556,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece14"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece14"]
@@ -599,7 +580,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece15"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece15"]
@@ -625,7 +605,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece16"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece16"]
@@ -650,7 +629,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece17"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece17"]
@@ -676,7 +654,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece18"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece18"]
@@ -702,7 +679,6 @@ tooltip = "puzzle piece"
 global_id = "inv_piece19"
 use_combine = true
 placeholders = {
-
 }
 
 [node name="area" type="TextureRect" parent="inv_pieces/inv_piece19"]
@@ -720,15 +696,17 @@ texture = ExtResource( 38 )
 [node name="slots" type="Node2D" parent="." groups=[
 "puzzle",
 ]]
+z_index = 1
+z_as_relative = false
 
 [node name="slot1" type="Node2D" parent="slots"]
 position = Vector2( -318.198, 801.859 )
+z_index = 1
 z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot1.esc"
 global_id = "slot1"
-use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot1"]
 margin_left = 498.0
@@ -741,12 +719,13 @@ __meta__ = {
 
 [node name="slot2" type="Node2D" parent="slots"]
 position = Vector2( 185.262, 647.71 )
+z_index = 1
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot2.esc"
 global_id = "slot2"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot2"]
@@ -766,7 +745,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot3.esc"
 global_id = "slot3"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot3"]
@@ -787,7 +765,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot7.esc"
 global_id = "slot7"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot7"]
@@ -807,7 +784,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot4.esc"
 global_id = "slot4"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot4"]
@@ -827,7 +803,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot5.esc"
 global_id = "slot5"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot5"]
@@ -846,7 +821,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot6.esc"
 global_id = "slot6"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot6"]
@@ -865,7 +839,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot8.esc"
 global_id = "slot8"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot8"]
@@ -884,7 +857,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot9.esc"
 global_id = "slot9"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot9"]
@@ -905,7 +877,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot10.esc"
 global_id = "slot10"
 placeholders = {
-
 }
 use_custom_z = true
 
@@ -925,7 +896,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot11.esc"
 global_id = "slot11"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot11"]
@@ -944,7 +914,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot12.esc"
 global_id = "slot12"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot12"]
@@ -963,7 +932,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot13.esc"
 global_id = "slot13"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot13"]
@@ -982,7 +950,6 @@ tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot14.esc"
 global_id = "slot14"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot14"]
@@ -997,12 +964,13 @@ __meta__ = {
 
 [node name="slot15" type="Node2D" parent="slots"]
 position = Vector2( 248.902, 284.964 )
+z_index = 1
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot15.esc"
 global_id = "slot15"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot15"]
@@ -1017,12 +985,13 @@ __meta__ = {
 
 [node name="slot16" type="Node2D" parent="slots"]
 position = Vector2( 224.86, 296.985 )
+z_index = 1
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot16.esc"
 global_id = "slot16"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot16"]
@@ -1037,12 +1006,13 @@ __meta__ = {
 
 [node name="slot17" type="Node2D" parent="slots"]
 position = Vector2( -84.8528, 340.118 )
+z_index = 1
+z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot17.esc"
 global_id = "slot17"
 placeholders = {
-
 }
 
 [node name="area" type="TextureButton" parent="slots/slot17"]
@@ -1057,15 +1027,14 @@ __meta__ = {
 
 [node name="slot18" type="Node2D" parent="slots"]
 position = Vector2( -33.9411, 951.058 )
+z_index = 1
 z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot18.esc"
 global_id = "slot18"
 placeholders = {
-
 }
-use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot18"]
 margin_left = 201.0
@@ -1079,15 +1048,14 @@ __meta__ = {
 
 [node name="slot19" type="Node2D" parent="slots"]
 position = Vector2( 49.4975, 1029.55 )
+z_index = 1
 z_as_relative = false
 script = ExtResource( 45 )
 tooltip = "broken window"
 events_path = "res://scenes/3_livingroom/31_window/slots/slot19.esc"
 global_id = "slot19"
 placeholders = {
-
 }
-use_custom_z = true
 
 [node name="area" type="TextureButton" parent="slots/slot19"]
 margin_left = 80.0
@@ -1105,11 +1073,10 @@ tooltip = "Back"
 events_path = "res://scenes/3_livingroom/31_window/exit.esc"
 global_id = "exit_living_31"
 placeholders = {
-
 }
 
 [node name="confirm" parent="." instance=ExtResource( 46 )]
-position = Vector2( 1351.7, 698.571 )
+position = Vector2( 1355, 741.531 )
 scale = Vector2( 0.16, 0.16 )
 script = ExtResource( 45 )
 tooltip = "Confirm solution"
@@ -1118,6 +1085,8 @@ global_id = "window_confirm"
 
 [node name="kiara" parent="." instance=ExtResource( 42 )]
 position = Vector2( 0, 1200 )
+z_index = 4000
 events_path = "res://scenes/3_livingroom/31_window/puzzle_kiara.esc"
+use_custom_z = false
 
 [node name="game" parent="." instance=ExtResource( 3 )]

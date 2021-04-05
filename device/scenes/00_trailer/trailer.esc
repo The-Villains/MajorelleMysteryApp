@@ -21,7 +21,7 @@ wait 2
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer3.tscn
 cut_scene telon fade_in
-say telon trailer_1:"trailer_1" info_l
+say telon trailer_1:"trailer_1" info_l_small
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer4.tscn
@@ -32,7 +32,7 @@ say telon trailer_3:"trailer_3" info_r
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer3.tscn
 cut_scene telon fade_in
-say telon trailer_4:"trailer_4" info_l
+say telon trailer_4:"trailer_4" info_l_small
 
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer5.tscn
@@ -47,7 +47,7 @@ wait 1.5
 cut_scene telon fade_out
 change_scene res://scenes/00_trailer/trailer6.tscn
 cut_scene telon fade_in
-say telon trailer_6:"trailer_6" right_right avatar_artur
+say telon trailer_6:"trailer_6" small_right avatar_artur
 
 cut_scene telon fade_out
 change_scene res://scenes/1_entrance/scene.tscn
@@ -56,10 +56,10 @@ cut_scene telon fade_in
 # Workaround - Initial speaking for following main scene and Esc Script here
 
 set_state kiara tip1
-say telon entrance_kiara_01:"entrance_kiara_01" right_left
+say telon entrance_kiara_01:"entrance_kiara_01" kiara
 set_active entrance_ghost true
 set_active button_tutorial true
 teleport_pos button_tutorial 1085 1055.5
 set_active ghost_tutorial true
-say telon entrance_kiara_talk:"entrance_kiara_talk" right_left
+say telon entrance_kiara_talk:"entrance_kiara_talk" kiara
 set_state kiara default

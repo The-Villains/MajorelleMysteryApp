@@ -1,22 +1,16 @@
 :use inv_flower4
 set_global i/inv_flower4 false
-set_active flower4 true
+set_state bedroom_plants flower4
 set_global flower4 true
-wait 1.5
+wait 1
 >  [flower1,flower2,flower3,flower4]
  set_state bedroom_plants disappear
- set_active flower1 false
- set_active flower2 false
- set_active flower3 false
- set_active flower4 false
- set_active bedroom_spot1 false
- set_active bedroom_spot2 false
- set_active bedroom_spot3 false
- set_active bedroom_spot4 false
- wait 3
- set_active bedroom_plants false
- set_active front_bedroom_door true
- set_global flowers_solved true
+ wait 4
+ cut_scene telon fade_out
+ change_scene res://scenes/7_in_bedroom/scene.tscn
+ set_state bedroom_ghost jane
+ cut_scene telon fade_in
+ say telon bedroom_jane_givealbum:"bedroom_jane_givealbum" left_right avatar_jane
 
 :use inv_flower2
 say telon frontbedroom_kiara_wrong_spot:"frontbedroom_kiara_wrong_spot"

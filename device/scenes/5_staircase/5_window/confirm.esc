@@ -2,7 +2,7 @@
 > [staircase_window_solved]
  set_active staircase_frame true
  set_active staircase_solved_window true
- say telon staircase_window_solved:"staircase_window_solved" default avatar_luis
+ say telon staircase_window_solved:"staircase_window_solved" small avatar_luis
  set_global i/inv_flower1 true
  cut_scene telon fade_out
  change_scene res://scenes/5_staircase/scene.tscn
@@ -12,13 +12,13 @@
  cut_scene telon fade_in
  set_state staircase_plants disappear
  wait 3
- say telon staircase_kiara_upstairs:"staircase_kiara_upstairs" right_left
+ say telon staircase_kiara_upstairs:"staircase_kiara_upstairs" kiara
  set_active staircase_plants false
  set_active upstairs true
 
 
 > [!staircase_window_solved]
- say telon staircase_window_unsolved:"staircase_window_unsolved"
+ say telon staircase_window_unsolved:"staircase_window_unsolved" small
 
 
 #Functions needed so it doesn't matter which action is currently active in the background.

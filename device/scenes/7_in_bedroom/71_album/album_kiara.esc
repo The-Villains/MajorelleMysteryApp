@@ -2,25 +2,25 @@
 
 > [!looked_at_lock]
  set_state kiara tip2
- say telon bedroom_album_kiara_tip1:"bedroom_album_kiara_tip1" right_left
+ say telon bedroom_album_kiara_tip1:"bedroom_album_kiara_tip1" kiara
  set_state kiara default
  stop
 
 > [looked_at_lock,!bedroom_album_kiara_tip2]
  set_state kiara tip1
- say telon bedroom_album_kiara_tip2:"bedroom_album_kiara_tip2" right_left
+ say telon bedroom_album_kiara_tip2:"bedroom_album_kiara_tip2" kiara
  set_state kiara default
  set_global bedroom_album_kiara_tip2 true
  stop
 
 > [bedroom_album_kiara_tip2,looked_at_rose]
  set_state kiara tip1
- say telon bedroom_album_kiara_tip3:"bedroom_album_kiara_tip3" right_left
+ say telon bedroom_album_kiara_tip3:"bedroom_album_kiara_tip3" kiara
  set_state kiara default
  stop
 
 > [bedroom_album_kiara_tip2,!looked_at_rose]
  set_state kiara tip1
- say telon bedroom_album_kiara_tip4:"bedroom_album_kiara_tip4" right_left
+ say telon bedroom_album_kiara_tip4:"bedroom_album_kiara_tip4" kiara
  set_state kiara default
  stop

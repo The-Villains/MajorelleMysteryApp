@@ -1,11 +1,11 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://globals/player.gd" type="Script" id=1]
 [ext_resource path="res://actors/arturo/sprites/arturo_avatar.png" type="Texture" id=2]
 [ext_resource path="res://actors/arturo/sprites/arturo_up_right.png" type="Texture" id=3]
 [ext_resource path="res://actors/arturo/sprites/back.png" type="Texture" id=4]
 [ext_resource path="res://actors/arturo/sprites/walking03.png" type="Texture" id=5]
-[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/looking.png" type="Texture" id=6]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/arthur_3.png" type="Texture" id=6]
 [ext_resource path="res://actors/arturo/sprites/walking04.png" type="Texture" id=7]
 [ext_resource path="res://actors/arturo/sprites/arturo-down_right.png" type="Texture" id=8]
 [ext_resource path="res://actors/arturo/sprites/arturo.png" type="Texture" id=9]
@@ -14,6 +14,7 @@
 [ext_resource path="res://actors/arturo/sprites/walking01.png" type="Texture" id=12]
 [ext_resource path="res://actors/arturo/sprites/walking02.png" type="Texture" id=13]
 [ext_resource path="res://globals/sprites/character zeug/arthur und kiara/arthur.png" type="Texture" id=14]
+[ext_resource path="res://globals/sprites/character zeug/arthur und kiara/arthur_2.png" type="Texture" id=15]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 3.25645
@@ -21,7 +22,7 @@ height = 0.905671
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 14 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 14 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -67,7 +68,6 @@ scale = Vector2( 0.4, 0.4 )
 z_as_relative = false
 script = ExtResource( 1 )
 placeholders = {
-
 }
 
 [node name="area" type="Area2D" parent="."]

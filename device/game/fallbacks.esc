@@ -1,21 +1,21 @@
 :use
 debug fallbacks_use:"use fallback!"
-say telon fallbacks_use:"I can't do that." default avatar_artur
+say telon fallbacks_use:"I can't do that." small_right avatar_artur
 
 :pick_up
 debug fallbacks_pick_up:"pick_up fallback!"
-say telon fallbacks_pick_up:"That's not a good idea." default avatar_artur
+say telon fallbacks_pick_up:"That's not a good idea." small_right avatar_artur
 
 :talk
 debug fallbacks_talk:"talk fallback!"
-say telon fallbacks_talk:"This won't answer me!" default avatar_artur
+say telon fallbacks_talk:"This won't answer me!" small_right avatar_artur
 
 :look
 debug fallbacks_look:"look fallback!"
-say telon fallbacks_look:"Nothing to look at here." default avatar_artur
+say telon fallbacks_look:"Nothing to look at here." small_right avatar_artur
 
 :no_interaction
-say telon fallbacks_no_interaction:"I can't interact with this." default avatar_artur
+say telon fallbacks_no_interaction:"I can't interact with this." small_right avatar_artur
 
 :no_action_chosen
-say telon fallbacks_no_action_chosen:"Try again after choosing one of the actions."
+say telon fallbacks_no_action_chosen:"Try again after choosing one of the actions." small_right avatar_artur

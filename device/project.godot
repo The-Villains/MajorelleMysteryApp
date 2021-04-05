@@ -10,7 +10,6 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
@@ -19,9 +18,9 @@ config/name="Majorelle Mystery"
 run/main_scene="res://globals/scene_main.tscn"
 boot_splash/fullsize=false
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
-config/icon="res://icon.png"
-config/macos_native_icon="res://icon.icns"
-config/windows_native_icon="res://icon.ico"
+config/icon="res://icon/icon.png"
+config/macos_native_icon="res://icon/icon.icns"
+config/windows_native_icon="res://icon/icon.ico"
 #main_scene="res://scenes/intro-game/scene.tscn"
 max_voice_volume=2
 save_data="res://globals/save_data.gd"

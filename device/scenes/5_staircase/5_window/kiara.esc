@@ -1,7 +1,7 @@
 :talk
 > [!staircase_window_kiara1]
  set_state kiara tip1
- say telon staircase_window_kiara1:"staircase_window_kiara1" right_left
+ say telon staircase_window_kiara1:"staircase_window_kiara1" kiara
  set_state kiara default
  set_global staircase_window_kiara1 true
  set_global staircase_window_kiara3 false
@@ -9,14 +9,14 @@
 
 > [staircase_window_kiara1,!staircase_window_kiara2]
  set_state kiara tip1
- say telon staircase_window_kiara2:"staircase_window_kiara2" right_left
+ say telon staircase_window_kiara2:"staircase_window_kiara2" kiara
  set_state kiara default
  set_global staircase_window_kiara2 true
  stop
 
 > [staircase_window_kiara2,!staircase_window_kiara3]
  set_state kiara tip1
- say telon staircase_window_kiara3:"staircase_window_kiara3" right_left
+ say telon staircase_window_kiara3:"staircase_window_kiara3" kiara
  set_state kiara default
  set_global staircase_window_kiara3 true
  set_global staircase_window_kiara1 false

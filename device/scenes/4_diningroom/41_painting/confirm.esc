@@ -1,26 +1,26 @@
 :load
 > [!found1]
- say telon diningroom_not_all_found:"diningroom_not_all_found" default avatar_jane
+ say telon diningroom_not_all_found:"diningroom_not_all_found" small avatar_jane
  stop
 
 > [!found2]
- say telon diningroom_not_all_found:"diningroom_not_all_found" default avatar_jane
+ say telon diningroom_not_all_found:"diningroom_not_all_found" small avatar_jane
  stop
 
 > [!found3]
- say telon diningroom_not_all_found:"diningroom_not_all_found" default avatar_jane
+ say telon diningroom_not_all_found:"diningroom_not_all_found" small avatar_jane
  stop
 
 > [!found4]
- say telon diningroom_not_all_found:"diningroom_not_all_found" default avatar_jane
+ say telon diningroom_not_all_found:"diningroom_not_all_found" small avatar_jane
  stop
 
 > [!found5]
- say telon diningroom_not_all_found:"diningroom_not_all_found" default avatar_jane
+ say telon diningroom_not_all_found:"diningroom_not_all_found" small avatar_jane
  stop
 
 > [found1,found2,found3,found4,found5]
- say telon diningroom_all_found:"diningroom_all_found" default avatar_jane
+ say telon diningroom_all_found:"diningroom_all_found" small avatar_jane
  set_global painting_solved true
  set_global i/inv_flower3 true
  change_scene res://scenes/4_diningroom/scene.tscn
@@ -28,7 +28,7 @@
  set_state diningroom_paper falling
  wait 3
  set_global paper_on_table true
- say telon diningroom_artur_paper:"diningroom_all_found" default avatar_artur
+ say telon diningroom_artur_paper:"diningroom_all_found" small avatar_artur
 
 :talk
 

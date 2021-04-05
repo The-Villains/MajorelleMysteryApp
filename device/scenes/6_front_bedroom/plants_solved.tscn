@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/6_front_bedroom/sprites/plants_w_flowers.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "disappear"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
+
+[node name="plants_solved" type="Node2D"]
+position = Vector2( 792.828, 603.615 )
+scale = Vector2( 1.14, 1.14 )
+z_as_relative = false
+script = ExtResource( 1 )
+tooltip = "overgrown area"
+events_path = "res://scenes/6_front_bedroom/plants.esc"
+global_id = "bedroom_plantsbedroom_plants_solved"
+placeholders = {
+}
+
+[node name="area" type="TextureButton" parent="."]
+margin_left = -344.0
+margin_top = -535.0
+margin_right = 412.0
+margin_bottom = 538.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/default = SubResource( 1 )
+anims/disappear = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
