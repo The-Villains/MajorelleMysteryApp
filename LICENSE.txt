@@ -1,6 +1,6 @@
-LICENCES
+LICENSES
 
-This licence document includes Licenses for the works of the developers of this application (Software MajorelleMystery 1.0 and Artwork MajorelleMystery 1.0) as well as materials and open source code used in the creation of MajorelleMystery.
+This license document includes licenses for the works of the developers of this application (Software MajorelleMystery 1.0 and Artwork MajorelleMystery 1.0) as well as materials and open source code used in the creation of MajorelleMystery.
 
 The developers own licences are Software MajorelleMystery 1.0 and Artwork MajorelleMystery 1.0.
 The other licences are from the materials and open source code used in this project.
